@@ -1,7 +1,13 @@
+using Gamebook.Interfaces;
+using Gamebook.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+//SERVICES injecting
+builder.Services.AddScoped<IGameLocationService, GameLocationService>();
 
 var app = builder.Build();
 

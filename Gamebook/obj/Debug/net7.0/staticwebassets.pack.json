@@ -245,6 +245,54 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests.md",
+      "PackagePath": "staticwebassets/story_draft/quests.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest1.md",
+      "PackagePath": "staticwebassets/story_draft/quests/quest1.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest2.md",
+      "PackagePath": "staticwebassets/story_draft/quests/quest2.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest3.md",
+      "PackagePath": "staticwebassets/story_draft/quests/quest3.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest4_fyz.md",
+      "PackagePath": "staticwebassets/story_draft/quests/quest4_fyz.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest4_hack.md",
+      "PackagePath": "staticwebassets/story_draft/quests/quest4_hack.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest5_fyz.md",
+      "PackagePath": "staticwebassets/story_draft/quests/quest5_fyz.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest5_hack.md",
+      "PackagePath": "staticwebassets/story_draft/quests/quest5_hack.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest6.md",
+      "PackagePath": "staticwebassets/story_draft/quests/quest6.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest7.md",
+      "PackagePath": "staticwebassets/story_draft/quests/quest7.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/story.md",
+      "PackagePath": "staticwebassets/story_draft/story.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/todo.md",
+      "PackagePath": "staticwebassets/story_draft/todo.md"
+    },
+    {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.Gamebook.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
