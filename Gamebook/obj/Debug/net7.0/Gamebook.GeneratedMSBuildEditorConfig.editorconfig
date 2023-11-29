@@ -28,6 +28,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9jYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/Pages/Shared/_LocationLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19Mb2NhdGlvbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

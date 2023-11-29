@@ -1,8 +1,10 @@
-﻿@page "/location/{Id:int}"
-@model Gamebook.Models.GameLocationModel
+﻿@page "/location/{location}"
+@model Gamebook.Pages.LocationModel
 
-<h1>@Model.Title</h1>
-<p>@Model.Description</p>
-<img src="@Model.BackgroundImagePath" alt="Background Image">
+@{
+    Layout = "_LocationLayout";
+}
+
+<p>TEST</p>
 
 

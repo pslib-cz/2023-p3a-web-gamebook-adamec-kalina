@@ -6,10 +6,10 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Location.cshtml">
     <Files>
       <File FileName="Pages/Error.cshtml" />
-      <File FileName="Pages/Index.cshtml" />
+      <File FileName="Pages/Index.cshtml" Line="1" Column="1" />
       <File FileName="obj/Gamebook.csproj.nuget.dgspec.json" />
       <File FileName="obj/Debug/net7.0/Gamebook.csproj.AssemblyReference.cache" />
       <File FileName="obj/project.nuget.cache" />
@@ -23,18 +23,28 @@
       <File FileName="Pages/_ViewStart.cshtml" />
       <File FileName="Pages/Shared/_Layout.cshtml" Line="21" Column="1" />
       <File FileName="appsettings.json" Line="10" Column="1" />
-      <File FileName="Enums/Location.cs" Line="5" Column="6" />
-      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Enums/Location.cs" />
+      <File FileName="Program.cs" Line="13" Column="1" />
+      <File FileName="Models/GameLocation.cs" Line="6" Column="35" />
+      <File FileName="Pages/Location.cshtml" Line="9" Column="1" />
+      <File FileName="Pages/Location.cshtml.cs" Line="27" Column="1" />
+      <File FileName="Services/GameLocationService.cs" Line="14" Column="1" />
+      <File FileName="Interfaces/IGameLocationService.cs" Line="12" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Gamebook">
-            <Node name="Gamebook" selected="True">
-              <Node name="wwwroot" expanded="True">
-                <Node name="images" expanded="True" />
+            <Node name="Gamebook">
+              <Node name="Enums" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True" />
+                <Node name="Location.cshtml" expanded="True" />
               </Node>
-              <Node name="appsettings.json" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
             </Node>
           </Node>
         </State>
