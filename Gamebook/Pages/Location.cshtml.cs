@@ -30,7 +30,7 @@ namespace Gamebook.Pages
             Location = _locationService.GetLocation(Enum.Parse<Location>(location));//parse the string into the Enum
             ViewData["LocationTitle"] = Location.Title;
             ViewData["LocationDescription"] = Location.Description;
-            ViewData["BackgroundImagePath"] = Location.BackgroundImagePath;
+            // ViewData["BackgroundImagePath"] = Location.BackgroundImagePath;
           
         }
     }

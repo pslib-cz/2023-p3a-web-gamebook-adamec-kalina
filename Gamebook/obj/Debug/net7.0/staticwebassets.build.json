@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "khfw0mjWmreyyxnDHeeG88M5MpU7SNnt2uQkhRBD8dc=",
+  "Hash": "l1pLgPUBG01sOnHu7D94a3ni3UWLhajfm75K+01MM1Q=",
   "Source": "Gamebook",
   "BasePath": "_content/Gamebook",
   "Mode": "Default",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/obj/Debug/net7.0/scopedcss/projectbundle/Gamebook.bundle.scp.css"
     },
     {
-      "Identity": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/css/site.css",
+      "Identity": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/css/gameLocation.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/",
       "BasePath": "_content/Gamebook",
-      "RelativePath": "css/site.css",
+      "RelativePath": "css/gameLocation.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,7 +65,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/site.css"
+      "OriginalItemSpec": "wwwroot/css/gameLocation.css"
     },
     {
       "Identity": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/favicon.ico",
