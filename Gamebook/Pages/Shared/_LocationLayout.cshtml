@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@ViewData["LocationTitle"]</title>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/gameLocation.css" asp-append-version="true" />
 </head>
 <body style="background-image: url('@ViewData["BackgroundImagePath"]')">
     <div class="container">
+        <h2>@ViewData["LocationTitle"]</h2>
         <p>@ViewData["LocationDescription"]</p>
 
         @RenderBody()
