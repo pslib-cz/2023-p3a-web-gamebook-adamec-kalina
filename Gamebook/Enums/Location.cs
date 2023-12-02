@@ -3,9 +3,17 @@ namespace Gamebook.Enums
 {
     public enum Location
     {
-        Cave,
-        Forest,
-        City
+        ChudinskeCtvrti,
+        ChudinskaCtvrt,
+        KramekSElektronikou,
+        TemnaUlicka,
+        ZapadlyBar,
+        CastBaru,
+        ZadniVchod,
+        TajneSchuzoveMisto,
+        Dilna,
+        TaktickaMistnost,
+        Laborator
     }
 }
 

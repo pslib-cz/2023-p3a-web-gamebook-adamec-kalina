@@ -7,7 +7,7 @@ namespace Gamebook.Models
     {
         public string Title { get; set; }
         public string Description { get; set; }
-        public string BackgroundImagePath { get; set; }
+        public string BackgroundImageClass { get; set; }
     }
 }
 
