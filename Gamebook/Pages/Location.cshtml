@@ -5,10 +5,19 @@
     Layout = "_LocationLayout";
 }
 
-<p>TEST</p>
-
-<a asp-area="" asp-page="/Location" asp-route-location="ChudinskaCtvrt">Chudinská Čtvrť</a>
-<a asp-area="" asp-page="/Location" asp-route-location="KramekSElektronikou">Krámek s Elektronikou</a>
-<a asp-area="" asp-page="/Location" asp-route-location="TemnaUlicka">Temná Ulička</a>
 
 
+<div class="textbox textbox--red textbox--hidden">
+    <div class="textbox__container">
+        <p class="textbox__character">Shadow Viper</p>
+        <button class="textbox__next"></button>
+    </div>
+    <p class="textbox__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores hic at expedita, quia nostrum accusantium vitae alias non facilis error veniam enim provident tempora obcaecati doloremque eius. Laboriosam, sequi veniam.</p>
+</div>
+
+<div class="choice ">
+    <!--choice--hidden-->
+    <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="ChudinskaCtvrt">Chudinská Čtvrť</a>
+    <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="KramekSElektronikou">Krámek s Elektronikou</a>
+    <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="TemnaUlicka">Temná Ulička</a>
+</div>

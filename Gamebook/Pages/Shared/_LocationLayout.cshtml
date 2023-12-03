@@ -4,14 +4,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@ViewData["LocationTitle"]</title>
     <link rel="stylesheet" href="~/css/gameLocation.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/LocationBackground.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/root.css" asp-append-version="true" />
 </head>
-<body style="background-image: url('@ViewData["BackgroundImagePath"]')">
-    <div class="container">
-        <h2>@ViewData["LocationTitle"]</h2>
-        <p>@ViewData["LocationDescription"]</p>
+<body class="@ViewData["BackgroundImageClass"]">
 
-        @RenderBody()
-    </div>
+    <header class="header">
+        <h1 class="header__heading">@ViewData["LocationTitle"]</h1>
+    </header>
+
+    <section class="sidemenu">
+        <div class="menu menu--closed">
+            <button onclick="toggleMenu()" class="menu__swich"></button>
+            <h1 class="menu__heading">HackAttack</h1>
+            <ul class="menu__list">
+                <li class="menu__item"><a class="manu__link" href="#">Mapa</a></li>
+                <li class="menu__item"><a class="manu__link" href="#">Quests</a></li>
+                <li class="menu__item"><a class="manu__link" href="#">Inventory</a></li>
+                <li class="menu__item"><a class="manu__link" href="#">Save Game</a></li>
+                <li class="menu__item"><a class="manu__link" href="./mainmenu.html">Main menu</a></li>
+            </ul>
+        </div>
+        <div class="menu__overflow" onclick="toggleMenu()"></div>
+    </section>
+
+    <div class="npc"></div>
+
+    @RenderBody()
 
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)

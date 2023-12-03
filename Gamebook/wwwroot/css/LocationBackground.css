@@ -1,0 +1,62 @@
+﻿body {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+
+body.main-menu {
+    background-color: var(--black);
+}
+
+
+body.kramek-s-elektronikou {
+    background-image: url(/images/background/krámek_s_elektronikou.png);
+}
+
+body.temna-ulicka {
+    background-image: url(/images/background/temna_ulicka.png);
+}
+
+body.chudinska-ctvrt {
+    background-image:url(/images/background/chudinska_ctvrt.png);
+}
+
+body.chudinske-ctvrti {
+    background-image:url(/images/background/chudinske_ctvrti.png);
+}
+
+body.zapadly-bar {
+    background-image:url(/images/background/zapadly_bar.png);
+}
+
+body.cast-baru {
+    background-image:url(/images/background/cast_baru.png);
+}
+
+body.zadni-vchod {
+    background-image:url(/images/background/zadni_vchod.png);
+}
+
+
+body.tajne-schuzkove-misto {
+    background-image:url(/images/background/tajne_schuzkove_misto.png);
+}
+
+body.laborator {
+    background-image:url(/images/background/laborator.png);
+}
+
+body.takticka-mistnost {
+    background-image:url(/images/background/takticka_mistnost.png);
+}
+
+body.dilna {
+    background-image:url(/images/background/dilna.png);
+}
+
+body.kvanotovy-pocitac {
+    background-image:url(/images/background/kvantovy_pocitac.png);
+}

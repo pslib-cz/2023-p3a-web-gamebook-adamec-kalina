@@ -5,12 +5,84 @@
       "PackagePath": "staticwebassets\\Gamebook.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\css\\LocationBackground.css",
+      "PackagePath": "staticwebassets\\css\\LocationBackground.css"
+    },
+    {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\css\\gameLocation.css",
       "PackagePath": "staticwebassets\\css\\gameLocation.css"
     },
     {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\css\\root.css",
+      "PackagePath": "staticwebassets\\css\\root.css"
+    },
+    {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\fonts\\TechnoRaceItalic-eZRWe.otf",
+      "PackagePath": "staticwebassets\\fonts\\TechnoRaceItalic-eZRWe.otf"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\arrow-left.svg",
+      "PackagePath": "staticwebassets\\images\\arrow-left.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\arrow-right--red.svg",
+      "PackagePath": "staticwebassets\\images\\arrow-right--red.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\arrow-right.svg",
+      "PackagePath": "staticwebassets\\images\\arrow-right.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\cast_baru.png",
+      "PackagePath": "staticwebassets\\images\\background\\cast_baru.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\chudinska_ctvrt.png",
+      "PackagePath": "staticwebassets\\images\\background\\chudinska_ctvrt.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\chudinske_ctvrti.png",
+      "PackagePath": "staticwebassets\\images\\background\\chudinske_ctvrti.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\dilna.png",
+      "PackagePath": "staticwebassets\\images\\background\\dilna.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\krámek_s_elektronikou.png",
+      "PackagePath": "staticwebassets\\images\\background\\krámek_s_elektronikou.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\kvantovy_pocitac.png",
+      "PackagePath": "staticwebassets\\images\\background\\kvantovy_pocitac.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\laborator.png",
+      "PackagePath": "staticwebassets\\images\\background\\laborator.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\tajne_schuzkove_misto.png",
+      "PackagePath": "staticwebassets\\images\\background\\tajne_schuzkove_misto.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\takticka_mistnost.png",
+      "PackagePath": "staticwebassets\\images\\background\\takticka_mistnost.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\temna_ulicka.png",
+      "PackagePath": "staticwebassets\\images\\background\\temna_ulicka.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\zadni_vchod.png",
+      "PackagePath": "staticwebassets\\images\\background\\zadni_vchod.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\zapadly_bar.png",
+      "PackagePath": "staticwebassets\\images\\background\\zapadly_bar.png"
     },
     {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\site.js",
