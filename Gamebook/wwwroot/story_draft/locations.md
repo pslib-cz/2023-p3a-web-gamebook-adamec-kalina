@@ -1,47 +1,49 @@
-Chudinské Čtvrti **FAST TRAVEL**
-Chudinská Čtvrť
-krámek s elektronikou
-temná ulička
+Slum District **FAST TRAVEL**
+Slum Quarter
+Electro Shop
+Dark Alley
 
-Zapadlý bar **FAST TRAVEL**
-část baru
-zadní vchod
+Shady Bar **FAST TRAVEL**
+Part of the Bar
+Back Entrance
 
-Tajné Schůzové Místo **FAST TRAVEL**
-Dílna
-Taktická místnost
-Kybernetická laboratoř
-Kvantová technika
+Secret Meeting Place **FAST TRAVEL**
+Workshop
+Tactical Room
+Cyber Lab
+Quantum Technology
 
 ---
 
-Chudinské Čtvrti
+Slum District
 
-- Chudinská Čtvrť
-  -- zpět
-  -- krámek s elektronikou
-  --- zpět
-- Temná Ulička
-  --zpět
+- Slum quarter
+  -- back
+  -- electro shop
+  --- back
+- dark alley
+  --back
 
-Zapadlý bar
+shady bar
 
-- část baru
-  -- zpět
-- zadní vchod
-  -- zpět
-  -- > Tajné Schůzové Místo
+- part of the bar
+  -- back
+- back entrance
+  -- back
+  -- > Secret Meeting Place
 
-Tajné Schůzové Místo
+Secret Meeting Place
 
-- Kybernetická laboratoř -> zpět
-- Dílna hacktivistů
-  -- zpět
-  -- kvantová technika
-  --- zpět
-- Taktická místnost
-  -- zpět
-  --> Příchod ke Korporátní Budově **AKCE1**
+- Cyber Lab -> back
+- Workshop
+  -- back
+  -- Quantum Technology
+  --- back
+- Tactical Room
+  -- back
+  -->  **ACTION1**
+  -->  **ACTION2**
+  -->  **ACTION3**
 
 **AKCE1**
 
@@ -49,6 +51,7 @@ Tajné Schůzové Místo
 
 - Korporátní průmyslové zařízení
 
+
 ### no story
 
-- SHOP
+- Black Market
