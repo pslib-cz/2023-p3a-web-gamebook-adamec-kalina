@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Security.Cryptography.X509Certificates;
+using Gamebook.Enums;
 
 namespace Gamebook.Models
 {
@@ -7,7 +8,8 @@ namespace Gamebook.Models
     {
         public string Title { get; set; }
         public string Description { get; set; }
-        public string BackgroundImageClass { get; set; }
+        public string BackgroundImage { get; set; }
+        public List<TargetLocation> TargetLocations { get; set; }
     }
 }
 

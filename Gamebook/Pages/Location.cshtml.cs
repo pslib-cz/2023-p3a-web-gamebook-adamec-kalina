@@ -13,14 +13,12 @@ namespace Gamebook.Pages
     public class LocationModel : PageModel
     {
         private readonly IGameLocationService _locationService;
-        private readonly IHttpContextAccessor _httpContext;
 
         public GameLocationModel Location { get; private set; }
         
         
-        public LocationModel(IGameLocationService locationService, IHttpContextAccessor httpContext)
+        public LocationModel(IGameLocationService locationService)
         {
-            _httpContext = httpContext;
             _locationService = locationService;
         }
 
@@ -30,7 +28,7 @@ namespace Gamebook.Pages
             Location = _locationService.GetLocation(Enum.Parse<Location>(location));//parse the string into the Enum
             ViewData["LocationTitle"] = Location.Title;
             ViewData["LocationDescription"] = Location.Description;
-            ViewData["BackgroundImageClass"] = Location.BackgroundImageClass;
+            ViewData["BackgroundImage"] = Location.BackgroundImage;
           
         }
     }

@@ -11,13 +11,12 @@ builder.Services.AddDistributedMemoryCache(); // Adds the default in-memory impl
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromDays(300); // Set session timeout to 300 days
-    options.Cookie.HttpOnly = true;
-    options.Cookie.IsEssential = true;
 });
 
 //SERVICES injecting
-builder.Services.AddScoped<IGameLocationService, GameLocationService>();
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddScoped<ISessionHelper, SessionHelper>();
+builder.Services.AddScoped<IGameLocationService, GameLocationService>();
 
 
 var app = builder.Build();
@@ -30,6 +29,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseSession();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

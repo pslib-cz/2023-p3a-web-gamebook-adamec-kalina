@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="~/css/LocationBackground.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/root.css" asp-append-version="true" />
 </head>
-<body class="@ViewData["BackgroundImageClass"]">
+<body class="@ViewData["BackgroundImage"]">
 
     <header class="header">
         <h1 class="header__heading">@ViewData["LocationTitle"]</h1>
@@ -18,7 +18,7 @@
             <button onclick="toggleMenu()" class="menu__swich"></button>
             <h1 class="menu__heading">HackAttack</h1>
             <ul class="menu__list">
-                <li class="menu__item"><a class="manu__link" asp-page="#">Mapa</a></li>
+                <li class="menu__item"><a class="manu__link" asp-page="#">Map</a></li>
                 <li class="menu__item"><a class="manu__link" asp-page="#">Quests</a></li>
                 <li class="menu__item"><a class="manu__link" asp-page="#">Inventory</a></li>
                 <li class="menu__item"><a class="manu__link" asp-page="#">Save Game</a></li>
@@ -32,7 +32,11 @@
 
     @RenderBody()
 
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <div class="choice ">
+        @await RenderSectionAsync("Choices", required:true)
+    </div>
+
+<script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
