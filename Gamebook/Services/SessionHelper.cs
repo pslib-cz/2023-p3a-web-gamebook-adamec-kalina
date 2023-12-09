@@ -10,7 +10,7 @@ public class SessionHelper : ISessionHelper
 {
     private readonly IHttpContextAccessor _httpContext;
     
-    // Default game locations' states
+    //TODO Default game locations' states
     private Dictionary<Location, GameLocationModel> gameLocationDataDict = new()
     {
         {Location.SlumDistrict, new GameLocationModel(){Title = "Slum District", Description = "Slum District, btw ur moms a hoe", BackgroundImage = "slum-district"}},
@@ -27,7 +27,7 @@ public class SessionHelper : ISessionHelper
         {Location.QuantumTechnology, new GameLocationModel(){Title = "Quantum Technology", Description = "Quantum Technology, btw ur moms a hoe", BackgroundImage = "quantum-technology"}},
     };
 
-    // Default game locations dialog states
+    //TODO Default game locations dialog states
     private Dictionary<string, Dialog> gameLocationDialogDict = new()
     {
         {$"{Location.SlumDistrict}Dialog", new Dialog {Text = ""}},
@@ -44,6 +44,7 @@ public class SessionHelper : ISessionHelper
         {$"{Location.QuantumTechnology}Dialog", new Dialog {Text = ""}}
     };
 
+    //TODO Default game locations' target locations states 
     private Dictionary<string, List<TargetLocation>> gameLocationTargetLocationDict = new()
     {
         {$"{Location.SlumDistrict}TargetLocations", new List<TargetLocation> {}},
@@ -61,7 +62,7 @@ public class SessionHelper : ISessionHelper
 
     };
  
-    // Default inventory state
+    //TODO Default inventory state
     private List<Item> inventoryItemList = new()
     {
         Item.Item1, Item.Item2
