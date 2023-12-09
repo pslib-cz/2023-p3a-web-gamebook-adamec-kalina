@@ -3,17 +3,18 @@ namespace Gamebook.Enums
 {
     public enum Location
     {
-        ChudinskeCtvrti,
-        ChudinskaCtvrt,
-        KramekSElektronikou,
-        TemnaUlicka,
-        ZapadlyBar,
-        CastBaru,
-        ZadniVchod,
-        TajneSchuzoveMisto,
-        Dilna,
-        TaktickaMistnost,
-        Laborator
+        SlumDistrict,
+        SlumQuarter,
+        ElectroShop,
+        DarkAlley,
+        ShadyBar,
+        PartOfTheBar,
+        BackEntrance,
+        SecretMeetingPlace,
+        Workshop,
+        TacticalRoom,
+        CyberLab,
+        QuantumTechnology
     }
 }
 

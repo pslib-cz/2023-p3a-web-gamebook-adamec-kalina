@@ -1,3 +1,4 @@
+```
 Slum District **FAST TRAVEL**
 Slum Quarter
 Electro Shop
@@ -12,6 +13,7 @@ Workshop
 Tactical Room
 Cyber Lab
 Quantum Technology
+```
 
 ---
 
@@ -41,16 +43,11 @@ Secret Meeting Place
   --- back
 - Tactical Room
   -- back
-  -->  **ACTION1**
-  -->  **ACTION2**
-  -->  **ACTION3**
+  --> **ACTION1**
+  --> **ACTION2**
+  --> **ACTION3**
 
-**AKCE1**
-
-- Příchod ke Korporátní Budově
-
-- Korporátní průmyslové zařízení
-
+---
 
 ### no story
 

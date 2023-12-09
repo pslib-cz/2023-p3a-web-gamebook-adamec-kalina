@@ -9,17 +9,18 @@ namespace Gamebook.Services
     {
         private Dictionary<Location, GameLocationModel> gameLocationDataDict = new Dictionary<Location, GameLocationModel>
         {
-            {Location.ChudinskeCtvrti, new GameLocationModel(){Title = "Chudinské Čtvrti", Description = "Chudinské Čtvrti, btw ur moms a hoe", BackgroundImageClass = "chudinske-ctvrti"}},
-            {Location.ChudinskaCtvrt, new GameLocationModel(){Title = "Chudinská Čtvrť", Description = "Chudinská Čtvrť, btw ur moms a hoe", BackgroundImageClass = "chudinska-ctvrt"}},
-            {Location.KramekSElektronikou, new GameLocationModel(){Title = "Krámek s Elektro", Description = "Krámek s Elektronikou, btw ur moms a hoe", BackgroundImageClass = "kramek-s-elektronikou"}},
-            {Location.TemnaUlicka, new GameLocationModel(){Title = "Temná Ulička", Description = "Temná Ulička, btw ur moms a hoe", BackgroundImageClass = "temna-ulicka"}},
-            {Location.ZapadlyBar, new GameLocationModel(){Title = "Zapadlý Bar", Description = "Zapadlý Bar, btw ur moms a hoe", BackgroundImageClass = "zapadly-bar"}},
-            {Location.CastBaru, new GameLocationModel(){Title = "Část Baru", Description = "Část Baru, btw ur moms a hoe", BackgroundImageClass = "cast-baru"}},
-            {Location.ZadniVchod, new GameLocationModel(){Title = "Zadní Vchod", Description = "Zadní Vchod, btw ur moms a hoe", BackgroundImageClass = "zadni-vchod"}},
-            {Location.TajneSchuzoveMisto, new GameLocationModel(){Title = "Tajné Schůzové Místo", Description = "Tajné Schůzové Místo, btw ur moms a hoe", BackgroundImageClass = "tajne-schuzkove-misto"}},
-            {Location.Dilna, new GameLocationModel(){Title = "Dílna", Description = "Dílna, btw ur moms a hoe", BackgroundImageClass = "dilna"}},
-            {Location.TaktickaMistnost, new GameLocationModel(){Title = "Taktická Místnost", Description = "Taktická Místnost, btw ur moms a hoe", BackgroundImageClass = "takticka-mistnost"}},
-            {Location.Laborator, new GameLocationModel(){Title = "Laboratoř", Description = "Laboratoř, btw ur moms a hoe", BackgroundImageClass = "laborator"}},
+            {Location.SlumDistrict, new GameLocationModel(){Title = "Slum District", Description = "Slum District, btw ur moms a hoe", BackgroundImageClass = "slum-district"}},
+            {Location.SlumQuarter, new GameLocationModel(){Title = "Slum Quarter", Description = "Slum Quarter, btw ur moms a hoe", BackgroundImageClass = "slum-quarter"}},
+            {Location.ElectroShop, new GameLocationModel(){Title = "Electro Shop", Description = "Electro Shop, btw ur moms a hoe", BackgroundImageClass = "electro-shop"}},
+            {Location.DarkAlley, new GameLocationModel(){Title = "Dark Alley", Description = "Dark Alley, btw ur moms a hoe", BackgroundImageClass = "dark-alley"}},
+            {Location.ShadyBar, new GameLocationModel(){Title = "Shady Bar", Description = "Shady Bar, btw ur moms a hoe", BackgroundImageClass = "shady-bar"}},
+            {Location.PartOfTheBar, new GameLocationModel(){Title = "Part of the Bar", Description = "Part of the Bar, btw ur moms a hoe", BackgroundImageClass = "part-of-the-bar"}},
+            {Location.BackEntrance, new GameLocationModel(){Title = "Back Entrance", Description = "Back Entrance, btw ur moms a hoe", BackgroundImageClass = "back-entrance"}},
+            {Location.SecretMeetingPlace, new GameLocationModel(){Title = "Secret Meeting Place", Description = "Secret Meeting Place, btw ur moms a hoe", BackgroundImageClass = "secret-meeting-place"}},
+            {Location.Workshop, new GameLocationModel(){Title = "Workshop", Description = "Workshop, btw ur moms a hoe", BackgroundImageClass = "workshop"}},
+            {Location.TacticalRoom, new GameLocationModel(){Title = "Tactical Room", Description = "Tactical Room, btw ur moms a hoe", BackgroundImageClass = "tactical-room"}},
+            {Location.CyberLab, new GameLocationModel(){Title = "Cyber Lab", Description = "Cyber Lab, btw ur moms a hoe", BackgroundImageClass = "cyber-lab"}},
+            {Location.QuantumTechnology, new GameLocationModel(){Title = "Quantum Technology", Description = "Quantum Technology, btw ur moms a hoe", BackgroundImageClass = "quantum-technology"}},
         };
 
         public GameLocationModel GetLocation(Location location)
