@@ -37,52 +37,52 @@
       "PackagePath": "staticwebassets/images/arrow-right.svg"
     },
     {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/cast_baru.png",
-      "PackagePath": "staticwebassets/images/background/cast_baru.png"
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/back_entrance.png",
+      "PackagePath": "staticwebassets/images/background/back_entrance.png"
     },
     {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/chudinska_ctvrt.png",
-      "PackagePath": "staticwebassets/images/background/chudinska_ctvrt.png"
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/cyber_lab.png",
+      "PackagePath": "staticwebassets/images/background/cyber_lab.png"
     },
     {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/chudinske_ctvrti.png",
-      "PackagePath": "staticwebassets/images/background/chudinske_ctvrti.png"
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/dark_alley.png",
+      "PackagePath": "staticwebassets/images/background/dark_alley.png"
     },
     {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/dilna.png",
-      "PackagePath": "staticwebassets/images/background/dilna.png"
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/electro_shop.png",
+      "PackagePath": "staticwebassets/images/background/electro_shop.png"
     },
     {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/krámek_s_elektronikou.png",
-      "PackagePath": "staticwebassets/images/background/krámek_s_elektronikou.png"
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/part_of_the_bar.png",
+      "PackagePath": "staticwebassets/images/background/part_of_the_bar.png"
     },
     {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/kvantovy_pocitac.png",
-      "PackagePath": "staticwebassets/images/background/kvantovy_pocitac.png"
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/quantum_technology.png",
+      "PackagePath": "staticwebassets/images/background/quantum_technology.png"
     },
     {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/laborator.png",
-      "PackagePath": "staticwebassets/images/background/laborator.png"
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/secret_meeting_place.png",
+      "PackagePath": "staticwebassets/images/background/secret_meeting_place.png"
     },
     {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/tajne_schuzkove_misto.png",
-      "PackagePath": "staticwebassets/images/background/tajne_schuzkove_misto.png"
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/shady_bar.png",
+      "PackagePath": "staticwebassets/images/background/shady_bar.png"
     },
     {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/takticka_mistnost.png",
-      "PackagePath": "staticwebassets/images/background/takticka_mistnost.png"
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/slum_district.png",
+      "PackagePath": "staticwebassets/images/background/slum_district.png"
     },
     {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/temna_ulicka.png",
-      "PackagePath": "staticwebassets/images/background/temna_ulicka.png"
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/slum_quarter.png",
+      "PackagePath": "staticwebassets/images/background/slum_quarter.png"
     },
     {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/zadni_vchod.png",
-      "PackagePath": "staticwebassets/images/background/zadni_vchod.png"
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/tactical_room.png",
+      "PackagePath": "staticwebassets/images/background/tactical_room.png"
     },
     {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/zapadly_bar.png",
-      "PackagePath": "staticwebassets/images/background/zapadly_bar.png"
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/images/background/workshop.png",
+      "PackagePath": "staticwebassets/images/background/workshop.png"
     },
     {
       "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/js/site.js",
@@ -317,6 +317,42 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/StoryLine_StepByStep/quest1.md",
+      "PackagePath": "staticwebassets/story_draft/StoryLine_StepByStep/quest1.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/StoryLine_StepByStep/quest2.md",
+      "PackagePath": "staticwebassets/story_draft/StoryLine_StepByStep/quest2.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/StoryLine_StepByStep/quest3.md",
+      "PackagePath": "staticwebassets/story_draft/StoryLine_StepByStep/quest3.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/StoryLine_StepByStep/quest4_fyz.md",
+      "PackagePath": "staticwebassets/story_draft/StoryLine_StepByStep/quest4_fyz.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/StoryLine_StepByStep/quest4_hack.md",
+      "PackagePath": "staticwebassets/story_draft/StoryLine_StepByStep/quest4_hack.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/StoryLine_StepByStep/quest5_fyz.md",
+      "PackagePath": "staticwebassets/story_draft/StoryLine_StepByStep/quest5_fyz.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/StoryLine_StepByStep/quest5_hack.md",
+      "PackagePath": "staticwebassets/story_draft/StoryLine_StepByStep/quest5_hack.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/StoryLine_StepByStep/quest6.md",
+      "PackagePath": "staticwebassets/story_draft/StoryLine_StepByStep/quest6.md"
+    },
+    {
+      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/StoryLine_StepByStep/quest7.md",
+      "PackagePath": "staticwebassets/story_draft/StoryLine_StepByStep/quest7.md"
+    },
+    {
       "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/items.md",
       "PackagePath": "staticwebassets/story_draft/items.md"
     },
@@ -327,42 +363,6 @@
     {
       "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests.md",
       "PackagePath": "staticwebassets/story_draft/quests.md"
-    },
-    {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest1.md",
-      "PackagePath": "staticwebassets/story_draft/quests/quest1.md"
-    },
-    {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest2.md",
-      "PackagePath": "staticwebassets/story_draft/quests/quest2.md"
-    },
-    {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest3.md",
-      "PackagePath": "staticwebassets/story_draft/quests/quest3.md"
-    },
-    {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest4_fyz.md",
-      "PackagePath": "staticwebassets/story_draft/quests/quest4_fyz.md"
-    },
-    {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest4_hack.md",
-      "PackagePath": "staticwebassets/story_draft/quests/quest4_hack.md"
-    },
-    {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest5_fyz.md",
-      "PackagePath": "staticwebassets/story_draft/quests/quest5_fyz.md"
-    },
-    {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest5_hack.md",
-      "PackagePath": "staticwebassets/story_draft/quests/quest5_hack.md"
-    },
-    {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest6.md",
-      "PackagePath": "staticwebassets/story_draft/quests/quest6.md"
-    },
-    {
-      "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/quests/quest7.md",
-      "PackagePath": "staticwebassets/story_draft/quests/quest7.md"
     },
     {
       "Id": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/wwwroot/story_draft/story.md",

@@ -1,4 +1,5 @@
 ﻿@page "/location/{location}"
+@using Gamebook.Enums
 @model Gamebook.Pages.LocationModel
 
 @{
@@ -9,8 +10,8 @@
 
 @section Choices {
     <!--choice--hidden-->
-        <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="ChudinskaCtvrt">Chudinská Čtvrť</a>
-        <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="KramekSElektronikou">Krámek s Elektronikou</a>
-        <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="TemnaUlicka">Temná Ulička</a>
+    <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="@Location.SlumQuarter.ToString()">Slum quarter</a>
+    <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="@Location.ElectroShop.ToString()">Electro shop</a>
+    <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="@Location.DarkAlley.ToString()">Dark alley</a>
 }
 

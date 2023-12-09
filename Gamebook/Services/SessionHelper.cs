@@ -1,3 +1,4 @@
+using System.Net.Mime;
 using System.Text.Json;
 using Gamebook.Enums;
 using Gamebook.Interfaces;
@@ -10,7 +11,7 @@ public class SessionHelper : ISessionHelper
     private readonly IHttpContextAccessor _httpContext;
     
     // Default game locations' states
-    private Dictionary<Location, GameLocationModel> gameLocationDataDict = new Dictionary<Location, GameLocationModel>
+    private Dictionary<Location, GameLocationModel> gameLocationDataDict = new()
     {
         {Location.SlumDistrict, new GameLocationModel(){Title = "Slum District", Description = "Slum District, btw ur moms a hoe", BackgroundImage = "slum-district"}},
         {Location.SlumQuarter, new GameLocationModel(){Title = "Slum Quarter", Description = "Slum Quarter, btw ur moms a hoe", BackgroundImage = "slum-quarter"}},
@@ -26,8 +27,42 @@ public class SessionHelper : ISessionHelper
         {Location.QuantumTechnology, new GameLocationModel(){Title = "Quantum Technology", Description = "Quantum Technology, btw ur moms a hoe", BackgroundImage = "quantum-technology"}},
     };
 
+    // Default game locations dialog states
+    private Dictionary<string, Dialog> gameLocationDialogDict = new()
+    {
+        {$"{Location.SlumDistrict}Dialog", new Dialog {Text = ""}},
+        {$"{Location.SlumQuarter}Dialog", new Dialog {Text = ""}},
+        {$"{Location.ElectroShop}Dialog", new Dialog {Text = ""}},
+        {$"{Location.DarkAlley}Dialog", new Dialog {Text = ""}},
+        {$"{Location.ShadyBar}Dialog", new Dialog {Text = ""}},
+        {$"{Location.PartOfTheBar}Dialog", new Dialog {Text = ""}},
+        {$"{Location.BackEntrance}Dialog", new Dialog {Text = ""}},
+        {$"{Location.SecretMeetingPlace}Dialog", new Dialog {Text = ""}},
+        {$"{Location.Workshop}Dialog", new Dialog {Text = ""}},
+        {$"{Location.TacticalRoom}Dialog", new Dialog {Text = ""}},
+        {$"{Location.CyberLab}Dialog", new Dialog {Text = ""}},
+        {$"{Location.QuantumTechnology}Dialog", new Dialog {Text = ""}}
+    };
+
+    private Dictionary<string, List<TargetLocation>> gameLocationTargetLocationDict = new()
+    {
+        {$"{Location.SlumDistrict}TargetLocations", new List<TargetLocation> {}},
+        {$"{Location.SlumQuarter}TargetLocations", new List<TargetLocation> {}},
+        {$"{Location.ElectroShop}TargetLocations", new List<TargetLocation> {}},
+        {$"{Location.DarkAlley}TargetLocations", new List<TargetLocation> {}},
+        {$"{Location.ShadyBar}TargetLocations", new List<TargetLocation> {}},
+        {$"{Location.PartOfTheBar}TargetLocations", new List<TargetLocation> {}},
+        {$"{Location.BackEntrance}TargetLocations", new List<TargetLocation> {}},
+        {$"{Location.SecretMeetingPlace}TargetLocations", new List<TargetLocation> {}},
+        {$"{Location.Workshop}TargetLocations", new List<TargetLocation> {}},
+        {$"{Location.TacticalRoom}TargetLocations", new List<TargetLocation> {}},
+        {$"{Location.CyberLab}TargetLocations", new List<TargetLocation> {}},
+        {$"{Location.QuantumTechnology}TargetLocations", new List<TargetLocation> {}}
+
+    };
+ 
     // Default inventory state
-    private List<Item> gameItemsList = new List<Item>
+    private List<Item> inventoryItemList = new()
     {
         Item.Item1, Item.Item2
     };
@@ -81,6 +116,21 @@ public class SessionHelper : ISessionHelper
             string serializedValue = JsonSerializer.Serialize(pair.Value);
             _httpContext.HttpContext.Session.SetString(pair.Key.ToString(), serializedValue);
         }
+
+        foreach (var pair in gameLocationDialogDict)
+        {
+            string serializedValue = JsonSerializer.Serialize(pair.Value);
+            _httpContext.HttpContext.Session.SetString(pair.Key, serializedValue);
+        }
+
+        foreach (var pair in gameLocationTargetLocationDict)
+        {
+            string serializedValue = JsonSerializer.Serialize(pair.Value);
+            _httpContext.HttpContext.Session.SetString(pair.Key, serializedValue);
+        }
+
+        string serializedList = JsonSerializer.Serialize(inventoryItemList);
+        _httpContext.HttpContext.Session.SetString("inventory", serializedList);
     }
 
 }
