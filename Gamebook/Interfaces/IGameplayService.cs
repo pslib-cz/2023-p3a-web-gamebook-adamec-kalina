@@ -1,6 +1,6 @@
 namespace Gamebook.Interfaces;
 
-public interface IGameStoryService
+public interface IGameplayService
 {
     
 }

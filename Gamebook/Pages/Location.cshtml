@@ -12,10 +12,15 @@
 @section Choices {
     @foreach (var target in locationRequest.TargetLocations)
     {
-        <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="@target.Location">@target.Location</a>
+        if (target.Locked)
+        {
+            <a class="choice__item hidden" asp-area="" asp-page="/Location" asp-route-location="@target.Location">@target.Location</a>
+        }
+        else
+        {
+            <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="@target.Location">@target.Location</a>
+        }
+        
     }
-    @* <!--choice--hidden--> *@
-    @* <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="@Location.ElectroShop.ToString()">Electro shop</a> *@
-    @* <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="@Location.DarkAlley.ToString()">Dark alley</a> *@
 }
 
