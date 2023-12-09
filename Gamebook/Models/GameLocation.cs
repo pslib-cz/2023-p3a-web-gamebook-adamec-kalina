@@ -4,7 +4,7 @@ using Gamebook.Enums;
 
 namespace Gamebook.Models
 {
-    public class GameLocationModel
+    public class GameLocation
     {
         public string Title { get; set; }
         public string Description { get; set; }

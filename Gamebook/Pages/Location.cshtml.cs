@@ -14,7 +14,8 @@ namespace Gamebook.Pages
     {
         private readonly IGameLocationService _locationService;
 
-        public GameLocationModel Location { get; private set; }
+        // public GameLocationModel Location { get; private set; }
+        public LocationPageRequest LocationPageRequest { get; set; }
         
         
         public LocationModel(IGameLocationService locationService)
@@ -25,11 +26,17 @@ namespace Gamebook.Pages
 
         public void OnGet(string location)
         {
-            Location = _locationService.GetLocation(Enum.Parse<Location>(location));//parse the string into the Enum
-            ViewData["LocationTitle"] = Location.Title;
-            ViewData["LocationDescription"] = Location.Description;
-            ViewData["BackgroundImage"] = Location.BackgroundImage;
-          
+            var locationEnum = Enum.Parse<Location>(location);
+            var gameLocation = _locationService.GetLocation(locationEnum);//parse the string into the Enum
+            ViewData["LocationTitle"] = gameLocation.Title;
+            ViewData["LocationDescription"] = gameLocation.Description;
+            ViewData["BackgroundImage"] = gameLocation.BackgroundImage;
+
+            LocationPageRequest = new()
+            {
+                TargetLocations = _locationService.GetTargetLocations(locationEnum),
+                Dialog = _locationService.GetDialog(locationEnum)
+            };
         }
     }
 }

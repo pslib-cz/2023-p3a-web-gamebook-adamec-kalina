@@ -16,13 +16,13 @@ namespace Gamebook.Services
             _session = session;
         }
 
-        public GameLocationModel GetLocation(Location location)
+        public GameLocation GetLocation(Location location)
         {
             try
             {
                 // Retrieve data from the session
                 var serializedModel = _session.GetString(location.ToString());
-                return JsonSerializer.Deserialize<GameLocationModel>(serializedModel);
+                return JsonSerializer.Deserialize<GameLocation>(serializedModel);
             }
             catch(Exception e)
             {

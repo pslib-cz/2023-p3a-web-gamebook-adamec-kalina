@@ -4,14 +4,18 @@
 
 @{
     Layout = "_LocationLayout";
+    var locationRequest = Model.LocationPageRequest;
 }
 
 
 
 @section Choices {
-    <!--choice--hidden-->
-    <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="@Location.SlumQuarter.ToString()">Slum quarter</a>
-    <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="@Location.ElectroShop.ToString()">Electro shop</a>
-    <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="@Location.DarkAlley.ToString()">Dark alley</a>
+    @foreach (var target in locationRequest.TargetLocations)
+    {
+        <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="@target.Location">@target.Location</a>
+    }
+    @* <!--choice--hidden--> *@
+    @* <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="@Location.ElectroShop.ToString()">Electro shop</a> *@
+    @* <a class="choice__item" asp-area="" asp-page="/Location" asp-route-location="@Location.DarkAlley.ToString()">Dark alley</a> *@
 }
 

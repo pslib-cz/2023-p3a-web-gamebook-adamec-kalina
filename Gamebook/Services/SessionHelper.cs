@@ -1,4 +1,5 @@
 using System.Net.Mime;
+using System.Reflection.Metadata;
 using System.Text.Json;
 using Gamebook.Enums;
 using Gamebook.Interfaces;
@@ -11,20 +12,20 @@ public class SessionHelper : ISessionHelper
     private readonly IHttpContextAccessor _httpContext;
     
     //TODO Default game locations' states
-    private Dictionary<Location, GameLocationModel> gameLocationDataDict = new()
+    private Dictionary<Location, GameLocation> gameLocationDataDict = new()
     {
-        {Location.SlumDistrict, new GameLocationModel(){Title = "Slum District", Description = "Slum District, btw ur moms a hoe", BackgroundImage = "slum-district"}},
-        {Location.SlumQuarter, new GameLocationModel(){Title = "Slum Quarter", Description = "Slum Quarter, btw ur moms a hoe", BackgroundImage = "slum-quarter"}},
-        {Location.ElectroShop, new GameLocationModel(){Title = "Electro Shop", Description = "Electro Shop, btw ur moms a hoe", BackgroundImage = "electro-shop"}},
-        {Location.DarkAlley, new GameLocationModel(){Title = "Dark Alley", Description = "Dark Alley, btw ur moms a hoe", BackgroundImage = "dark-alley"}},
-        {Location.ShadyBar, new GameLocationModel(){Title = "Shady Bar", Description = "Shady Bar, btw ur moms a hoe", BackgroundImage = "shady-bar"}},
-        {Location.PartOfTheBar, new GameLocationModel(){Title = "Part of the Bar", Description = "Part of the Bar, btw ur moms a hoe", BackgroundImage = "part-of-the-bar"}},
-        {Location.BackEntrance, new GameLocationModel(){Title = "Back Entrance", Description = "Back Entrance, btw ur moms a hoe", BackgroundImage = "back-entrance"}},
-        {Location.SecretMeetingPlace, new GameLocationModel(){Title = "Secret Meeting Place", Description = "Secret Meeting Place, btw ur moms a hoe", BackgroundImage = "secret-meeting-place"}},
-        {Location.Workshop, new GameLocationModel(){Title = "Workshop", Description = "Workshop, btw ur moms a hoe", BackgroundImage = "workshop"}},
-        {Location.TacticalRoom, new GameLocationModel(){Title = "Tactical Room", Description = "Tactical Room, btw ur moms a hoe", BackgroundImage = "tactical-room"}},
-        {Location.CyberLab, new GameLocationModel(){Title = "Cyber Lab", Description = "Cyber Lab, btw ur moms a hoe", BackgroundImage = "cyber-lab"}},
-        {Location.QuantumTechnology, new GameLocationModel(){Title = "Quantum Technology", Description = "Quantum Technology, btw ur moms a hoe", BackgroundImage = "quantum-technology"}},
+        {Location.SlumDistrict, new GameLocation(){Title = "Slum District", Description = "Slum District, btw ur moms a hoe", BackgroundImage = "slum-district"}},
+        {Location.SlumQuarter, new GameLocation(){Title = "Slum Quarter", Description = "Slum Quarter, btw ur moms a hoe", BackgroundImage = "slum-quarter"}},
+        {Location.ElectroShop, new GameLocation(){Title = "Electro Shop", Description = "Electro Shop, btw ur moms a hoe", BackgroundImage = "electro-shop"}},
+        {Location.DarkAlley, new GameLocation(){Title = "Dark Alley", Description = "Dark Alley, btw ur moms a hoe", BackgroundImage = "dark-alley"}},
+        {Location.ShadyBar, new GameLocation(){Title = "Shady Bar", Description = "Shady Bar, btw ur moms a hoe", BackgroundImage = "shady-bar"}},
+        {Location.PartOfTheBar, new GameLocation(){Title = "Part of the Bar", Description = "Part of the Bar, btw ur moms a hoe", BackgroundImage = "part-of-the-bar"}},
+        {Location.BackEntrance, new GameLocation(){Title = "Back Entrance", Description = "Back Entrance, btw ur moms a hoe", BackgroundImage = "back-entrance"}},
+        {Location.SecretMeetingPlace, new GameLocation(){Title = "Secret Meeting Place", Description = "Secret Meeting Place, btw ur moms a hoe", BackgroundImage = "secret-meeting-place"}},
+        {Location.Workshop, new GameLocation(){Title = "Workshop", Description = "Workshop, btw ur moms a hoe", BackgroundImage = "workshop"}},
+        {Location.TacticalRoom, new GameLocation(){Title = "Tactical Room", Description = "Tactical Room, btw ur moms a hoe", BackgroundImage = "tactical-room"}},
+        {Location.CyberLab, new GameLocation(){Title = "Cyber Lab", Description = "Cyber Lab, btw ur moms a hoe", BackgroundImage = "cyber-lab"}},
+        {Location.QuantumTechnology, new GameLocation(){Title = "Quantum Technology", Description = "Quantum Technology, btw ur moms a hoe", BackgroundImage = "quantum-technology"}},
     };
 
     //TODO Default game locations dialog states
@@ -47,14 +48,14 @@ public class SessionHelper : ISessionHelper
     //TODO Default game locations' target locations states 
     private Dictionary<string, List<TargetLocation>> gameLocationTargetLocationDict = new()
     {
-        {$"{Location.SlumDistrict}TargetLocations", new List<TargetLocation> {}},
-        {$"{Location.SlumQuarter}TargetLocations", new List<TargetLocation> {}},
-        {$"{Location.ElectroShop}TargetLocations", new List<TargetLocation> {}},
-        {$"{Location.DarkAlley}TargetLocations", new List<TargetLocation> {}},
-        {$"{Location.ShadyBar}TargetLocations", new List<TargetLocation> {}},
-        {$"{Location.PartOfTheBar}TargetLocations", new List<TargetLocation> {}},
-        {$"{Location.BackEntrance}TargetLocations", new List<TargetLocation> {}},
-        {$"{Location.SecretMeetingPlace}TargetLocations", new List<TargetLocation> {}},
+        {$"{Location.SlumDistrict}TargetLocations", new List<TargetLocation> {new() {Location = Location.SlumQuarter}, new() {Location = Location.ElectroShop}, new() {Location = Location.DarkAlley}}},
+        {$"{Location.SlumQuarter}TargetLocations", new List<TargetLocation> {new() {Location = Location.SlumDistrict}}},
+        {$"{Location.ElectroShop}TargetLocations", new List<TargetLocation> {new() {Location = Location.SlumDistrict}}},
+        {$"{Location.DarkAlley}TargetLocations", new List<TargetLocation> {new() {Location = Location.SlumDistrict}}},
+        {$"{Location.ShadyBar}TargetLocations", new List<TargetLocation> {new() {Location = Location.PartOfTheBar}, new(){Location = Location.BackEntrance}}},
+        {$"{Location.PartOfTheBar}TargetLocations", new List<TargetLocation> {new() {Location = Location.ShadyBar}}},
+        {$"{Location.BackEntrance}TargetLocations", new List<TargetLocation> {new() {Location = Location.ShadyBar}, new() {Location = Location.SecretMeetingPlace}}},
+        {$"{Location.SecretMeetingPlace}TargetLocations", new List<TargetLocation> {new() {Location = Location.BackEntrance}}},
         {$"{Location.Workshop}TargetLocations", new List<TargetLocation> {}},
         {$"{Location.TacticalRoom}TargetLocations", new List<TargetLocation> {}},
         {$"{Location.CyberLab}TargetLocations", new List<TargetLocation> {}},
@@ -65,7 +66,7 @@ public class SessionHelper : ISessionHelper
     //TODO Default inventory state
     private List<Item> inventoryItemList = new()
     {
-        Item.Item1, Item.Item2
+        Item.Battery, Item.Item2
     };
 
     public SessionHelper(IHttpContextAccessor httpContext)
@@ -78,7 +79,7 @@ public class SessionHelper : ISessionHelper
     /// Retrieves a value from the session
     /// </summary>
     /// <param name="key"></param>
-    /// <returns></returns>
+    /// <returns> session value </returns>
     public string GetString(string key)
     {
         try

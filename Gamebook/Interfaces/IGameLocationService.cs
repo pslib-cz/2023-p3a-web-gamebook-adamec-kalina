@@ -6,7 +6,9 @@ namespace Gamebook.Interfaces
 {
     public interface IGameLocationService
     {
-        public GameLocationModel GetLocation(Location location);
+        public GameLocation GetLocation(Location location);
+        public List<TargetLocation> GetTargetLocations(Location location);
+        public Dialog GetDialog(Location location);
     }
 }
 
