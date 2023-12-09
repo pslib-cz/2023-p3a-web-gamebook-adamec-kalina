@@ -7,56 +7,45 @@
     background-position: center;
 }
 
-body.main-menu {
-    background-color: var(--black);
+
+body.electro-shop{
+    background-image: url(/images/background/electro_shop.png);
+}
+body.dark-alley{
+    background-image: url(/images/background/dark_alley.png);
+}
+body.slum-quarter{
+    background-image: url(/images/background/slum_quarter.png);
+}
+body.slum-district{
+    background-image: url(/images/background/slum_district.png);
 }
 
 
-body.kramek-s-elektronikou {
-    background-image: url(/images/background/krámek_s_elektronikou.png);
+body.shady-bar{
+    background-image: url(/images/background/shady_bar.png);
 }
-
-body.temna-ulicka {
-    background-image: url(/images/background/temna_ulicka.png);
+body.part-of-the-bar{
+    background-image: url(/images/background/part_of_the_bar.png);
 }
-
-body.chudinska-ctvrt {
-    background-image:url(/images/background/chudinska_ctvrt.png);
-}
-
-body.chudinske-ctvrti {
-    background-image:url(/images/background/chudinske_ctvrti.png);
-}
-
-body.zapadly-bar {
-    background-image:url(/images/background/zapadly_bar.png);
-}
-
-body.cast-baru {
-    background-image:url(/images/background/cast_baru.png);
-}
-
-body.zadni-vchod {
-    background-image:url(/images/background/zadni_vchod.png);
+body.back-entrance{
+    background-image: url(/images/background/back_entrance.png);
 }
 
 
-body.tajne-schuzkove-misto {
-    background-image:url(/images/background/tajne_schuzkove_misto.png);
+body.secret-meeting-place{
+    background-image: url(/images/background/secret_meeting_place.png);
 }
 
-body.laborator {
-    background-image:url(/images/background/laborator.png);
+body.cyber-lab{
+    background-image: url(/images/background/cyber_lab.png);
 }
-
-body.takticka-mistnost {
-    background-image:url(/images/background/takticka_mistnost.png);
+body.tactical-room{
+    background-image: url(/images/background/tactical_room.png);
 }
-
-body.dilna {
-    background-image:url(/images/background/dilna.png);
+body.workshop{
+    background-image: url(/images/background/workshop.png);
 }
-
-body.kvanotovy-pocitac {
-    background-image:url(/images/background/kvantovy_pocitac.png);
+body.quantum-technology{
+    background-image: url(/images/background/quantum_technology.png);
 }
