@@ -48,18 +48,18 @@ public class SessionHelper : ISessionHelper
     //TODO Default game locations' target locations states 
     private Dictionary<string, List<TargetLocation>> gameLocationTargetLocationDict = new()
     {
-        {$"{Location.SlumDistrict}TargetLocations", new List<TargetLocation> {new() {Location = Location.SlumQuarter}, new() {Location = Location.ElectroShop}, new() {Location = Location.DarkAlley}}},
-        {$"{Location.SlumQuarter}TargetLocations", new List<TargetLocation> {new() {Location = Location.SlumDistrict}}},
-        {$"{Location.ElectroShop}TargetLocations", new List<TargetLocation> {new() {Location = Location.SlumDistrict}}},
+        {$"{Location.SlumDistrict}TargetLocations", new List<TargetLocation> {new() {Location = Location.SlumQuarter, Locked=false}, new() {Location = Location.DarkAlley}}},
+        {$"{Location.SlumQuarter}TargetLocations", new List<TargetLocation> {new() {Location = Location.SlumDistrict}, new() {Location = Location.ElectroShop}}},
+        {$"{Location.ElectroShop}TargetLocations", new List<TargetLocation> {new() {Location = Location.SlumQuarter}}},
         {$"{Location.DarkAlley}TargetLocations", new List<TargetLocation> {new() {Location = Location.SlumDistrict}}},
         {$"{Location.ShadyBar}TargetLocations", new List<TargetLocation> {new() {Location = Location.PartOfTheBar}, new(){Location = Location.BackEntrance}}},
         {$"{Location.PartOfTheBar}TargetLocations", new List<TargetLocation> {new() {Location = Location.ShadyBar}}},
         {$"{Location.BackEntrance}TargetLocations", new List<TargetLocation> {new() {Location = Location.ShadyBar}, new() {Location = Location.SecretMeetingPlace}}},
-        {$"{Location.SecretMeetingPlace}TargetLocations", new List<TargetLocation> {new() {Location = Location.BackEntrance}}},
-        {$"{Location.Workshop}TargetLocations", new List<TargetLocation> {}},
-        {$"{Location.TacticalRoom}TargetLocations", new List<TargetLocation> {}},
-        {$"{Location.CyberLab}TargetLocations", new List<TargetLocation> {}},
-        {$"{Location.QuantumTechnology}TargetLocations", new List<TargetLocation> {}}
+        {$"{Location.SecretMeetingPlace}TargetLocations", new List<TargetLocation> {new() {Location = Location.CyberLab}, new() { Location = Location.Workshop}, new() { Location = Location.TacticalRoom}}},
+        {$"{Location.Workshop}TargetLocations", new List<TargetLocation> {new() {Location = Location.SecretMeetingPlace}, new() { Location = Location.QuantumTechnology}}},
+        {$"{Location.TacticalRoom}TargetLocations", new List<TargetLocation> {new() {Location = Location.SecretMeetingPlace}}},
+        {$"{Location.CyberLab}TargetLocations", new List<TargetLocation> {new() {Location = Location.SecretMeetingPlace}}},
+        {$"{Location.QuantumTechnology}TargetLocations", new List<TargetLocation> {new() {Location = Location.Workshop}}}
 
     };
  
