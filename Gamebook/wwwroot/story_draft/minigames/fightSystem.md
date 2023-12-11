@@ -1,3 +1,9 @@
+### Weapons
+- knife - damage: 10, energy: 15
+- baseball - damage: 25, energy: 20
+- handgun - damage: 25, energy: 5
+- gun - damage: 40, energy: 10
+
 player: health, energy
 enemy: health
 
