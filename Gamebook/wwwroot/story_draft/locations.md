@@ -17,6 +17,7 @@ Quantum Technology
 
 ---
 
+```
 Slum District
 
 - Slum quarter
@@ -43,9 +44,10 @@ Secret Meeting Place
   --- back
 - Tactical Room
   -- back
-  --> **ACTION1**
-  --> **ACTION2**
-  --> **ACTION3**
+  --> ACTION1
+  --> ACTION2
+  --> ACTION3
+```
 
 ---
 

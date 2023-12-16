@@ -1,5 +1,3 @@
-- figting system
-- pin puzzle
 - hacking minigame
 - ACTION 1 + Tree Diagram
 - ACTION 2 + Tree Diagram
@@ -7,20 +5,16 @@
 - HACKING MINIGAME - MISSION 1 EXPLANATION
 - HACKING MINIGAME - MISSION 2 EXPLANATION
 
-
-
-
- 
 - NPCS:
-- **Old Merchant** - *Slum quarter*
-- **Jake** - *Electro Shop*
-- **Gang Leader** - *Dark Alley*
+- **Old Merchant** - _Slum quarter_
+- **Jake** - _Electro Shop_
+- **Gang Leader** - _Dark Alley_
 
-- **Barman** - *Shady Bar*
-- **Mysterious Guest** - *Part of the Bar*
+- **Barman** - _Shady Bar_
+- **Mysterious Guest** - _Part of the Bar_
 
-- **Hacktivist leader** - *Secret Meeting Place*
+- **Hacktivist leader** - _Secret Meeting Place_
 
-- **Ripper Dock** - *Cyber Lab*
-- **Technician Expert** - *Workshop*
-- **Technician Expert** - *Tactical Room*
+- **Ripper Dock** - _Cyber Lab_
+- **Technician Expert** - _Workshop_
+- **Technician Expert** - _Tactical Room_
