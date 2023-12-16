@@ -14,7 +14,12 @@ namespace Gamebook.Enums
         Workshop,
         TacticalRoom,
         CyberLab,
-        QuantumTechnology
+        QuantumTechnology,
+        
+        // Map,
+        // Menu,
+        // Help,
+        // LoadOut
     }
 }
 

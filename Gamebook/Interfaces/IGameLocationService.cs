@@ -9,6 +9,8 @@ namespace Gamebook.Interfaces
         public GameLocation GetLocation(Location location);
         public List<TargetLocation> GetTargetLocations(Location location);
         public Dialog GetDialog(Location location);
+        public bool IsValidConnection(Location locationFrom, Location locationTo);
+
     }
 }
 

@@ -31,18 +31,18 @@ public class SessionHelper : ISessionHelper
     //TODO Default game locations dialog states
     private Dictionary<string, Dialog> gameLocationDialogDict = new()
     {
-        {$"{Location.SlumDistrict}Dialog", new Dialog {Text = ""}},
-        {$"{Location.SlumQuarter}Dialog", new Dialog {Text = ""}},
-        {$"{Location.ElectroShop}Dialog", new Dialog {Text = ""}},
-        {$"{Location.DarkAlley}Dialog", new Dialog {Text = ""}},
-        {$"{Location.ShadyBar}Dialog", new Dialog {Text = ""}},
-        {$"{Location.PartOfTheBar}Dialog", new Dialog {Text = ""}},
-        {$"{Location.BackEntrance}Dialog", new Dialog {Text = ""}},
-        {$"{Location.SecretMeetingPlace}Dialog", new Dialog {Text = ""}},
-        {$"{Location.Workshop}Dialog", new Dialog {Text = ""}},
-        {$"{Location.TacticalRoom}Dialog", new Dialog {Text = ""}},
-        {$"{Location.CyberLab}Dialog", new Dialog {Text = ""}},
-        {$"{Location.QuantumTechnology}Dialog", new Dialog {Text = ""}}
+        {$"{Location.SlumDistrict}Dialog", new Dialog { Texts = new List<string> {"", "", ""}}},
+        {$"{Location.SlumQuarter}Dialog", new Dialog {Texts = new List<string> {"", "", ""}}},
+        {$"{Location.ElectroShop}Dialog", new Dialog {Texts = new List<string> {"", "", ""}}},
+        {$"{Location.DarkAlley}Dialog", new Dialog {Texts = new List<string> {"", "", ""}}},
+        {$"{Location.ShadyBar}Dialog", new Dialog {Texts = new List<string> {"", "", ""}}},
+        {$"{Location.PartOfTheBar}Dialog", new Dialog {Texts = new List<string> {"", "", ""}}},
+        {$"{Location.BackEntrance}Dialog", new Dialog {Texts = new List<string> {"", "", ""}}},
+        {$"{Location.SecretMeetingPlace}Dialog", new Dialog {Texts = new List<string> {"", "", ""}}},
+        {$"{Location.Workshop}Dialog", new Dialog {Texts = new List<string> {"", "", ""}}},
+        {$"{Location.TacticalRoom}Dialog", new Dialog {Texts = new List<string> {"", "", ""}}},
+        {$"{Location.CyberLab}Dialog", new Dialog {Texts = new List<string> {"", "", ""}}},
+        {$"{Location.QuantumTechnology}Dialog", new Dialog {Texts = new List<string> {"", "", ""}}}
     };
 
     //TODO Default game locations' target locations states 
@@ -67,6 +67,18 @@ public class SessionHelper : ISessionHelper
     private List<Item> inventoryItemList = new()
     {
         Item.Battery, Item.Item2
+    };
+
+    //TODO Default quests state
+    private List<Quest> questList = new()
+    {
+        
+    };
+
+    //TODO Default player state
+    private PlayerStats playerStats = new()
+    {
+        Health = 50, Energy = 50, Money = 0
     };
 
     public SessionHelper(IHttpContextAccessor httpContext)
@@ -113,26 +125,38 @@ public class SessionHelper : ISessionHelper
     
     private void SetSessionDefaultState()
     {
+        // Add game locations info
         foreach (var pair in gameLocationDataDict)
         {
             string serializedValue = JsonSerializer.Serialize(pair.Value);
             _httpContext.HttpContext.Session.SetString(pair.Key.ToString(), serializedValue);
         }
 
+        // Add dialogs
         foreach (var pair in gameLocationDialogDict)
         {
             string serializedValue = JsonSerializer.Serialize(pair.Value);
             _httpContext.HttpContext.Session.SetString(pair.Key, serializedValue);
         }
 
+        // Add target locations
         foreach (var pair in gameLocationTargetLocationDict)
         {
             string serializedValue = JsonSerializer.Serialize(pair.Value);
             _httpContext.HttpContext.Session.SetString(pair.Key, serializedValue);
         }
 
-        string serializedList = JsonSerializer.Serialize(inventoryItemList);
-        _httpContext.HttpContext.Session.SetString("inventory", serializedList);
+        // Add inventory items
+        string serializedItemList = JsonSerializer.Serialize(inventoryItemList);
+        _httpContext.HttpContext.Session.SetString("inventory", serializedItemList);
+
+        // Add quests
+        string serializedQuestList = JsonSerializer.Serialize(questList);
+        _httpContext.HttpContext.Session.SetString("quests", serializedQuestList);
+
+        // Add player stats
+        string serializedPlayerStats = JsonSerializer.Serialize(playerStats);
+        _httpContext.HttpContext.Session.SetString("playerStats", serializedPlayerStats);
     }
 
 }

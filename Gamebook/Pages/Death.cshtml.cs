@@ -6,6 +6,6 @@ public class Death : PageModel
 {
     public void OnGet()
     {
-        
+        TempData["menu"] = true;
     }
 }

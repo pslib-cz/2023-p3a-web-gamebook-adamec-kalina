@@ -16,20 +16,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/Pages/Death.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVhdGguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/Pages/Help.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSGVscC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/Pages/LoadOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9hZE91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/Pages/Location.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9jYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/Pages/Menu.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVudS5jc2h0bWw=
+[/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/Pages/Map.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWFwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/Pages/Shared/_LocationLayout.cshtml]

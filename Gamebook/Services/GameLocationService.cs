@@ -57,7 +57,16 @@ namespace Gamebook.Services
             }
         }
 
-        
+        public bool IsValidConnection(Location locationFrom, Location locationTo)
+        {
+            if (locationFrom == locationTo) return true;
+            // if (locationTo is Location.SlumDistrict or Location.ShadyBar or Location.SecretMeetingPlace) return true;
+            var targetLocations = GetTargetLocations(locationFrom);
+            var connection = targetLocations.FirstOrDefault(t => t.Location == locationTo && !t.Locked);
+            return connection != null;
+        }
+
+
     }
 }
 
