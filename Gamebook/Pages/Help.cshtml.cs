@@ -7,6 +7,5 @@ public class Help : PageModel
 {
     public void OnGet()
     {
-        TempData["menu"] = true;
     }
 }

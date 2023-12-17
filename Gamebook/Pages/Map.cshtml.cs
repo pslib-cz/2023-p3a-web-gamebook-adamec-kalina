@@ -7,6 +7,5 @@ public class Map : PageModel
 {
     public void OnGet()
     {
-        TempData["menu"] = true;
     }
 }

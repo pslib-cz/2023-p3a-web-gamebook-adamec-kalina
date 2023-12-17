@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="~/Gamebook.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <a asp-area="" asp-page="/Location" asp-route-location="SlumDistrict">Start</a>
+    @RenderSection("Buttons", true)
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()

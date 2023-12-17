@@ -49,7 +49,7 @@ public class SessionHelper : ISessionHelper
     private Dictionary<string, List<TargetLocation>> gameLocationTargetLocationDict = new()
     {
         {$"{Location.SlumDistrict}TargetLocations", new List<TargetLocation> {new() {Location = Location.SlumQuarter, Locked=false}, new() {Location = Location.DarkAlley}}},
-        {$"{Location.SlumQuarter}TargetLocations", new List<TargetLocation> {new() {Location = Location.SlumDistrict}, new() {Location = Location.ElectroShop}}},
+        {$"{Location.SlumQuarter}TargetLocations", new List<TargetLocation> {new() {Location = Location.SlumDistrict, Locked = false}, new() {Location = Location.ElectroShop}}},
         {$"{Location.ElectroShop}TargetLocations", new List<TargetLocation> {new() {Location = Location.SlumQuarter}}},
         {$"{Location.DarkAlley}TargetLocations", new List<TargetLocation> {new() {Location = Location.SlumDistrict}}},
         {$"{Location.ShadyBar}TargetLocations", new List<TargetLocation> {new() {Location = Location.PartOfTheBar}, new(){Location = Location.BackEntrance}}},
@@ -81,6 +81,20 @@ public class SessionHelper : ISessionHelper
         Health = 50, Energy = 50, Money = 0
     };
 
+    // Game not in progress by default
+    private bool gameInProgress = false;
+
+    // Set default currentLocation on game start
+    private Location currentLocation = Location.SlumDistrict;
+
+    //TODO default equipped weapon
+    private Weapon equippedWeapon = new Weapon()
+    {
+        Type = WeaponType.NoWeapon,
+        Demage = 0,
+        EnergyConsumption = 0
+    };
+    
     public SessionHelper(IHttpContextAccessor httpContext)
     {
         _httpContext = httpContext;
@@ -123,7 +137,7 @@ public class SessionHelper : ISessionHelper
         }
     }
     
-    private void SetSessionDefaultState()
+    public void SetSessionDefaultState()
     {
         // Add game locations info
         foreach (var pair in gameLocationDataDict)
@@ -157,6 +171,16 @@ public class SessionHelper : ISessionHelper
         // Add player stats
         string serializedPlayerStats = JsonSerializer.Serialize(playerStats);
         _httpContext.HttpContext.Session.SetString("playerStats", serializedPlayerStats);
+        
+        // Game not in progress
+        _httpContext.HttpContext.Session.SetString("gameInProgress", gameInProgress.ToString());
+        
+        // Set default currentLocation
+        _httpContext.HttpContext.Session.SetString("currentLocation", currentLocation.ToString());
+        
+        // Set default equipped weapon
+        string serializedEquippedWeapon = JsonSerializer.Serialize(equippedWeapon);
+        _httpContext.HttpContext.Session.SetString("equippedWeapon", serializedEquippedWeapon);
     }
 
 }

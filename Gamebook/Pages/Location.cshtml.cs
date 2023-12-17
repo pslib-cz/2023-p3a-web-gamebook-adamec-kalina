@@ -26,33 +26,56 @@ namespace Gamebook.Pages
         }
 
 
-        public void OnGet(string location)
+        public IActionResult OnGet(string location)
         {
-            var previousLocationTempData = TempData["currentLocation"];
-            if(string.IsNullOrEmpty(previousLocationTempData.ToString())){previousLocationTempData = location;}
-            var previousLocation = Enum.Parse<Location>(previousLocationTempData.ToString());
-            var currentlocation = Enum.Parse<Location>(location);
-            // Checking the location connection validity 
-            bool valid = _locationService.IsValidConnection(previousLocation, currentlocation);
-            TempData["currentLocation"] = $"{location}"; // Setting the new location as the current
+            var previousLocation = _locationService.GetCurrentLocation();
+            var currentLocation = Enum.Parse<Location>(location);
             
-            var gameLocation = _locationService.GetLocation(currentlocation);//parse the string into the Enum
+            // Checking the location connection validity 
+            bool valid = _locationService.IsValidConnection(previousLocation, currentLocation);
+            
+            if (!valid)
+            {
+                return RedirectToPage("/Location", new { location = previousLocation.ToString() });
+            }
+            
+            // Set the new location as current
+            if (previousLocation != currentLocation)
+            {
+                _locationService.SetCurrentLocation(currentLocation); 
+            }
+            
+            PassLocationData(currentLocation);
+
+            return Page();
+        }
+
+        public void OnGetStart(string location)
+        {
+            var currentLocation = Enum.Parse<Location>(location);
+            _locationService.ResetGame();
+            _locationService.SetGameInProgress();
+            
+            // Set the new location as current
+            _locationService.SetCurrentLocation(currentLocation); 
+            
+            PassLocationData(currentLocation);
+        }
+
+        private void PassLocationData(Location currentLocation)
+        {
+            var gameLocation = _locationService.GetLocation(currentLocation);//parse the string into the Enum
             ViewData["LocationTitle"] = gameLocation.Title;
             ViewData["LocationDescription"] = gameLocation.Description;
             ViewData["BackgroundImage"] = gameLocation.BackgroundImage;
 
             LocationPageResponse = new()
             {
-                TargetLocations = _locationService.GetTargetLocations(currentlocation),
-                Dialog = _locationService.GetDialog(currentlocation)
+                TargetLocations = _locationService.GetTargetLocations(currentLocation),
+                Dialog = _locationService.GetDialog(currentLocation),
+                EquipedWeapon = _locationService.GetEquippedWeapon(),
+                PlayerStats = _locationService.GetPlayerStats()
             };
-
-            // return null;
-        }
-
-        private IActionResult Redirect(Location location)
-        {
-            return RedirectToPage("Location", new { location = location.ToString() });
         }
     }
 }

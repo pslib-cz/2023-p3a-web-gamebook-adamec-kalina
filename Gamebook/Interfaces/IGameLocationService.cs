@@ -6,10 +6,20 @@ namespace Gamebook.Interfaces
 {
     public interface IGameLocationService
     {
-        public GameLocation GetLocation(Location location);
-        public List<TargetLocation> GetTargetLocations(Location location);
-        public Dialog GetDialog(Location location);
-        public bool IsValidConnection(Location locationFrom, Location locationTo);
+        GameLocation GetLocation(Location location);
+        List<TargetLocation> GetTargetLocations(Location location);
+        Dialog GetDialog(Location location);
+        PlayerStats GetPlayerStats();
+        Weapon GetEquippedWeapon();
+        bool IsValidConnection(Location locationFrom, Location locationTo);
+        Location GetCurrentLocation();
+        void SetCurrentLocation(Location location);
+        void ResetGame();
+        bool IsGameInProgress();
+        void SetGameInProgress();
+
+
+
 
     }
 }

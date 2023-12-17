@@ -1,7 +1,21 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "start page";
+    ViewData["Title"] = "Start";
+    bool gameInProgress = Model.GameInProgress;
 }
 
 <h1>THIS WILL BE START/WELCOME SCREEN</h1>
+
+@section Buttons{
+    <a asp-area="" asp-page="/Location" asp-page-handler="Start" asp-route-location="SlumDistrict">New Game</a>
+    @if (gameInProgress)
+    {
+        <a asp-area="" asp-page="/Location" asp-route-location="@ViewData["lastLocation"]">Continue</a>
+    }
+    else
+    {
+        <a class="hidden" asp-area="" asp-page="/Location" asp-route-location="@ViewData["lastLocation"]">Continue</a>
+    }
+    
+}

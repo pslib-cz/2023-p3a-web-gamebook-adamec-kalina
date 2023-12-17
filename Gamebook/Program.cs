@@ -15,7 +15,7 @@ builder.Services.AddSession(options =>
 
 //SERVICES injecting
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-builder.Services.AddScoped<ISessionHelper, SessionHelper>();
+builder.Services.AddSingleton<ISessionHelper, SessionHelper>();
 builder.Services.AddScoped<IGameLocationService, GameLocationService>();
 
 

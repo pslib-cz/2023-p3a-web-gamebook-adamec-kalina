@@ -44,6 +44,34 @@ namespace Gamebook.Services
             }
         }
 
+        public PlayerStats GetPlayerStats()
+        {
+            try
+            {
+                // Retrieve data from the session
+                var serializedModel = _session.GetString("playerStats");
+                return JsonSerializer.Deserialize<PlayerStats>(serializedModel);
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Player stats were not found -> {e.Message}");
+            }
+        }
+        
+        public Weapon GetEquippedWeapon()
+        {
+            try
+            {
+                // Retrieve data from the session
+                var serializedModel = _session.GetString("equippedWeapon");
+                return JsonSerializer.Deserialize<Weapon>(serializedModel);
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Equipped weapon was not found -> {e.Message}");
+            }
+        }
+
         public List<TargetLocation> GetTargetLocations(Location location)
         {
             try
@@ -57,6 +85,30 @@ namespace Gamebook.Services
             }
         }
 
+        public Location GetCurrentLocation()
+        {
+            string currentLocation = string.Empty;
+            try
+            {
+                currentLocation = _session.GetString("currentLocation");
+                if (String.IsNullOrEmpty(currentLocation))
+                {
+                    throw new Exception("Error no current location was found");
+                }
+
+                return Enum.Parse<Location>(currentLocation);
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Error wrong currentLocation value -> {currentLocation}");
+            }
+        }
+
+        public void SetCurrentLocation(Location location)
+        {
+            _session.SetString("currentLocation", location.ToString());
+        }
+
         public bool IsValidConnection(Location locationFrom, Location locationTo)
         {
             if (locationFrom == locationTo) return true;
@@ -64,6 +116,35 @@ namespace Gamebook.Services
             var targetLocations = GetTargetLocations(locationFrom);
             var connection = targetLocations.FirstOrDefault(t => t.Location == locationTo && !t.Locked);
             return connection != null;
+        }
+
+        public bool IsGameInProgress()
+        {
+            bool gameInProgress;
+            try
+            {
+                var gameInProgressString = _session.GetString("gameInProgress");
+                if (String.IsNullOrEmpty(gameInProgressString))
+                {
+                    throw new Exception("Error gameInProgress could not be retrieved from session");
+                }
+                return bool.Parse(gameInProgressString);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Error gameInProgress could not be retrieved from session");
+
+            }
+        }
+
+        public void SetGameInProgress()
+        {
+            _session.SetString("gameInProgress", true.ToString());
+        }
+
+        public void ResetGame()
+        {
+            _session.SetSessionDefaultState();
         }
 
 

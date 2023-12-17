@@ -4,5 +4,6 @@ public enum WeaponType
 {
     Pistol,
     Knife,
-    Bat
+    Bat,
+    NoWeapon //TODO needed?
 }

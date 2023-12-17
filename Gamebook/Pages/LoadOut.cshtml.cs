@@ -7,6 +7,5 @@ public class LoadOut : PageModel
 {
     public void OnGet()
     {
-        TempData["menu"] = true;
     }
 }
