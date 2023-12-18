@@ -16,7 +16,6 @@ namespace Gamebook.Pages
     {
         private readonly IGameLocationService _locationService;
 
-        // public GameLocationModel Location { get; private set; }
         public LocationPageResponse LocationPageResponse { get; set; }
         
         
@@ -36,6 +35,7 @@ namespace Gamebook.Pages
             
             if (!valid)
             {
+                // Redirect back if the location connection not allowed
                 return RedirectToPage("/Location", new { location = previousLocation.ToString() });
             }
             
@@ -64,7 +64,7 @@ namespace Gamebook.Pages
 
         private void PassLocationData(Location currentLocation)
         {
-            var gameLocation = _locationService.GetLocation(currentLocation);//parse the string into the Enum
+            var gameLocation = _locationService.GetLocation(currentLocation);
             ViewData["LocationTitle"] = gameLocation.Title;
             ViewData["LocationDescription"] = gameLocation.Description;
             ViewData["BackgroundImage"] = gameLocation.BackgroundImage;
