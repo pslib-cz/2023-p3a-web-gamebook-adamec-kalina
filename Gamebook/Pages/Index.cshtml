@@ -17,5 +17,33 @@
     {
         <a class="hidden" asp-area="" asp-page="/Location" asp-route-location="@ViewData["lastLocation"]">Continue</a>
     }
-    
+    <a href="#" id="testLink">Test Endpoint</a>
 }
+
+<script type="text/javascript">
+    document.getElementById('testLink').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+    
+        const amount = -10; // Example amount, change as needed
+    
+        fetch('/Gameplay/HealthChange', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(amount),
+        })
+        .then(response => response.json())
+        .then(data => {
+                if (data.redirectToDeath) {
+                    window.location.href = data.redirectToDeath; // Handle redirection
+                } else {
+                    console.log('Response:', data);
+                }
+            })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    });
+
+</script>
