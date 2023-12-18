@@ -14,29 +14,44 @@
     </header>
 
     <section class="sidemenu">
-        <div class="menu menu--closed">
+        <div class="menu menu--closed"> 
             <button onclick="toggleMenu()" class="menu__swich"></button>
             <h1 class="menu__heading">HackAttack</h1>
             <ul class="menu__list">
-                <li class="menu__item"><a class="manu__link" asp-page="Map">Map</a></li>
-                <li class="menu__item"><a class="manu__link" asp-page="Map">Quests</a></li>
+                <li class="menu__item"><a class="manu__link" asp-page="Map#Map">Map</a></li>
+                <li class="menu__item"><a class="manu__link" asp-page="Map#Quests">Quests</a></li>
                 <li class="menu__item"><a class="manu__link" asp-page="LoadOut">LoadOut</a></li>
-                @* <li class="menu__item"><a class="manu__link" asp-page="#">Save Game</a></li> *@
                 <li class="menu__item"><a class="manu__link" asp-page="Index">Main menu</a></li>
             </ul>
         </div>
         <div class="menu__overflow" onclick="toggleMenu()"></div>
     </section>
 
-    <div class="npc"></div>
+    <div class="hitbox" id="hitbox"></div>
 
     @RenderBody()
 
-    <div class="choice ">
+    <div class="wrap">
+
+        <div class="player hidden" id="player-stats">
+            <div class="player__cont">
+                <p class="player-stats player-stats--health"><span id="player-health">50</span>/<span id="player-max-health">50</span></p>
+                <div class="progress-bar progress-bar--health"><span id="bar-player-health" class="progress-bar__bar"></span></div>
+                <button class="button" id="attack-btn" onclick="initiateAttack()">Attack</button>
+            </div>
+            <div class="player__cont">
+                <p class="player-stats player-stats--energy"><span id="player-energy">50</span>/<span id="player-max-energy">50</span></p>
+                <div class="progress-bar progress-bar--energy"><span id="bar-player-energy" class="progress-bar__bar"></span></div>
+                <button class="button" id="defence-btn" onclick="initiateDefense()">Defend</button>
+            </div>
+        </div>
+
+        <div class="location-choice" id="location-choice">
         @await RenderSectionAsync("Choices", required:true)
+        </div>
     </div>
 
-<script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

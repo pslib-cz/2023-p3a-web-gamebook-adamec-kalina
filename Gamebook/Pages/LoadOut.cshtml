@@ -5,4 +5,66 @@
     Layout = null;
 }
 
-<h1>LOADOUT PAGE</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/gameLocation.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/LocationBackground.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/root.css" asp-append-version="true" />
+    <title>LoadOut</title>
+</head>
+<body class="loadout">
+
+    <a class="button button--blue button--arrow" href="#">Return To Game</a>
+
+    <div class="loadout__cont">
+        <p class="cont__heading">Stats</p>
+        <div class="cont__stats">
+            <div class="cont__stat_item">
+                <p class="cont__stat__money">MONEY</p>
+                <p>100</p>
+            </div>
+            <div class="cont__stat_item">
+                <div class="progress-bar progress-bar--health progress-bar--wide"><span style="width: 50%;" class="progress-bar__bar"></span></div>
+                <p>50/50</p>
+            </div>
+            <div class="cont__stat_item">
+                <div class="progress-bar progress-bar--energy progress-bar--wide"><span style="width: 50%;" class="progress-bar__bar"></span></div>
+                <p>45/50</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="loadout__cont">
+        <p class="cont__heading">Weapon</p>
+        <div class="cont__weapon cont__weapon--knife"></div>
+    </div>
+
+
+    <div class="loadout__cont">
+        <p class="cont__heading">Inventory</p>
+        <div class="cont__inventory">
+            <span class="cont__inventory__item"></span>
+            <span class="cont__inventory__item"></span>
+            <span class="cont__inventory__item"></span>
+            <span class="cont__inventory__item"></span>
+            <span class="cont__inventory__item"></span>
+            <span class="cont__inventory__item"></span>
+        </div>
+    </div>
+
+
+    <div class="loadout__cont loadout__cont--chip loadout__cont--body">
+        <p class="cont__heading">Cyberware</p>
+        <div class="cont__cyberware">
+            <span class="cont__cyberware__item"></span>
+            <span class="cont__cyberware__item"></span>
+        </div>
+        <p class="cont__cyberware_text"></p>
+    </div>
+
+</body>
+</html>
