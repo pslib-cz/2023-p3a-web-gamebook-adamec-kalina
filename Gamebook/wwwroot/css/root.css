@@ -6,11 +6,15 @@
 :root {
     --black: black;
     --black50: rgba(0, 0, 0, 0.5);
+    --black80: rgba(0, 0, 0, 0.8);
     --white: white;
+    --grey: #333;
     --white-25: rgba(255, 255, 255, 0.25);
     --blue: #31FFFB;
     --blue-light: #B4FFFE;
     --red: red;
+    --pink: #D765C5;
+    --green: #7ACA5E;
 }
 
 html, body {
@@ -18,4 +22,8 @@ html, body {
     padding: 0;
     font-family: Techno-Race;
     letter-spacing: 2px;
+}
+
+.hidden {
+    display: none;
 }

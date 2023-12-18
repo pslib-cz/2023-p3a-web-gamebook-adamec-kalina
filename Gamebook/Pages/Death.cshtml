@@ -7,13 +7,24 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 <head>
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/gameLocation.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/LocationBackground.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/root.css" asp-append-version="true" />
+    <title>You DIED</title>
 </head>
-<body>
-<div>
-    
-</div>
+
+<body class="death-screen">
+
+    <div class="death-menu">
+        <p class="death-menu__text">
+            We've lost contact with Viper,
+            Looks like you killed him.
+        </p>
+        <a class="button button--blue" href="#">Load Last CheckPoint</a>
+    </div>
+
 </body>
 </html>

@@ -49,3 +49,7 @@ body.workshop{
 body.quantum-technology{
     background-image: url(/images/background/quantum_technology.png);
 }
+
+body.death-screen {
+    background-image: url(/images/background/death_screen.png)
+}

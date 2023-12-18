@@ -1,4 +1,5 @@
 .header {
+    z-index: -999;
     width: fit-content;
     height: 75px;
     background: var(--black);
@@ -30,7 +31,7 @@
     }
 
 .header__heading {
-    font-size: 1.5em;
+    font-size: 38px;
     margin: 0 .4em;
     color: var(--white);
 }
@@ -43,11 +44,6 @@
         border-radius: 50px;
         box-shadow: 0px 0px 10px 0px var(--blue);
     }
-
-
-
-
-
 
 
 
@@ -92,17 +88,16 @@
 
 .manu__link {
     display: block;
-    font-size: 1.5em;
-    padding: 1em;
+    font-size: 2.5em;
+    padding: .5em 0;
     text-decoration: none;
     color: white;
     border: 1px solid var(--blue-light);
-    width: 7em;
+    width: 6em;
     text-align: center;
     box-shadow: 0 5px 10px var(--blue);
     transition: transform .2s ease-in-out;
 }
-
 
 .menu__item {
     height: fit-content;
@@ -118,7 +113,7 @@
 
 .menu__heading {
     text-align: center;
-    font-size: 3.3em;
+    font-size: 3.2em;
     position: relative;
     color: var(--white);
 }
@@ -143,10 +138,6 @@
     left: 0;
     z-index: 998;
 }
-
-
-
-
 
 
 
@@ -211,37 +202,489 @@
         background-image: url(../images/arrow-right--red.svg);
     }
 
-.textbox--hidden {
-    display: none;
-}
 
 
 
 
-
-.choice {
+.wrap {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
     bottom: 1em;
     width: 95%;
+}
+
+.location-choice {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 1em;
 }
 
-.choice__item {
+
+
+
+
+.button {
+    text-decoration: none;
+    cursor: pointer;
     flex-grow: 1;
     border: 1px solid var(--blue);
-    padding: 1em;
+    padding: 1em .5em;
     background-color: var(--black50);
     color: var(--white);
     text-align: center;
+    border-radius: 16px;
+    margin: 0;
+    font-size: 24px;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+}
+
+.button--hit {
+    width: 100%;
+}
+
+.button--blue {
+    width: calc(100% - 1em);
+    background-color: var(--blue);
+    backdrop-filter: unset;
+    color: var(--black);
+    padding: .5em;
+    box-shadow: 0px 0px 25px 0px var(--blue);
+    display: block;
+}
+
+.button--arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: fit-content;
+}
+
+    .button--arrow::before {
+        content: "";
+        display: inline-block;
+        width: 44px;
+        height: 44px;
+        background-image: url(../images/arrow-big.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
+
+
+
+.player {
+    gap: 1em;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.player__cont {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+    .player__cont:last-child {
+        justify-content: right;
+    }
+
+.player-stats {
+    width: fit-content;
+    background-color: var(--black50);
+    border-radius: 5px;
+    padding: .2em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.player-stats--health {
+    color: var(--pink);
+}
+
+.player-stats--energy {
+    margin-left: auto;
+    color: var(--green);
+}
+
+.player-stats--health::before {
+    content: "";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url(../images/heart.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.player-stats--energy::after {
+    content: "";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url(../images/bolt.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+.progress-bar {
+    overflow: hidden;
     border-radius: 15px;
+    margin-bottom: 16px;
+    height: fit-content;
+    background-color: var(--black);
+    box-shadow: 0px 0px 15px 5px var(--pink);
+}
+
+.progress-bar__bar {
+    border-radius: 15px;
+    display: block;
+    height: 6px;
+    width: 100%;
+    transition: width .8s ease-in-out;
+}
+
+.progress-bar--health .progress-bar__bar {
+    background-color: var(--pink);
+}
+
+.progress-bar--energy {
+    box-shadow: 0px 0px 15px 5px var(--green);
+}
+
+    .progress-bar--energy .progress-bar__bar {
+        background-color: var(--green);
+    }
+
+.progress-bar--wide{
+    box-shadow: 0px 0px 15px 5px var(--blue);
+    width: 60%;
+}
+.progress-bar--wide .progress-bar__bar {
+    height: 48px;
+    border-radius: 3px;
+    background-color: var(--blue);
+}
+
+
+
+
+
+
+.enemy-stats {
+    color: var(--white);
+    margin: 0 auto;
+    width: 95%;
+    font-size: 24px;
+}
+
+.enemy-stats__enemy__pink {
+    color: var(--pink);
+}
+
+.enemy-stats__enemy {
+    background-color: var(--black50);
+    border-radius: 15px;
+    width: fit-content;
+    margin: 1em auto .3em auto;
+    padding: .3em;
+}
+
+
+
+
+
+.minigame--green_square {
+    width: 95%;
+    height: 105px;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%);
+    background-color: var(--black50);
+    border-radius: 10px;
+    border: 3px solid var(--blue);
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 2px var(--blue);
+}
+
+.minigame__square {
+    position: absolute;
+    width: 35px;
+    height: 105px;
+    background-color: var(--green);
+    top: 0;
+    left: 75%;
+}
+
+.minigame__stick {
+    position: absolute;
+    width: 8px;
+    height: 105px;
+    background-color: var(--black);
+    bottom: 0;
+    left: 76%;
+    border-right: 3px solid var(--blue);
+    border-left: 3px solid var(--blue);
+}
+
+
+
+
+
+.fight-info {
+    background-color: var(--black50);
+    border-radius: 15px;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.fight-info__cont {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+}
+
+.fight-info__text {
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+.fight-info__text--pink {
+    color: var(--pink);
+}
+
+.fight-info__text--green {
+    color: var(--green);
+    margin-left: 5px;
+}
+
+
+
+
+
+.death-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.death-menu {
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    background-color: var(--black80);
+    width: fit-content;
+    padding: 2em;
+    margin: auto;
+    width: calc(85% - 4em);
+    max-width: calc(850px - 130px);
+}
+
+.death-menu__text {
+    margin: 0 0 1em 0;
+    color: var(--white);
+    font-size: 3em;
+    line-height: 95%;
+    text-align: center;
+}
+
+    .death-menu__text::before {
+        content: "404";
+        display: flex;
+        text-shadow: -4px -4px 0 var(--black), 4px -4px 0 var(--black), -4px 4px 0 var(--black), 4px 4px 0 var(--black);
+        justify-content: right;
+        align-items: end;
+        line-height: 1.4em;
+        height: 85px;
+        width: 200px;
+        background-image: url(../images/no-signal.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+
+
+.loadout {
+    background-color: black;
+    padding: 1em;
+    width: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: fit-content;
+    overflow: unset;
+}
+
+.loadout__cont {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: .8em;
+    border-radius: 25px;
+    background: var(--black);
+    box-shadow: 0px 0px 25px 0px var(--blue);
+}
+
+.cont__heading {
+    font-size: 48px;
+    text-align: center;
     margin: 0;
 }
 
-.choice--hidden {
-    display: none;
+    .cont__heading::after {
+        content: "";
+        display: block;
+        background-color: var(--blue-light);
+        height: 5px;
+        border-radius: 50px;
+        box-shadow: 0px 0px 10px 0px var(--blue);
+    }
+
+
+
+.cont__weapon {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-size: contain;
+    height: 100px;
 }
+
+.cont__weapon--knife {
+    background-image: url(../images/weapons/knife.png);
+}
+
+.cont__weapon--bat {
+    background-image: url(../images/weapons/bat.png);
+}
+
+.cont__weapon--gun {
+    background-image: url(../images/weapons/gun.png);
+    height: 250px;
+}
+
+
+
+.cont__inventory {
+    width: 100%;
+    display: grid;
+    gap: .5em;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cont__inventory__item {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: var(--blue);
+    border-radius: 8px;
+    background: var(--grey);
+}
+
+.cont__cyberware {
+    height: 450px;
+    width: 100%;
+    background-image: url(../images/body.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.cont__cyberware__item {
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    border-radius: 15px;
+    background-color: var(--grey);
+    background-image: url(../images/close.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    .cont__cyberware__item:last-child {
+        top: 70%;
+        left: 60%;
+    }
+
+.loadout__cont--chip .cont__cyberware__item:first-child {
+    background-image: url(../images/chip.png);
+}
+
+.loadout__cont--body .cont__cyberware__item:last-child {
+    background-image: url(../images/skelleton.png);
+}
+
+.cont__cyberware_text {
+    margin: 0;
+    text-align: center;
+}
+
+    .cont__cyberware_text::after {
+        content: "You do not have equiped no CYBERWARE.";
+        font-size: 28px;
+        width: 100%;
+    }
+
+.loadout__cont--chip .cont__cyberware_text::after {
+    content: "You have equiped BRAIN CHIP.";
+}
+
+.loadout__cont--body .cont__cyberware_text::after {
+    content: "You have equiped SKELETRON.";
+}
+
+.loadout__cont--chip.loadout__cont--body .cont__cyberware_text::after {
+    content: "You have equiped SKELETRON and BRAIN CHIP.";
+}
+
+.cont__stat_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont__stat_item::before {
+    content: "";
+    display: block;
+    height: 48px;
+    width: 48px;
+    background-image: url(../images/pig.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cont__stat_item:nth-child(2):before {
+    background-image: url(../images/heart-wide.svg);
+}.cont__stat_item:last-child:before {
+    background-image: url(../images/bolt-wide.svg);
+}
+
+.cont__stats p {
+    font-size: 24px;
+}
+p.cont__stat__money {
+    font-size: 2em;
+    margin: 0;
+}
+

@@ -28,11 +28,18 @@ namespace Gamebook.Pages
         public IActionResult OnGet(string location)
         {
             var previousLocation = _locationService.GetCurrentLocation();
-            var currentLocation = Enum.Parse<Location>(location);
-            
-            // Checking the location connection validity 
-            bool valid = _locationService.IsValidConnection(previousLocation, currentLocation);
-            
+            bool valid = false;
+
+            if (Enum.TryParse<Location>(location, out var currentLocation) && Enum.IsDefined(typeof(Location), currentLocation))
+            {
+                // Checking the location connection validity
+                valid = _locationService.IsValidConnection(previousLocation, currentLocation);
+            }
+            else
+            {
+                valid = false;
+            }
+
             if (!valid)
             {
                 // Redirect back if the location connection not allowed
