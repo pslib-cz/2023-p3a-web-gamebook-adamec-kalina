@@ -15,6 +15,8 @@
     --red: red;
     --pink: #D765C5;
     --green: #7ACA5E;
+    --grey-dark: #1D1D1D;
+    --grey-light: #858585;
 }
 
 html, body {

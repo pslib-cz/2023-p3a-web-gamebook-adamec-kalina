@@ -5,4 +5,47 @@
     Layout = null;
 }
 
-<h1>MAP / QUESTS PAGE</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/gameLocation.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/root.css" asp-append-version="true" />
+    <script src="~/js/swichtabs.js"></script>
+    <title>LoadOut</title>
+
+</head>
+<body class="map">
+
+    <a class="button button--blue button--arrow" href="#">Return To Game</a>
+
+    <div class="map__wrap">
+
+        <div class="swich__cont" id="menu">
+            <button class="swich" id="button-map" onclick="switchTab(this, 'map')">MAP</button>
+            <button class="swich" id="button-quests" onclick="switchTab(this, 'quests')">QUESTS</button>
+        </div>
+
+        <div class="content content--map hidden" id="map">
+            <div class="content__map">
+                <span class="content__map__location"></span>
+                <span class="content__map__location"></span>
+                <span class="content__map__location"></span>
+            </div>
+            <div class="content__container">
+                <button class="content__choice">Slum District</button>
+                <button class="content__choice">Shady Bar</button>
+                <button class="content__choice">Secret Meeting Place</button>
+            </div>
+            <a class="content__cta  " href="">Go to Location</a>
+        </div>
+
+        <div class="content content--quests" id="quests">
+        </div>
+    </div>
+
+
+</body>
+</html>
+

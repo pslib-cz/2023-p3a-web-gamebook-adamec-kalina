@@ -2,6 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\Gamebook",
+    "\\Gamebook\\Models",
     "\\Gamebook\\Services"
   ],
   "SelectedNode": "\\Gamebook\\Services\\SessionHelper.cs",
