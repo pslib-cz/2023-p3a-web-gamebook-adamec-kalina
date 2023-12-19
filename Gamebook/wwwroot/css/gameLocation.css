@@ -833,3 +833,89 @@ p.cont__stat__money {
         top: 80%;
         left: 40%;
     }
+
+
+
+
+
+.content--quests {
+    overflow-y: scroll;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.quest__card {
+    overflow: hidden;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background: var(--black);
+}
+
+.quest__card__heading {
+    font-weight: 700;
+    background: var(--black);
+    color: var(--white);
+    font-size: 32px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quest__card__text {
+    margin: 0;
+}
+
+.quest__card__text--blue {
+    color: var(--blue);
+    padding-bottom: 10px;
+}
+
+.quest__card__heading:after {
+    content: "";
+    display: block;
+    height: 40px;
+    width: 32px;
+    background-image: url(../images/arrow-up.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 14px;
+}
+
+.quest__card.finished .quest__card__heading {
+    padding: 0 10px;
+}
+
+    .quest__card.finished .quest__card__heading:after {
+        height: 60px;
+        flex-grow: 1;
+        background-image: url(../images/check.svg), url(../images/arrow-up.svg);
+        background-position: left, right;
+        background-size: contain, 32px;
+    }
+
+.quest__card.active .quest__card__heading:after {
+    background-image: url(../images/arrow-down.svg);
+}
+
+.quest__card.active.finished .quest__card__heading:after {
+    background-image: url(../images/check.svg), url(../images/arrow-down.svg);
+    background-position: left, right;
+    background-size: contain, 32px;
+}
+
+.quest__card__cont {
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}

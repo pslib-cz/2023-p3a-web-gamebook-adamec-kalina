@@ -3,8 +3,10 @@
     "",
     "\\Gamebook",
     "\\Gamebook\\Models",
+    "\\Gamebook\\Pages",
+    "\\Gamebook\\Pages\\Shared",
     "\\Gamebook\\Services"
   ],
-  "SelectedNode": "\\Gamebook\\Services\\SessionHelper.cs",
+  "SelectedNode": "\\Gamebook\\Pages\\Shared\\_LocationLayout.cshtml",
   "PreviewInSolutionExplorer": false
 }
