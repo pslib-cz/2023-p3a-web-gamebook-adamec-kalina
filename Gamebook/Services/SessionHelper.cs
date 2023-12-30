@@ -78,7 +78,7 @@ public class SessionHelper : ISessionHelper
     //TODO Default player state
     private PlayerStats playerStats = new()
     {
-        Health = 50, Energy = 50, Money = 0
+        Health = 50 , MaxHealth = 50, Energy = 50, MaxEnergy = 50, Money = 0
     };
 
     // Game not in progress by default

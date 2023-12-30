@@ -35,13 +35,21 @@
 
         <div class="player hidden" id="player-stats">
             <div class="player__cont">
-                <p class="player-stats player-stats--health"><span id="player-health">50</span>/<span id="player-max-health">50</span></p>
-                <div class="progress-bar progress-bar--health"><span id="bar-player-health" class="progress-bar__bar"></span></div>
+                <p class="player-stats player-stats--health">
+                    @ViewData["PlayerHealth"]/@ViewData["PlayerMaxHealth"]
+                </p>
+                <div class="progress-bar progress-bar--health">
+                    <span class="progress-bar__bar" style="width: @ViewData["PlayerHealthPercentage"]%;"></span>
+                </div>
                 <button class="button" id="attack-btn" onclick="initiateAttack()">Attack</button>
             </div>
             <div class="player__cont">
-                <p class="player-stats player-stats--energy"><span id="player-energy">50</span>/<span id="player-max-energy">50</span></p>
-                <div class="progress-bar progress-bar--energy"><span id="bar-player-energy" class="progress-bar__bar"></span></div>
+                <p class="player-stats player-stats--energy">
+                    @ViewData["PlayerEnergy"]/@ViewData["PlayerMaxEnergy"]
+                </p>
+                <div class="progress-bar progress-bar--energy">
+                    <span class="progress-bar__bar" style="width: @ViewData["PlayerEnergyPercentage"]%;"></span>
+                </div>
                 <button class="button" id="defence-btn" onclick="initiateDefense()">Defend</button>
             </div>
         </div>

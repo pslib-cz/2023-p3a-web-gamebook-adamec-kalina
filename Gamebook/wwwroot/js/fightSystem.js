@@ -1,86 +1,122 @@
-const energyCost = 10;
-const playerDamage = 25;
+// changable variables from backend
+const energyCost = 5;
+const playerDamage = 35;
 
 const playerMaxHealth = 50;
 const playerMaxEnergy = 50;
 
 const enemyMaxHealth = 100;
+const enemyMaxDamage = 10;
 
 
-let playerHealth = playerMaxHealth;
-let playerEnergy = playerMaxEnergy;
-let enemyHealth = enemyMaxHealth;
-let miniGameSuccess = null;
-let currentAction = null;
 
 
+function initiateGame() {
+    playerHealth = playerMaxHealth;
+    playerEnergy = playerMaxEnergy;
+    enemyHealth = enemyMaxHealth;
+    currentAction = null;
+    isGameOver = false;
+
+    // show max health, energy
+    document.getElementById("player-max-health").textContent = playerMaxHealth;
+    document.getElementById("player-max-energy").textContent = playerMaxEnergy;
+    document.getElementById("enemy-max-health").textContent = enemyMaxHealth;
+    updateStats();
+
+
+    // show stats, info box
+    document.getElementById('player-stats').classList.remove('hidden');
+    document.getElementById('enemy-stats').classList.remove('hidden');
+    document.getElementById('info-box').classList.remove('hidden');
+
+    // hide menu , hitbox and location choices
+    document.getElementById('hitbox').classList.add('hidden');
+    document.getElementById('sidemenu').classList.add('hidden');
+    document.getElementById('location-choice').classList.add('hidden');
+
+
+}
 
 function initiateAttack() {
-  if (playerEnergy >= energyCost) {
-    currentAction = 'attack';
-    showMiniGame();
-    playerEnergy -= energyCost;
-    miniGameSuccess = () => {
-            enemyHealth -= playerDamage;
-            console.log("You hit the enemy");
-            updateInfoBox("You hit the enemy", -playerDamage, -energyCost);
+    if (playerEnergy >= energyCost) { // if player has less energy than needed -> dont attack
+        playerEnergy -= energyCost;
+        showMiniGame(() => { // show minigame
+            if (checkHit()) { // if hit -> decrease health, update infobox
+                currentAction = 'attack';
+                enemyHealth -= playerDamage;
+                console.log("You hit the enemy");
+                updateInfoBox("You hit the enemy", -playerDamage, -energyCost);
+            } else { // if not hit -> update infobox
+                currentAction = 'mised';
+                console.log("You missed")
+                updateInfoBox("You missed", null, -energyCost);
+            }
             updateStats();
             enemyTurn();
-          };
-  } else {
-    console.log("Not enough energy to attack!");
-    updateInfoBox("Not enough energy to attack!", null, null);
-  }
+        });
+    } else {
+        console.log("Not enough energy to attack!");
+        updateInfoBox("Not enough energy to attack!", null, null);
+    }
 }
+
+
 
 function initiateDefense() {
     currentAction = 'defense';
-    showMiniGame();
-    miniGameSuccess = () => {
-        playerHealth += 5; //todo increase/decrease
-        playerEnergy += 5; //todo increase/decrease
-        if (playerHealth > playerMaxHealth) playerHealth = playerMaxHealth;
-        if (playerEnergy > playerMaxEnergy) playerEnergy = playerMaxEnergy;
-        console.log("Your defense has held");
-        updateInfoBox("Your defense has held", 5, 5); //todo increase/decrease
+    showMiniGame(() => {// show minigame
+        if (checkHit()) { // if hit -> increase health and energy, update infobox
+            playerHealth += 5;
+            playerEnergy += 5;
+            if (playerHealth > playerMaxHealth) playerHealth = playerMaxHealth;
+            if (playerEnergy > playerMaxEnergy) playerEnergy = playerMaxEnergy;
+            console.log("Your defense has held");
+            updateInfoBox("Your defense has held", 5, 5);
+        } else {
+            console.log("Your defense collapsed");
+            updateInfoBox("Your defense collapsed", null, null);
+        }
         updateStats();
         enemyTurn();
-    };
+    });
 }
 
+
 function enemyTurn() {
-  checkGameOver();
-  setTimeout(function() {
-    console.log("It's opponent's turn.")
-    updateInfoBox("It's opponent's turn.", null, null);
-    setTimeout(function() {
-      if (currentAction === "attack"){
-        if(Math.random() < 0.5){
-          enemyAttack();
-        } else {
-          enemyDefend();
-        }
-      }
-      else{
-        enemyAttack();
-      }
-      document.getElementById('attack-btn').classList.remove('hidden')
-      document.getElementById('defence-btn').classList.remove('hidden')
+    if (isGameOver) return;
+    checkGameOver();
+    setTimeout(function () {
+        if (isGameOver) return;
+        console.log("It's opponent's turn.")
+        updateInfoBox("It's opponent's turn.", null, null);
+        setTimeout(function () {
+            if (isGameOver) return;
+            if (currentAction === "attack") {
+                if (Math.random() < 0.5) {
+                    enemyAttack();
+                } else {
+                    enemyDefend();
+                }
+            }
+            else {
+                console.log("nochoice");
+                enemyAttack();
+            }
+            document.getElementById('attack-btn').classList.remove('hidden')
+            document.getElementById('defence-btn').classList.remove('hidden')
+        }, 1000);
     }, 1000);
-  }, 1000);
 }
 
 
 function enemyAttack() {
-    let damage = Math.floor(Math.random() * 10) + 1; // Random damage between 1 and 10 todo increase/decrease
+    let damage = Math.floor(Math.random() * enemyMaxDamage) + 1; // Random damage between 1 and 10
     playerHealth -= damage;
     console.log("Opponent hit you.")
     updateInfoBox("Opponent hit you", -damage, null);
     updateStats();
     checkGameOver();
-
-
-
 }
 
 function enemyDefend() {
@@ -89,36 +125,49 @@ function enemyDefend() {
     console.log("Opponent has dodged the attack")
     updateInfoBox("Opponent has dodged the attack", null, null);
     updateStats();
-
-
-
 }
 
 function updateStats() {
+    var enemyHealthPercentage = (enemyHealth / enemyMaxHealth) * 100;
+    document.getElementById('bar-enemy-health').style.width = enemyHealthPercentage + '%';
+
+    // stats - health, energy
     document.getElementById("player-health").textContent = playerHealth;
     document.getElementById("player-energy").textContent = playerEnergy;
-    document.getElementById("player-max-health").textContent = playerMaxHealth;
-    document.getElementById("player-max-energy").textContent = playerMaxEnergy;
-    document.getElementById("enemy-max-health").textContent = enemyMaxHealth;
     document.getElementById("enemy-health").textContent = enemyHealth;
 }
 
 function checkGameOver() {
-    if (playerHealth <= 0) {
-        console.log("Game Over! Enemy wins.");
-        resetGame();
-    } else if (enemyHealth <= 0) {
-        console.log("Congratulations! You win!");
-        resetGame();
-    }
-}
+    if (playerHealth <= 0 || enemyHealth <= 0) {
+        isGameOver = true;
+        if (playerHealth <= 0) {
+            console.log("Game Over! Enemy wins.");
+            updateInfoBox("Game Over! Enemy wins.", null, null)
+        } else if (enemyHealth <= 0) {
+            console.log("Congratulations! You win!");
+            updateInfoBox("Congratulations! You win!", null, null)
+        }
 
-function resetGame() {
-    playerHealth = playerMaxHealth;
-    playerEnergy = playerMaxEnergy;
-    enemyHealth = enemyMaxHealth;
-    hideMiniGame();
-    updateStats();
+
+        document.getElementById('attack-btn').disabled = true;
+        document.getElementById('defence-btn').disabled = true;
+
+        hideMiniGame();
+
+
+        // hide stats, infobox, hit button
+        document.getElementById('player-stats').classList.add('hidden');
+        document.getElementById('enemy-stats').classList.add('hidden');
+        document.getElementById('hit-btn').classList.add('hidden');
+        document.getElementById('info-box').classList.add('hidden');
+
+        // show hitbox, menu and location choices
+        document.getElementById('hitbox').classList.remove('hidden');
+        document.getElementById('sidemenu').classList.remove('hidden');
+        document.getElementById('location-choice').classList.remove('hidden');
+
+    }
+
 }
 
 
@@ -134,25 +183,27 @@ let greenSquare = null;
 let container = null;
 let stickInterval = null;
 
-function showMiniGame() {
+function showMiniGame(onComplete) {
     document.getElementById('attack-btn').classList.add('hidden')
     document.getElementById('defence-btn').classList.add('hidden')
+
     document.getElementById('hit-btn').classList.remove('hidden')
-
-
-    document.getElementById('mini-game').classList.remove('hidden');
+    document.getElementById('game-container').classList.remove('hidden');
     container = document.getElementById('game-container');
     greenSquare = document.getElementById('green-square');
     stick = document.getElementById('stick');
-    stick.style.left = '0px'; // Reset stick position
+    stick.style.left = '0px';
     randomizeGreenSquare();
     moveStick();
+
+    document.getElementById('hit-btn').onclick = () => {
+        onComplete();
+        hideMiniGame();
+    };
 }
 function hideMiniGame() {
     document.getElementById('hit-btn').classList.add('hidden')
-
-
-    document.getElementById('mini-game').classList.add('hidden');
+    document.getElementById('game-container').classList.add('hidden');
     if (stickInterval) {
         clearInterval(stickInterval);
         stickInterval = null;
@@ -161,6 +212,7 @@ function hideMiniGame() {
 function randomizeGreenSquare() {
     let maxLeft = container.offsetWidth - greenSquare.offsetWidth;
     greenSquare.style.left = Math.floor(Math.random() * maxLeft) + 'px';
+    console.log(maxLeft);
 }
 function moveStick() {
     if (stickInterval) clearInterval(stickInterval);
@@ -180,32 +232,16 @@ function checkHit() {
 
     let stickX = stickRect.left - containerRect.left;
     let greenX = greenRect.left - containerRect.left;
-    if (stickX >= greenX && stickX <= (greenX + greenSquare.offsetWidth)) {
-        hideMiniGame();
-        if (typeof miniGameSuccess === 'function') {
-            miniGameSuccess();
-        }
-    } else {
-      hideMiniGame();
-      if (currentAction === 'attack') {
-          console.log("You missed")
-          updateInfoBox("You missed", null, -energyCost);
-          enemyTurn();
-        } else if (currentAction === 'defense') {
-          console.log("Your defense collapsed")
-          updateInfoBox("Your defense collapsed", null, null);
-          enemyTurn();
-      }
-    }
+    return stickX >= greenX && stickX <= (greenX + greenSquare.offsetWidth);
 }
-
 
 
 function updateInfoBox(text, healthChange, energyChange) {
-  document.getElementById('info-box-text').textContent = text;
-  document.getElementById('info-box-health').textContent = healthChange ? `${healthChange > 0 ? '+' : ''}${healthChange}hp` : '';
-  document.getElementById('info-box-energy').textContent = energyChange ? `${energyChange > 0 ? '+' : ''}${energyChange}energy` : '';
+    document.getElementById('info-box-text').textContent = text;
+    document.getElementById('info-box-health').textContent = healthChange ? `${healthChange > 0 ? '+' : ''}${healthChange}hp` : '';
+    document.getElementById('info-box-energy').textContent = energyChange ? `${energyChange > 0 ? '+' : ''}${energyChange}energy` : '';
 }
 
 
-updateStats();
+
+initiateGame();

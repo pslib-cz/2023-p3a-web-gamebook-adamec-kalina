@@ -76,7 +76,19 @@ namespace Gamebook.Pages
             ViewData["LocationDescription"] = gameLocation.Description;
             ViewData["BackgroundImage"] = gameLocation.BackgroundImage;
 
-            LocationPageResponse = new()
+            var playerStats = _locationService.GetPlayerStats();
+            ViewData["PlayerHealth"] = playerStats.Health;
+            ViewData["PlayerMaxHealth"] = playerStats.MaxHealth;
+            ViewData["PlayerEnergy"] = playerStats.Energy;
+            ViewData["PlayerMaxEnergy"] = playerStats.MaxEnergy;
+
+            ViewData["PlayerHealthPercentage"] = (playerStats.Health > 0) ? (playerStats.Health * 100) / playerStats.MaxHealth : 0;
+            ViewData["PlayerEnergyPercentage"] = (playerStats.Energy > 0) ? (playerStats.Energy * 100) / playerStats.MaxEnergy : 0;
+
+
+
+
+        LocationPageResponse = new()
             {
                 TargetLocations = _locationService.GetTargetLocations(currentLocation),
                 Dialog = _locationService.GetDialog(currentLocation),

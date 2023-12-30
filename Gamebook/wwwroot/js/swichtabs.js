@@ -49,4 +49,21 @@ document.addEventListener('DOMContentLoaded', function () {
     choiceButtons.forEach(button => {
         button.addEventListener('click', updateSelection);
     });
+
+
+    var acc = document.getElementsByClassName("quest__card__heading");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            var questCard = this.parentElement;
+            questCard.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
 });

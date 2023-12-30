@@ -12,9 +12,25 @@
         "projectPath": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/Gamebook.csproj",
         "packagesPath": "/Users/kalinadam/.nuget/packages/",
         "outputPath": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/obj/",
+
+    "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\Gamebook.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\Gamebook.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\Gamebook.csproj",
+        "projectName": "Gamebook",
+        "projectPath": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\Gamebook.csproj",
+        "packagesPath": "C:\\Users\\Maty\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kalinadam/.nuget/NuGet/NuGet.Config"
+
+          "C:\\Users\\Maty\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -58,6 +74,26 @@
               "privateAssets": "all"
             }
           },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+    "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/Gamebook.csproj": {}
+    "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\Gamebook.csproj": {}
+    "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/Gamebook.csproj": {
+    "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\Gamebook.csproj": {
+        "projectUniqueName": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/Gamebook.csproj",
+        "projectUniqueName": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\Gamebook.csproj",
+        "projectPath": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/Gamebook.csproj",
+        "packagesPath": "/Users/kalinadam/.nuget/packages/",
+        "outputPath": "/Users/kalinadam/Docs/Projects/School/Gamebook2023KalinaAdamec/Gamebook/obj/",
+        "projectPath": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\Gamebook.csproj",
+        "packagesPath": "C:\\Users\\Maty\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\obj\\",
+          "/Users/kalinadam/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Maty\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/usr/local/share/dotnet/library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.311/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
         }
       }
