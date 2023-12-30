@@ -63,16 +63,16 @@ public class SessionHelper : ISessionHelper
 
     };
  
-    //TODO Default inventory state
+    //Default inventory state
     private List<Item> inventoryItemList = new()
     {
-        Item.Battery, Item.Item2
+        //Empty inventory at the beginning 
     };
 
     //TODO Default quests state
     private List<Quest> questList = new()
     {
-        
+        //TODO quest 1
     };
 
     //TODO Default player state
@@ -90,7 +90,7 @@ public class SessionHelper : ISessionHelper
     //TODO default equipped weapon
     private Weapon equippedWeapon = new Weapon()
     {
-        Type = WeaponType.NoWeapon,
+        Type = WeaponType.Knife,
         Demage = 0,
         EnergyConsumption = 0
     };
