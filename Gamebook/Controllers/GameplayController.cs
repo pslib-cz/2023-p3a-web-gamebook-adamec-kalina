@@ -26,5 +26,5 @@ public class GameplayController : ControllerBase
 
         Console.WriteLine("success");
         return Ok();
-    }
+    }    
 }
