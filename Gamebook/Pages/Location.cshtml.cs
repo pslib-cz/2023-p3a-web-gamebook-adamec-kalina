@@ -73,7 +73,6 @@ namespace Gamebook.Pages
         {
             var gameLocation = _locationService.GetLocation(currentLocation);
             ViewData["LocationTitle"] = gameLocation.Title;
-            ViewData["LocationDescription"] = gameLocation.Description;
             ViewData["BackgroundImage"] = gameLocation.BackgroundImage;
 
             var playerStats = _locationService.GetPlayerStats();
@@ -86,12 +85,21 @@ namespace Gamebook.Pages
             ViewData["PlayerEnergyPercentage"] = (playerStats.Energy > 0) ? (playerStats.Energy * 100) / playerStats.MaxEnergy : 0;
 
 
-
-
-        LocationPageResponse = new()
+            List<TargetLocation> targetLocations = new();
+            foreach (var location in _locationService.GetTargetLocations(currentLocation))
             {
-                TargetLocations = _locationService.GetTargetLocations(currentLocation),
-                Dialog = _locationService.GetDialog(currentLocation),
+                var targetLocation = new TargetLocation()
+                {
+                    Location = location,
+                    Locked = _locationService.IsLocationLocked(location)
+                };
+                targetLocations.Add(targetLocation);
+            }
+
+            LocationPageResponse = new()
+            {
+                TargetLocations = targetLocations,
+                Dialogs = _locationService.GetDialog(currentLocation),
                 EquipedWeapon = _locationService.GetEquippedWeapon(),
                 PlayerStats = _locationService.GetPlayerStats()
             };

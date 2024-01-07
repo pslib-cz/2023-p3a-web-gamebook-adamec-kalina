@@ -6,6 +6,8 @@ public interface IGameplayService
 {
     void HealthChange(int health);
     void EnergyChange(int energy);
-    void DialogNotAvailable(string currentLocation);
-    
+    public void MoneyChange(int change);
+    void SetPlayerFocusChoice(PlayerFocus playerFocus);
+    void SetDialogNotAvailable();
+    public void UnlockLocation(Location locationString);
 }

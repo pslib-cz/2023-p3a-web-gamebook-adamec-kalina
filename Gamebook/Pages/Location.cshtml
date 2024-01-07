@@ -4,13 +4,13 @@
 
 @{
     Layout = "_LocationLayout";
-    var locationRequest = Model.LocationPageResponse;
+    var locationResponse = Model.LocationPageResponse;
 }
 
 
 
 @section Choices {
-    @foreach (var target in locationRequest.TargetLocations)
+    @foreach (var target in locationResponse.TargetLocations)
     {
         if (target.Locked)
         {

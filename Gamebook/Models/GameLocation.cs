@@ -7,8 +7,8 @@ namespace Gamebook.Models
     public class GameLocation
     {
         public string Title { get; set; }
-        public string Description { get; set; }
         public string BackgroundImage { get; set; }
+        public bool Locked { get; set; } = false; //TODO: false for testing purposes -> will be changed 
     }
 }
 

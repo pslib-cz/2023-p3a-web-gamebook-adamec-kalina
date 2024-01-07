@@ -75,13 +75,13 @@ Jake: "Good job, now I can hopefully concentrate on my work. Here's the componen
 ```
 
 - the player receives a Component in his inventory
-- the player returns with the component to the Old Trader
+- the player returns with the component to the Old Merchant
 
 ```
 Shadow Viper: "I have the component you needed.
-Old Trader: "Oh, that's it. Thanks, young man. Well, I promised you the information. I saw you come into the Quarter. You were accompanied by a strange figure, looked like a hacker or something. You had some electronics on you, and it looked like you were planning something together."
+Old Merchant: "Oh, that's it. Thanks, young man. Well, I promised you the information. I saw you come into the Quarter. You were accompanied by a strange figure, looked like a hacker or something. You had some electronics on you, and it looked like you were planning something together."
 Shadow Viper: "Do you know anything more about the character or what we were planning?"
-Old Trader: "Unfortunately no, that's all I saw. But the character was wearing a badge I've seen on people in a group that meets in a shady bar on the outskirts of the neighborhood. Maybe you'll find more answers there."
+Old Merchant: "Unfortunately no, that's all I saw. But the character was wearing a badge I've seen on people in a group that meets in a shady bar on the outskirts of the neighborhood. Maybe you'll find more answers there."
 ```
 
 - a component is removed from the player's inventory

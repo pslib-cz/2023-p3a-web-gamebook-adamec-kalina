@@ -3,6 +3,7 @@
 
 @{
     Layout = null;
+    var loadOutResponse = Model.LoadOutPageResponse;
 }
 
 <!DOCTYPE html>
@@ -17,7 +18,7 @@
 </head>
 <body class="loadout">
 
-    <a class="button button--blue button--arrow" href="#">Return To Game</a>
+    <a class="button button--blue button--arrow" asp-page="/Location" asp-route-location="@loadOutResponse.CurrentLocation">Return To Game</a>
 
     <div class="loadout__cont">
         <p class="cont__heading">Stats</p>

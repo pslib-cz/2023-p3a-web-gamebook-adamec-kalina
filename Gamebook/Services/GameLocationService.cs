@@ -30,13 +30,22 @@ namespace Gamebook.Services
             }
         }
 
-        public Dialog GetDialog(Location location)
+        public List<Dialog>? GetDialog(Location location)
         {
             try
             {
                 // Retrieve data from the session
                 var serializedModel = _session.GetString($"{location}Dialog");
-                return JsonSerializer.Deserialize<Dialog>(serializedModel);
+                if(serializedModel == null) return null;
+                var dialogsList = JsonSerializer.Deserialize<List<Dialog>>(serializedModel);
+                var playerFocusString = _session.GetString("playerFocus");
+
+                
+                return !Enum.TryParse(playerFocusString, true, out PlayerFocus playerFocus) ? 
+                    // No focus set yet
+                    dialogsList.Where(d => d.Available).ToList() :
+                    // Dialog for the specific focus
+                    dialogsList.Where(d => d.Available && d.DialogFocus == playerFocus).ToList();
             }
             catch (Exception e)
             {
@@ -72,12 +81,12 @@ namespace Gamebook.Services
             }
         }
 
-        public List<TargetLocation> GetTargetLocations(Location location)
+        public List<Location> GetTargetLocations(Location location)
         {
             try
             {
                 var serializedModel = _session.GetString($"{location}TargetLocations");
-                return JsonSerializer.Deserialize<List<TargetLocation>>(serializedModel);
+                return JsonSerializer.Deserialize<List<Location>>(serializedModel);
             }
             catch (Exception e)
             {
@@ -109,13 +118,37 @@ namespace Gamebook.Services
             _session.SetString("currentLocation", location.ToString());
         }
 
+        public PlayerFocus? GetPlayerFocus()
+        {
+            var playerFocusString = _session.GetString("playerFocus");
+            if (!Enum.TryParse(playerFocusString, true, out PlayerFocus playerFocus))
+            {
+                throw new Exception("Invalid player focus");
+            }
+
+            return playerFocus;
+        }
+
         public bool IsValidConnection(Location locationFrom, Location locationTo)
         {
             if (locationFrom == locationTo) return true;
-            // if (locationTo is Location.SlumDistrict or Location.ShadyBar or Location.SecretMeetingPlace) return true;
             var targetLocations = GetTargetLocations(locationFrom);
-            var connection = targetLocations.FirstOrDefault(t => t.Location == locationTo && !t.Locked);
-            return connection != null;
+            var connection = targetLocations.FirstOrDefault(t => t == locationTo);
+            return connection != null && !IsLocationLocked(locationTo);
+        }
+
+        public bool IsLocationLocked(Location location)
+        {
+            try
+            {
+                var gameLocationString = _session.GetString(location.ToString());
+                var gameLocation = JsonSerializer.Deserialize<GameLocation>(gameLocationString);
+                return gameLocation.Locked;
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Error while retrieving a game location from session -> {e.Message}");
+            }
         }
 
         public bool IsGameInProgress()
