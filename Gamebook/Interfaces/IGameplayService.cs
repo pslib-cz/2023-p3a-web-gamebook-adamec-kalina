@@ -6,8 +6,14 @@ public interface IGameplayService
 {
     void HealthChange(int health);
     void EnergyChange(int energy);
-    public void MoneyChange(int change);
+    void MoneyChange(int change);
     void SetPlayerFocusChoice(PlayerFocus playerFocus);
     void SetDialogNotAvailable();
-    public void UnlockLocation(Location locationString);
+    void UnlockLocation(Location locationString);
+    void EquipWeapon(WeaponType type);
+    void SetQuestCompleted(int number);
+    void NewQuest(int number);
+
+
+
 }

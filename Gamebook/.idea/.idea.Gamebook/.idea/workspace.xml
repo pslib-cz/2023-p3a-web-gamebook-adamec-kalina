@@ -8,51 +8,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="663ff9be-f37e-4dfd-8f97-762eb3d36c87" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Enums/PlayerFocus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/LoadOutPageResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/GameplayController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/GameplayController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interfaces/IGameLocationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Interfaces/IGameLocationService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interfaces/IGameplayService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Interfaces/IGameplayService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Dialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Dialog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/GameLocation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/GameLocation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/LocationPageResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/LocationPageResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/TargetLocation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/TargetLocation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/LoadOut.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/LoadOut.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/LoadOut.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/LoadOut.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Location.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Location.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Location.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Location.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Map.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Map.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/GameLocationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/GameLocationService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/GameplayService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/GameplayService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/SessionHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/SessionHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Gamebook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Gamebook.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Gamebook.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Gamebook.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Gamebook.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Gamebook.staticwebassets.runtime.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Gamebook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Gamebook.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Gamebook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Gamebook.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.pack.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Gamebook.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Gamebook.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.Gamebook.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.Gamebook.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Gamebook.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Gamebook.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Gamebook.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Gamebook.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/story_draft/StoryLine_StepByStep/quest1.md" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/story_draft/StoryLine_StepByStep/quest1.md" afterDir="false" />
+    <list default="true" id="663ff9be-f37e-4dfd-8f97-762eb3d36c87" name="Changes" comment="GameplayService update - new methods + gameplayController update - new endpoints &amp;&amp; Location locked attribute logic change">
+      <change afterPath="$PROJECT_DIR$/GlobalModels/GlobalModels.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enums/WeaponType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Enums/WeaponType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Quest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Weapon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +121,7 @@
       <workItem from="1702919329953" duration="4982000" />
       <workItem from="1702974397638" duration="2215000" />
       <workItem from="1703873126123" duration="32747000" />
-      <workItem from="1704368441796" duration="19849000" />
+      <workItem from="1704368441796" duration="24671000" />
     </task>
     <task id="LOCAL-00001" summary="session create, LocationLayout create, locationModel passing into pageModel">
       <option name="closed" value="true" />
@@ -339,7 +299,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703954876657</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="GameplayService update - new methods + gameplayController update - new endpoints &amp;&amp; Location locked attribute logic change">
+      <option name="closed" value="true" />
+      <created>1704591054809</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1704591054809</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +336,8 @@
     <MESSAGE value="default session values - update" />
     <MESSAGE value="merge conflict resolved" />
     <MESSAGE value="merge conflicts resolved" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge conflicts resolved" />
+    <MESSAGE value="GameplayService update - new methods + gameplayController update - new endpoints &amp;&amp; Location locked attribute logic change" />
+    <option name="LAST_COMMIT_MESSAGE" value="GameplayService update - new methods + gameplayController update - new endpoints &amp;&amp; Location locked attribute logic change" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

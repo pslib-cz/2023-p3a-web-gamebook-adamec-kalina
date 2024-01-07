@@ -6,6 +6,7 @@ using Gamebook.Pages;
 using Microsoft.AspNetCore.Authentication.OAuth.Claims;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Global = Gamebook.GlobalModels.GlobalModels;
 
 namespace Gamebook.Services;
 
@@ -20,38 +21,58 @@ public class GameplayService : IGameplayService
         _locationService = locationService;
     }
     
-    public void HealthChange(int change)
+    /// <summary>
+    /// Changes players health
+    /// </summary>
+    /// <param name="amountLeft"> the amount of health left </param>
+    public void HealthChange(int amountLeft)
     {
         var serializedModel = _session.GetString("playerStats");
         PlayerStats playerStats = JsonSerializer.Deserialize<PlayerStats>(serializedModel);
-        playerStats.Health = change;
+        playerStats.Health = amountLeft;
         string serializedPlayerStats = JsonSerializer.Serialize(playerStats);
         _session.SetString("playerStats", serializedPlayerStats);
     }
 
-    public void EnergyChange(int change)
+    /// <summary>
+    /// Changes players energy
+    /// </summary>
+    /// <param name="amountLeft"> the amount of energy left </param>
+    public void EnergyChange(int amountLeft)
     {
         var serializedModel = _session.GetString("playerStats");
         PlayerStats playerStats = JsonSerializer.Deserialize<PlayerStats>(serializedModel);
-        playerStats.Energy = change;
+        playerStats.Energy = amountLeft;
         string serializedPlayerStats = JsonSerializer.Serialize(playerStats);
         _session.SetString("playerStats", serializedPlayerStats);
     }
 
-    public void MoneyChange(int change)
+    /// <summary>
+    /// Changes players money amount
+    /// </summary>
+    /// <param name="amountLeft"> the amount of money left </param>
+    public void MoneyChange(int amountLeft)
     {
         var serializedModel = _session.GetString("playerStats");
         PlayerStats playerStats = JsonSerializer.Deserialize<PlayerStats>(serializedModel);
-        playerStats.Money = change;
+        playerStats.Money = amountLeft;
         string serializedPlayerStats = JsonSerializer.Serialize(playerStats);
         _session.SetString("playerStats", serializedPlayerStats);
     }
 
+    /// <summary>
+    /// Sets player's story focus
+    /// </summary>
+    /// <param name="playerFocus"></param>
     public void SetPlayerFocusChoice(PlayerFocus playerFocus)
     {
         _session.SetString("playerFocus", playerFocus.ToString());
     }
 
+    /// <summary>
+    /// Sets a specific dialog as not available
+    /// </summary>
+    /// <exception cref="Exception"></exception>
     public void SetDialogNotAvailable()
     {
         var currentLocation = _locationService.GetCurrentLocation();
@@ -71,6 +92,11 @@ public class GameplayService : IGameplayService
         }
     }
 
+    /// <summary>
+    /// Sets a specific location as Locked = false
+    /// </summary>
+    /// <param name="location"></param>
+    /// <exception cref="Exception"></exception>
     public void UnlockLocation(Location location)
     {
         try
@@ -88,4 +114,54 @@ public class GameplayService : IGameplayService
             throw new Exception($"Error while retrieving a game location from session -> {e.Message}");
         }
     }
+
+    /// <summary>
+    /// Changes the player's equipped weapon + de-equips the current one
+    /// </summary>
+    /// <param name="type"></param>
+    public void EquipWeapon(WeaponType type)
+    {
+        // Retrieve the new weapon from global models
+        var weapon = Global.Weapons.First(w => w.Type == type);
+        
+        string serializedEquippedWeapon = JsonSerializer.Serialize(weapon);
+        _session.SetString("equippedWeapon", serializedEquippedWeapon);
+    }
+
+    /// <summary>
+    /// Sets a quest as completed
+    /// </summary>
+    /// <param name="number"> number of the quest </param>
+    public void SetQuestCompleted(int number)
+    {
+        // Retrieve current quest list from the session
+        var questsString = _session.GetString("quests");
+        var quests = JsonSerializer.Deserialize<List<Quest>>(questsString);
+
+        // Set the quest as completed
+        quests.First(q => q.Number == number).Completed = true;
+        // Save back into the session
+        string serializedQuests = JsonSerializer.Serialize(quests);
+        _session.SetString("quests", serializedQuests);
+    }
+
+    /// <summary>
+    /// Adds a new quest into the current quests list
+    /// </summary>
+    /// <param name="number"> number of the quest to be added </param>
+    public void NewQuest(int number)
+    {
+        // Retrieve current quest list from the session
+        var questsString = _session.GetString("quests");
+        var quests = JsonSerializer.Deserialize<List<Quest>>(questsString);
+        
+        // Add the new quest from global models
+        quests.Add(Global.Quests.First(q => q.Number == number));
+        // Save back into the session
+        string serializedQuests = JsonSerializer.Serialize(quests);
+        _session.SetString("quests", serializedQuests);
+        
+    }
+    
+    
 }

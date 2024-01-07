@@ -4,6 +4,7 @@ using System.Text.Json;
 using Gamebook.Enums;
 using Gamebook.Interfaces;
 using Gamebook.Models;
+using Global = Gamebook.GlobalModels.GlobalModels;
 
 namespace Gamebook.Services;
 
@@ -340,10 +341,10 @@ public class SessionHelper : ISessionHelper
         //Empty inventory at the beginning 
     };
 
-    //TODO Default quests state
+    // Default quests state
     private List<Quest> questList = new()
     {
-        //TODO quest 1
+        Global.Quests.First(q => q.Number == 1)
     };
 
     // Default player state
@@ -358,13 +359,8 @@ public class SessionHelper : ISessionHelper
     // Set default currentLocation on game start
     private Location currentLocation = Location.SlumDistrict;
 
-    //TODO default equipped weapon
-    private Weapon equippedWeapon = new Weapon()
-    {
-        Type = WeaponType.Knife,
-        Demage = 0,
-        EnergyConsumption = 0
-    };
+    // Default equipped weapon
+    private Weapon equippedWeapon = Global.Weapons.First(w => w.Type == WeaponType.Knife);
     
     public SessionHelper(IHttpContextAccessor httpContext)
     {

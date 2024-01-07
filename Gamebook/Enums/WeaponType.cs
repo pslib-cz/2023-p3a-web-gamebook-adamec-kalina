@@ -2,8 +2,8 @@ namespace Gamebook.Enums;
 
 public enum WeaponType
 {
-    Pistol,
+    Gun,
     Knife,
     Bat,
-    NoWeapon //TODO needed?
+    Submachine
 }
