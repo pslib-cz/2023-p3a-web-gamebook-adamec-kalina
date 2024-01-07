@@ -3,6 +3,7 @@
 
 @{
     Layout = null;
+    var mapResponse = Model.MapPageResponse;
 }
 
 <!DOCTYPE html>
@@ -18,7 +19,7 @@
 </head>
 <body class="map">
 
-    <a class="button button--blue button--arrow" asp-page="/Index">Return To Game</a>
+    <a class="button button--blue button--arrow" asp-page="/Location" asp-route-location="@mapResponse.CurrentLocation">Return To Game</a>
 
     <div class="map__wrap">
 

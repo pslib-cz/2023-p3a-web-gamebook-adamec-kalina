@@ -22,7 +22,7 @@ public class GameplayService : IGameplayService
     }
     
     /// <summary>
-    /// Changes players health
+    /// Changes player's health
     /// </summary>
     /// <param name="amountLeft"> the amount of health left </param>
     public void HealthChange(int amountLeft)
@@ -35,7 +35,7 @@ public class GameplayService : IGameplayService
     }
 
     /// <summary>
-    /// Changes players energy
+    /// Changes player's energy
     /// </summary>
     /// <param name="amountLeft"> the amount of energy left </param>
     public void EnergyChange(int amountLeft)
@@ -48,7 +48,7 @@ public class GameplayService : IGameplayService
     }
 
     /// <summary>
-    /// Changes players money amount
+    /// Changes player's money amount
     /// </summary>
     /// <param name="amountLeft"> the amount of money left </param>
     public void MoneyChange(int amountLeft)
@@ -56,6 +56,19 @@ public class GameplayService : IGameplayService
         var serializedModel = _session.GetString("playerStats");
         PlayerStats playerStats = JsonSerializer.Deserialize<PlayerStats>(serializedModel);
         playerStats.Money = amountLeft;
+        string serializedPlayerStats = JsonSerializer.Serialize(playerStats);
+        _session.SetString("playerStats", serializedPlayerStats);
+    }
+
+    /// <summary>
+    /// Changes player's moral score
+    /// </summary>
+    /// <param name="changeAmount"> the amount to be added </param>
+    public void MoralScoreChange(int changeAmount)
+    {
+        var serializedModel = _session.GetString("playerStats");
+        PlayerStats playerStats = JsonSerializer.Deserialize<PlayerStats>(serializedModel);
+        playerStats.MoralScore += changeAmount;
         string serializedPlayerStats = JsonSerializer.Serialize(playerStats);
         _session.SetString("playerStats", serializedPlayerStats);
     }
@@ -139,7 +152,14 @@ public class GameplayService : IGameplayService
         var quests = JsonSerializer.Deserialize<List<Quest>>(questsString);
 
         // Set the quest as completed
-        quests.First(q => q.Number == number).Completed = true;
+        try
+        {
+            quests.First(q => q.Number == number).Completed = true;
+        }
+        catch (Exception e)
+        {
+            throw new Exception($"Error - Quest number [{number}] was not found");
+        }
         // Save back into the session
         string serializedQuests = JsonSerializer.Serialize(quests);
         _session.SetString("quests", serializedQuests);
@@ -149,14 +169,24 @@ public class GameplayService : IGameplayService
     /// Adds a new quest into the current quests list
     /// </summary>
     /// <param name="number"> number of the quest to be added </param>
-    public void NewQuest(int number)
+    public void AddNewQuest(int number)
     {
+        // Retrieve players focus from the session
+        var playerFocus = _locationService.GetPlayerFocus();
+        
         // Retrieve current quest list from the session
         var questsString = _session.GetString("quests");
         var quests = JsonSerializer.Deserialize<List<Quest>>(questsString);
         
         // Add the new quest from global models
-        quests.Add(Global.Quests.First(q => q.Number == number));
+        try
+        {
+            quests.Add(Global.Quests.First(q => q.Number == number && (q.Focus == null || q.Focus == playerFocus)));
+        }
+        catch (Exception e)
+        {
+            throw new Exception($"Error - Quest number [{number}] was not found");
+        }
         // Save back into the session
         string serializedQuests = JsonSerializer.Serialize(quests);
         _session.SetString("quests", serializedQuests);

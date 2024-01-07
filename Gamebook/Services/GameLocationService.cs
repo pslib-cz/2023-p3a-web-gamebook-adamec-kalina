@@ -113,6 +113,12 @@ namespace Gamebook.Services
             }
         }
 
+        public int GetPlayerMoralScore()
+        {
+            var serializedModel = _session.GetString("playerStats");
+            return JsonSerializer.Deserialize<PlayerStats>(serializedModel).MoralScore;
+        }
+
         public void SetCurrentLocation(Location location)
         {
             _session.SetString("currentLocation", location.ToString());

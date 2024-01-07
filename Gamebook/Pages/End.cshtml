@@ -1,0 +1,10 @@
+@page
+@model Gamebook.Pages.End
+
+@{
+    Layout = null;
+    var endResponse = Model.EndPageResponse;
+}
+
+<h1>@endResponse.Ending.Title</h1>
+<p>@endResponse.Ending.Text</p>

@@ -7,4 +7,5 @@ public class PlayerStats
     public int Energy { get; set; }
     public int MaxEnergy { get; set; }
     public int Money { get; set; }
+    public int MoralScore { get; set; }
 }

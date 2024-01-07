@@ -11,7 +11,8 @@ namespace Gamebook.Interfaces
         List<Dialog> GetDialog(Location location);
         PlayerStats GetPlayerStats();
         Weapon GetEquippedWeapon();
-        public PlayerFocus? GetPlayerFocus();
+        PlayerFocus? GetPlayerFocus();
+        int GetPlayerMoralScore();
         bool IsValidConnection(Location locationFrom, Location locationTo);
         bool IsLocationLocked(Location location);
         Location GetCurrentLocation();

@@ -317,7 +317,7 @@ public class SessionHelper : ISessionHelper
         }},
     };
 
-    //TODO Default game locations' target locations states 
+    // Default game locations' target locations states 
     private Dictionary<string, List<Location>> gameLocationTargetLocationDict = new()
     {
         {$"{Location.SlumDistrict}TargetLocations", new List<Location> { Location.SlumQuarter, Location.DarkAlley}},
@@ -350,7 +350,13 @@ public class SessionHelper : ISessionHelper
     // Default player state
     private PlayerStats playerStats = new()
     {
-        Health = 50 , MaxHealth = 50, Energy = 50, MaxEnergy = 50, Money = 0
+        Health = 50,
+        MaxHealth = 50,
+        Energy = 50,
+        MaxEnergy = 50,
+        Money = 0,
+        //TODO Default moral score
+        MoralScore = 100
     };
 
     // Game not in progress by default
@@ -369,7 +375,7 @@ public class SessionHelper : ISessionHelper
     }
 
     /// <summary>
-    /// Retrieves a value from the session
+    /// Retrieves a string value from the session
     /// </summary>
     /// <param name="key"></param>
     /// <returns> session value </returns>
@@ -397,6 +403,42 @@ public class SessionHelper : ISessionHelper
         try
         {
             _httpContext.HttpContext.Session.SetString(key, value);
+        }
+        catch (Exception e)
+        {
+            throw new Exception($"Error while trying to set a new pair [{key}, {value}] into the session -> {e.Message}");
+        }
+    }
+    
+    /// <summary>
+    /// Retrieves a int value from the session
+    /// </summary>
+    /// <param name="key"></param>
+    /// <returns> session value </returns>
+    public int? GetInt(string key)
+    {
+        try
+        {
+            return _httpContext.HttpContext.Session.GetInt32(key);
+
+        }
+        catch (Exception e)
+        {
+            throw new Exception($"Error while trying to retrieve a int value of [{key}] from the session -> {e.Message}");
+        }
+        
+    }
+
+    /// <summary>
+    /// Stores a new key-value pair in the session
+    /// </summary>
+    /// <param name="key"></param>
+    /// <param name="value"></param>
+    public void SetInt(string key, int value)
+    {
+        try
+        {
+            _httpContext.HttpContext.Session.SetInt32(key, value);
         }
         catch (Exception e)
         {
@@ -448,6 +490,7 @@ public class SessionHelper : ISessionHelper
         // Set default equipped weapon
         string serializedEquippedWeapon = JsonSerializer.Serialize(equippedWeapon);
         _httpContext.HttpContext.Session.SetString("equippedWeapon", serializedEquippedWeapon);
+        
     }
 
 }

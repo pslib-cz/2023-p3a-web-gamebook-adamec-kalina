@@ -44,6 +44,13 @@ public class GameplayController : ControllerBase
         _gameplayService.MoneyChange(amount);
         return Ok();
     }
+    
+    [HttpPost("MoralScoreChange")]
+    public ActionResult MoralScoreChange([FromBody] int changeAmount)
+    {
+        _gameplayService.MoralScoreChange(changeAmount);
+        return Ok();
+    }
 
     [HttpPost("PlayerFocusChoice")]
     public ActionResult PlayerFocusChoice([FromBody] string playerFocusString)
@@ -74,4 +81,32 @@ public class GameplayController : ControllerBase
         
         return Ok();
     }
+    
+    [HttpPost("EquipWeapon")]
+    public ActionResult EquipWeapon([FromBody] string weaponTypeString)
+    {
+        if (!Enum.TryParse(weaponTypeString, true, out WeaponType weaponType))
+            throw new Exception($"invalid weaponType -> {weaponTypeString}");
+
+        _gameplayService.EquipWeapon(weaponType);
+        
+        return Ok();
+    }
+    
+    [HttpPost("SetQuestCompleted")]
+    public ActionResult SetQuestCompleted([FromBody] int questNumber)
+    {
+        _gameplayService.SetQuestCompleted(questNumber);
+        return Ok();
+    }
+    
+    [HttpPost("AddNewQuest")]
+    public ActionResult AddNewQuest([FromBody] int questNumber)
+    {
+        _gameplayService.AddNewQuest(questNumber);
+        return Ok();
+    }
+    
+    
+    
 }
