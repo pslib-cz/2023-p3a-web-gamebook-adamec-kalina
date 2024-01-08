@@ -63,19 +63,19 @@ function initiateAttack() {
 
 
 
-function initiateDefense() {
-    currentAction = 'defense';
+function initiateMeditation() {
+    currentAction = 'meditation';
     showMiniGame(() => {// show minigame
         if (checkHit()) { // if hit -> increase health and energy, update infobox
             playerHealth += 5;
             playerEnergy += 5;
             if (playerHealth > playerMaxHealth) playerHealth = playerMaxHealth;
             if (playerEnergy > playerMaxEnergy) playerEnergy = playerMaxEnergy;
-            console.log("Your defense has held");
-            updateInfoBox("Your defense has held", 5, 5);
+            console.log("Your meditation has held");
+            updateInfoBox("Your meditation has held", 5, 5);
         } else {
-            console.log("Your defense collapsed");
-            updateInfoBox("Your defense collapsed", null, null);
+            console.log("Your meditation collapsed");
+            updateInfoBox("Your meditation collapsed", null, null);
         }
         updateStats();
         enemyTurn();
@@ -147,32 +147,36 @@ function checkGameOver() {
             console.log("Congratulations! You win!");
             updateInfoBox("Congratulations! You win!", null, null)
         }
-
-
-        document.getElementById('attack-btn').disabled = true;
-        document.getElementById('defence-btn').disabled = true;
-
-        hideMiniGame();
-
-
-        // hide stats, infobox, hit button
-        document.getElementById('player-stats').classList.add('hidden');
-        document.getElementById('enemy-stats').classList.add('hidden');
-        document.getElementById('hit-btn').classList.add('hidden');
-        document.getElementById('info-box').classList.add('hidden');
-
-        // show hitbox, menu and location choices
-        document.getElementById('hitbox').classList.remove('hidden');
-        document.getElementById('sidemenu').classList.remove('hidden');
-        document.getElementById('location-choice').classList.remove('hidden');
-
+        GameOver();
     }
 
 }
 
 
 
+function GameOver() {
 
+    document.getElementById('attack-btn').disabled = true;
+    document.getElementById('defence-btn').disabled = true;
+
+    hideMiniGame();
+
+
+    // hide stats, infobox, hit button
+    document.getElementById('player-stats').classList.add('hidden');
+    document.getElementById('enemy-stats').classList.add('hidden');
+    document.getElementById('hit-btn').classList.add('hidden');
+    document.getElementById('info-box').classList.add('hidden');
+
+    // show hitbox, menu and location choices
+    document.getElementById('hitbox').classList.remove('hidden');
+    document.getElementById('sidemenu').classList.remove('hidden');
+    document.getElementById('location-choice').classList.remove('hidden');
+
+    //send data to backend
+    HealthChange(playerHealth);
+    EnergyChange(playerEnergy);
+}
 
 
 
@@ -245,3 +249,38 @@ function updateInfoBox(text, healthChange, energyChange) {
 
 
 initiateGame();
+
+
+
+function HealthChange(amount) {
+
+    fetch('/Gameplay/HealthChange', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(amount),
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data.redirectToDeath) {
+                window.location.href = data.redirectToDeath; // Handle redirection
+            } else {
+                console.log('Response:', data);
+            }
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+}
+
+function EnergyChange(amount) {
+
+    fetch('/Gameplay/EnergyChange', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(amount),
+    })
+}
