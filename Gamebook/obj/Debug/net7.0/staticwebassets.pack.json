@@ -13,8 +13,24 @@
       "PackagePath": "staticwebassets\\css\\gameLocation.css"
     },
     {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\css\\hitbox.css",
+      "PackagePath": "staticwebassets\\css\\hitbox.css"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\css\\loadout.css",
+      "PackagePath": "staticwebassets\\css\\loadout.css"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\css\\map.css",
+      "PackagePath": "staticwebassets\\css\\map.css"
+    },
+    {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\css\\root.css",
       "PackagePath": "staticwebassets\\css\\root.css"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\favicon.ico",
@@ -111,6 +127,10 @@
     {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\bolt.svg",
       "PackagePath": "staticwebassets\\images\\bolt.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\character.png",
+      "PackagePath": "staticwebassets\\images\\character.png"
     },
     {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\check.svg",

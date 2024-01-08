@@ -12,6 +12,7 @@
     --white-25: rgba(255, 255, 255, 0.25);
     --blue: #31FFFB;
     --blue-light: #B4FFFE;
+    --blue-dark: #1a8280;
     --red: red;
     --pink: #D765C5;
     --green: #7ACA5E;
@@ -27,5 +28,14 @@ html, body {
 }
 
 .hidden {
+    display: none;
+}
+
+button {
+    font-family: Techno-Race;
+}
+
+
+live-preview-root{
     display: none;
 }
