@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\gameLocation.css"
     },
     {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\css\\hitbox.css",
+      "PackagePath": "staticwebassets\\css\\hitbox.css"
+    },
+    {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\css\\loadout.css",
       "PackagePath": "staticwebassets\\css\\loadout.css"
     },
