@@ -7,25 +7,28 @@
     var locationResponse = Model.LocationPageResponse;
 }
 
-
+<script>
+    var locationResponseData = @Html.Raw(Json.Serialize(locationResponse));
+</script>
+<script src="~/js/main.js"></script>
 
 @section Choices {
     @foreach (var target in locationResponse.TargetLocations)
     {
         if (target.Locked)
         {
-            <a class="button hidden" asp-area="" asp-page="/Location" asp-route-location="@target.Location">@target.Location</a>
+    <a class="button hidden" asp-area="" asp-page="/Location" asp-route-location="@target.Location">@target.Location</a>
         }
         else
         {
-            <a class="button" asp-area="" asp-page="/Location" asp-route-location="@target.Location">@target.Location</a>
+    <a class="button" asp-area="" asp-page="/Location" asp-route-location="@target.Location">@target.Location</a>
         }
-        
+
     }
 }
 
 
-<div class="textbox textbox--red hidden">
+<div id="textbox" class="textbox textbox--red hidden">
     <div class="textbox__container">
         <p class="textbox__character">Shadow Viper</p>
         <button class="textbox__next"></button>
