@@ -187,7 +187,10 @@
     width: 25px;
     padding: 0;
 }
-
+.textbox__next--close {
+    background-image: url(../images/close-light.svg);
+    width: 55px;
+}
 .textbox--red {
     border: 3px solid var(--red);
 }

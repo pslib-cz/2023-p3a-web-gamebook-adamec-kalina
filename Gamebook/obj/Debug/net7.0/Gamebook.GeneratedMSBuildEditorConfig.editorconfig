@@ -9,61 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Gamebook
 build_property.RootNamespace = Gamebook
-build_property.ProjectDir = C:\Users\adame\Desktop\gamebook\2023-p3a-web-gamebook-adamec-kalina\Gamebook\
+build_property.ProjectDir = C:\Users\Maty\OneDrive\Plocha\gamebook\2023-p3a-web-gamebook-adamec-kalina\Gamebook\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\adame\Desktop\gamebook\2023-p3a-web-gamebook-adamec-kalina\Gamebook
+build_property.MSBuildProjectDirectory = C:\Users\Maty\OneDrive\Plocha\gamebook\2023-p3a-web-gamebook-adamec-kalina\Gamebook
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/adame/Desktop/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Death.cshtml]
+[C:/Users/Maty/OneDrive/Plocha/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Death.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVhdGguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adame/Desktop/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/End.cshtml]
+[C:/Users/Maty/OneDrive/Plocha/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/End.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5kLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adame/Desktop/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Error.cshtml]
+[C:/Users/Maty/OneDrive/Plocha/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adame/Desktop/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Help.cshtml]
+[C:/Users/Maty/OneDrive/Plocha/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Help.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGVscC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adame/Desktop/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Index.cshtml]
+[C:/Users/Maty/OneDrive/Plocha/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adame/Desktop/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/LoadOut.cshtml]
+[C:/Users/Maty/OneDrive/Plocha/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/LoadOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9hZE91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adame/Desktop/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Location.cshtml]
+[C:/Users/Maty/OneDrive/Plocha/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Location.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9jYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adame/Desktop/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Map.cshtml]
+[C:/Users/Maty/OneDrive/Plocha/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Map.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adame/Desktop/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Shared/_LocationLayout.cshtml]
+[C:/Users/Maty/OneDrive/Plocha/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Shared/_LocationLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2NhdGlvbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adame/Desktop/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Maty/OneDrive/Plocha/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adame/Desktop/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/_ViewImports.cshtml]
+[C:/Users/Maty/OneDrive/Plocha/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adame/Desktop/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/_ViewStart.cshtml]
+[C:/Users/Maty/OneDrive/Plocha/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/adame/Desktop/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Shared/_Layout.cshtml]
+[C:/Users/Maty/OneDrive/Plocha/gamebook/2023-p3a-web-gamebook-adamec-kalina/Gamebook/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-4rja14fmts

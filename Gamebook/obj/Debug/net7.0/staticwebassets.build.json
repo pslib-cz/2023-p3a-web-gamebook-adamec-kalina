@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4w4567t9q1ED25WenI7ksUSqn+gJR7/UX9Lw70lZdb0=",
+  "Hash": "4UMCrCH1d1tW91MyrYl8vCTk/eV2HWnzEtO6xNP6p6Q=",
   "Source": "Gamebook",
   "BasePath": "_content/Gamebook",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Gamebook\\wwwroot",
       "Source": "Gamebook",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Gamebook.styles.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Gamebook.styles.css",
       "SourceId": "Gamebook",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "Gamebook.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Gamebook.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Gamebook.styles.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Gamebook.bundle.scp.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Gamebook.bundle.scp.css",
       "SourceId": "Gamebook",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "Gamebook.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Gamebook.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Gamebook.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\css\\gameLocation.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\css\\gameLocation.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "css/gameLocation.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\gameLocation.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\css\\LocationBackground.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\css\\LocationBackground.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "css/LocationBackground.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\LocationBackground.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\css\\root.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\css\\root.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "css/root.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\root.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\favicon.ico",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\fonts\\TechnoRaceItalic-eZRWe.otf",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\fonts\\TechnoRaceItalic-eZRWe.otf",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "fonts/TechnoRaceItalic-eZRWe.otf",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\TechnoRaceItalic-eZRWe.otf"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\arrow-big.svg",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\arrow-big.svg",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/arrow-big.svg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\images\\arrow-big.svg"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\arrow-down.svg",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\arrow-down.svg",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/arrow-down.svg",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\images\\arrow-down.svg"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\arrow-left.svg",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\arrow-left.svg",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/arrow-left.svg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\images\\arrow-left.svg"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\arrow-right.svg",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\arrow-right.svg",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/arrow-right.svg",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\images\\arrow-right.svg"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\arrow-right--red.svg",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\arrow-right--red.svg",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/arrow-right--red.svg",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\images\\arrow-right--red.svg"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\arrow-up.svg",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\arrow-up.svg",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/arrow-up.svg",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\images\\arrow-up.svg"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\back_entrance.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\back_entrance.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/background/back_entrance.png",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\images\\background\\back_entrance.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\cyber_lab.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\cyber_lab.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/background/cyber_lab.png",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\images\\background\\cyber_lab.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\dark_alley.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\dark_alley.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/background/dark_alley.png",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\images\\background\\dark_alley.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\death_screen.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\death_screen.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/background/death_screen.png",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\images\\background\\death_screen.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\electro_shop.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\electro_shop.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/background/electro_shop.png",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\images\\background\\electro_shop.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\part_of_the_bar.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\part_of_the_bar.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/background/part_of_the_bar.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\background\\part_of_the_bar.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\quantum_technology.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\quantum_technology.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/background/quantum_technology.png",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\images\\background\\quantum_technology.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\secret_meeting_place.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\secret_meeting_place.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/background/secret_meeting_place.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\images\\background\\secret_meeting_place.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\shady_bar.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\shady_bar.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/background/shady_bar.png",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\images\\background\\shady_bar.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\slum_district.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\slum_district.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/background/slum_district.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\images\\background\\slum_district.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\slum_quarter.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\slum_quarter.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/background/slum_quarter.png",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\images\\background\\slum_quarter.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\tactical_room.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\tactical_room.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/background/tactical_room.png",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\background\\tactical_room.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\workshop.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\workshop.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/background/workshop.png",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\images\\background\\workshop.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\body.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\body.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/body.png",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\images\\body.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\bolt.svg",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\bolt.svg",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/bolt.svg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bolt.svg"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\bolt-wide.svg",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\bolt-wide.svg",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/bolt-wide.svg",
       "AssetKind": "All",
@@ -510,61 +510,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bolt-wide.svg"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\close.svg",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\check.svg",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
-      "BasePath": "_content/Gamebook",
-      "RelativePath": "images/close.svg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\close.svg"
-    },
-    {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\heart.svg",
-      "SourceId": "Gamebook",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
-      "BasePath": "_content/Gamebook",
-      "RelativePath": "images/heart.svg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\heart.svg"
-    },
-    {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\heart-wide.svg",
-      "SourceId": "Gamebook",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
-      "BasePath": "_content/Gamebook",
-      "RelativePath": "images/heart-wide.svg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\heart-wide.svg"
-    },
-    {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\check.svg",
-      "SourceId": "Gamebook",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/check.svg",
       "AssetKind": "All",
@@ -578,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\images\\check.svg"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\chip.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\chip.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/chip.png",
       "AssetKind": "All",
@@ -595,10 +544,78 @@
       "OriginalItemSpec": "wwwroot\\images\\chip.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\map.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\close.svg",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "BasePath": "_content/Gamebook",
+      "RelativePath": "images/close.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\close.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\close-light.svg",
+      "SourceId": "Gamebook",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "BasePath": "_content/Gamebook",
+      "RelativePath": "images/close-light.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\close-light.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\heart.svg",
+      "SourceId": "Gamebook",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "BasePath": "_content/Gamebook",
+      "RelativePath": "images/heart.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\heart.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\heart-wide.svg",
+      "SourceId": "Gamebook",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "BasePath": "_content/Gamebook",
+      "RelativePath": "images/heart-wide.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\heart-wide.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\map.png",
+      "SourceId": "Gamebook",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/map.png",
       "AssetKind": "All",
@@ -612,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\images\\map.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\no-signal.svg",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\no-signal.svg",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/no-signal.svg",
       "AssetKind": "All",
@@ -629,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\images\\no-signal.svg"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\pig.svg",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\pig.svg",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/pig.svg",
       "AssetKind": "All",
@@ -646,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\images\\pig.svg"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\skelleton.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\skelleton.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/skelleton.png",
       "AssetKind": "All",
@@ -663,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\images\\skelleton.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\weapons\\bat.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\weapons\\bat.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/weapons/bat.png",
       "AssetKind": "All",
@@ -680,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\images\\weapons\\bat.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\weapons\\gun.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\weapons\\gun.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/weapons/gun.png",
       "AssetKind": "All",
@@ -697,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\images\\weapons\\gun.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\weapons\\knife.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\weapons\\knife.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "images/weapons/knife.png",
       "AssetKind": "All",
@@ -714,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\images\\weapons\\knife.png"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\fightSystem.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\fightSystem.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "js/fightSystem.js",
       "AssetKind": "All",
@@ -731,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\js\\fightSystem.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\main.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\main.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "js/main.js",
       "AssetKind": "All",
@@ -748,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\pin.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\pin.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "js/pin.js",
       "AssetKind": "All",
@@ -765,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\js\\pin.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\site.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -782,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\swichtabs.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\swichtabs.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "js/swichtabs.js",
       "AssetKind": "All",
@@ -799,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\js\\swichtabs.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -816,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -833,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -850,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -867,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -884,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -901,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -918,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -935,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -952,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -969,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -986,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1003,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1020,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1037,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1054,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1071,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1088,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1105,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1122,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1139,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1156,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1173,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1190,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1207,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1224,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1241,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1258,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1275,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1292,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1309,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1326,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1343,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1360,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1377,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1394,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1411,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1428,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1445,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1462,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1479,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1496,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1513,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1530,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1547,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1564,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1581,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1598,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1615,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1632,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1649,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1666,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1683,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1700,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1717,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1734,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1751,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1768,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\items.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\items.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "story_draft/items.md",
       "AssetKind": "All",
@@ -1785,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\story_draft\\items.md"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\locations.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\locations.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "story_draft/locations.md",
       "AssetKind": "All",
@@ -1802,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\story_draft\\locations.md"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\minigames\\fightSystem.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\minigames\\fightSystem.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "story_draft/minigames/fightSystem.md",
       "AssetKind": "All",
@@ -1819,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\story_draft\\minigames\\fightSystem.md"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\minigames\\PIN.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\minigames\\PIN.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "story_draft/minigames/PIN.md",
       "AssetKind": "All",
@@ -1836,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\story_draft\\minigames\\PIN.md"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\quests.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\quests.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "story_draft/quests.md",
       "AssetKind": "All",
@@ -1853,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\story_draft\\quests.md"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\story.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\story.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "story_draft/story.md",
       "AssetKind": "All",
@@ -1870,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\story_draft\\story.md"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest1.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest1.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "story_draft/StoryLine_StepByStep/quest1.md",
       "AssetKind": "All",
@@ -1887,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\story_draft\\StoryLine_StepByStep\\quest1.md"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest2.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest2.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "story_draft/StoryLine_StepByStep/quest2.md",
       "AssetKind": "All",
@@ -1904,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\story_draft\\StoryLine_StepByStep\\quest2.md"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest3.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest3.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "story_draft/StoryLine_StepByStep/quest3.md",
       "AssetKind": "All",
@@ -1921,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\story_draft\\StoryLine_StepByStep\\quest3.md"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest4_fyz.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest4_fyz.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "story_draft/StoryLine_StepByStep/quest4_fyz.md",
       "AssetKind": "All",
@@ -1938,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\story_draft\\StoryLine_StepByStep\\quest4_fyz.md"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest4_hack.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest4_hack.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "story_draft/StoryLine_StepByStep/quest4_hack.md",
       "AssetKind": "All",
@@ -1955,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\story_draft\\StoryLine_StepByStep\\quest4_hack.md"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest5_fyz.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest5_fyz.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "story_draft/StoryLine_StepByStep/quest5_fyz.md",
       "AssetKind": "All",
@@ -1972,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\story_draft\\StoryLine_StepByStep\\quest5_fyz.md"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest5_hack.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest5_hack.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "story_draft/StoryLine_StepByStep/quest5_hack.md",
       "AssetKind": "All",
@@ -1989,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\story_draft\\StoryLine_StepByStep\\quest5_hack.md"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest6.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest6.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "story_draft/StoryLine_StepByStep/quest6.md",
       "AssetKind": "All",
@@ -2006,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\story_draft\\StoryLine_StepByStep\\quest6.md"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest7.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\StoryLine_StepByStep\\quest7.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "story_draft/StoryLine_StepByStep/quest7.md",
       "AssetKind": "All",
@@ -2023,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\story_draft\\StoryLine_StepByStep\\quest7.md"
     },
     {
-      "Identity": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\todo.md",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\story_draft\\todo.md",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\adame\\Desktop\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
       "RelativePath": "story_draft/todo.md",
       "AssetKind": "All",

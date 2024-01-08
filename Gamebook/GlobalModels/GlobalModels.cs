@@ -16,14 +16,14 @@ public static class GlobalModels
     public static readonly List<Quest> Quests = new()
     {
         new Quest{Number = 1, Name = "Lost Memories", Description = "You have awaken in a foreign district and you have no memories.", Task = "Ask around if anyone knows how you got there."},
-        new Quest{Number = 2, Name = "", Description = "", Task = ""},
-        new Quest{Number = 3, Name = "", Description = "", Task = ""},
-        new Quest{Number = 4, Focus = PlayerFocus.Physics, Name = "", Description = "", Task = ""},
-        new Quest{Number = 4, Focus = PlayerFocus.Hack, Name = "", Description = "", Task = ""},
-        new Quest{Number = 5, Focus = PlayerFocus.Physics, Name = "", Description = "", Task = ""},
-        new Quest{Number = 5, Focus = PlayerFocus.Hack, Name = "", Description = "", Task = ""},
-        new Quest{Number = 6, Name = "", Description = "", Task = ""},
-        new Quest{Number = 7, Name = "", Description = "", Task = ""},
+        new Quest{Number = 2, Name = "First Touch", Description = "Old Merchant told you about the hackers, he spotted near his shop.", Task = "Word on the street is you'll find them at the Shady Bar."},
+        new Quest{Number = 3, Name = "Cyberware", Description = "You've made it into the group, prepare for incoming tasks.", Task = "Get some upgrades from Ripper Dock."},
+        new Quest{Number = 4, Focus = PlayerFocus.Physics, Name = "Rescue Mission", Description = "You have chosen the SKELLETRON. BIG SCARY DUDE!", Task = "Rescue your colleague, be carefull of security."},
+        new Quest{Number = 4, Focus = PlayerFocus.Hack, Name = "Digital Infiltration", Description = "You have chosen the BRAIN CHIP. NERD!", Task = "Hack the corporate database."},
+        new Quest{Number = 5, Focus = PlayerFocus.Physics, Name = "Sabotage", Description = "The corporation is about to launch a new project. Don't let it.", Task = "Stop the corporation from releasing it into the world."},
+        new Quest{Number = 5, Focus = PlayerFocus.Hack, Name = "Information War", Description = "Our networks are facing coordinated cyber attacks.", Task = "Return the favour and STOP THEM!"},
+        new Quest{Number = 6, Name = "Cyber Infiltration", Description = "This task can be done only from the inside.", Task = "Go in and hack them, easy right ;)"},
+        new Quest{Number = 7, Name = "Decisive Confrontation", Description = "STOP THE CORPORATION ONE AND FOR ALL", Task = "MAKE THEM BLEED!"},
     };
 
     public static readonly Dictionary<int, GameEnding> Endings = new()
