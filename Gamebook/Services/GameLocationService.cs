@@ -77,12 +77,11 @@ namespace Gamebook.Services
 
         public List<TargetLocation> GetTargetLocationList(Location location)
         {
-            var result = GetTargetLocations(location).Select(targetLocation => new TargetLocation()
+            return GetTargetLocations(location).Select(targetLocation => new TargetLocation()
             {
                 Location = targetLocation,
                 Locked = IsLocationLocked(targetLocation)
             }).ToList();
-            return result;
         }
         
         public Weapon GetEquippedWeapon()
