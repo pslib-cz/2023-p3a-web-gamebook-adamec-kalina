@@ -66,6 +66,24 @@ namespace Gamebook.Services
                 throw new Exception($"Player stats were not found -> {e.Message}");
             }
         }
+
+        public HitboxType? GetHitbox(Location location)
+        {
+            var gameLocation = GetLocation(location);
+            if (gameLocation.Hitboxes == null) return null;
+            var availableHitbox = gameLocation.Hitboxes.FirstOrDefault(h => h.Available);
+            return availableHitbox?.Type;
+        }
+
+        public List<TargetLocation> GetTargetLocationList(Location location)
+        {
+            var result = GetTargetLocations(location).Select(targetLocation => new TargetLocation()
+            {
+                Location = targetLocation,
+                Locked = IsLocationLocked(targetLocation)
+            }).ToList();
+            return result;
+        }
         
         public Weapon GetEquippedWeapon()
         {
@@ -127,6 +145,7 @@ namespace Gamebook.Services
         public PlayerFocus? GetPlayerFocus()
         {
             var playerFocusString = _session.GetString("playerFocus");
+            if (playerFocusString == null) return null; //Player has no focus yet
             if (!Enum.TryParse(playerFocusString, true, out PlayerFocus playerFocus))
             {
                 throw new Exception("Invalid player focus");

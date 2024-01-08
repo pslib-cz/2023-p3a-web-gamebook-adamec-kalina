@@ -8,32 +8,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="663ff9be-f37e-4dfd-8f97-762eb3d36c87" name="Changes" comment="">
+    <list default="true" id="663ff9be-f37e-4dfd-8f97-762eb3d36c87" name="Changes" comment="ui branch merged">
+      <change afterPath="$PROJECT_DIR$/Enums/HitboxType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/Hitbox.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamebook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamebook/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/GameplayController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/GameplayController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interfaces/IGameLocationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Interfaces/IGameLocationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interfaces/IGameplayService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Interfaces/IGameplayService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/GameLocation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/GameLocation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/LocationPageResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/LocationPageResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Location.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Location.cshtml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/GameLocationService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/GameLocationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/GameplayService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/GameplayService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/SessionHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/SessionHelper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Gamebook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Gamebook.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Gamebook.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Gamebook.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Gamebook.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Gamebook.staticwebassets.runtime.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Gamebook.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Gamebook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Gamebook.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Gamebook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Gamebook.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets.pack.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets/msbuild.Gamebook.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets/msbuild.Gamebook.Microsoft.AspNetCore.StaticWebAssets.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Gamebook.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Gamebook.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.Gamebook.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.Gamebook.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Gamebook.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Gamebook.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Gamebook.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Gamebook.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +139,7 @@
       <workItem from="1702974397638" duration="2215000" />
       <workItem from="1703873126123" duration="32747000" />
       <workItem from="1704368441796" duration="37980000" />
-      <workItem from="1704745408350" duration="1778000" />
+      <workItem from="1704745408350" duration="5966000" />
     </task>
     <task id="LOCAL-00001" summary="session create, LocationLayout create, locationModel passing into pageModel">
       <option name="closed" value="true" />
@@ -347,7 +341,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704654659666</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="ui branch merged">
+      <option name="closed" value="true" />
+      <created>1704747389546</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1704747389546</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,9 +382,27 @@
     <MESSAGE value="Global Models create - quests, weapons &amp;&amp; New Gameplay service Methods add" />
     <MESSAGE value="End screen create with moral score logic &amp;&amp; gameplay controller endponits create" />
     <MESSAGE value="defence -&gt; meditation" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="ui branch merged" />
+    <option name="LAST_COMMIT_MESSAGE" value="ui branch merged" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Services/GameLocationService.cs</url>
+          <line>84</line>
+          <properties documentPath="$PROJECT_DIR$/Services/GameLocationService.cs" initialLine="84" containingFunctionPresentation="Method 'GetTargetLocationList'">
+            <startOffsets>
+              <option value="2999" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3013" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="LaunchSettings">
         <watch expression="previousLocation" />

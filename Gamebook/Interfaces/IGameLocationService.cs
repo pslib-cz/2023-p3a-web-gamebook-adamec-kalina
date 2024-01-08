@@ -10,6 +10,8 @@ namespace Gamebook.Interfaces
         List<Location> GetTargetLocations(Location location);
         List<Dialog> GetDialog(Location location);
         PlayerStats GetPlayerStats();
+        HitboxType? GetHitbox(Location location);
+        List<TargetLocation> GetTargetLocationList(Location location);
         Weapon GetEquippedWeapon();
         PlayerFocus? GetPlayerFocus();
         int GetPlayerMoralScore();

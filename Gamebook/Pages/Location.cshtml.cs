@@ -83,25 +83,15 @@ namespace Gamebook.Pages
 
             ViewData["PlayerHealthPercentage"] = (playerStats.Health > 0) ? (playerStats.Health * 100) / playerStats.MaxHealth : 0;
             ViewData["PlayerEnergyPercentage"] = (playerStats.Energy > 0) ? (playerStats.Energy * 100) / playerStats.MaxEnergy : 0;
-
-
-            List<TargetLocation> targetLocations = new();
-            foreach (var location in _locationService.GetTargetLocations(currentLocation))
-            {
-                var targetLocation = new TargetLocation()
-                {
-                    Location = location,
-                    Locked = _locationService.IsLocationLocked(location)
-                };
-                targetLocations.Add(targetLocation);
-            }
+            
 
             LocationPageResponse = new()
             {
-                TargetLocations = targetLocations,
+                TargetLocations = _locationService.GetTargetLocationList(currentLocation),
                 Dialogs = _locationService.GetDialog(currentLocation),
                 EquipedWeapon = _locationService.GetEquippedWeapon(),
-                PlayerStats = _locationService.GetPlayerStats()
+                PlayerStats = _locationService.GetPlayerStats(),
+                Hitbox = _locationService.GetHitbox(currentLocation)
             };
         }
     }

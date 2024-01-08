@@ -8,4 +8,5 @@ public class LocationPageResponse
     public List<Dialog>? Dialogs { get; set; } = null;
     public PlayerStats PlayerStats { get; set; }
     public Weapon EquipedWeapon { get; set; }
+    public HitboxType? Hitbox { get; set; }
 }

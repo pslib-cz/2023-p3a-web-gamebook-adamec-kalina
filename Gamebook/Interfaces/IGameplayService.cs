@@ -10,6 +10,7 @@ public interface IGameplayService
     void MoralScoreChange(int changeAmount);
     void SetPlayerFocusChoice(PlayerFocus playerFocus);
     void SetDialogNotAvailable();
+    void SetHitboxNotAvailable();
     void UnlockLocation(Location locationString);
     void EquipWeapon(WeaponType type);
     void SetQuestCompleted(int number);

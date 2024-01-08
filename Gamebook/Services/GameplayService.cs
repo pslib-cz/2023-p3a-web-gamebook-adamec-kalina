@@ -101,9 +101,29 @@ public class GameplayService : IGameplayService
         }
         catch (Exception e)
         {
-            throw new Exception($"Error while trying to set a dialog unavailable -> {e.Message}");
+            throw new Exception($"Error while trying to set a dialog in [{currentLocation}] unavailable -> {e.Message}");
         }
     }
+
+    public void SetHitboxNotAvailable()
+    {
+        var currentLocation = _locationService.GetCurrentLocation();
+        try
+        {
+            var location = _locationService.GetLocation(currentLocation);
+            if (location.Hitboxes.Count == 0 || location.Hitboxes.FirstOrDefault(h => h.Available) == null) return;//No hitboxes at all or just no available ones on the current page
+
+            // Change the hitbox available state
+            location.Hitboxes.First(h => h.Available).Available = false;
+                
+            // Save the changed location info back into the session
+            string serializedLocation= JsonSerializer.Serialize(location);
+            _session.SetString(currentLocation.ToString(), serializedLocation);
+        }
+        catch (Exception e)
+        {
+            throw new Exception($"Error while trying to set a hitbox in [{currentLocation}] unavailable -> {e.Message}");
+        }    }
 
     /// <summary>
     /// Sets a specific location as Locked = false

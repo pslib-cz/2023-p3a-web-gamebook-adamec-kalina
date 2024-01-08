@@ -16,17 +16,17 @@ public class SessionHelper : ISessionHelper
     private Dictionary<Location, GameLocation> gameLocationDataDict = new()
     {
         {Location.SlumDistrict, new GameLocation(){Title = "Slum District", BackgroundImage = "slum-district", Locked = false}},
-        {Location.SlumQuarter, new GameLocation(){Title = "Slum Quarter", BackgroundImage = "slum-quarter", Locked = false}},
-        {Location.ElectroShop, new GameLocation(){Title = "Electro Shop", BackgroundImage = "electro-shop", Locked = false}},
-        {Location.DarkAlley, new GameLocation(){Title = "Dark Alley", BackgroundImage = "dark-alley"}},
-        {Location.ShadyBar, new GameLocation(){Title = "Shady Bar", BackgroundImage = "shady-bar"}},
-        {Location.PartOfTheBar, new GameLocation(){Title = "Part of the Bar", BackgroundImage = "part-of-the-bar"}},
-        {Location.BackEntrance, new GameLocation(){Title = "Back Entrance", BackgroundImage = "back-entrance"}},
-        {Location.SecretMeetingPlace, new GameLocation(){Title = "Secret Meeting Place", BackgroundImage = "secret-meeting-place"}},
-        {Location.Workshop, new GameLocation(){Title = "Workshop", BackgroundImage = "workshop"}},
-        {Location.TacticalRoom, new GameLocation(){Title = "Tactical Room", BackgroundImage = "tactical-room"}},
-        {Location.CyberLab, new GameLocation(){Title = "Cyber Lab", BackgroundImage = "cyber-lab"}},
-        {Location.QuantumTechnology, new GameLocation(){Title = "Quantum Technology", BackgroundImage = "quantum-technology"}},
+        {Location.SlumQuarter, new GameLocation(){Title = "Slum Quarter", BackgroundImage = "slum-quarter", Locked = false, Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.ElectroShop, new GameLocation(){Title = "Electro Shop", BackgroundImage = "electro-shop", Locked = false, Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.DarkAlley, new GameLocation(){Title = "Dark Alley", BackgroundImage = "dark-alley", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}, new(){Type = HitboxType.Fight}, new(){Type = HitboxType.Dialog}}}},
+        {Location.ShadyBar, new GameLocation(){Title = "Shady Bar", BackgroundImage = "shady-bar", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.PartOfTheBar, new GameLocation(){Title = "Part of the Bar", BackgroundImage = "part-of-the-bar", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.BackEntrance, new GameLocation(){Title = "Back Entrance", BackgroundImage = "back-entrance", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Pin}}}},
+        {Location.SecretMeetingPlace, new GameLocation(){Title = "Secret Meeting Place", BackgroundImage = "secret-meeting-place", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.Workshop, new GameLocation(){Title = "Workshop", BackgroundImage = "workshop", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.TacticalRoom, new GameLocation(){Title = "Tactical Room", BackgroundImage = "tactical-room", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.CyberLab, new GameLocation(){Title = "Cyber Lab", BackgroundImage = "cyber-lab", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.QuantumTechnology, new GameLocation(){Title = "Quantum Technology", BackgroundImage = "quantum-technology", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
     };
 
     // Default game locations dialog states
