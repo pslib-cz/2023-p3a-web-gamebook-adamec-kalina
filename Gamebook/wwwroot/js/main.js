@@ -10,16 +10,19 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    const startDialog = document.getElementById('hitbox');
+    const hitbox = document.getElementById('hitbox');
 
     
-    //startDialog.addEventListener('click', ToggleDialog);    
-    
+    //hitbox.addEventListener('click', ToggleDialog);
+    //hitbox.addEventListener('click', InitiateGame); 
 
-    startDialog.addEventListener('click', initiateGame);
+    hitbox.addEventListener('click', ShowPin);
 
-    const nextButton = document.querySelector('.textbox__next');
-    nextButton.addEventListener('click', onNextButtonClick);
+    const nextInDialogue = document.querySelector('.textbox__next');
+    nextInDialogue.addEventListener('click', onNextButtonClick);
+
+    const closePin = document.querySelector('.pin__close');
+    closePin.addEventListener('click', HidePin);
 
 
 

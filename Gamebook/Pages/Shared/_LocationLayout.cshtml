@@ -59,30 +59,11 @@
         </div>        
         <button class="button button--hit hidden" id="hit-btn">Hit!</button>
 
-
         <div class="location-choice" id="location-choice">
-        @await RenderSectionAsync("Choices", required:true)
+            @await RenderSectionAsync("Choices", required:true)
         </div>
     </div>
 
-
-    <div class="enemy-stats hidden" id="enemy-stats">
-        <p class="enemy-stats__enemy">Enemy <span class="enemy-stats__enemy__pink"><span id="enemy-health">50</span>/<span id="enemy-max-health">50</span></span></p>
-        <div class="progress-bar progress-bar--health"><span id="bar-enemy-health" class="progress-bar__bar"></span></div>
-    </div>
-
-    <div class="minigame--green_square hidden" id="game-container">
-        <div class="minigame__square" id="green-square"></div>
-        <div class="minigame__stick" id="stick"></div>
-    </div>
-
-    <div class="fight-info hidden" id="info-box">
-        <p class="fight-info__text" id="info-box-text">It's your turn.</p>
-        <div class="fight-info__cont">
-            <p class="fight-info__text fight-info__text--pink" id="info-box-health"></p>
-            <p class="fight-info__text fight-info__text--green" id="info-box-energy"></p>
-        </div>
-    </div>
 
 
     <script src="~/js/site.js" asp-append-version="true"></script>

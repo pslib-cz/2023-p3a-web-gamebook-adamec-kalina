@@ -15,7 +15,7 @@ const enemyMaxDamage = 10;
 
 
 
-function initiateGame() {
+function InitiateGame() {
     playerHealth = playerMaxHealth;
     playerEnergy = playerMaxEnergy;
     enemyHealth = enemyMaxHealth;

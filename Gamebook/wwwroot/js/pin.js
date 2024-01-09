@@ -98,3 +98,13 @@ function checkGuess(guess) {
 
     return { W: correctPositions, L: correctNumbers };
 }
+
+function ShowPin() {
+    document.getElementById('pin').classList.remove('pin--hidden');  
+    console.log('ShowPin');
+}
+
+function HidePin() {
+    document.getElementById('pin').classList.add('pin--hidden');
+}
+
