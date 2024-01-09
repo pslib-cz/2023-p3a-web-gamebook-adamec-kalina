@@ -29,7 +29,7 @@
         <div class="menu__overflow" onclick="toggleMenu()"></div>
     </section>
 
-    <div class="hitbox" id="hitbox" style="height:250px;width:250px; background-color:transparent;"></div>
+    <div class="hitbox" id="hitbox"></div>
 
     @RenderBody()
 
@@ -62,6 +62,7 @@
     </div>
 
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/dialogue.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

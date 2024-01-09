@@ -191,7 +191,9 @@
 .textbox__next--close {
     background-image: url(../images/close-light.svg);
     width: 55px;
+
 }
+
 .textbox--red {
     border: 3px solid var(--red);
 }
@@ -204,7 +206,10 @@
     .textbox--red .textbox__next {
         background-image: url(../images/arrow-right--red.svg);
     }
-
+    .textbox--red .textbox__next--close {
+        background-image: url(../images/close-light-red.svg);
+        width: 55px;
+    }
 
 
 
