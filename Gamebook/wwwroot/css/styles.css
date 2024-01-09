@@ -50,7 +50,12 @@
         background-repeat: no-repeat;
     }
 
-
+.button--wide {
+    padding: .7em .5em;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 2em;
+}
 
 /*PROGRESS BAR*/
 .progress-bar {

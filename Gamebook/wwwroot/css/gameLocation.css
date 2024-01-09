@@ -658,3 +658,90 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
+
+
+/*PIN*/
+
+.pin{
+    color: var(--white);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+
+    text-align: center;
+    width: 385px;
+    background-color: var(--grey-dark);
+    border-radius: 16px;
+    padding: 16px;
+
+    box-shadow: 0 0 15px 5px var(--blue);
+
+}
+
+
+.pin__heading{
+    font-size: 4em;
+    margin: 0;
+}
+
+.pin__input{
+    width: calc(100% - 12px);
+    height: 70px;
+    font-size: 2em;
+    background-color: var(--blue-light);
+    border-radius: 16px;
+    font-weight: bolder;
+    text-align: center;
+    border: 3px solid var(--blue, #31FFFB);
+
+}
+.pin__attempts{
+    margin: 16px;
+    font-size: 24px;
+}
+.pin__cont{
+    border-radius: 15px;
+    border: 6px solid var(--blue, #31FFFB);
+    padding: 0px 24px 24px 24px;
+    margin: 0 auto 1em auto;
+}
+
+.pin__cont__heading{
+    color: var(--blue-light, #B4FFFE);
+    font-size: 2.5em;
+    margin: 0 0 24px 0;
+
+}
+.pin_history{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 36px);
+
+}
+
+.pin_history p{
+    font-size: 1.2em;
+    width: fit-content;
+    margin: 0;
+}
+
+.pin_history p span{
+    color: var(--blue);
+}
+
+.pin__close{
+    cursor: pointer;
+    height: 65px;
+    width:  65px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    background-image: url(../images/close-light.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
