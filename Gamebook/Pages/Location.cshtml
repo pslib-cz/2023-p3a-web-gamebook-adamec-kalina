@@ -39,22 +39,12 @@
 <div class="pin hidden">
     <span class="pin__close"></span>
     <p class="pin__heading">Door Pin</p>
-    <input class="pin__input" type="number" min="0" max="99999">
-    <p class="pin__attempts">Attempts left: 10</p>
+    <input id="pin-input" class="pin__input" type="number" min="0" max="99999">
+    <p id="pin-attempts" class="pin__attempts">Attempts left: 10</p>
     <div class="pin__cont">
         <p class="pin__cont__heading">Attempt history</p>
-        <div class="pin_history">
-            <p>88888 0<span>W</span> 0L</p>
-            <p>88888 0<span>W</span> 0<span>L</span></p>
-            <p>88888 0<span>W</span> 0<span>L</span></p>
-            <p>88888 0<span>W</span> 0<span>L</span></p>
-            <p>88888 0<span>W</span> 0<span>L</span></p>
-            <p>88888 0<span>W</span> 0<span>L</span></p>
-            <p>88888 0<span>W</span> 0<span>L</span></p>
-            <p>88888 0<span>W</span> 0<span>L</span></p>
-            <p>88888 0<span>W</span> 0<span>L</span></p>
-            <p>88888 0<span>W</span> 0<span>L</span></p>
+        <div id="pin-history" class="pin_history">
         </div>
     </div>
-    <button class="button button--blue button--wide">Attempt Hack</button>
+    <button onclick="submitGuess()" class="button button--blue button--wide">Attempt Hack</button>
 </div>

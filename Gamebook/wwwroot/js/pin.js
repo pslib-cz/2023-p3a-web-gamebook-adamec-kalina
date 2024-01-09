@@ -51,17 +51,17 @@ function generateCode() {
 
 
 function submitGuess() {
-    let guess = document.getElementById('guess').value;
+    let guess = document.getElementById('pin-input').value;
     if (guess.length !== codeLength) {
         alert(`Please enter a ${codeLength}-digit code.`);
         return;
     }
 
     let result = checkGuess(guess);
-    document.getElementById('feedback').innerHTML += `<p>${guess}: ${result.W}W ${result.L}L</p>`;
+    document.getElementById('pin-history').innerHTML += `<p>${guess}: ${result.W}<span>W</span> ${result.L}<span>L</span></p>`;
 
     attempts--;
-    document.getElementById('attempts').innerHTML = `Attempts remaining: ${attempts}`;
+    document.getElementById('pin-attempts').innerHTML = `Attempts left: ${attempts}`;
 
     if (result.W === codeLength) {
         alert('Congratulations! You cracked the code!');
