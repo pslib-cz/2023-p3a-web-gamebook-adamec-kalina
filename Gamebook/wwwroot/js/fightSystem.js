@@ -1,9 +1,13 @@
 // changable variables from backend
-const energyCost = 5;
-const playerDamage = 35;
+console.log(locationResponseData.playerStats.maxHealth);
 
-const playerMaxHealth = 50;
-const playerMaxEnergy = 50;
+
+const energyCost = locationResponseData.equipedWeapon.energyConsumption;
+//const playerDamage = locationResponseData.equipedWeapon.damage;
+const playerDamage = 80;
+
+const playerMaxHealth = locationResponseData.playerStats.maxHealth;
+const playerMaxEnergy = locationResponseData.playerStats.maxEnergy;
 
 const enemyMaxHealth = 100;
 const enemyMaxDamage = 10;
@@ -19,8 +23,6 @@ function initiateGame() {
     isGameOver = false;
 
     // show max health, energy
-    document.getElementById("player-max-health").textContent = playerMaxHealth;
-    document.getElementById("player-max-energy").textContent = playerMaxEnergy;
     document.getElementById("enemy-max-health").textContent = enemyMaxHealth;
     updateStats();
 
@@ -32,25 +34,25 @@ function initiateGame() {
 
     // hide menu , hitbox and location choices
     document.getElementById('hitbox').classList.add('hidden');
-    document.getElementById('sidemenu').classList.add('hidden');
+    document.querySelector('.sidemenu').classList.add('hidden');
     document.getElementById('location-choice').classList.add('hidden');
-
+    console.log("Game started");    
 
 }
 
 function initiateAttack() {
-    if (playerEnergy >= energyCost) { // if player has less energy than needed -> dont attack
-        playerEnergy -= energyCost;
+    if (playerEnergy >= -energyCost) { // if player has less energy than needed -> dont attack
+        playerEnergy -= -energyCost;
         showMiniGame(() => { // show minigame
             if (checkHit()) { // if hit -> decrease health, update infobox
                 currentAction = 'attack';
                 enemyHealth -= playerDamage;
                 console.log("You hit the enemy");
-                updateInfoBox("You hit the enemy", -playerDamage, -energyCost);
+                updateInfoBox("You hit the enemy", -playerDamage, energyCost);
             } else { // if not hit -> update infobox
                 currentAction = 'mised';
                 console.log("You missed")
-                updateInfoBox("You missed", null, -energyCost);
+                updateInfoBox("You missed", null, energyCost);
             }
             updateStats();
             enemyTurn();
@@ -93,18 +95,17 @@ function enemyTurn() {
         setTimeout(function () {
             if (isGameOver) return;
             if (currentAction === "attack") {
-                if (Math.random() < 0.5) {
+                if (Math.random() < 0.6) { //TODO adjust values
                     enemyAttack();
                 } else {
                     enemyDefend();
                 }
             }
             else {
-                console.log("nochoice");
                 enemyAttack();
             }
             document.getElementById('attack-btn').classList.remove('hidden')
-            document.getElementById('defence-btn').classList.remove('hidden')
+            document.getElementById('meditate-btn').classList.remove('hidden')
         }, 1000);
     }, 1000);
 }
@@ -130,6 +131,12 @@ function enemyDefend() {
 function updateStats() {
     var enemyHealthPercentage = (enemyHealth / enemyMaxHealth) * 100;
     document.getElementById('bar-enemy-health').style.width = enemyHealthPercentage + '%';
+
+    var playerHealthPercentage = (playerHealth / playerMaxHealth) * 100;
+    document.getElementById('bar-player-health').style.width = playerHealthPercentage + '%';
+    var playerEnergyPercentage = (playerEnergy / playerMaxEnergy) * 100;
+    document.getElementById('bar-player-energy').style.width = playerEnergyPercentage + '%';
+
 
     // stats - health, energy
     document.getElementById("player-health").textContent = playerHealth;
@@ -157,7 +164,7 @@ function checkGameOver() {
 function GameOver() {
 
     document.getElementById('attack-btn').disabled = true;
-    document.getElementById('defence-btn').disabled = true;
+    document.getElementById('meditate-btn').disabled = true;
 
     hideMiniGame();
 
@@ -170,12 +177,13 @@ function GameOver() {
 
     // show hitbox, menu and location choices
     document.getElementById('hitbox').classList.remove('hidden');
-    document.getElementById('sidemenu').classList.remove('hidden');
+    document.querySelector('.sidemenu').classList.remove('hidden');
     document.getElementById('location-choice').classList.remove('hidden');
 
     //send data to backend
     HealthChange(playerHealth);
     EnergyChange(playerEnergy);
+    console.log("backend updated")
 }
 
 
@@ -189,7 +197,7 @@ let stickInterval = null;
 
 function showMiniGame(onComplete) {
     document.getElementById('attack-btn').classList.add('hidden')
-    document.getElementById('defence-btn').classList.add('hidden')
+    document.getElementById('meditate-btn').classList.add('hidden')
 
     document.getElementById('hit-btn').classList.remove('hidden')
     document.getElementById('game-container').classList.remove('hidden');
@@ -216,7 +224,6 @@ function hideMiniGame() {
 function randomizeGreenSquare() {
     let maxLeft = container.offsetWidth - greenSquare.offsetWidth;
     greenSquare.style.left = Math.floor(Math.random() * maxLeft) + 'px';
-    console.log(maxLeft);
 }
 function moveStick() {
     if (stickInterval) clearInterval(stickInterval);
@@ -227,7 +234,7 @@ function moveStick() {
             stickPos = 0;
         }
         stick.style.left = stickPos + 'px';
-    }, 5);
+    }, 1);
 }
 function checkHit() {
     let stickRect = stick.getBoundingClientRect();
@@ -245,10 +252,6 @@ function updateInfoBox(text, healthChange, energyChange) {
     document.getElementById('info-box-health').textContent = healthChange ? `${healthChange > 0 ? '+' : ''}${healthChange}hp` : '';
     document.getElementById('info-box-energy').textContent = energyChange ? `${energyChange > 0 ? '+' : ''}${energyChange}energy` : '';
 }
-
-
-
-initiateGame();
 
 
 
