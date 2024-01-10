@@ -79,3 +79,10 @@
     top: 44%;
     border-radius: 15px;
 }
+
+.back-entrance .hitbox {
+    height: 45vh;
+    width: 20vh;
+    left: 50%;
+    top: 25%;
+}

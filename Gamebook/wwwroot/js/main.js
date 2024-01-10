@@ -12,11 +12,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const hitbox = document.getElementById('hitbox');
 
-    
-    //hitbox.addEventListener('click', ToggleDialog);
-    //hitbox.addEventListener('click', InitiateGame); 
 
-    hitbox.addEventListener('click', ShowPin);
+    if (locationResponseData.hitbox == "Dialog") {
+        hitbox.addEventListener('click', function () {
+            ToggleDialog();
+            SetHitboxNotAvailable();
+        });
+    }
+    else if (locationResponseData.hitbox == "Fight") {
+        hitbox.addEventListener('click', function () {
+            InitiateGame();
+            SetHitboxNotAvailable();
+        });
+    } else if (locationResponseData.hitbox == "Pin") {
+        hitbox.addEventListener('click', function () {
+            ShowPin()
+            SetHitboxNotAvailable();
+        });
+    }
+
 
     const nextInDialogue = document.querySelector('.textbox__next');
     nextInDialogue.addEventListener('click', onNextButtonClick);
@@ -30,3 +44,12 @@ document.addEventListener('DOMContentLoaded', function () {
     updateDialogueText(currentDialog);
 }); 
 
+
+function SetHitboxNotAvailable() {
+    fetch('/Gameplay/SetHitboxNotAvailable ', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    });
+}

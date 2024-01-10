@@ -183,7 +183,12 @@ function GameOver() {
     //send data to backend
     HealthChange(playerHealth);
     EnergyChange(playerEnergy);
+
     console.log("backend updated")
+
+    setTimeout(function () {
+        location.reload(true);
+    }, 200);
 }
 
 
