@@ -1,9 +1,25 @@
 @page
+@using Gamebook.Enums
 @model Gamebook.Pages.LoadOut
 
 @{
     Layout = null;
     var loadOutResponse = Model.LoadOutPageResponse;
+    string loadoutWear = default;
+    switch (loadOutResponse.PlayerFocus)
+    {
+        case(null):
+            break;
+        case(PlayerFocus.Physics):
+            loadoutWear = "Physics";
+            break;
+        case(PlayerFocus.Hack):
+            loadoutWear = "Hack";
+            break;
+        case(PlayerFocus.Frajer):
+            loadoutWear = "Physics Hack";
+            break;
+    }
 }
 
 <!DOCTYPE html>
@@ -58,9 +74,9 @@
                 <span class="cont__inventory__item"></span>
             </div>
         </div>
-
-
-        <div class="loadout__cont loadout__cont--cyberware loadout__cont--chip loadout__cont--body">
+        
+        
+        <div class="loadout__cont loadout__cont--cyberware loadout__cont--chip loadout__cont--body @loadoutWear">
             <p class="cont__heading">Cyberware</p>
             <div class="cont__cyberware">
                 <span class="cont__cyberware__item"></span>

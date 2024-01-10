@@ -4,4 +4,5 @@ public enum PlayerFocus
 {
     Physics,
     Hack,
+    Frajer
 }

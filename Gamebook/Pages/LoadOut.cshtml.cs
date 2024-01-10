@@ -19,7 +19,8 @@ public class LoadOut : PageModel
     {
         LoadOutPageResponse = new()
         {
-            CurrentLocation = _locationService.GetCurrentLocation()
+            CurrentLocation = _locationService.GetCurrentLocation(),
+            PlayerFocus = _locationService.GetPlayerFocus()
         };
         
     }
