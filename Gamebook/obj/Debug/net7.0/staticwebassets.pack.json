@@ -189,6 +189,10 @@
       "PackagePath": "staticwebassets\\images\\weapons\\knife.png"
     },
     {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\choices.js",
+      "PackagePath": "staticwebassets\\js\\choices.js"
+    },
+    {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\dialogue.js",
       "PackagePath": "staticwebassets\\js\\dialogue.js"
     },

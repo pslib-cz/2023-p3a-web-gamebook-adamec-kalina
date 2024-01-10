@@ -518,3 +518,40 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/*CHOICES*/
+.choices {
+    
+
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 32px);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 24px 16px 16px 16px;
+    text-align: center;
+    background-color: var(--black80);
+}
+
+.choices__text {
+    font-size: 24px;
+    color: var(--white);
+    margin: 0;
+}
+
+.choices__choice.selected {
+    transition: box-shadow .2s ease-in-out;
+}
+.choices__choice.selected {
+    box-shadow: 0px 0px 10px 5px var(--red, #F00);
+}
+
+choices__submit.selected {
+    transition: all .2s ease-in-out;
+}
+.choices__submit.enabled {
+    opacity: 1;
+    border: 1px solid var(--blue, #31FFFB);
+    background-color: var(--black50);
+}

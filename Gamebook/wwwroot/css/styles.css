@@ -57,6 +57,21 @@
     font-size: 2em;
 }
 
+.button--choice{
+    width: 100%;
+    border-radius: 25px;
+    opacity: .5;
+    border: none;
+    background-color: black;
+}
+
+
+.button--red{
+    border: 1px solid var(--red);
+    opacity: 1;
+    background-color: var(--black50);
+}
+
 /*PROGRESS BAR*/
 .progress-bar {
     overflow: hidden;

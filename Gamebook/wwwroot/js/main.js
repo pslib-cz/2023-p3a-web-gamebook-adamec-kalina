@@ -12,9 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const hitbox = document.getElementById('hitbox');
 
-
+    
     if (locationResponseData.hitbox == "Dialog") {
         hitbox.addEventListener('click', function () {
+            updateDialogueText(currentDialog);
             ToggleDialog();
             SetHitboxNotAvailable();
         });
@@ -29,19 +30,17 @@ document.addEventListener('DOMContentLoaded', function () {
             ShowPin()
             SetHitboxNotAvailable();
         });
+    } else if (locationResponseData.hitbox == "Choice") {
+        hitbox.addEventListener('click', function () {
+                ShowChoices()
+                SetHitboxNotAvailable();
+        });
     }
 
 
-    const nextInDialogue = document.querySelector('.textbox__next');
-    nextInDialogue.addEventListener('click', onNextButtonClick);
-
-    const closePin = document.querySelector('.pin__close');
-    closePin.addEventListener('click', HidePin);
 
 
 
-
-    updateDialogueText(currentDialog);
 }); 
 
 

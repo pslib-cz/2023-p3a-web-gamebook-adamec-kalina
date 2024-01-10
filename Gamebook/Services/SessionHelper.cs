@@ -25,7 +25,7 @@ public class SessionHelper : ISessionHelper
         {Location.SecretMeetingPlace, new GameLocation(){Title = "Secret Meeting Place", BackgroundImage = "secret-meeting-place", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
         {Location.Workshop, new GameLocation(){Title = "Workshop", BackgroundImage = "workshop", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
         {Location.TacticalRoom, new GameLocation(){Title = "Tactical Room", BackgroundImage = "tactical-room", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.CyberLab, new GameLocation(){Title = "Cyber Lab", BackgroundImage = "cyber-lab", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.CyberLab, new GameLocation(){Title = "Cyber Lab", BackgroundImage = "cyber-lab", Hitboxes = new List<Hitbox>(){new() {Type = HitboxType.Dialog}}}},
         {Location.QuantumTechnology, new GameLocation(){Title = "Quantum Technology", BackgroundImage = "quantum-technology", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
     };
 

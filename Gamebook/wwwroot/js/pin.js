@@ -100,11 +100,23 @@ function checkGuess(guess) {
 }
 
 function ShowPin() {
+    document.getElementById('hitbox').classList.add('hidden');
+    document.querySelector('.sidemenu').classList.add('hidden');
+    document.getElementById('location-choice').classList.add('hidden');
+
     document.getElementById('pin').classList.remove('pin--hidden');  
     console.log('ShowPin');
 }
 
 function HidePin() {
+    document.getElementById('hitbox').classList.remove('hidden');
+    document.querySelector('.sidemenu').classList.remove('hidden');
+    document.getElementById('location-choice').classList.remove('hidden');
+
     document.getElementById('pin').classList.add('pin--hidden');
 }
 
+const closePin = document.querySelector('.pin__close');
+if (document.body.contains(closePin)) {
+    closePin.addEventListener('click', HidePin);
+}

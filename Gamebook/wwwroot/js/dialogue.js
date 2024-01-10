@@ -68,3 +68,8 @@ function SetDialogNotAvailable() {
         location.reload(true);
     }, 200);
 }
+
+const nextInDialogue = document.querySelector('.textbox__next');
+if (document.body.contains(nextInDialogue)) {
+    nextInDialogue.addEventListener('click', onNextButtonClick);
+}
