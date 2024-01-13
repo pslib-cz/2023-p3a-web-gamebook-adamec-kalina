@@ -38,12 +38,11 @@ namespace Gamebook.Services
                 var serializedModel = _session.GetString($"{location}Dialog");
                 if(serializedModel == null) return null;
                 var dialogsList = JsonSerializer.Deserialize<List<Dialog>>(serializedModel);
-                var playerFocusString = _session.GetString("playerFocus");
-
+                var playerFocus = GetPlayerFocus();
                 
-                return !Enum.TryParse(playerFocusString, true, out PlayerFocus playerFocus) ? 
+                return playerFocus == null ? 
                     // No focus set yet
-                    dialogsList.Where(d => d.Available).ToList() :
+                    dialogsList.Where(d => d is { Available: true, DialogFocus: null }).ToList() :
                     // Dialog for the specific focus
                     dialogsList.Where(d => d.Available && d.DialogFocus == playerFocus).ToList();
             }
