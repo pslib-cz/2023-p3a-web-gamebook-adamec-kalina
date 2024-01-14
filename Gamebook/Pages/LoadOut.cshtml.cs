@@ -20,7 +20,9 @@ public class LoadOut : PageModel
         LoadOutPageResponse = new()
         {
             CurrentLocation = _locationService.GetCurrentLocation(),
-            PlayerFocus = _locationService.GetPlayerFocus()
+            PlayerFocus = _locationService.GetPlayerFocus(),
+            PlayerStats = _locationService.GetPlayerStats(),
+            Weapon = _locationService.GetEquippedWeapon().Type
         };
         
     }

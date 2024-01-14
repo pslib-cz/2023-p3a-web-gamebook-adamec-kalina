@@ -20,6 +20,8 @@
             loadoutWear = "Physics Hack";
             break;
     }
+    int healthPercent = (int)((double)loadOutResponse.PlayerStats.Health / (double)loadOutResponse.PlayerStats.MaxHealth * 100);
+    int energyPercent = (int)((double)loadOutResponse.PlayerStats.Energy / (double)loadOutResponse.PlayerStats.MaxEnergy * 100);
 }
 
 <!DOCTYPE html>
@@ -43,15 +45,15 @@
             <div class="cont__stats">
                 <div class="cont__stat_item">
                     <p class="cont__stat__money">MONEY</p>
-                    <p>100</p>
+                    <p>@loadOutResponse.PlayerStats.Money</p>
                 </div>
                 <div class="cont__stat_item">
-                    <div class="progress-bar progress-bar--health progress-bar--wide"><span style="width: 50%;" class="progress-bar__bar"></span></div>
-                    <p>50/50</p>
+                    <div class="progress-bar progress-bar--health progress-bar--wide"><span style="width: @healthPercent%;" class="progress-bar__bar"></span></div>
+                    <p>@loadOutResponse.PlayerStats.Health/@loadOutResponse.PlayerStats.MaxHealth</p>
                 </div>
                 <div class="cont__stat_item">
-                    <div class="progress-bar progress-bar--energy progress-bar--wide"><span style="width: 50%;" class="progress-bar__bar"></span></div>
-                    <p>45/50</p>
+                    <div class="progress-bar progress-bar--energy progress-bar--wide"><span style="width: @energyPercent%;" class="progress-bar__bar"></span></div>
+                    <p>@loadOutResponse.PlayerStats.Energy/@loadOutResponse.PlayerStats.MaxEnergy</p>
                 </div>
             </div>
         </div>
@@ -59,7 +61,7 @@
 
         <div class="loadout__cont loadout__cont--weapon">
             <p class="cont__heading">Weapon</p>
-            <div class="cont__weapon cont__weapon--knife"></div>
+            <div class="cont__weapon @loadOutResponse.Weapon"></div>
         </div>
 
 

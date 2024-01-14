@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9x7BKS6cq1nQZOeY2HM6KzbyHsMpoy2OcWwYJXBkgTQ=",
+  "Hash": "p6XC8PnE8RwiiJ0BVDIq2iq9EaYqGbRK3w673lwU6WI=",
   "Source": "Gamebook",
   "BasePath": "_content/Gamebook",
   "Mode": "Default",
@@ -527,6 +527,23 @@
       "OriginalItemSpec": "wwwroot\\images\\background\\workshop.png"
     },
     {
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\battery.png",
+      "SourceId": "Gamebook",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "BasePath": "_content/Gamebook",
+      "RelativePath": "images/battery.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\battery.png"
+    },
+    {
       "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\body.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
@@ -678,6 +695,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\close-light-red.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\eye.png",
+      "SourceId": "Gamebook",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "BasePath": "_content/Gamebook",
+      "RelativePath": "images/eye.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\eye.png"
     },
     {
       "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\heart.svg",

@@ -91,18 +91,18 @@ p.cont__stat__money {
     height: 100px;
 }
 
-.cont__weapon--knife {
+.cont__weapon.Knife {
     background-image: url(../images/weapons/knife.png);
 }
 
-.cont__weapon--bat {
-    background-image: url(../images/weapons/bat.png);
-}
+    .cont__weapon.Bat {
+        background-image: url(../images/weapons/bat.png);
+    }
 
-.cont__weapon--gun {
-    background-image: url(../images/weapons/gun.png);
-    height: 250px;
-}
+    .cont__weapon.Gun {
+        background-image: url(../images/weapons/gun.png);
+        height: 250px;
+    }
 
 
 
