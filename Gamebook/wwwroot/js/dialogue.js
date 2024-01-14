@@ -29,6 +29,13 @@ function updateDialogueText(Dialog) {
                     closeButton.addEventListener('click', function () {
                         ToggleDialog();
                         SetDialogNotAvailable();
+                        if (dialogue.unlock !== null) {
+                            dialogue.unlock.forEach(location => {
+                                UnlockLocation(location);
+                                console.log(location);
+                            })
+                        }
+                        reload();
                     });
                 }
             }
@@ -56,6 +63,25 @@ function ToggleDialog() {
 
 }
 
+const infobox = document.getElementById('info-box');
+const infoBoxText = document.getElementById('info-box-text');
+
+
+function UnlockLocation(location) {
+    fetch('/Gameplay/UnlockLocation', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(location),
+    });
+
+    infobox.classList.remove('hidden');
+    infoBoxText.textContent = `Location ${location} unlocked`;
+    setTimeout(function () {
+        infobox.classList.add('hidden');
+    }, 500);
+}
 
 function SetDialogNotAvailable() {
     fetch('/Gameplay/SetDialogNotAvailable', {
@@ -64,9 +90,12 @@ function SetDialogNotAvailable() {
             'Content-Type': 'application/json',
         }
     });
+}
+
+function reload() {
     setTimeout(function () {
         location.reload(true);
-    }, 200);
+    }, 500);
 }
 
 const nextInDialogue = document.querySelector('.textbox__next');

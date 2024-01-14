@@ -151,11 +151,11 @@ p.cont__stat__money {
         left: 60%;
     }
 
-loadout__cont--cyberware.Hack .cont__cyberware__item:first-child {
+.loadout__cont--cyberware.Hack .cont__cyberware__item:first-child {
     background-image: url(../images/chip.png);
 }
 
-loadout__cont--cyberware.Physics .cont__cyberware__item:last-child {
+.loadout__cont--cyberware.Physics .cont__cyberware__item:last-child {
     background-image: url(../images/skelleton.png);
 }
 
@@ -170,15 +170,15 @@ loadout__cont--cyberware.Physics .cont__cyberware__item:last-child {
         width: 100%;
     }
 
-.loadout__cont--chip .cont__cyberware_text::after {
+.loadout__cont--cyberware.Hack .cont__cyberware_text::after {
     content: "You have equiped BRAIN CHIP.";
 }
 
-.loadout__cont--body .cont__cyberware_text::after {
+.loadout__cont--cyberware.Physics .cont__cyberware_text::after {
     content: "You have equiped SKELETRON.";
 }
 
-.loadout__cont--chip.loadout__cont--body .cont__cyberware_text::after {
+.loadout__cont--cyberware.Hack.Physics .cont__cyberware_text::after {
     content: "You have equiped SKELETRON and BRAIN CHIP.";
 }
 

@@ -348,8 +348,8 @@
     border-left: 3px solid var(--blue);
 }
 
-/*FIGHT INFOBOX*/
-.fight-info {
+/*INFOBOX*/
+.info {
     background-color: var(--black50);
     border-radius: 15px;
     width: fit-content;
@@ -357,23 +357,23 @@
     padding: 1em;
 }
 
-.fight-info__cont {
+.info__cont {
     display: flex;
     height: fit-content;
     justify-content: center;
 }
 
-.fight-info__text {
+.info__text {
     margin: 0;
     color: white;
     font-size: 24px;
 }
 
-.fight-info__text--pink {
+.info__text--pink {
     color: var(--pink);
 }
 
-.fight-info__text--green {
+.info__text--green {
     color: var(--green);
     margin-left: 5px;
 }

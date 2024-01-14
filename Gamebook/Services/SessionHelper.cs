@@ -17,7 +17,7 @@ public class SessionHelper : ISessionHelper
     {
         {Location.SlumDistrict, new GameLocation(){Title = "Slum District", BackgroundImage = "slum-district", Locked = false}},
         {Location.SlumQuarter, new GameLocation(){Title = "Slum Quarter", BackgroundImage = "slum-quarter", Locked = false, Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.ElectroShop, new GameLocation(){Title = "Electro Shop", BackgroundImage = "electro-shop", Locked = false, Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.ElectroShop, new GameLocation(){Title = "Electro Shop", BackgroundImage = "electro-shop", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
         {Location.DarkAlley, new GameLocation(){Title = "Dark Alley", BackgroundImage = "dark-alley", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}, new(){Type = HitboxType.Fight}, new(){Type = HitboxType.Dialog}}}},
         {Location.ShadyBar, new GameLocation(){Title = "Shady Bar", BackgroundImage = "shady-bar", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
         {Location.PartOfTheBar, new GameLocation(){Title = "Part of the Bar", BackgroundImage = "part-of-the-bar", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
@@ -48,7 +48,7 @@ public class SessionHelper : ISessionHelper
         }},
         {$"{Location.ElectroShop}Dialog", new List<Dialog>()
             { new() {Unlock = new() { Location.DarkAlley.ToString() }, Texts = new List<string> {
-                "Shadow Viper: Hello, the Old Trader sent me to you. He needs a component for repair.",
+                "Shadow Viper: Hello, the Old Merchant sent me to you. He needs a component for repair.",
                 "Jake: Oh, the old jerk. Oh well, I know what he needs. But it's not free. You have to promise me something.",
                 "Shadow Viper: What do you want in return?", "Jake: I've been having trouble with a local gang lately. I need someone to make sure they leave me alone. You don't have to confront them directly, just let them know it would be better to leave me alone.",
                 "Shadow Viper: What am I supposed to do? I have no power or influence here.",
@@ -58,7 +58,7 @@ public class SessionHelper : ISessionHelper
             }}, new() {Texts = new List<string>()
             {
                 "Shadow Viper: I've dealt with the gangs. They should leave you alone.",
-                "Jake: Good job, now I can hopefully concentrate on my work. Here's the component for the Old Trader. Thanks for your help."
+                "Jake: Good job, now I can hopefully concentrate on my work. Here's the component for the Old Merchant. Thanks for your help."
             }}
         }},
         {$"{Location.DarkAlley}Dialog", new List<Dialog>()
@@ -92,7 +92,7 @@ public class SessionHelper : ISessionHelper
             }}
         }},
         {$"{Location.BackEntrance}Dialog", new List<Dialog>()
-            { new() {Unlock = new() { Location.SecretMeetingPlace.ToString() }, Texts = new List<string> {
+            { new() { Texts = new List<string> {
                 "Shadow Viper: Good evening, I heard you might know something about a group that meets in secret.",
                 "Mysterious Guest:  Maybe yes, maybe no. Why would I tell a stranger anything?",
                 "Shadow Viper: I need to meet them. I have important information they might be interested in.",
