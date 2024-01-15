@@ -95,20 +95,19 @@ p.cont__stat__money {
     background-image: url(../images/weapons/knife.png);
 }
 
-    .cont__weapon.Bat {
-        background-image: url(../images/weapons/bat.png);
-    }
+.cont__weapon.Bat {
+    background-image: url(../images/weapons/bat.png);
+}
 
-    .cont__weapon.Gun {
-        background-image: url(../images/weapons/gun.png);
-        height: 250px;
-    }
+.cont__weapon.Gun {
+    background-image: url(../images/weapons/gun.png);
+}
 
 
 
 /*INVENTORY CONT*/
 .cont__inventory {
-    width: 100%;
+    height: calc(100% - .8em - 63px);
     display: grid;
     gap: .5em;
     grid-template-columns: repeat(3, 1fr);
@@ -120,6 +119,18 @@ p.cont__stat__money {
     background-color: var(--blue);
     border-radius: 8px;
     background: var(--grey);
+
+    overflow: hidden;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cont__inventory__item.Eye {
+    background-image: url(../images/items/eye.png);
+}
+.cont__inventory__item.Battery {
+    background-image: url(../images/items/battery.png);
 }
 
 /*CYBERWARE CONT*/

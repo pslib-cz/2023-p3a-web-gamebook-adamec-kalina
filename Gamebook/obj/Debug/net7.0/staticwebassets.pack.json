@@ -117,10 +117,6 @@
       "PackagePath": "staticwebassets\\images\\background\\workshop.png"
     },
     {
-      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\battery.png",
-      "PackagePath": "staticwebassets\\images\\battery.png"
-    },
-    {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\body.png",
       "PackagePath": "staticwebassets\\images\\body.png"
     },
@@ -157,16 +153,20 @@
       "PackagePath": "staticwebassets\\images\\close.svg"
     },
     {
-      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\eye.png",
-      "PackagePath": "staticwebassets\\images\\eye.png"
-    },
-    {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\heart-wide.svg",
       "PackagePath": "staticwebassets\\images\\heart-wide.svg"
     },
     {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\heart.svg",
       "PackagePath": "staticwebassets\\images\\heart.svg"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\items\\battery.png",
+      "PackagePath": "staticwebassets\\images\\items\\battery.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\items\\eye.png",
+      "PackagePath": "staticwebassets\\images\\items\\eye.png"
     },
     {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\map.png",
