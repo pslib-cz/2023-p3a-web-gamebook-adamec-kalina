@@ -299,6 +299,8 @@
     margin: 0 auto;
     width: 95%;
     font-size: 24px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .enemy-stats__enemy__pink {
@@ -554,4 +556,52 @@ choices__submit.selected {
     opacity: 1;
     border: 1px solid var(--blue, #31FFFB);
     background-color: var(--black50);
+}
+
+
+
+@media (min-width: 768px) {
+    /*HEADER*/
+    .header{
+        height: 90px;
+    }
+    .header__heading {
+        font-size: 50px;
+    }
+    .header:before {
+        right: -75px;
+        border-width: 90px 75px 0 0;
+    }    
+    .header:after {
+        left: -75px;
+        border-width: 90px 0 0 75px;
+    }
+
+
+    /*TEXTBOX*/
+    .textbox .textbox__character {
+        font-size: 3em;
+    }
+    .textbox__text {
+        font-size: 2em;
+    }
+    .textbox__next {
+        background-size: contain;
+        width: 55px;
+    }
+
+    /*FIGHT*/
+    .wrap, .minigame--green_square {
+        max-width: 1000px;
+        margin: 0 auto;
+    }    
+    .minigame--green_square {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .wrap .button{
+        font-size: 32px;
+        padding: .7em 1em;
+    }
 }
