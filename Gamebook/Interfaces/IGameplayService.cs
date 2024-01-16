@@ -15,6 +15,6 @@ public interface IGameplayService
     void EquipWeapon(WeaponType type);
     void SetQuestCompleted(int number);
     void AddNewQuest(int number);
-    void GetItem(Item item);
-    void TakeItem(Item item);
+    void AddItem(Item item);
+    void RemoveItem(Item item);
 }

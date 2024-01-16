@@ -213,26 +213,43 @@ public class GameplayService : IGameplayService
         
     }
 
-    public void GetItem(Item item)
+    public void AddItem(Item item)
     {
+        var inventoryString = _session.GetString("inventory");
+
         try
         {
-            // TODO
+            var inventory = JsonSerializer.Deserialize<List<Item>>(inventoryString);
+            // Add the new item
+            inventory.Add(item);
+            string serializedInventory = JsonSerializer.Serialize(inventory);
+            // Save the modified inventory
+            _session.SetString("inventory", serializedInventory);
         }
         catch (Exception e)
         {
-            throw new Exception($"Error while getting item -> {e.Message}");
+            throw new Exception($"Error while adding an item -> {e.Message}");
         }
     }
-    public void TakeItem(Item item)
+    public void RemoveItem(Item item)
     {
+        var inventoryString = _session.GetString("inventory");
         try
         {
-            // TODO
+            var inventory = JsonSerializer.Deserialize<List<Item>>(inventoryString);
+            if (!inventory.Contains(item))
+            {
+                throw new Exception($"item [{item}] cannot be removed since it does not appear to be in the inventory");
+            }
+            // Remove the item
+            inventory.Remove(item);
+            string serializedInventory = JsonSerializer.Serialize(inventory);
+            // Save the modified inventory
+            _session.SetString("inventory", serializedInventory);
         }
         catch (Exception e)
         {
-            throw new Exception($"Error while taking item -> {e.Message}");
+            throw new Exception($"Error while removing an item -> {e.Message}");
         }
     }
 

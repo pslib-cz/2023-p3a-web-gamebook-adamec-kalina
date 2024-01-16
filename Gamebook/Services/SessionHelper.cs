@@ -55,7 +55,7 @@ public class SessionHelper : ISessionHelper
                 "Jake: You're big and you look pretty dangerous. All you have to do is show up in their territory and show off a little. Talk about joining a bigger group, come up with something. They're pretty paranoid, so that's enough.", 
                 "Shadow Viper: All right, I'll do it. Then you'll give me the component?",
                 "Jake: Yes, you have my word. When you do, the component is yours."
-            }}, new() {Items_Take = new() { Item.Eye.ToString()}, Texts = new List<string>()
+            }}, new() {ItemsRemove = new() { Item.Eye.ToString()}, Texts = new List<string>()
             {
                 "Shadow Viper: I've dealt with the gangs. They should leave you alone.",
                 "Jake: Good job, now I can hopefully concentrate on my work. Here's the component for the Old Merchant. Thanks for your help."
@@ -66,10 +66,10 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: I hear you're making trouble for Jake. I don't like that.", 
                 "Gang Leader: What are you going to do to us? We have our territory here.",
                 "Shadow Viper: I don't have to put it into words. I can take you all out without breaking a sweat."
-            }}, new() {Items_Get = new() { Item.Eye.ToString()}, Texts = new List<string>()
+            }}, new() {ItemsGet = new() { Item.Eye.ToString()}, Texts = new List<string>()
             {
                 "Gang Leader: 'Okay, okay, we'll leave him alone. Just go away and leave us alone."
-            }}, new() {Items_Get = new() { Item.Eye.ToString()}, Texts = new List<string>()
+            }}, new() {ItemsGet = new() { Item.Eye.ToString()}, Texts = new List<string>()
             {
                 "Shadow Viper: Rumor has it you have a problem with Jake, the electronics dealer.",
                 "Gang Leader: Who wants to know?",

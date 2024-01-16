@@ -8,6 +8,6 @@ public class Dialog
     public bool Available { get; set; } = true; // Dialog available by default
     public PlayerFocus? DialogFocus { get; set; } = null;
     public List<string>? Unlock { get; set; } = null; // A list of string so not a int is passed to the FE
-    public List<string>? Items_Get { get; set; } = null; // A list of string so not a int is passed to the FE
-    public List<string>? Items_Take { get; set; } = null; // A list of string so not a int is passed to the FE
+    public List<string>? ItemsGet { get; set; } = null; // A list of string so not a int is passed to the FE
+    public List<string>? ItemsRemove { get; set; } = null; // A list of string so not a int is passed to the FE
 }

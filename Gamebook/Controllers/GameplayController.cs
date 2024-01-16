@@ -116,23 +116,23 @@ public class GameplayController : ControllerBase
     }    
 
     [HttpPost("GetItem")]
-    public ActionResult GetItem([FromBody] string itemString)
+    public ActionResult AddItem([FromBody] string itemString)
     {
         if (!Enum.TryParse(itemString, true, out Item item))
             throw new Exception($"invalid Item -> {itemString}");
 
-        _gameplayService.GetItem(item);
+        _gameplayService.AddItem(item);
 
         return Ok();
     }
 
-    [HttpPost("TakeItem")]
-    public ActionResult TakeItem([FromBody] string itemString)
+    [HttpPost("RemoveItem")]
+    public ActionResult RemoveItem([FromBody] string itemString)
     {
         if (!Enum.TryParse(itemString, true, out Item item))
             throw new Exception($"invalid Item -> {itemString}");
 
-        _gameplayService.TakeItem(item);
+        _gameplayService.RemoveItem(item);
 
         return Ok();
     }
