@@ -10,7 +10,8 @@ namespace Gamebook.Services
     public class GameLocationService : IGameLocationService
     {
         private readonly ISessionHelper _session;
-        
+        private IGameLocationService _gameLocationServiceImplementation;
+
         public GameLocationService(ISessionHelper session)
         {
             _session = session;
@@ -90,6 +91,20 @@ namespace Gamebook.Services
                 // Retrieve data from the session
                 var serializedModel = _session.GetString("equippedWeapon");
                 return JsonSerializer.Deserialize<Weapon>(serializedModel);
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Equipped weapon was not found -> {e.Message}");
+            }
+        }
+
+        public GameProgress GetGameProgress()
+        {
+            try
+            {
+                // Retrieve data from the session
+                var serializedModel = _session.GetString("gameProgress");
+                return JsonSerializer.Deserialize<GameProgress>(serializedModel);
             }
             catch (Exception e)
             {

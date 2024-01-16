@@ -13,6 +13,7 @@ namespace Gamebook.Interfaces
         HitboxType? GetHitbox(Location location);
         List<TargetLocation> GetTargetLocationList(Location location);
         Weapon GetEquippedWeapon();
+        GameProgress GetGameProgress();
         PlayerFocus? GetPlayerFocus();
         int GetPlayerMoralScore();
         bool IsValidConnection(Location locationFrom, Location locationTo);

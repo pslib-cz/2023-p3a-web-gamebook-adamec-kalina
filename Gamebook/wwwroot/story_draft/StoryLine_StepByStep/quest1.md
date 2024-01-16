@@ -28,7 +28,7 @@ player goes to **Electro Shop**
 - talks to **Jake**
 
 ```
-Shadow Viper: "Hello, the Old Trader sent me to you. He needs a component for repair."
+Shadow Viper: "Hello, the Old Merchant sent me to you. He needs a component for repair."
 Jake: "Oh, the old jerk. Oh well, I know what he needs. But it's not free. You have to promise me something."
 Shadow Viper: "What do you want in return?"
 Jake: "I've been having trouble with a local gang lately. I need someone to make sure they leave me alone. You don't have to confront them directly, just let them know it would be better to leave me alone."
