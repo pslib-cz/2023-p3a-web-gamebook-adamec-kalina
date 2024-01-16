@@ -149,6 +149,29 @@ public class GameplayService : IGameplayService
     }
 
     /// <summary>
+    /// Sets a specific location as Locked = true
+    /// </summary>
+    /// <param name="location"></param>
+    /// <exception cref="Exception"></exception>
+    public void LockLocation(Location location)
+    {
+        try
+        {
+            var gameLocationString = _session.GetString(location.ToString());
+            var gameLocation = JsonSerializer.Deserialize<GameLocation>(gameLocationString);
+            
+            if (gameLocation.Locked) return;
+            gameLocation.Locked = true;
+            string serializedGameLocation = JsonSerializer.Serialize(gameLocation);
+            _session.SetString(location.ToString(), serializedGameLocation);
+        }
+        catch (Exception e)
+        {
+            throw new Exception($"Error while retrieving a game location from session -> {e.Message}");
+        }
+    }
+
+    /// <summary>
     /// Changes the player's equipped weapon + de-equips the current one
     /// </summary>
     /// <param name="type"></param>

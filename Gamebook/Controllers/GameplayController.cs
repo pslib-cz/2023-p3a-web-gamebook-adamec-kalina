@@ -90,6 +90,17 @@ public class GameplayController : ControllerBase
         return Ok();
     }
     
+    [HttpPost("LockLocation")]
+    public ActionResult LockLocation([FromBody] string locationString)
+    {
+        if (!Enum.TryParse(locationString, true, out Location location))
+            throw new Exception($"invalid location -> {locationString}");
+
+        _gameplayService.LockLocation(location);
+        
+        return Ok();
+    }
+    
     [HttpPost("EquipWeapon")]
     public ActionResult EquipWeapon([FromBody] string weaponTypeString)
     {

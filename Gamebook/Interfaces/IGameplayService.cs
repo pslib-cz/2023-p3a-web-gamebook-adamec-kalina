@@ -12,6 +12,7 @@ public interface IGameplayService
     void SetDialogNotAvailable();
     void SetHitboxNotAvailable();
     void UnlockLocation(Location locationString);
+    void LockLocation(Location locationString);
     void EquipWeapon(WeaponType type);
     void SetQuestCompleted(int number);
     void AddNewQuest(int number);
