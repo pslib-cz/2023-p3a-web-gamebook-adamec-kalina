@@ -112,9 +112,7 @@ C:\Users\Maty\OneDrive\Plocha\gamebook\2023-p3a-web-gamebook-adamec-kalina\Gameb
 C:\Users\Maty\OneDrive\Plocha\gamebook\2023-p3a-web-gamebook-adamec-kalina\Gamebook\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Users\Maty\OneDrive\Plocha\gamebook\2023-p3a-web-gamebook-adamec-kalina\Gamebook\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\Maty\OneDrive\Plocha\gamebook\2023-p3a-web-gamebook-adamec-kalina\Gamebook\obj\Debug\net7.0\staticwebassets.development.json
-C:\Users\Maty\OneDrive\Plocha\gamebook\2023-p3a-web-gamebook-adamec-kalina\Gamebook\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Maty\OneDrive\Plocha\gamebook\2023-p3a-web-gamebook-adamec-kalina\Gamebook\obj\Debug\net7.0\scopedcss\bundle\Gamebook.styles.css
-C:\Users\Maty\OneDrive\Plocha\gamebook\2023-p3a-web-gamebook-adamec-kalina\Gamebook\obj\Debug\net7.0\scopedcss\projectbundle\Gamebook.bundle.scp.css
 C:\Users\Maty\OneDrive\Plocha\gamebook\2023-p3a-web-gamebook-adamec-kalina\Gamebook\obj\Debug\net7.0\Gamebook.dll
 C:\Users\Maty\OneDrive\Plocha\gamebook\2023-p3a-web-gamebook-adamec-kalina\Gamebook\obj\Debug\net7.0\refint\Gamebook.dll
 C:\Users\Maty\OneDrive\Plocha\gamebook\2023-p3a-web-gamebook-adamec-kalina\Gamebook\obj\Debug\net7.0\Gamebook.pdb

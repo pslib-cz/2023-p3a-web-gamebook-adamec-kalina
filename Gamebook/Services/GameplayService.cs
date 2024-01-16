@@ -212,6 +212,28 @@ public class GameplayService : IGameplayService
         _session.SetString("quests", serializedQuests);
         
     }
-    
-    
+
+    public void GetItem(Item item)
+    {
+        try
+        {
+            // TODO
+        }
+        catch (Exception e)
+        {
+            throw new Exception($"Error while getting item -> {e.Message}");
+        }
+    }
+    public void TakeItem(Item item)
+    {
+        try
+        {
+            // TODO
+        }
+        catch (Exception e)
+        {
+            throw new Exception($"Error while taking item -> {e.Message}");
+        }
+    }
+
 }

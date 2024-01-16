@@ -91,24 +91,23 @@ p.cont__stat__money {
     height: 100px;
 }
 
-.cont__weapon--knife {
+.cont__weapon.Knife {
     background-image: url(../images/weapons/knife.png);
 }
 
-.cont__weapon--bat {
+.cont__weapon.Bat {
     background-image: url(../images/weapons/bat.png);
 }
 
-.cont__weapon--gun {
+.cont__weapon.Gun {
     background-image: url(../images/weapons/gun.png);
-    height: 250px;
 }
 
 
 
 /*INVENTORY CONT*/
 .cont__inventory {
-    width: 100%;
+    height: calc(100% - .8em - 63px);
     display: grid;
     gap: .5em;
     grid-template-columns: repeat(3, 1fr);
@@ -120,6 +119,18 @@ p.cont__stat__money {
     background-color: var(--blue);
     border-radius: 8px;
     background: var(--grey);
+
+    overflow: hidden;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cont__inventory__item.Eye {
+    background-image: url(../images/items/eye.png);
+}
+.cont__inventory__item.Battery {
+    background-image: url(../images/items/battery.png);
 }
 
 /*CYBERWARE CONT*/
@@ -151,11 +162,11 @@ p.cont__stat__money {
         left: 60%;
     }
 
-loadout__cont--cyberware.Hack .cont__cyberware__item:first-child {
+.loadout__cont--cyberware.Hack .cont__cyberware__item:first-child {
     background-image: url(../images/chip.png);
 }
 
-loadout__cont--cyberware.Physics .cont__cyberware__item:last-child {
+.loadout__cont--cyberware.Physics .cont__cyberware__item:last-child {
     background-image: url(../images/skelleton.png);
 }
 
@@ -170,15 +181,15 @@ loadout__cont--cyberware.Physics .cont__cyberware__item:last-child {
         width: 100%;
     }
 
-.loadout__cont--chip .cont__cyberware_text::after {
+.loadout__cont--cyberware.Hack .cont__cyberware_text::after {
     content: "You have equiped BRAIN CHIP.";
 }
 
-.loadout__cont--body .cont__cyberware_text::after {
+.loadout__cont--cyberware.Physics .cont__cyberware_text::after {
     content: "You have equiped SKELETRON.";
 }
 
-.loadout__cont--chip.loadout__cont--body .cont__cyberware_text::after {
+.loadout__cont--cyberware.Hack.Physics .cont__cyberware_text::after {
     content: "You have equiped SKELETRON and BRAIN CHIP.";
 }
 

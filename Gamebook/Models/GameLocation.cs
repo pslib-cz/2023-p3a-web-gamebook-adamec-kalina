@@ -8,7 +8,7 @@ namespace Gamebook.Models
     {
         public string Title { get; set; }
         public string BackgroundImage { get; set; }
-        public bool Locked { get; set; } = false; //TODO: false for testing purposes -> will be changed 
+        public bool Locked { get; set; } = true; //TODO: false for testing purposes -> will be changed 
         public List<Hitbox> Hitboxes { get; set; }
     }
 }

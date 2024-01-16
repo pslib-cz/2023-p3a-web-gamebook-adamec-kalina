@@ -113,6 +113,28 @@ public class GameplayController : ControllerBase
     {
         _gameplayService.AddNewQuest(questNumber);
         return Ok();
+    }    
+
+    [HttpPost("GetItem")]
+    public ActionResult GetItem([FromBody] string itemString)
+    {
+        if (!Enum.TryParse(itemString, true, out Item item))
+            throw new Exception($"invalid Item -> {itemString}");
+
+        _gameplayService.GetItem(item);
+
+        return Ok();
+    }
+
+    [HttpPost("TakeItem")]
+    public ActionResult TakeItem([FromBody] string itemString)
+    {
+        if (!Enum.TryParse(itemString, true, out Item item))
+            throw new Exception($"invalid Item -> {itemString}");
+
+        _gameplayService.TakeItem(item);
+
+        return Ok();
     }
     
     

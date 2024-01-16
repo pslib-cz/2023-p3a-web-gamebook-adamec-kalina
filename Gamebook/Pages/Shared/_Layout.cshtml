@@ -4,27 +4,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Gamebook</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/gameLocation.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Gamebook.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/root.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/menu.css" asp-append-version="true" />
+    
 </head>
 <body>
-    @RenderSection("Buttons", true)
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+    <header class="header">
+        <h1 class="header__heading">HACK ATTACK</h1>
+    </header>
+
+    <div class="buttons">
+        @RenderSection("Buttons", true)
     </div>
+
  
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - Gamebook by - adam&ec
-        </div>
+    <footer class="footer">
+        <p class="footer__text">&copy; 2023 - Gamebook by - Adamec & Kalina</p>
     </footer>
 
+    @RenderBody()
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)

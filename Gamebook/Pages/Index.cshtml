@@ -5,7 +5,6 @@
     bool gameInProgress = Model.GameInProgress;
 }
 
-<h1>THIS WILL BE START/WELCOME SCREEN</h1>
 
 @section Buttons{
     <a asp-area="" asp-page="/Location" asp-page-handler="Start" asp-route-location="SlumDistrict">New Game</a>
@@ -17,53 +16,4 @@
     {
         <a class="hidden" asp-area="" asp-page="/Location" asp-route-location="@ViewData["lastLocation"]">Continue</a>
     }
-    <a href="#" id="testHealthLink">Test health</a>
-    <a href="#" id="testDialogLink">Test Dialog</a>
 }
-
-<script type="text/javascript">
-    document.getElementById('testHealthLink').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default anchor behavior
-    
-        const amount = -10; // Example amount, change as needed
-    
-        fetch('/Gameplay/HealthChange', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(amount),
-        })
-        .then(response => response.json())
-        .then(data => {
-                if (data.redirectToDeath) {
-                    window.location.href = data.redirectToDeath; // Handle redirection
-                } else {
-                    console.log('Response:', data);
-                }
-            })
-        .catch((error) => {
-            console.error('Error:', error);
-        });
-    });
-    
-    
-    document.getElementById('testDialogLink').addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default anchor behavior
-
-            const focus = "Hack"; // Example amount, change as needed
-
-            fetch('/Gameplay/PlayerFocusChoice', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(focus),
-            });
-
-        });
-    
-    
-    
-
-</script>
