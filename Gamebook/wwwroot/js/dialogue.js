@@ -35,6 +35,16 @@ function updateDialogueText(Dialog) {
                                 console.log(location);
                             })
                         }
+                        if (dialogue.items_Get !== null) {
+                            dialogue.items_Get.forEach(item => {
+                                GetItem(item);
+                            })
+                        }
+                        if (dialogue.items_Take !== null) {
+                            dialogue.items_Take.forEach(item => {
+                                TakeItem(item);
+                            })
+                        }
                         reload();
                     });
                 }
@@ -51,13 +61,19 @@ function onNextButtonClick() {
 function ToggleDialog() {
     const choices = document.getElementById('location-choice');
     const textbox = document.getElementById('textbox');
+    const menu = document.querySelector('.menu__swich');
+    const hitbox = document.getElementById('hitbox');
 
     if (textbox.classList.contains('hidden')) {
         choices.classList.add('hidden');
+        menu.classList.add('hidden');
+        hitbox.classList.add('hidden');
         textbox.classList.remove('hidden');
     }
     else {
         choices.classList.remove('hidden');
+        menu.classList.remove('hidden');
+        hitbox.classList.remove('hidden');
         textbox.classList.add('hidden');
     }
 
@@ -101,4 +117,11 @@ function reload() {
 const nextInDialogue = document.querySelector('.textbox__next');
 if (document.body.contains(nextInDialogue)) {
     nextInDialogue.addEventListener('click', onNextButtonClick);
+}
+
+function GetItem(item) {
+    console.log(item);
+}
+function TakeItem(item) {
+    console.log(item);
 }
