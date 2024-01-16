@@ -189,7 +189,6 @@ namespace Gamebook.Services
             catch (Exception e)
             {
                 throw new Exception("Error gameInProgress could not be retrieved from session");
-
             }
         }
 
