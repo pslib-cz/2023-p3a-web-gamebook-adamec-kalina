@@ -4,6 +4,10 @@
 @{
     Layout = null;
     var mapResponse = Model.MapPageResponse;
+
+    string slumDistrictAvailability = mapResponse.FastTravelLocations.SlumDistrict ? "" : "hidden";
+    string shadyBarAvailability = mapResponse.FastTravelLocations.ShadyBar ? "" : "hidden";
+    string secretMeetingPlaceAvailability = mapResponse.FastTravelLocations.SecretMeetingPlace ? "" : "hidden";
 }
 
 <!DOCTYPE html>
@@ -36,9 +40,9 @@
                 <span class="content__map__location"></span>
             </div>
             <div class="content__container">
-                <button class="content__choice">Slum District</button>
-                <button class="content__choice">Shady Bar</button>
-                <button class="content__choice">Secret Meeting Place</button>
+                <button class="content__choice @slumDistrictAvailability">Slum District</button>
+                <button class="content__choice @shadyBarAvailability">Shady Bar</button>
+                <button class="content__choice @secretMeetingPlaceAvailability">Secret Meeting Place</button>
             </div>
             <a class="content__cta  " href="">Go to Location</a>
         </div>

@@ -20,7 +20,13 @@ public class Map : PageModel
         MapPageResponse = new()
         {
             CurrentLocation = _locationService.GetCurrentLocation(),
-            QuestList = _locationService.GetQuests()
+            QuestList = _locationService.GetQuests(),
+            FastTravelLocations = new FastTravelLocationsModel()
+            {
+                SlumDistrict = !_locationService.IsLocationLocked(Location.SlumDistrict),
+                ShadyBar = !_locationService.IsLocationLocked(Location.ShadyBar),
+                SecretMeetingPlace = !_locationService.IsLocationLocked(Location.SecretMeetingPlace),
+            }
         };
         
     }
