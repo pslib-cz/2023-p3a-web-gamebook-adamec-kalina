@@ -88,7 +88,7 @@ namespace Gamebook.Pages
             LocationPageResponse = new()
             {
                 TargetLocations = _locationService.GetTargetLocationList(currentLocation),
-                Dialogs = _locationService.GetDialog(currentLocation),
+                Dialog = _locationService.GetDialog(currentLocation),
                 EquipedWeapon = _locationService.GetEquippedWeapon(),
                 PlayerStats = _locationService.GetPlayerStats(),
                 Hitbox = _locationService.GetHitbox(currentLocation).ToString()

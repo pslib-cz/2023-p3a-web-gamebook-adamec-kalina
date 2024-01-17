@@ -83,13 +83,24 @@ public class GameplayService : IGameplayService
     }
 
     /// <summary>
+    /// Sets player's dealing type 
+    /// </summary>
+    /// <param name="playerDealingType"></param>
+    public void SetPlayerDealingType(PlayerDealingType playerDealingType)
+    {
+        _session.SetString("playerDealingType", playerDealingType.ToString());
+    }
+
+    /// <summary>
     /// Increases the gameProgress (dialog is over => progress in the game)
+    /// Unlocks the next quest in case the dialog was the last one in its quest
     /// </summary>
     /// <exception cref="Exception"></exception>
     public void DialogOver()
     {
         var currentLocation = _locationService.GetCurrentLocation();
         var playerFocus = _locationService.GetPlayerFocus();
+        var playerDealingType = _locationService.GetPlayerDealingType();
         try
         {
             var gameProgress = _locationService.GetGameProgress();
@@ -97,7 +108,10 @@ public class GameplayService : IGameplayService
             var locationDialogs = JsonSerializer.Deserialize<List<Dialog>>(locationDialogsString);
 
             if (locationDialogs == null) return;
-            if (locationDialogs.First(d => d.DialogOrder == gameProgress && (d.DialogFocus == playerFocus || d.DialogFocus == null)).DialogOrder.LastStep)
+            var finishedDialog = locationDialogs.First(d => d.DialogOrder == gameProgress &&
+                                                            (d.DialogFocus == playerFocus || d.DialogFocus == null) && // playerFocus check
+                                                            (d.SpecialType == null || d.SpecialType == playerDealingType)); // playerDealingType check
+            if (finishedDialog.DialogOrder.LastStep)
             {
                 // Unlock the next quest
                 UnlockNextQuest(gameProgress.Quest);
@@ -106,7 +120,8 @@ public class GameplayService : IGameplayService
             }
             else
             {
-                gameProgress.Step++;
+                if (finishedDialog.SpecialType == PlayerDealingType.Peaceful) {gameProgress.Step += 2;} // Just a stupid exception for the one peaceful choice in quest 1 :)
+                else{gameProgress.Step++;}
             }
             
             // Save the progress back into the session
@@ -189,7 +204,7 @@ public class GameplayService : IGameplayService
         }
     }
 
-    public void UnlockNextQuest(int questCompletedNum)
+    private void UnlockNextQuest(int questCompletedNum)
     {
         var currentQuests = _locationService.GetQuests();
         currentQuests.First(q => q.Number == questCompletedNum).Completed = true;

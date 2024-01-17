@@ -8,8 +8,9 @@ namespace Gamebook.Interfaces
     {
         GameLocation GetLocation(Location location);
         List<Location> GetTargetLocations(Location location);
-        List<Dialog> GetDialog(Location location);
+        Dialog? GetDialog(Location location);
         PlayerStats GetPlayerStats();
+        PlayerDealingType? GetPlayerDealingType();
         HitboxType? GetHitbox(Location location);
         List<Quest> GetQuests();
         List<TargetLocation> GetTargetLocationList(Location location);

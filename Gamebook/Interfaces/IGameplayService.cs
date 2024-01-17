@@ -9,11 +9,11 @@ public interface IGameplayService
     void MoneyChange(int change);
     void MoralScoreChange(int changeAmount);
     void SetPlayerFocusChoice(PlayerFocus playerFocus);
+    void SetPlayerDealingType(PlayerDealingType playerDealingType);
     void DialogOver();
     void SetHitboxNotAvailable();
     void UnlockLocation(Location locationString);
     void LockLocation(Location locationString);
-    void UnlockNextQuest(int questCompletedNum);
     void EquipWeapon(WeaponType type);
     void SetQuestCompleted(int number);
     void AddNewQuest(int number);

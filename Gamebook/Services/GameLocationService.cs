@@ -31,7 +31,7 @@ namespace Gamebook.Services
             }
         }
 
-        public List<Dialog>? GetDialog(Location location)
+        public Dialog? GetDialog(Location location)
         {
             try
             {
@@ -40,13 +40,11 @@ namespace Gamebook.Services
                 if(serializedModel == null) return null;
                 var dialogsList = JsonSerializer.Deserialize<List<Dialog>>(serializedModel);
                 var playerFocus = GetPlayerFocus();
+                var playerDealingType = GetPlayerDealingType();
                 var gameProgress = GetGameProgress();
                 
-                return playerFocus == null ? 
-                    // No focus set yet
-                    dialogsList.Where(d => d.DialogFocus == null && d.DialogOrder == gameProgress).ToList() :
-                    // Dialog for the specific focus
-                    dialogsList.Where(d => d.DialogFocus == playerFocus && d.DialogOrder == gameProgress).ToList();
+                    
+                return dialogsList.FirstOrDefault(d => d.DialogOrder == gameProgress && (d.DialogFocus == null || d.DialogFocus == playerFocus) && (d.SpecialType == null || d.SpecialType == playerDealingType));
             }
             catch (Exception e)
             {
@@ -66,6 +64,21 @@ namespace Gamebook.Services
             {
                 throw new Exception($"Player stats were not found -> {e.Message}");
             }
+        }
+
+        public PlayerDealingType? GetPlayerDealingType()
+        {
+            try
+            {
+                var playerDealingTypeString = _session.GetString("playerDealingType");
+                if (!Enum.TryParse(playerDealingTypeString, true, out PlayerDealingType playerDealingType)) return null;
+                return playerDealingType;
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Error while retrieving the playerDealingType from the session -> {e.Message}");
+            }
+            
         }
 
         public HitboxType? GetHitbox(Location location)

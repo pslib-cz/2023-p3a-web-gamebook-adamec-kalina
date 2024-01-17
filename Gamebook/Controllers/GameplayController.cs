@@ -63,8 +63,19 @@ public class GameplayController : ControllerBase
         return Ok();
     }
 
-    [HttpPost("SetDialogNotAvailable")]
-    public ActionResult SetDialogNotAvailable()
+    [HttpPost("PlayerDealingTypeChoice")]
+    public ActionResult PlayerDealingTypeChoice([FromBody] string playerDealingTypeString)
+    {
+        if (!Enum.TryParse(playerDealingTypeString, true, out PlayerDealingType playerDealingType))
+            throw new Exception($"invalid player focus -> {playerDealingTypeString}");
+
+        _gameplayService.SetPlayerDealingType(playerDealingType);
+        
+        return Ok();
+    }
+
+    [HttpPost("DialogOver")]
+    public ActionResult DialogOver()
     {
         _gameplayService.DialogOver();
         
