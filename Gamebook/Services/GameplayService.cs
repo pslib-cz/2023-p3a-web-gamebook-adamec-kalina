@@ -83,18 +83,36 @@ public class GameplayService : IGameplayService
     }
 
     /// <summary>
-    /// Sets a specific dialog as not available
+    /// Increases the gameProgress (dialog is over => progress in the game)
     /// </summary>
     /// <exception cref="Exception"></exception>
-    public void SetDialogNotAvailable()
+    public void DialogOver()
     {
         var currentLocation = _locationService.GetCurrentLocation();
         var playerFocus = _locationService.GetPlayerFocus();
         try
         {
+            var gameProgress = _locationService.GetGameProgress();
             var locationDialogsString = _session.GetString($"{currentLocation}Dialog");
             var locationDialogs = JsonSerializer.Deserialize<List<Dialog>>(locationDialogsString);
-            locationDialogs.First(d => d.Available && (d.DialogFocus == null || d.DialogFocus == playerFocus)).Available = false;
+
+            if (locationDialogs == null) return;
+            if (locationDialogs.First(d => d.DialogOrder == gameProgress && (d.DialogFocus == playerFocus || d.DialogFocus == null)).DialogOrder.LastStep)
+            {
+                // Unlock the next quest
+                UnlockNextQuest(gameProgress.Quest);
+                gameProgress.Quest++;
+                gameProgress.Step = 1;
+            }
+            else
+            {
+                gameProgress.Step++;
+            }
+            
+            // Save the progress back into the session
+            string serializedGameProgress= JsonSerializer.Serialize(gameProgress);
+            _session.SetString("gameProgress", serializedGameProgress);
+            
             
             string serializedLocationDialogs= JsonSerializer.Serialize(locationDialogs);
             _session.SetString($"{currentLocation}Dialog", serializedLocationDialogs);
@@ -169,6 +187,18 @@ public class GameplayService : IGameplayService
         {
             throw new Exception($"Error while retrieving a game location from session -> {e.Message}");
         }
+    }
+
+    public void UnlockNextQuest(int questCompletedNum)
+    {
+        var currentQuests = _locationService.GetQuests();
+        currentQuests.First(q => q.Number == questCompletedNum).Completed = true;
+        var nextQuest = Global.Quests.FirstOrDefault(q => q.Number == questCompletedNum + 1); 
+        if(nextQuest != null){currentQuests.Add(nextQuest);}
+        
+        // Set the modified quest list back into the session
+        string serializedQuestList = JsonSerializer.Serialize(currentQuests);
+        _session.SetString("quests", serializedQuestList);
     }
 
     /// <summary>

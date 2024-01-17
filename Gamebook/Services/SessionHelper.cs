@@ -66,10 +66,10 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: I hear you're making trouble for Jake. I don't like that.", 
                 "Gang Leader: What are you going to do to us? We have our territory here.",
                 "Shadow Viper: I don't have to put it into words. I can take you all out without breaking a sweat."
-            }}, new() {ItemsGet = new() { Item.Eye.ToString()}, DialogOrder = new(){Quest = 1, Step = 3}, Texts = new List<string>()
+            }}, new() {ItemsAdd = new() { Item.Eye.ToString()}, DialogOrder = new(){Quest = 1, Step = 3}, Texts = new List<string>()
             {
                 "Gang Leader: 'Okay, okay, we'll leave him alone. Just go away and leave us alone."
-            }}, new() {ItemsGet = new() { Item.Eye.ToString()}, DialogOrder = new(){Quest = 1, Step = 3}, Texts = new List<string>()
+            }}, new() {ItemsAdd = new() { Item.Eye.ToString()}, DialogOrder = new(){Quest = 1, Step = 3}, Texts = new List<string>()
             {
                 "Shadow Viper: Rumor has it you have a problem with Jake, the electronics dealer.",
                 "Gang Leader: Who wants to know?",

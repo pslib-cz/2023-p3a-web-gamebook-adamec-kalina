@@ -19,7 +19,8 @@ public class Map : PageModel
     {
         MapPageResponse = new()
         {
-            CurrentLocation = _locationService.GetCurrentLocation()
+            CurrentLocation = _locationService.GetCurrentLocation(),
+            QuestList = _locationService.GetQuests()
         };
         
     }

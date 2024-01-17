@@ -40,12 +40,13 @@ namespace Gamebook.Services
                 if(serializedModel == null) return null;
                 var dialogsList = JsonSerializer.Deserialize<List<Dialog>>(serializedModel);
                 var playerFocus = GetPlayerFocus();
+                var gameProgress = GetGameProgress();
                 
                 return playerFocus == null ? 
                     // No focus set yet
-                    dialogsList.Where(d => d is { Available: true, DialogFocus: null }).ToList() :
+                    dialogsList.Where(d => d.DialogFocus == null && d.DialogOrder == gameProgress).ToList() :
                     // Dialog for the specific focus
-                    dialogsList.Where(d => d.Available && d.DialogFocus == playerFocus).ToList();
+                    dialogsList.Where(d => d.DialogFocus == playerFocus && d.DialogOrder == gameProgress).ToList();
             }
             catch (Exception e)
             {
@@ -73,6 +74,12 @@ namespace Gamebook.Services
             if (gameLocation.Hitboxes == null) return null;
             var availableHitbox = gameLocation.Hitboxes.FirstOrDefault(h => h.Available);
             return availableHitbox?.Type;
+        }
+
+        public List<Quest> GetQuests()
+        {
+            var serializedQuests = _session.GetString($"quests");
+            return JsonSerializer.Deserialize<List<Quest>>(serializedQuests);
         }
 
         public List<TargetLocation> GetTargetLocationList(Location location)

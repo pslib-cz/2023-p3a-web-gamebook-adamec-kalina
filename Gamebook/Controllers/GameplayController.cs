@@ -66,7 +66,7 @@ public class GameplayController : ControllerBase
     [HttpPost("SetDialogNotAvailable")]
     public ActionResult SetDialogNotAvailable()
     {
-        _gameplayService.SetDialogNotAvailable();
+        _gameplayService.DialogOver();
         
         return Ok();
     }

@@ -11,6 +11,7 @@ namespace Gamebook.Interfaces
         List<Dialog> GetDialog(Location location);
         PlayerStats GetPlayerStats();
         HitboxType? GetHitbox(Location location);
+        List<Quest> GetQuests();
         List<TargetLocation> GetTargetLocationList(Location location);
         Weapon GetEquippedWeapon();
         GameProgress GetGameProgress();
