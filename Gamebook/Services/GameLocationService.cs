@@ -44,7 +44,7 @@ namespace Gamebook.Services
                 var gameProgress = GetGameProgress();
                 
                     
-                return dialogsList.FirstOrDefault(d => d.DialogOrder == gameProgress && (d.DialogFocus == null || d.DialogFocus == playerFocus) && (d.SpecialType == null || d.SpecialType == playerDealingType));
+                return dialogsList.FirstOrDefault(d => d.DialogOrder.Quest == gameProgress.Quest && d.DialogOrder.Step == gameProgress.Step && (d.DialogFocus == null || d.DialogFocus == playerFocus) && (d.SpecialType == null || d.SpecialType == playerDealingType));
             }
             catch (Exception e)
             {

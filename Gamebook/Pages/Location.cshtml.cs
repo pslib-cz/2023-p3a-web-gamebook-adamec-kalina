@@ -28,7 +28,7 @@ namespace Gamebook.Pages
         public IActionResult OnGet(string location)
         {
             var previousLocation = _locationService.GetCurrentLocation();
-            bool valid = false;
+            bool valid;
 
             if (Enum.TryParse<Location>(location, out var currentLocation) && Enum.IsDefined(typeof(Location), currentLocation))
             {
