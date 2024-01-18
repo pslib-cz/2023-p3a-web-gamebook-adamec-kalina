@@ -4,5 +4,6 @@ public enum HitboxType
 {
     Dialog,
     Fight,
-    Pin
+    Pin,
+    Choice
 }

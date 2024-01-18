@@ -65,6 +65,106 @@
       "PackagePath": "staticwebassets\\images\\arrow-up.svg"
     },
     {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_1\\back_entrance.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_1\\back_entrance.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_1\\back_of_building.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_1\\back_of_building.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_1\\boiler_room.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_1\\boiler_room.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_1\\chief_technitian_office.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_1\\chief_technitian_office.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_1\\control_room.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_1\\control_room.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_1\\corporal_building.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_1\\corporal_building.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_1\\extraction_van.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_1\\extraction_van.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_1\\hallway.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_1\\hallway.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_1\\holding_cells.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_1\\holding_cells.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_1\\main_entrance.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_1\\main_entrance.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_1\\reception.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_1\\reception.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_1\\security_door.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_1\\security_door.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_1\\security_room.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_1\\security_room.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_1\\server_room.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_1\\server_room.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_1\\warehouse.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_1\\warehouse.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_2\\delivery_entrance.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_2\\delivery_entrance.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_2\\electrical_hallway.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_2\\electrical_hallway.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_2\\emergency_exit.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_2\\emergency_exit.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_2\\escape_car.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_2\\escape_car.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_2\\maintenance_area.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_2\\maintenance_area.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_2\\room_A421.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_2\\room_A421.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_2\\room_A765.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_2\\room_A765.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_2\\room_B78.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_2\\room_B78.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_2\\security_checkpoint.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_2\\security_checkpoint.png"
+    },
+    {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_2\\tool_storage.png",
+      "PackagePath": "staticwebassets\\images\\background\\act_2\\tool_storage.png"
+    },
+    {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\back_entrance.png",
       "PackagePath": "staticwebassets\\images\\background\\back_entrance.png"
     },

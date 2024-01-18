@@ -9,7 +9,7 @@ function updateSelection(event) {
     var clickedButton = event.currentTarget;
     clickedButton.classList.add('selected');
 
-    document.querySelector('.choices__submit').classList.add('enabled');
+    submit.classList.add('enabled');
 }
 
 
@@ -32,7 +32,18 @@ function ShowChoices(){
     document.querySelector('.sidemenu').classList.add('hidden');
     document.getElementById('location-choice').classList.add('hidden');
 
+    var choicesDiv = document.querySelector('.choices');
+    var choiceAButton = choicesDiv.querySelector('.button--choice:nth-of-type(1)');
+    var choiceBButton = choicesDiv.querySelector('.button--choice:nth-of-type(2)');
+    var descriptionParagraph = choicesDiv.querySelector('.choices__text');
+    var data = locationResponseData;
+
+    choiceAButton.textContent = data.choices.choiceA;
+    choiceBButton.textContent = data.choices.choiceA;
+    descriptionParagraph.textContent = data.choices.description;
+
     document.querySelector('.choices').classList.remove('hidden');
+
 };
 
 
@@ -42,5 +53,9 @@ choiceButtons.forEach(button => {
 
 
 if (document.body.contains(submit)) {
-    submit.addEventListener('click', hideChoices);
+    submit.addEventListener('click', function () {
+
+        hideChoices();
+
+    });
 }
