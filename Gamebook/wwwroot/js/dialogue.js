@@ -84,6 +84,7 @@ const infoBoxText = document.getElementById('info-box-text');
 
 
 function UnlockLocation(location) {
+    console.log(location);
     fetch('/Gameplay/UnlockLocation', {
         method: 'POST',
         headers: {

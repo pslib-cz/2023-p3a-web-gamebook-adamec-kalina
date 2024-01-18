@@ -10,14 +10,7 @@
         });
     }
     else {
-        if (data.hitbox == "Dialog") {
-            hitbox.addEventListener('click', function () {
-                updateDialogueText();
-                ToggleDialog();
-                SetHitboxNotAvailable();
-            });
-        }
-        else if (data.hitbox == "Fight") {
+        if (data.hitbox == "Fight") {
             hitbox.addEventListener('click', function () {
                 InitiateGame();
                 SetHitboxNotAvailable();
@@ -35,9 +28,23 @@
                 SetHitboxNotAvailable();
             });
         }
+        else if (data.hitbox == "Dialog") {
+            hitbox.addEventListener('click', function () {
+                updateDialogueText();
+                ToggleDialog();
+                SetHitboxNotAvailable();
+            });
+        }
+        else if (data.dialog != null && data.hitbox == "") {
+            hitbox.addEventListener('click', function () {
+                updateDialogueText();
+                ToggleDialog();
+                SetHitboxNotAvailable();
+            });
+        }
     }
 
-    if (data.hitbox == "") {
+    if (data.hitbox == "" && data.dialog == null) {
         hitbox.classList.add("hidden");
     }
 

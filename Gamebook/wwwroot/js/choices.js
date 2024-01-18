@@ -67,6 +67,7 @@ if (document.body.contains(submit)) {
 
 
 function ChoiceNotAvailable() {
+    console.log("choice not avalible");
     fetch('/Gameplay/SetChoiceNotAvailable', {
         method: 'POST',
         headers: {
@@ -82,13 +83,13 @@ function PlayerFocusChoice(choice) {
     }
     else if (choice == "Brain Chip") {
         endChoice = "Hack"
+        MoralScoreChange(25);
     }
     else {
         return;
     }
 
     console.log(endChoice);
-    MoralScoreChange(25);
     fetch('/Gameplay/PlayerFocusChoice', {
         method: 'POST',
         headers: {
@@ -104,6 +105,7 @@ function PlayerDealingTypeChoice(choice) {
     }
     else if (choice == "Talk them Down") {
         endChoice = "Peaceful"
+        MoralScoreChange(25);
     }
     else {
         return;
@@ -111,7 +113,6 @@ function PlayerDealingTypeChoice(choice) {
 
     console.log(endChoice);
 
-    MoralScoreChange(25);
     fetch('/Gameplay/PlayerDealingTypeChoice', {
         method: 'POST',
         headers: {
