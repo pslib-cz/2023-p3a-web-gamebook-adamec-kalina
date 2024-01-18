@@ -1,13 +1,12 @@
 ﻿let currentDialog = 0;
 
-
-function updateDialogueText(Dialog) {
+function updateDialogueText() {
     if (locationResponseData.dialogs !== null) {
         const dialogue = locationResponseData.dialog;
 
         if (dialogue && dialogue.hasOwnProperty('texts')) {
-            if (dialogue.texts.length >= Dialog + 1 && dialogue.texts.length > 0) {
-                const [character, text] = dialogue.texts[Dialog].split(': ')
+            if (dialogue.texts.length >= currentDialog + 1 && dialogue.texts.length > 0) {
+                const [character, text] = dialogue.texts[currentDialog].split(': ')
                 const textBox = document.getElementById('textbox');
 
                 if (character === 'Shadow Viper') {
@@ -22,10 +21,11 @@ function updateDialogueText(Dialog) {
                 textBoxText.textContent = text;
                 textBoxCharacter.textContent = character;
 
-                if (dialogue.texts.length <= Dialog + 1) {
+                if (dialogue.texts.length <= currentDialog + 1) {
                     const nextButton = document.querySelector('.textbox__next');
                     nextButton.classList.add('textbox__next--close');
                     const closeButton = document.querySelector('.textbox__next--close');
+
                     closeButton.addEventListener('click', function () {
                         ToggleDialog();
                         SetDialogNotAvailable();
@@ -47,6 +47,7 @@ function updateDialogueText(Dialog) {
                         }
                         reload();
                     });
+
                 }
             }
         }
@@ -96,7 +97,7 @@ function UnlockLocation(location) {
     infoBoxText.textContent = `Location ${location} unlocked`;
     setTimeout(function () {
         infobox.classList.add('hidden');
-    }, 500);
+    }, 300);
 }
 
 function SetDialogNotAvailable() {
@@ -109,7 +110,9 @@ function SetDialogNotAvailable() {
 }
 
 function reload() {
-    location.reload(true);
+    setTimeout(function () {
+        location.reload(true);
+    }, 500);
 }
 
 const nextInDialogue = document.querySelector('.textbox__next');

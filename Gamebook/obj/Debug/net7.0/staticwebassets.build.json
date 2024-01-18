@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FsEUq+LrjiPhwGrRTx+zwvw7SrVmpTjyxt4+2+6Xqb0=",
+  "Hash": "zUtmBEVYwhZrIVBNzzDR+yMy6izv/Md/aqsieH4fWCs=",
   "Source": "Gamebook",
   "BasePath": "_content/Gamebook",
   "Mode": "Default",
@@ -1341,6 +1341,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\fightSystem.js"
+    },
+    {
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\hack.js",
+      "SourceId": "Gamebook",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "BasePath": "_content/Gamebook",
+      "RelativePath": "js/hack.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\hack.js"
     },
     {
       "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\main.js",

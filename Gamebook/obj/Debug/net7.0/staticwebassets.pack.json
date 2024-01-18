@@ -313,6 +313,10 @@
       "PackagePath": "staticwebassets\\js\\fightSystem.js"
     },
     {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\hack.js",
+      "PackagePath": "staticwebassets\\js\\hack.js"
+    },
+    {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
     },

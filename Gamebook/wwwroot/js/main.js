@@ -12,7 +12,7 @@
     else {
         if (data.hitbox == "Dialog") {
             hitbox.addEventListener('click', function () {
-                updateDialogueText(currentDialog);
+                updateDialogueText();
                 ToggleDialog();
                 SetHitboxNotAvailable();
             });
@@ -26,6 +26,12 @@
         else if (data.hitbox == "Pin") {
             hitbox.addEventListener('click', function () {
                 ShowPin()
+                SetHitboxNotAvailable();
+            });
+        }
+        else if (data.hitbox == "Hack") {
+            hitbox.addEventListener('click', function () {
+                ShowHack()
                 SetHitboxNotAvailable();
             });
         }

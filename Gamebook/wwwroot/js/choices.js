@@ -67,7 +67,7 @@ if (document.body.contains(submit)) {
 
 
 function ChoiceNotAvailable() {
-    fetch('/Gameplay/ChoiceNotAvailable ', {
+    fetch('/Gameplay/ChoiceNotAvailable', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

@@ -71,6 +71,18 @@
 
 }
 
+@if (locationResponse.Hitbox == "Hack")
+{
+    <div class="hack-game">
+        <h1 class="hack-game__heading">Solve this chunk of code.</h1>
+
+        <ul class="hack-game__list" id="codeList"></ul>
+        <button class="hack-game__submit" id="submitBtn">Submit</button>
+        <p class="hack-game__result" id="result"></p>
+    </div>
+
+}
+
 <div class="choices hidden">
     <button class="button button--choice button--red choices__choice">Violence</button>
     <button class="button button--choice button--red choices__choice">Talk them Down</button>
