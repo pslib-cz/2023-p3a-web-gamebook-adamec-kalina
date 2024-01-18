@@ -124,7 +124,9 @@ public class GameplayService : IGameplayService
                 if (finishedDialog.SpecialType == PlayerDealingType.Peaceful) {gameProgress.Step += 2;} // Just a stupid exception for the one peaceful choice in quest 1 :)
                 else{gameProgress.Step++;}
             }
-            
+
+            finishedDialog.Unlock?.ForEach(UnlockLocation);
+
             // Save the progress back into the session
             string serializedGameProgress= JsonSerializer.Serialize(gameProgress);
             _session.SetString("gameProgress", serializedGameProgress);
