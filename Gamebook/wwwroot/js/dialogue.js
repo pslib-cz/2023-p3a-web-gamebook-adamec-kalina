@@ -3,7 +3,7 @@
 
 function updateDialogueText(Dialog) {
     if (locationResponseData.dialogs !== null) {
-        const dialogue = locationResponseData.dialogs[0];
+        const dialogue = locationResponseData.dialog;
 
         if (dialogue && dialogue.hasOwnProperty('texts')) {
             if (dialogue.texts.length >= Dialog + 1 && dialogue.texts.length > 0) {
@@ -35,14 +35,14 @@ function updateDialogueText(Dialog) {
                                 console.log(location);
                             })
                         }
-                        if (dialogue.items_Get !== null) {
-                            dialogue.items_Get.forEach(item => {
-                                GetItem(item);
+                        if (dialogue.itemsAdd !== null) {
+                            dialogue.itemsAdd.forEach(item => {
+                                AddItem(item);
                             })
                         }
-                        if (dialogue.items_Take !== null) {
-                            dialogue.items_Take.forEach(item => {
-                                TakeItem(item);
+                        if (dialogue.itemsRemove !== null) {
+                            dialogue.itemsRemove.forEach(item => {
+                                RemoveItem(item);
                             })
                         }
                         reload();
@@ -100,7 +100,7 @@ function UnlockLocation(location) {
 }
 
 function SetDialogNotAvailable() {
-    fetch('/Gameplay/SetDialogNotAvailable', {
+    fetch('/Gameplay/DialogOver', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -119,9 +119,25 @@ if (document.body.contains(nextInDialogue)) {
     nextInDialogue.addEventListener('click', onNextButtonClick);
 }
 
-function GetItem(item) {
+function AddItem(item) {
+    fetch('/Gameplay/AddItem', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(item),
+    });
+
     console.log(item);
 }
-function TakeItem(item) {
+function RemoveItem(item) {
+    fetch('/Gameplay/RemoveItem', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(item),
+    });
+
     console.log(item);
 }

@@ -50,28 +50,33 @@
     font-size: 2em;
     text-align: center;
 }
-
-body{
-    background-image: url(../images/background/menu.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width:100vw;
+.buttons a.hidden {
+    display: none;
 }
 
-@media (min-width: 768px){
-    .header{
-        padding: 4em 0 2em 0;
-    }
-    .header__heading{
-        font-size: 8em;
+    body {
+        background-image: url(../images/background/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
     }
 
-    .buttons{
-        margin-top: 6em;
+    @media (min-width: 768px) {
+        .header {
+            padding: 4em 0 2em 0;
+        }
+
+        .header__heading {
+            font-size: 8em;
+        }
+
+        .buttons {
+            margin-top: 6em;
+        }
+
+            .buttons a {
+                font-size: 2.5em;
+            }
     }
-    .buttons a{
-        font-size: 2.5em;
-    }
-}

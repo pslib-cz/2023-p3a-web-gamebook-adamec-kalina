@@ -26,24 +26,27 @@ document.addEventListener('DOMContentLoaded', function () {
     var mapLocations = document.querySelectorAll('.content__map__location');
 
     function updateSelection(event) {
-        choiceButtons.forEach((button, index) => {
-            button.classList.remove('selected');
-            mapLocations[index].classList.remove('active');
-        });
-
         var clickedButton = event.currentTarget;
-        clickedButton.classList.add('selected');
+        if (!clickedButton.classList.contains('hidden')) {
+            choiceButtons.forEach((button, index) => {
+                button.classList.remove('selected');
+                mapLocations[index].classList.remove('active');
+            });
 
-        var buttonIndex = Array.from(choiceButtons).indexOf(clickedButton);
+            clickedButton.classList.add('selected');
+            console.log(clickedButton);
 
-        if (mapLocations[buttonIndex]) {
-            mapLocations[buttonIndex].classList.add('active');
+            var buttonIndex = Array.from(choiceButtons).indexOf(clickedButton);
+
+            if (mapLocations[buttonIndex]) {
+                mapLocations[buttonIndex].classList.add('active');
+            }
+
+            var locationName = clickedButton.textContent.trim().replace(/\s+/g, '');
+            var ctaLink = document.querySelector('.content__cta');
+            ctaLink.href = 'Location/' + locationName;
+            ctaLink.classList.add('enabled');
         }
-
-        var locationName = clickedButton.textContent.trim().replace(/\s+/g, '');
-        var ctaLink = document.querySelector('.content__cta');
-        ctaLink.href = 'Location/' + locationName;
-        ctaLink.classList.add('enabled');
     }
 
     choiceButtons.forEach(button => {
