@@ -15,11 +15,39 @@ namespace Gamebook.Enums
         TacticalRoom,
         CyberLab,
         QuantumTechnology,
-        
+
         // Map,
         // Menu,
         // Help,
         // LoadOut
+
+        CorporalBuilding,
+        MainEntrance,
+        Reception,
+        BackOfBuilding,
+        Hallway,
+        ServerRoom,
+        SecurityDoor,
+        HoldingCells,
+        ControlRoom,
+        ChiefTechnitianOffice,
+        BackDoor,
+        Warehouse,
+        BoilerRoom,
+        SecurityRoom,
+        ExtractionVan,
+
+        Facility,
+        DeliveryEntrance,
+        SecurityCheckpoint,
+        ElectricalHallway,
+        RoomA421,
+        RoomB78,
+        RoomA765,
+        MaintenanceArea,
+        ToolStorage,
+        EmergencyExit,
+        EscapeCar,
     }
 }
 
