@@ -558,20 +558,67 @@ choices__submit.selected {
     background-color: var(--black50);
 }
 
+/*HACK*/
+.hack-game {
+    text-align: center;
+    color: white;
+    font-family: 'Consolas', 'Courier New', monospace;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    border: 1px solid red;
+    border-radius: 16px;
+    overflow: hidden;
+    font-size: .8em;
+}
 
+.hack-game__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+    .hack-game__list li {
+        white-space: pre-wrap; /* This will make the browser respect whitespace, including tabs */
+        text-align: left;
+        padding: 4px;
+        background-color: #222;
+        cursor: pointer;
+        tab-size: 20px;
+        border-bottom: 1px solid #444;
+    }
+
+        .hack-game__list li:hover {
+            background-color: #111111;
+        }
+
+.hack-game__submit {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #111111;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.8em;
+}
 
 @media (min-width: 768px) {
     /*HEADER*/
-    .header{
+    .header {
         height: 90px;
     }
+
     .header__heading {
         font-size: 50px;
     }
+
     .header:before {
         right: -75px;
         border-width: 90px 75px 0 0;
-    }    
+    }
+
     .header:after {
         left: -75px;
         border-width: 90px 0 0 75px;
@@ -582,9 +629,11 @@ choices__submit.selected {
     .textbox .textbox__character {
         font-size: 3em;
     }
+
     .textbox__text {
         font-size: 2em;
     }
+
     .textbox__next {
         background-size: contain;
         width: 55px;
@@ -594,14 +643,23 @@ choices__submit.selected {
     .wrap, .minigame--green_square {
         max-width: 1000px;
         margin: 0 auto;
-    }    
+    }
+
     .minigame--green_square {
         max-width: 750px;
         margin: 0 auto;
     }
 
-    .wrap .button{
+    .wrap .button {
         font-size: 32px;
         padding: .7em 1em;
+    }
+
+    .choices {
+        bottom: 2em;
+        border-radius: 16px;
+        max-width: 750px;
+        left: 50%;
+        transform: translateX(-50%)
     }
 }

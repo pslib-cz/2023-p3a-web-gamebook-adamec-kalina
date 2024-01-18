@@ -1,40 +1,51 @@
 ﻿document.addEventListener('DOMContentLoaded', function () {
 
-        console.log(locationResponseData);
-
-});
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-
     const hitbox = document.getElementById('hitbox');
+    const data = locationResponseData;
+    console.log(data);
 
-    
-    if (locationResponseData.hitbox == "Dialog") {
+    if (data.choices != null) {
         hitbox.addEventListener('click', function () {
-            updateDialogueText(currentDialog);
-            ToggleDialog();
-            SetHitboxNotAvailable();
+            ShowChoices()
         });
     }
-    else if (locationResponseData.hitbox == "Fight") {
-        hitbox.addEventListener('click', function () {
-            InitiateGame();
-            SetHitboxNotAvailable();
-        });
-    } else if (locationResponseData.hitbox == "Pin") {
-        hitbox.addEventListener('click', function () {
-            ShowPin()
-            SetHitboxNotAvailable();
-        });
-    } else if (locationResponseData.hitbox == "Choice") {
-        hitbox.addEventListener('click', function () {
-                ShowChoices()
+    else {
+        if (data.hitbox == "Fight") {
+            hitbox.addEventListener('click', function () {
+                InitiateGame();
                 SetHitboxNotAvailable();
-        });
+            });
+        }
+        else if (data.hitbox == "Pin") {
+            hitbox.addEventListener('click', function () {
+                ShowPin()
+                SetHitboxNotAvailable();
+            });
+        }
+        else if (data.hitbox == "Hack") {
+            hitbox.addEventListener('click', function () {
+                ShowHack()
+                SetHitboxNotAvailable();
+            });
+        }
+        else if (data.hitbox == "Dialog") {
+            hitbox.addEventListener('click', function () {
+                updateDialogueText();
+                ToggleDialog();
+                SetHitboxNotAvailable();
+            });
+        }
+        else if (data.dialog != null && data.hitbox == "") {
+            hitbox.addEventListener('click', function () {
+                updateDialogueText();
+                ToggleDialog();
+                SetHitboxNotAvailable();
+            });
+        }
+    }
+
+    if (data.hitbox == "" && data.dialog == null) {
+        hitbox.classList.add("hidden");
     }
 
 

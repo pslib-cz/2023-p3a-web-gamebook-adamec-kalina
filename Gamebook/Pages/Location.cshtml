@@ -30,15 +30,14 @@
 
 
 
-@if (locationResponse.Hitbox == "Dialog") {
-    <div class="textbox textbox--red hidden" id="textbox">
-        <div class="textbox__container">
-            <p class="textbox__character"></p>
-            <button class="textbox__next"></button>
-        </div>
-        <p class="textbox__text"></p>
+<div class="textbox textbox--red hidden" id="textbox">
+    <div class="textbox__container">
+        <p class="textbox__character"></p>
+        <button class="textbox__next"></button>
     </div>
-}
+    <p class="textbox__text"></p>
+</div>
+
 
 @if (locationResponse.Hitbox == "Pin")
 {
@@ -71,14 +70,23 @@
 
 }
 
-@if (locationResponse.Hitbox == "Choice")
+@if (locationResponse.Hitbox == "Hack")
 {
-    <div class="choices hidden">
-        <button class="button button--choice button--red choices__choice">Violence</button>
-        <button class="button button--choice button--red choices__choice">Talk them Down</button>
+    <div class="hack-game">
+        <h1 class="hack-game__heading">Solve this chunk of code.</h1>
 
-        <p class="choices__text">Choose whether to deal with the gang violently or talk them down and scare them away.</p>
-
-        <button class="button button--choice choices__submit">Submit</button>
+        <ul class="hack-game__list" id="codeList"></ul>
+        <button class="hack-game__submit" id="submitBtn">Submit</button>
+        <p class="hack-game__result" id="result"></p>
     </div>
+
 }
+
+<div class="choices hidden">
+    <button class="button button--choice button--red choices__choice">Violence</button>
+    <button class="button button--choice button--red choices__choice">Talk them Down</button>
+
+    <p class="choices__text">Choose whether to deal with the gang violently or talk them down and scare them away.</p>
+
+    <button class="button button--choice choices__submit">Submit</button>
+</div>

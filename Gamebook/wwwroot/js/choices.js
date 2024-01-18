@@ -9,15 +9,12 @@ function updateSelection(event) {
     var clickedButton = event.currentTarget;
     clickedButton.classList.add('selected');
 
-    document.querySelector('.choices__submit').classList.add('enabled');
+    submit.classList.add('enabled');
 }
 
 
 
 function hideChoices() {
-    if (!submit.classList.contains("enabled")) {
-        return;
-    }
 
     document.getElementById('hitbox').classList.remove('hidden');
     document.querySelector('.sidemenu').classList.remove('hidden');
@@ -32,7 +29,18 @@ function ShowChoices(){
     document.querySelector('.sidemenu').classList.add('hidden');
     document.getElementById('location-choice').classList.add('hidden');
 
+    var choicesDiv = document.querySelector('.choices');
+    var choiceAButton = choicesDiv.querySelector('.button--choice:nth-of-type(1)');
+    var choiceBButton = choicesDiv.querySelector('.button--choice:nth-of-type(2)');
+    var descriptionParagraph = choicesDiv.querySelector('.choices__text');
+    var data = locationResponseData;
+
+    choiceAButton.textContent = data.choices.choiceA;
+    choiceBButton.textContent = data.choices.choiceB;
+    descriptionParagraph.textContent = data.choices.description;
+
     document.querySelector('.choices').classList.remove('hidden');
+
 };
 
 
@@ -42,5 +50,85 @@ choiceButtons.forEach(button => {
 
 
 if (document.body.contains(submit)) {
-    submit.addEventListener('click', hideChoices);
+    submit.addEventListener('click', function () {
+        if (!submit.classList.contains("enabled")) {
+            return;
+        }
+
+        hideChoices();
+        ChoiceNotAvailable();
+        PlayerFocusChoice(document.querySelector('.choices__choice.selected').textContent);
+        PlayerDealingTypeChoice(document.querySelector('.choices__choice.selected').textContent);
+        setTimeout(function () {
+            location.reload(true);
+        }, 500);
+    });
 }
+
+
+function ChoiceNotAvailable() {
+    console.log("choice not avalible");
+    fetch('/Gameplay/SetChoiceNotAvailable', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    });
+}
+
+function PlayerFocusChoice(choice) {
+    var endChoice = "";
+    if (choice == "SKELLETRON") {
+        endChoice = "Physics";
+    }
+    else if (choice == "Brain Chip") {
+        endChoice = "Hack"
+        MoralScoreChange(25);
+    }
+    else {
+        return;
+    }
+
+    console.log(endChoice);
+    fetch('/Gameplay/PlayerFocusChoice', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(endChoice),
+    });
+}
+function PlayerDealingTypeChoice(choice) {
+    var endChoice = "";
+    if (choice == "Violence") {
+        endChoice = "Violent";
+    }
+    else if (choice == "Talk them Down") {
+        endChoice = "Peaceful"
+        MoralScoreChange(25);
+    }
+    else {
+        return;
+    }
+
+    console.log(endChoice);
+
+    fetch('/Gameplay/PlayerDealingTypeChoice', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(endChoice),
+    });
+}
+function MoralScoreChange(amount) {
+
+    fetch('/Gameplay/MoralScoreChange', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(amount),
+    });
+}
+

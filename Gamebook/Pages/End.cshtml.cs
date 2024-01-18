@@ -30,7 +30,7 @@ public class End : PageModel
         EndPageResponse.Ending = moralScore switch
         {
             (< 20) => Global.Endings.First(e => e.Key == 3).Value,
-            (< 50) => Global.Endings.First(e => e.Key == 2).Value,
+            (< 40) => Global.Endings.First(e => e.Key == 2).Value,
             _ => Global.Endings.First(e => e.Key == 1).Value
         };
     }

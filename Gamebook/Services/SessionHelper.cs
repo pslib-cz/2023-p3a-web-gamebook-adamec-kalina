@@ -29,32 +29,32 @@ public class SessionHelper : ISessionHelper
         {Location.QuantumTechnology, new GameLocation(){Title = "Quantum Technology", BackgroundImage = "quantum-technology", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
                 
         {Location.CorporalBuilding, new GameLocation(){Title = "Corporal Building", BackgroundImage = "corporal-building" }},
-        {Location.MainEntrance, new GameLocation(){Title = "Main Entrance", BackgroundImage = "main-entrance", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.Reception, new GameLocation(){Title = "Reception", BackgroundImage = "reception", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.BackOfBuilding, new GameLocation(){Title = "Back Of Building", BackgroundImage = "back-of-building", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}, new(){Type = HitboxType.Fight}, new(){Type = HitboxType.Dialog}}}},
-        {Location.Hallway, new GameLocation(){Title = "Hallway", BackgroundImage = "hallway", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.ServerRoom, new GameLocation(){Title = "Server Room", BackgroundImage = "server-room", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.SecurityDoor, new GameLocation(){Title = "Security Door", BackgroundImage = "security-door", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Pin}}}},
-        {Location.HoldingCells, new GameLocation(){Title = "Holding Cells", BackgroundImage = "holding-cells", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.ControlRoom, new GameLocation(){Title = "Control Room", BackgroundImage = "control-room", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.ChiefTechnitianOffice, new GameLocation(){Title = "Chiefs Technitian Office", BackgroundImage = "chief-technitian-office", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.BackDoor, new GameLocation(){Title = "Back Door", BackgroundImage = "back-door", Hitboxes = new List<Hitbox>(){new() {Type = HitboxType.Dialog}}}},
-        {Location.Warehouse, new GameLocation(){Title = "Warehouse", BackgroundImage = "warehouse", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.BoilerRoom, new GameLocation(){Title = "Boiler Room", BackgroundImage = "boiler-room", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.SecurityRoom, new GameLocation(){Title = "Security Room", BackgroundImage = "security-room", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.ExtractionVan, new GameLocation(){Title = "Extraction Van", BackgroundImage = "extraction-van", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.MainEntrance, new GameLocation(){Title = "Main Entrance", BackgroundImage = "main-entrance"}},
+        {Location.Reception, new GameLocation(){Title = "Reception", BackgroundImage = "reception"}},
+        {Location.BackOfBuilding, new GameLocation(){Title = "Back Of Building", BackgroundImage = "back-of-building"}},
+        {Location.Hallway, new GameLocation(){Title = "Hallway", BackgroundImage = "hallway"}},
+        {Location.ServerRoom, new GameLocation(){Title = "Server Room", BackgroundImage = "server-room"}},
+        {Location.SecurityDoor, new GameLocation(){Title = "Security Door", BackgroundImage = "security-door"}},
+        {Location.HoldingCells, new GameLocation(){Title = "Holding Cells", BackgroundImage = "holding-cells"}},
+        {Location.ControlRoom, new GameLocation(){Title = "Control Room", BackgroundImage = "control-room"}},
+        {Location.ChiefTechnitianOffice, new GameLocation(){Title = "Chiefs Technitian Office", BackgroundImage = "chief-technitian-office"}},
+        {Location.BackDoor, new GameLocation(){Title = "Back Door", BackgroundImage = "back-door"}},
+        {Location.Warehouse, new GameLocation(){Title = "Warehouse", BackgroundImage = "warehouse"}},
+        {Location.BoilerRoom, new GameLocation(){Title = "Boiler Room", BackgroundImage = "boiler-room"}},
+        {Location.SecurityRoom, new GameLocation(){Title = "Security Room", BackgroundImage = "security-room"}},
+        {Location.ExtractionVan, new GameLocation(){Title = "Extraction Van", BackgroundImage = "extraction-van"}},
                         
-        {Location.Facility, new GameLocation(){Title = "Facility", BackgroundImage = "facility", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.DeliveryEntrance, new GameLocation(){Title = "Delivery Entrance", BackgroundImage = "delivery-entrance", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.SecurityCheckpoint, new GameLocation(){Title = "Security Checkpoint", BackgroundImage = "security-checkpoint", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.ElectricalHallway, new GameLocation(){Title = "Electrical Hallway", BackgroundImage = "electrical-hallway", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.RoomA421, new GameLocation(){Title = "Room A421", BackgroundImage = "room-A421", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.RoomB78, new GameLocation(){Title = "Room B78", BackgroundImage = "room-B78", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.RoomA765, new GameLocation(){Title = "Room A765", BackgroundImage = "room-A765", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.MaintenanceArea, new GameLocation(){Title = "Maintenance Area", BackgroundImage = "maintenance-area", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.ToolStorage, new GameLocation(){Title = "Tool Storage", BackgroundImage = "tool-storage", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.EmergencyExit, new GameLocation(){Title = "Emergency Exit", BackgroundImage = "emergency-exit", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.EscapeCar, new GameLocation(){Title = "Escape Car", BackgroundImage = "escape-car", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.Facility, new GameLocation(){Title = "Facility", BackgroundImage = "facility"}},
+        {Location.DeliveryEntrance, new GameLocation(){Title = "Delivery Entrance", BackgroundImage = "delivery-entrance"}},
+        {Location.SecurityCheckpoint, new GameLocation(){Title = "Security Checkpoint", BackgroundImage = "security-checkpoint"}},
+        {Location.ElectricalHallway, new GameLocation(){Title = "Electrical Hallway", BackgroundImage = "electrical-hallway"}},
+        {Location.RoomA421, new GameLocation(){Title = "Room A421", BackgroundImage = "room-A421"}},
+        {Location.RoomB78, new GameLocation(){Title = "Room B78", BackgroundImage = "room-B78"}},
+        {Location.RoomA765, new GameLocation(){Title = "Room A765", BackgroundImage = "room-A765"}},
+        {Location.MaintenanceArea, new GameLocation(){Title = "Maintenance Area", BackgroundImage = "maintenance-area"}},
+        {Location.ToolStorage, new GameLocation(){Title = "Tool Storage", BackgroundImage = "tool-storage"}},
+        {Location.EmergencyExit, new GameLocation(){Title = "Emergency Exit", BackgroundImage = "emergency-exit"}},
+        {Location.EscapeCar, new GameLocation(){Title = "Escape Car", BackgroundImage = "escape-car"}},
 
 
     };
@@ -68,7 +68,7 @@ public class SessionHelper : ISessionHelper
                 "Old Merchant: Hmm, your face is familiar, but there are a lot of people hanging around this neighborhood. I might remember something, but I have my own worries right now.",
                 "Shadow Viper: Can I help you with something?",
                 "Old Merchant: Well, I need a component to repair a piece of equipment. You can find it at Jake's electronics shop just down the road. Bring it to me and maybe I'll remember something useful."
-            }}, new() { DialogOrder = new(){Quest = 1, Step = 6, LastStep = true}, Texts = new List<string>{
+            }}, new() {ItemsRemove = new() { Item.Battery.ToString()}, DialogOrder = new(){Quest = 1, Step = 6, LastStep = true}, Unlock = new() { Location.ShadyBar.ToString()}, Texts = new List<string>{
                 "Shadow Viper: I have the component you needed.",
                 "Old Merchant: Oh, that's it. Thanks, young man. Well, I promised you the information. I saw you come into the Quarter. You were accompanied by a strange figure, looked like a hacker or something. You had some electronics on you, and it looked like you were planning something together.", 
                 "Shadow Viper: Do you know anything more about the character or what we were planning?",
@@ -85,7 +85,7 @@ public class SessionHelper : ISessionHelper
                 "Jake: You're big and you look pretty dangerous. All you have to do is show up in their territory and show off a little. Talk about joining a bigger group, come up with something. They're pretty paranoid, so that's enough.", 
                 "Shadow Viper: All right, I'll do it. Then you'll give me the component?",
                 "Jake: Yes, you have my word. When you do, the component is yours."
-            }}, new() {ItemsRemove = new() { Item.Eye.ToString()}, DialogOrder = new(){Quest = 1, Step = 5}, Texts = new List<string>()
+            }}, new() {ItemsAdd = new() { Item.Battery.ToString()}, ItemsRemove = new() { Item.Eye.ToString()}, DialogOrder = new(){Quest = 1, Step = 5}, Texts = new List<string>()
             {
                 "Shadow Viper: I've dealt with the gangs. They should leave you alone.",
                 "Jake: Good job, now I can hopefully concentrate on my work. Here's the component for the Old Merchant. Thanks for your help."
@@ -350,7 +350,7 @@ public class SessionHelper : ISessionHelper
     private Dictionary<string, Choice> gameLocationChoiceDict = new()
     {
         {$"{Location.DarkAlley}Choice", new Choice(){ChoiceA = "Violence", ChoiceB = "Talk them Down", Description = "Choose whether to deal with the gang violently or talk them down and scare them away."}},
-        {$"{Location.CyberLab}Choice", new Choice(){ChoiceA = "Skelletron", ChoiceB = "Brain Chip", Description = "SKELLETRON - fighting BRAIN CHIP - hacking Choose a cyberware you want to equip."}}
+        {$"{Location.CyberLab}Choice", new Choice(){ChoiceA = "SKELLETRON", ChoiceB = "Brain Chip", Description = "SKELLETRON - fighting BRAIN CHIP - hacking Choose a cyberware you want to equip."}}
     };
 
     // Default game locations' target locations states 
