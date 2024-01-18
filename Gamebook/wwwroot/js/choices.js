@@ -88,6 +88,7 @@ function PlayerFocusChoice(choice) {
     }
 
     console.log(endChoice);
+    MoralScoreChange(25);
     fetch('/Gameplay/PlayerFocusChoice', {
         method: 'POST',
         headers: {
@@ -110,6 +111,7 @@ function PlayerDealingTypeChoice(choice) {
 
     console.log(endChoice);
 
+    MoralScoreChange(25);
     fetch('/Gameplay/PlayerDealingTypeChoice', {
         method: 'POST',
         headers: {
@@ -118,3 +120,14 @@ function PlayerDealingTypeChoice(choice) {
         body: JSON.stringify(endChoice),
     });
 }
+function MoralScoreChange(amount) {
+
+    fetch('/Gameplay/MoralScoreChange', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(amount),
+    });
+}
+
