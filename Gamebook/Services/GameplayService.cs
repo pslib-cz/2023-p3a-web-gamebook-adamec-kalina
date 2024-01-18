@@ -108,7 +108,8 @@ public class GameplayService : IGameplayService
             var locationDialogs = JsonSerializer.Deserialize<List<Dialog>>(locationDialogsString);
 
             if (locationDialogs == null) return;
-            var finishedDialog = locationDialogs.First(d => d.DialogOrder == gameProgress &&
+            var finishedDialog = locationDialogs.First(d => d.DialogOrder.Quest == gameProgress.Quest &&
+                                                            d.DialogOrder.Step == gameProgress.Step &&
                                                             (d.DialogFocus == playerFocus || d.DialogFocus == null) && // playerFocus check
                                                             (d.SpecialType == null || d.SpecialType == playerDealingType)); // playerDealingType check
             if (finishedDialog.DialogOrder.LastStep)
