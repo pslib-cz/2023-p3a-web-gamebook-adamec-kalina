@@ -53,3 +53,87 @@ body.quantum-technology{
 body.death-screen {
     background-image: url(/images/background/death_screen.png)
 }
+
+
+
+/*ACT1*/
+body.corporal-building {
+    background-image: url(/images/background/act_1/corporal_building.png);
+}
+body.main-entrance {
+    background-image: url(/images/background/act_1/main_entrance.png);
+}
+body.reception {
+    background-image: url(/images/background/act_1/reception.png);
+}
+body.back-of-building {
+    background-image: url(/images/background/act_1/back_of_building.png);
+}
+body.hallway {
+    background-image: url(/images/background/act_1/hallway.png);
+}
+body.server-room {
+    background-image: url(/images/background/act_1/server_room.png);
+}
+body.security-door {
+    background-image: url(/images/background/act_1/security_door.png);
+}
+body.holding-cells {
+    background-image: url(/images/background/act_1/holding_cells.png);
+}
+body.control-room {
+    background-image: url(/images/background/act_1/control_room.png);
+}
+body.chief-technitian-office {
+    background-image: url(/images/background/act_1/chief_technitian_office.png);
+}
+body.back-door {
+    background-image: url(/images/background/act_1/back_door.png);
+}
+body.warehouse {
+    background-image: url(/images/background/act_1/warehouse.png);
+}
+body.boiler-room {
+    background-image: url(/images/background/act_1/boiler_room.png);
+}
+body.security-room {
+    background-image: url(/images/background/act_1/security_room.png);
+}
+body.extraction-van{
+    background-image: url(/images/background/act_1/extraction_van.png);
+}
+
+/*ACT2*/
+body.facility{
+    background-image: url(/images/background/act_2/facility.png);
+}
+body.delivery-entrance{
+    background-image: url(/images/background/act_2/delivery_entrance.png);
+}
+body.security-checkpoint{
+    background-image: url(/images/background/act_2/security_checkpoint.png);
+}
+body.electrical-hallway{
+    background-image: url(/images/background/act_2/electrical_hallway.png);
+}
+body.room-A421{
+    background-image: url(/images/background/act_2/room_A421.png);
+}
+body.room-B78{
+    background-image: url(/images/background/act_2/room_B78.png);
+}
+body.room-A765{
+    background-image: url(/images/background/act_2/room_A765.png);
+}
+body.maintenance-area{
+    background-image: url(/images/background/act_2/maintenance_area.png);
+}
+body.tool-storage{
+    background-image: url(/images/background/act_2/tool_storage.png);
+}
+body.emergency-exit{
+    background-image: url(/images/background/act_2/emergency_exit.png);
+}
+body.escape-car{
+    background-image: url(/images/background/act_2/escape_car.png);
+}

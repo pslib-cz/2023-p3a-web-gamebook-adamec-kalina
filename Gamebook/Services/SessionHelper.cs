@@ -27,6 +27,36 @@ public class SessionHelper : ISessionHelper
         {Location.TacticalRoom, new GameLocation(){Title = "Tactical Room", BackgroundImage = "tactical-room", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
         {Location.CyberLab, new GameLocation(){Title = "Cyber Lab", BackgroundImage = "cyber-lab", Hitboxes = new List<Hitbox>(){new() {Type = HitboxType.Dialog}}}},
         {Location.QuantumTechnology, new GameLocation(){Title = "Quantum Technology", BackgroundImage = "quantum-technology", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+                
+        {Location.CorporalBuilding, new GameLocation(){Title = "Corporal Building", BackgroundImage = "corporal-building" }},
+        {Location.MainEntrance, new GameLocation(){Title = "Main Entrance", BackgroundImage = "main-entrance", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.Reception, new GameLocation(){Title = "Reception", BackgroundImage = "reception", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.BackOfBuilding, new GameLocation(){Title = "Back Of Building", BackgroundImage = "back-of-building", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}, new(){Type = HitboxType.Fight}, new(){Type = HitboxType.Dialog}}}},
+        {Location.Hallway, new GameLocation(){Title = "Hallway", BackgroundImage = "hallway", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.ServerRoom, new GameLocation(){Title = "Server Room", BackgroundImage = "server-room", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.SecurityDoor, new GameLocation(){Title = "Security Door", BackgroundImage = "security-door", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Pin}}}},
+        {Location.HoldingCells, new GameLocation(){Title = "Holding Cells", BackgroundImage = "holding-cells", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.ControlRoom, new GameLocation(){Title = "Control Room", BackgroundImage = "control-room", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.ChiefTechnitianOffice, new GameLocation(){Title = "Chiefs Technitian Office", BackgroundImage = "chief-technitian-office", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.BackDoor, new GameLocation(){Title = "Back Door", BackgroundImage = "back-door", Hitboxes = new List<Hitbox>(){new() {Type = HitboxType.Dialog}}}},
+        {Location.Warehouse, new GameLocation(){Title = "Warehouse", BackgroundImage = "warehouse", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.BoilerRoom, new GameLocation(){Title = "Boiler Room", BackgroundImage = "boiler-room", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.SecurityRoom, new GameLocation(){Title = "Security Room", BackgroundImage = "security-room", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.ExtractionVan, new GameLocation(){Title = "Extraction Van", BackgroundImage = "extraction-van", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+                        
+        {Location.Facility, new GameLocation(){Title = "Facility", BackgroundImage = "facility", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.DeliveryEntrance, new GameLocation(){Title = "Delivery Entrance", BackgroundImage = "delivery-entrance", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.SecurityCheckpoint, new GameLocation(){Title = "Security Checkpoint", BackgroundImage = "security-checkpoint", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.ElectricalHallway, new GameLocation(){Title = "Electrical Hallway", BackgroundImage = "electrical-hallway", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.RoomA421, new GameLocation(){Title = "Room A421", BackgroundImage = "room-A421", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.RoomB78, new GameLocation(){Title = "Room B78", BackgroundImage = "room-B78", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.RoomA765, new GameLocation(){Title = "Room A765", BackgroundImage = "room-A765", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.MaintenanceArea, new GameLocation(){Title = "Maintenance Area", BackgroundImage = "maintenance-area", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.ToolStorage, new GameLocation(){Title = "Tool Storage", BackgroundImage = "tool-storage", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.EmergencyExit, new GameLocation(){Title = "Emergency Exit", BackgroundImage = "emergency-exit", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.EscapeCar, new GameLocation(){Title = "Escape Car", BackgroundImage = "escape-car", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+
+
     };
 
     // Default game locations dialog states
@@ -326,6 +356,7 @@ public class SessionHelper : ISessionHelper
     // Default game locations' target locations states 
     private Dictionary<string, List<Location>> gameLocationTargetLocationDict = new()
     {
+        //Game
         {$"{Location.SlumDistrict}TargetLocations", new List<Location> { Location.SlumQuarter, Location.DarkAlley}},
         {$"{Location.SlumQuarter}TargetLocations", new List<Location> { Location.SlumDistrict, Location.ElectroShop}},
         {$"{Location.ElectroShop}TargetLocations", new List<Location> { Location.SlumQuarter}},
@@ -335,9 +366,40 @@ public class SessionHelper : ISessionHelper
         {$"{Location.BackEntrance}TargetLocations", new List<Location> { Location.ShadyBar, Location.SecretMeetingPlace}},
         {$"{Location.SecretMeetingPlace}TargetLocations", new List<Location> { Location.CyberLab, Location.Workshop, Location.TacticalRoom}},
         {$"{Location.Workshop}TargetLocations", new List<Location> { Location.SecretMeetingPlace, Location.QuantumTechnology}},
-        {$"{Location.TacticalRoom}TargetLocations", new List<Location> { Location.SecretMeetingPlace}},
+        {$"{Location.TacticalRoom}TargetLocations", new List<Location> { Location.SecretMeetingPlace , Location.CorporalBuilding, Location.Facility}},
         {$"{Location.CyberLab}TargetLocations", new List<Location> { Location.SecretMeetingPlace}},
-        {$"{Location.QuantumTechnology}TargetLocations", new List<Location> { Location.Workshop}}
+        {$"{Location.QuantumTechnology}TargetLocations", new List<Location> { Location.Workshop}},
+
+        //Act1
+        {$"{Location.CorporalBuilding}TargetLocations", new List<Location> { Location.MainEntrance, Location.BackOfBuilding}},
+        {$"{Location.MainEntrance}TargetLocations", new List<Location> { Location.Reception}},
+        {$"{Location.Reception}TargetLocations", new List<Location> { }}, // death
+        {$"{Location.BackOfBuilding}TargetLocations", new List<Location> { Location.Hallway , Location.BackDoor}},
+        {$"{Location.Hallway}TargetLocations", new List<Location> { Location.ServerRoom, Location.ChiefTechnitianOffice}},
+        {$"{Location.ServerRoom}TargetLocations", new List<Location> { Location.SecurityDoor, Location.ControlRoom, Location.Hallway}},
+        {$"{Location.SecurityDoor}TargetLocations", new List<Location> { Location.ServerRoom, Location.HoldingCells}},
+        {$"{Location.HoldingCells}TargetLocations", new List<Location> { Location.ExtractionVan}},
+        {$"{Location.ControlRoom}TargetLocations", new List<Location> { Location.ServerRoom}},
+        {$"{Location.ChiefTechnitianOffice}TargetLocations", new List<Location> { Location.Hallway}},
+        {$"{Location.BackDoor}TargetLocations", new List<Location> { Location.Warehouse, Location.SecurityRoom}},
+        {$"{Location.Warehouse}TargetLocations", new List<Location> { Location.SecurityDoor, Location.BoilerRoom, Location.BackDoor}},
+        {$"{Location.BoilerRoom}TargetLocations", new List<Location> { Location.Warehouse}},
+        {$"{Location.SecurityRoom}TargetLocations", new List<Location> { Location.BackDoor}},        
+        {$"{Location.ExtractionVan}TargetLocations", new List<Location> { Location.SecretMeetingPlace}}, // end mission
+        
+        //Act2
+        {$"{Location.Facility}TargetLocations", new List<Location> { Location.DeliveryEntrance}},
+        {$"{Location.DeliveryEntrance}TargetLocations", new List<Location> {  Location.SecurityCheckpoint, Location.ToolStorage}},
+        {$"{Location.SecurityCheckpoint}TargetLocations", new List<Location> {Location.ElectricalHallway, Location.DeliveryEntrance, Location.MaintenanceArea }},
+        {$"{Location.ElectricalHallway}TargetLocations", new List<Location> { Location.RoomA421, Location.RoomB78, Location.SecurityCheckpoint}},
+        {$"{Location.RoomA421}TargetLocations", new List<Location> { Location.ElectricalHallway }},
+        {$"{Location.RoomB78}TargetLocations", new List<Location> { Location.ElectricalHallway }},
+        {$"{Location.RoomA765}TargetLocations", new List<Location> { Location.MaintenanceArea}},
+        {$"{Location.MaintenanceArea}TargetLocations", new List<Location> { Location.EmergencyExit, Location.RoomA765, Location.SecurityCheckpoint}},
+        {$"{Location.ToolStorage}TargetLocations", new List<Location> { Location.DeliveryEntrance}},
+        {$"{Location.EmergencyExit}TargetLocations", new List<Location> { Location.MaintenanceArea, Location.EscapeCar}},
+        {$"{Location.EscapeCar}TargetLocations", new List<Location> { Location.SecretMeetingPlace }} // end mission
+
 
     };
  

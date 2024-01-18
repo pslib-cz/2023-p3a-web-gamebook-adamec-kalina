@@ -1,4 +1,4 @@
-# Quest 5: Sabotage (Time Line Physical Abilities)
+﻿# Quest 5: Sabotage (Time Line Physical Abilities)
 
 - player goes to **Secret Meeting Place**
 - player talks to **Hacktivist leader**
@@ -32,7 +32,17 @@ Shadow Viper: "Excellent, that sounds like a solid plan. As soon as I have all t
 ```
 
 ```
-ACTION 2
+Facility
+  └── Delivery Entrance
+      ├── Security Checkpoint
+      │   ├── Electrical Hallway
+      │   │   ├── Room A421 (Tear Cables) (get cables)
+      │   │   └── Room B78 (Tear Cables) (get cables)
+      │   └── Maintenance Area
+      │       ├── Room A765 (Tear Cables) (get cables)
+      │       └── emergency exit (needs 3 cables)
+      │           └── Escape Car
+      └── Tool Storage (Find Pliers)
 ```
 
 - player goes to **Secret Meeting Place**

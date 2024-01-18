@@ -1,4 +1,4 @@
-# Quest 4: Rescue Mission (Physical Ability Time Line)
+﻿# Quest 4: Rescue Mission (Physical Ability Time Line)
 
 - player goes to **Secret Meeting Place**
 - player talks to **Hacktivist leader**
@@ -32,7 +32,22 @@ Shadow Viper: "Okay, sounds like a solid plan. I'm ready."
 ```
 
 ```
-- ACTION 1 
+Corporal Building
+├── Main entrance
+│   └── Reception (killed by security)
+└── Back of Building
+    ├─> Hallway
+    │   ├── Server room
+    │   │   ├── Security door **(needs keycard)**
+    │   │   │   └─> Holding cells **[finish]** -> extraction van
+    │   │   └── Control Room
+    │   └── Chief Technitian office **(fight - keycard)**
+    └─> Back Door
+        ├── Warehouse
+        │   ├── Security door **(needs key)**
+        │   │   └─> Holding cells **[finish]** -> extraction van
+        │   └── Boiler Room
+        └── Security room **(fight - key)**
 ```
 
 player goes to **Secret Meeting Place**
