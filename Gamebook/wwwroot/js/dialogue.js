@@ -72,7 +72,6 @@ function ToggleDialog() {
         textbox.classList.remove('hidden');
     }
     else {
-        choices.classList.remove('hidden');
         menu.classList.remove('hidden');
         hitbox.classList.remove('hidden');
         textbox.classList.add('hidden');
@@ -110,7 +109,10 @@ function SetDialogNotAvailable() {
 }
 
 function reload() {
+    const choices = document.getElementById('location-choice');
+
     setTimeout(function () {
+        choices.classList.remove('hidden');
         location.reload(true);
     }, 500);
 }

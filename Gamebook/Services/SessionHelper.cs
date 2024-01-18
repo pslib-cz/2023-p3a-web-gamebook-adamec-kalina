@@ -17,7 +17,7 @@ public class SessionHelper : ISessionHelper
     {
         {Location.SlumDistrict, new GameLocation(){Title = "Slum District", BackgroundImage = "slum-district", Locked = false}},
         {Location.SlumQuarter, new GameLocation(){Title = "Slum Quarter", BackgroundImage = "slum-quarter", Locked = false, Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.ElectroShop, new GameLocation(){Title = "Electro Shop", BackgroundImage = "electro-shop", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
+        {Location.ElectroShop, new GameLocation(){Title = "Electro Shop", BackgroundImage = "electro-shop", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}, new(){Type = HitboxType.Dialog}}}},
         {Location.DarkAlley, new GameLocation(){Title = "Dark Alley", BackgroundImage = "dark-alley", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}, new(){Type = HitboxType.Fight}, new(){Type = HitboxType.Dialog}}}},
         {Location.ShadyBar, new GameLocation(){Title = "Shady Bar", BackgroundImage = "shady-bar", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
         {Location.PartOfTheBar, new GameLocation(){Title = "Part of the Bar", BackgroundImage = "part-of-the-bar", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
@@ -68,7 +68,7 @@ public class SessionHelper : ISessionHelper
                 "Old Merchant: Hmm, your face is familiar, but there are a lot of people hanging around this neighborhood. I might remember something, but I have my own worries right now.",
                 "Shadow Viper: Can I help you with something?",
                 "Old Merchant: Well, I need a component to repair a piece of equipment. You can find it at Jake's electronics shop just down the road. Bring it to me and maybe I'll remember something useful."
-            }}, new() { DialogOrder = new(){Quest = 1, Step = 6, LastStep = true}, Texts = new List<string>{
+            }}, new() {ItemsRemove = new() { Item.Eye.ToString()}, DialogOrder = new(){Quest = 1, Step = 6, LastStep = true}, Texts = new List<string>{
                 "Shadow Viper: I have the component you needed.",
                 "Old Merchant: Oh, that's it. Thanks, young man. Well, I promised you the information. I saw you come into the Quarter. You were accompanied by a strange figure, looked like a hacker or something. You had some electronics on you, and it looked like you were planning something together.", 
                 "Shadow Viper: Do you know anything more about the character or what we were planning?",
@@ -85,7 +85,7 @@ public class SessionHelper : ISessionHelper
                 "Jake: You're big and you look pretty dangerous. All you have to do is show up in their territory and show off a little. Talk about joining a bigger group, come up with something. They're pretty paranoid, so that's enough.", 
                 "Shadow Viper: All right, I'll do it. Then you'll give me the component?",
                 "Jake: Yes, you have my word. When you do, the component is yours."
-            }}, new() {ItemsRemove = new() { Item.Eye.ToString()}, DialogOrder = new(){Quest = 1, Step = 5}, Texts = new List<string>()
+            }}, new() {ItemsAdd = new() { Item.Battery.ToString()}, ItemsRemove = new() { Item.Eye.ToString()}, DialogOrder = new(){Quest = 1, Step = 5}, Texts = new List<string>()
             {
                 "Shadow Viper: I've dealt with the gangs. They should leave you alone.",
                 "Jake: Good job, now I can hopefully concentrate on my work. Here's the component for the Old Merchant. Thanks for your help."
