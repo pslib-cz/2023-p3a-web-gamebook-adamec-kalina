@@ -59,15 +59,15 @@ if (document.body.contains(submit)) {
         ChoiceNotAvailable();
         PlayerFocusChoice(document.querySelector('.choices__choice.selected').textContent);
         PlayerDealingTypeChoice(document.querySelector('.choices__choice.selected').textContent);
-        /*setTimeout(function () {
+        setTimeout(function () {
             location.reload(true);
-        }, 500);*/
+        }, 500);
     });
 }
 
 
 function ChoiceNotAvailable() {
-    fetch('/Gameplay/ChoiceNotAvailable', {
+    fetch('/Gameplay/SetChoiceNotAvailable', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
