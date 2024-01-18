@@ -137,7 +137,7 @@ public class GameplayController : ControllerBase
         return Ok();
     }    
 
-    [HttpPost("GetItem")]
+    [HttpPost("AddItem")]
     public ActionResult AddItem([FromBody] string itemString)
     {
         if (!Enum.TryParse(itemString, true, out Item item))
