@@ -128,7 +128,7 @@ namespace Gamebook.Services
             }
             catch (Exception e)
             {
-                throw new Exception($"Equipped weapon was not found -> {e.Message}");
+                throw new Exception($"Game progress -> {e.Message}");
             }
         }
 

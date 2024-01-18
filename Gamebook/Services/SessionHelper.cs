@@ -366,7 +366,7 @@ public class SessionHelper : ISessionHelper
     private bool gameInProgress = false;
 
     // Game starts at quest 1, step 1
-    private GameProgress gameProgress = new(){Quest = 1, Step = 1};
+    private GameProgress gameProgress = new() {Quest = 1, Step = 1};
 
     // Set default currentLocation on game start
     private Location currentLocation = Location.SlumDistrict;
@@ -491,7 +491,8 @@ public class SessionHelper : ISessionHelper
         _httpContext.HttpContext.Session.SetString("gameInProgress", gameInProgress.ToString());
         
         // Set default game progress -> used for tracking
-        _httpContext.HttpContext.Session.SetString("gameProgress", gameProgress.ToString());
+        string serializedGameProgress = JsonSerializer.Serialize(gameProgress);
+        _httpContext.HttpContext.Session.SetString("gameProgress", serializedGameProgress);
         
         // Set default currentLocation
         _httpContext.HttpContext.Session.SetString("currentLocation", currentLocation.ToString());
