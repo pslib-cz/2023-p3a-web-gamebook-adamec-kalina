@@ -15,9 +15,6 @@ function updateSelection(event) {
 
 
 function hideChoices() {
-    if (!submit.classList.contains("enabled")) {
-        return;
-    }
 
     document.getElementById('hitbox').classList.remove('hidden');
     document.querySelector('.sidemenu').classList.remove('hidden');
@@ -39,7 +36,7 @@ function ShowChoices(){
     var data = locationResponseData;
 
     choiceAButton.textContent = data.choices.choiceA;
-    choiceBButton.textContent = data.choices.choiceA;
+    choiceBButton.textContent = data.choices.choiceB;
     descriptionParagraph.textContent = data.choices.description;
 
     document.querySelector('.choices').classList.remove('hidden');
@@ -54,8 +51,70 @@ choiceButtons.forEach(button => {
 
 if (document.body.contains(submit)) {
     submit.addEventListener('click', function () {
+        if (!submit.classList.contains("enabled")) {
+            return;
+        }
 
         hideChoices();
+        ChoiceNotAvailable();
+        PlayerFocusChoice(document.querySelector('.choices__choice.selected').textContent);
+        PlayerDealingTypeChoice(document.querySelector('.choices__choice.selected').textContent);
+        /*setTimeout(function () {
+            location.reload(true);
+        }, 500);*/
+    });
+}
 
+
+function ChoiceNotAvailable() {
+    fetch('/Gameplay/ChoiceNotAvailable ', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    });
+}
+
+function PlayerFocusChoice(choice) {
+    var endChoice = "";
+    if (choice == "SKELLETRON") {
+        endChoice = "Physics";
+    }
+    else if (choice == "Brain Chip") {
+        endChoice = "Hack"
+    }
+    else {
+        return;
+    }
+
+    console.log(endChoice);
+    fetch('/Gameplay/PlayerFocusChoice', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(endChoice),
+    });
+}
+function PlayerDealingTypeChoice(choice) {
+    var endChoice = "";
+    if (choice == "Violence") {
+        endChoice = "Violent";
+    }
+    else if (choice == "Talk them Down") {
+        endChoice = "Peaceful"
+    }
+    else {
+        return;
+    }
+
+    console.log(endChoice);
+
+    fetch('/Gameplay/PlayerDealingTypeChoice', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(endChoice),
     });
 }

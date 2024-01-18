@@ -562,16 +562,19 @@ choices__submit.selected {
 
 @media (min-width: 768px) {
     /*HEADER*/
-    .header{
+    .header {
         height: 90px;
     }
+
     .header__heading {
         font-size: 50px;
     }
+
     .header:before {
         right: -75px;
         border-width: 90px 75px 0 0;
-    }    
+    }
+
     .header:after {
         left: -75px;
         border-width: 90px 0 0 75px;
@@ -582,9 +585,11 @@ choices__submit.selected {
     .textbox .textbox__character {
         font-size: 3em;
     }
+
     .textbox__text {
         font-size: 2em;
     }
+
     .textbox__next {
         background-size: contain;
         width: 55px;
@@ -594,14 +599,23 @@ choices__submit.selected {
     .wrap, .minigame--green_square {
         max-width: 1000px;
         margin: 0 auto;
-    }    
+    }
+
     .minigame--green_square {
         max-width: 750px;
         margin: 0 auto;
     }
 
-    .wrap .button{
+    .wrap .button {
         font-size: 32px;
         padding: .7em 1em;
+    }
+
+    .choices {
+        bottom: 2em;
+        border-radius: 16px;
+        max-width: 750px;
+        left: 50%;
+        transform: translateX(-50%)
     }
 }

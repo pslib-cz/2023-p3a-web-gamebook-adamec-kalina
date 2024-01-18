@@ -18,7 +18,7 @@ public class SessionHelper : ISessionHelper
         {Location.SlumDistrict, new GameLocation(){Title = "Slum District", BackgroundImage = "slum-district", Locked = false}},
         {Location.SlumQuarter, new GameLocation(){Title = "Slum Quarter", BackgroundImage = "slum-quarter", Locked = false, Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
         {Location.ElectroShop, new GameLocation(){Title = "Electro Shop", BackgroundImage = "electro-shop", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
-        {Location.DarkAlley, new GameLocation(){Title = "Dark Alley", BackgroundImage = "dark-alley", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Choice}, new(){Type = HitboxType.Fight}, new(){Type = HitboxType.Dialog}}}},
+        {Location.DarkAlley, new GameLocation(){Title = "Dark Alley", BackgroundImage = "dark-alley", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}, new(){Type = HitboxType.Fight}, new(){Type = HitboxType.Dialog}}}},
         {Location.ShadyBar, new GameLocation(){Title = "Shady Bar", BackgroundImage = "shady-bar", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
         {Location.PartOfTheBar, new GameLocation(){Title = "Part of the Bar", BackgroundImage = "part-of-the-bar", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Dialog}}}},
         {Location.BackEntrance, new GameLocation(){Title = "Back Entrance", BackgroundImage = "back-entrance", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Pin}}}},
@@ -350,7 +350,7 @@ public class SessionHelper : ISessionHelper
     private Dictionary<string, Choice> gameLocationChoiceDict = new()
     {
         {$"{Location.DarkAlley}Choice", new Choice(){ChoiceA = "Violence", ChoiceB = "Talk them Down", Description = "Choose whether to deal with the gang violently or talk them down and scare them away."}},
-        {$"{Location.CyberLab}Choice", new Choice(){ChoiceA = "Skelletron", ChoiceB = "Brain Chip", Description = "SKELLETRON - fighting BRAIN CHIP - hacking Choose a cyberware you want to equip."}}
+        {$"{Location.CyberLab}Choice", new Choice(){ChoiceA = "SKELLETRON", ChoiceB = "Brain Chip", Description = "SKELLETRON - fighting BRAIN CHIP - hacking Choose a cyberware you want to equip."}}
     };
 
     // Default game locations' target locations states 

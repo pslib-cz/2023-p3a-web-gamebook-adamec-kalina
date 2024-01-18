@@ -109,9 +109,7 @@ function SetDialogNotAvailable() {
 }
 
 function reload() {
-    setTimeout(function () {
-        location.reload(true);
-    }, 500);
+    location.reload(true);
 }
 
 const nextInDialogue = document.querySelector('.textbox__next');
