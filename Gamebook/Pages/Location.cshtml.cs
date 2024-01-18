@@ -91,7 +91,8 @@ namespace Gamebook.Pages
                 Dialog = _locationService.GetDialog(currentLocation),
                 EquipedWeapon = _locationService.GetEquippedWeapon(),
                 PlayerStats = _locationService.GetPlayerStats(),
-                Hitbox = _locationService.GetHitbox(currentLocation).ToString()
+                Hitbox = _locationService.GetHitbox(currentLocation).ToString(),
+                Choices = _locationService.GetChoice(currentLocation)
             };
         }
     }

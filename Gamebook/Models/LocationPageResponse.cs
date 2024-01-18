@@ -9,4 +9,5 @@ public class LocationPageResponse
     public PlayerStats PlayerStats { get; set; }
     public Weapon EquipedWeapon { get; set; }
     public string? Hitbox { get; set; }
+    public Choice? Choices { get; set; }
 }

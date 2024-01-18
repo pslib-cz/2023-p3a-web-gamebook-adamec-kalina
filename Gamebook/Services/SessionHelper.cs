@@ -96,7 +96,7 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: I hear you're making trouble for Jake. I don't like that.", 
                 "Gang Leader: What are you going to do to us? We have our territory here.",
                 "Shadow Viper: I don't have to put it into words. I can take you all out without breaking a sweat."
-            }}, new() {ItemsAdd = new() { Item.Eye.ToString()}, DialogOrder = new(){Quest = 1, Step = 3}, SpecialType = PlayerDealingType.Violent, Texts = new List<string>()
+            }}, new() {ItemsAdd = new() { Item.Eye.ToString()}, DialogOrder = new(){Quest = 1, Step = 4}, SpecialType = PlayerDealingType.Violent, Texts = new List<string>()
             {
                 "Gang Leader: 'Okay, okay, we'll leave him alone. Just go away and leave us alone."
             }}, new() {ItemsAdd = new() { Item.Eye.ToString()}, DialogOrder = new(){Quest = 1, Step = 3}, SpecialType = PlayerDealingType.Peaceful, Texts = new List<string>()
@@ -346,6 +346,12 @@ public class SessionHelper : ISessionHelper
             }}
         }},
     };
+    
+    private Dictionary<string, Choice> gameLocationChoiceDict = new()
+    {
+        {$"{Location.DarkAlley}Choice", new Choice(){ChoiceA = "Violence", ChoiceB = "Talk them Down", Description = "Choose whether to deal with the gang violently or talk them down and scare them away."}},
+        {$"{Location.CyberLab}Choice", new Choice(){ChoiceA = "Skelletron", ChoiceB = "Brain Chip", Description = "SKELLETRON - fighting BRAIN CHIP - hacking Choose a cyberware you want to equip."}}
+    };
 
     // Default game locations' target locations states 
     private Dictionary<string, List<Location>> gameLocationTargetLocationDict = new()
@@ -535,6 +541,13 @@ public class SessionHelper : ISessionHelper
         {
             string serializedValue = JsonSerializer.Serialize(pair.Value);
             _httpContext.HttpContext.Session.SetString(pair.Key, serializedValue);
+        }
+        
+        // Add game locations choices
+        foreach (var pair in gameLocationChoiceDict)
+        {
+            string serializedValue = JsonSerializer.Serialize(pair.Value);
+            _httpContext.HttpContext.Session.SetString(pair.Key.ToString(), serializedValue);
         }
 
         // Add inventory items

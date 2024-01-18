@@ -9,6 +9,7 @@ namespace Gamebook.Interfaces
         GameLocation GetLocation(Location location);
         List<Location> GetTargetLocations(Location location);
         Dialog? GetDialog(Location location);
+        Choice? GetChoice(Location location);
         PlayerStats GetPlayerStats();
         PlayerDealingType? GetPlayerDealingType();
         HitboxType? GetHitbox(Location location);
