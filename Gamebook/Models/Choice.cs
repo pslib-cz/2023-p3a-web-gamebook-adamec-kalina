@@ -5,4 +5,5 @@ public class Choice
     public string ChoiceA { get; set; }
     public string ChoiceB { get;set; }
     public string Description { get; set; }
+    public bool Available { get; set; } = true;
 }
