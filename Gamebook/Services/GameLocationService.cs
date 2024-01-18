@@ -59,7 +59,9 @@ namespace Gamebook.Services
                 // Retrieve data from the session
                 var serializedModel = _session.GetString($"{location}Choice");
                 if(serializedModel == null) return null;
-                return JsonSerializer.Deserialize<Choice>(serializedModel);
+                var choice = JsonSerializer.Deserialize<Choice>(serializedModel);
+                if (choice.Available) return choice;
+                return null;
                 // var gameProgress = GetGameProgress();
             }
             catch (Exception e)

@@ -89,6 +89,14 @@ public class GameplayController : ControllerBase
         
         return Ok();
     }
+    
+    [HttpPost("SetChoiceNotAvailable")]
+    public ActionResult SetChoiceNotAvailable()
+    {
+        _gameplayService.SetChoiceNotAvailable();
+        
+        return Ok();
+    }
 
     [HttpPost("UnlockLocation")]
     public ActionResult UnlockLocation([FromBody] string locationString)

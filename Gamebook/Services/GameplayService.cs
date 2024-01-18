@@ -157,7 +157,27 @@ public class GameplayService : IGameplayService
         catch (Exception e)
         {
             throw new Exception($"Error while trying to set a hitbox in [{currentLocation}] unavailable -> {e.Message}");
-        }    }
+        }    
+    }
+
+    public void SetChoiceNotAvailable()
+    {
+        var currentLocation = _locationService.GetCurrentLocation();
+        try
+        {
+            var choice = _locationService.GetChoice(currentLocation);
+            if (choice.Available) choice.Available = false;
+            else{return;}
+                
+            // Save the changed location info back into the session
+            string serializedChoice= JsonSerializer.Serialize(choice);
+            _session.SetString($"{currentLocation}Choice", serializedChoice);
+        }
+        catch (Exception e)
+        {
+            throw new Exception($"Error while trying to set a choice in [{currentLocation}] unavailable -> {e.Message}");
+        }    
+    }
 
     /// <summary>
     /// Sets a specific location as Locked = false
