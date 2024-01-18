@@ -136,6 +136,20 @@ namespace Gamebook.Services
             }
         }
 
+        public List<Item> GetInventoryItems()
+        {
+            try
+            {
+                // Retrieve data from the session
+                var serializedModel = _session.GetString("inventory");
+                return JsonSerializer.Deserialize<List<Item>>(serializedModel);
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Error while trying to get inventory -> {e.Message}");
+            }
+        }
+
         public GameProgress GetGameProgress()
         {
             try

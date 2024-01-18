@@ -8,4 +8,5 @@ public class LoadOutPageResponse
     public PlayerFocus? PlayerFocus { get; set; }
     public WeaponType Weapon { get; set; }
     public PlayerStats PlayerStats { get; set; }
+    public List<Item> InventoryItems { get; set; }
 }

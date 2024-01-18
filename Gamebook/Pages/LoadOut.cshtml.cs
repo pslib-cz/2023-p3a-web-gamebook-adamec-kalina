@@ -22,7 +22,8 @@ public class LoadOut : PageModel
             CurrentLocation = _locationService.GetCurrentLocation(),
             PlayerFocus = _locationService.GetPlayerFocus(),
             PlayerStats = _locationService.GetPlayerStats(),
-            Weapon = _locationService.GetEquippedWeapon().Type
+            Weapon = _locationService.GetEquippedWeapon().Type,
+            InventoryItems = _locationService.GetInventoryItems()
         };
         
     }

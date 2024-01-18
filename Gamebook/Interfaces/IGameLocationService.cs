@@ -16,6 +16,7 @@ namespace Gamebook.Interfaces
         List<Quest> GetQuests();
         List<TargetLocation> GetTargetLocationList(Location location);
         Weapon GetEquippedWeapon();
+        List<Item> GetInventoryItems();
         GameProgress GetGameProgress();
         PlayerFocus? GetPlayerFocus();
         int GetPlayerMoralScore();

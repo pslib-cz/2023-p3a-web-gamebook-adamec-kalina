@@ -20,6 +20,7 @@
             loadoutWear = "Physics Hack";
             break;
     }
+    
     int healthPercent = (int)((double)loadOutResponse.PlayerStats.Health / (double)loadOutResponse.PlayerStats.MaxHealth * 100);
     int energyPercent = (int)((double)loadOutResponse.PlayerStats.Energy / (double)loadOutResponse.PlayerStats.MaxEnergy * 100);
 }
@@ -68,12 +69,12 @@
         <div class="loadout__cont loadout__cont--inventory">
             <p class="cont__heading">Inventory</p>
             <div class="cont__inventory">
-                <span class="cont__inventory__item"></span>
-                <span class="cont__inventory__item"></span>
-                <span class="cont__inventory__item"></span>
-                <span class="cont__inventory__item"></span>
-                <span class="cont__inventory__item"></span>
-                <span class="cont__inventory__item"></span>
+                <span class="cont__inventory__item @(loadOutResponse.InventoryItems.Count >= 1 ? loadOutResponse.InventoryItems[0] : "")"></span>
+                <span class="cont__inventory__item @(loadOutResponse.InventoryItems.Count >= 2 ? loadOutResponse.InventoryItems[1] : "")"></span>
+                <span class="cont__inventory__item @(loadOutResponse.InventoryItems.Count >= 3 ? loadOutResponse.InventoryItems[2] : "")"></span>
+                <span class="cont__inventory__item @(loadOutResponse.InventoryItems.Count >= 4 ? loadOutResponse.InventoryItems[3] : "")"></span>
+                <span class="cont__inventory__item @(loadOutResponse.InventoryItems.Count >= 5 ? loadOutResponse.InventoryItems[4] : "")"></span>
+                <span class="cont__inventory__item @(loadOutResponse.InventoryItems.Count >= 6 ? loadOutResponse.InventoryItems[5] : "")"></span>
             </div>
         </div>
         
