@@ -52,6 +52,22 @@ namespace Gamebook.Services
             }
         }
 
+        public Choice? GetChoice(Location location)
+        {
+            try
+            {
+                // Retrieve data from the session
+                var serializedModel = _session.GetString($"{location}Choice");
+                if(serializedModel == null) return null;
+                return JsonSerializer.Deserialize<Choice>(serializedModel);
+                // var gameProgress = GetGameProgress();
+            }
+            catch (Exception e)
+            {
+                throw new Exception($"Choice for [{location}] was not found -> {e.Message}");
+            }
+        }
+
         public PlayerStats GetPlayerStats()
         {
             try
