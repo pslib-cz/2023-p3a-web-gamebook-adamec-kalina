@@ -28,13 +28,6 @@ function updateDialogueText() {
 
                     closeButton.addEventListener('click', function () {
                         ToggleDialog();
-                        SetDialogNotAvailable();
-                        if (dialogue.unlock !== null) {
-                            dialogue.unlock.forEach(location => {
-                                UnlockLocation(location);
-                                console.log(location);
-                            })
-                        }
                         if (dialogue.itemsAdd !== null) {
                             dialogue.itemsAdd.forEach(item => {
                                 AddItem(item);
@@ -45,7 +38,9 @@ function updateDialogueText() {
                                 RemoveItem(item);
                             })
                         }
-                        reload();
+
+                        SetDialogNotAvailable();
+
                     });
 
                 }
@@ -83,39 +78,29 @@ const infobox = document.getElementById('info-box');
 const infoBoxText = document.getElementById('info-box-text');
 
 
-function UnlockLocation(location) {
-    console.log(location);
-    fetch('/Gameplay/UnlockLocation', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(location),
-    });
-
-    infobox.classList.remove('hidden');
-    infoBoxText.textContent = `Location ${location} unlocked`;
-    setTimeout(function () {
-        infobox.classList.add('hidden');
-    }, 300);
-}
-
 function SetDialogNotAvailable() {
+    console.log("Dialog over");
     fetch('/Gameplay/DialogOver', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         }
+    })
+    .then(response => {
+        if (response.status === 200) {
+            console.log("Request successful with status 200");
+            reloadNow();
+        } else {
+            console.error("Request failed with status:", response.status);
+        }
     });
 }
 
-function reload() {
-    const choices = document.getElementById('location-choice');
 
-    setTimeout(function () {
-        choices.classList.remove('hidden');
-        location.reload(true);
-    }, 500);
+function reloadNow() {
+    const choices = document.getElementById('location-choice');
+    choices.classList.remove('hidden');
+    location.reload(true);
 }
 
 const nextInDialogue = document.querySelector('.textbox__next');
