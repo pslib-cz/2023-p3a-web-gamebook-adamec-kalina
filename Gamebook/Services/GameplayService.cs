@@ -126,6 +126,8 @@ public class GameplayService : IGameplayService
             }
 
             finishedDialog.Unlock?.ForEach(UnlockLocation);
+            finishedDialog.ItemsAdd?.ForEach(AddItem);
+            finishedDialog.ItemsRemove?.ForEach(RemoveItem);
 
             // Save the progress back into the session
             string serializedGameProgress= JsonSerializer.Serialize(gameProgress);
