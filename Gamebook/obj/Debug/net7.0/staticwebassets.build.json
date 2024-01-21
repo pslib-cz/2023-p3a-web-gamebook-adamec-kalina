@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L7211X4U57gML1jFN8uSjVF9YXoSMKONKDOua7Iw+FI=",
+  "Hash": "lJyb8Srtehpdh+qwZXtSdr8xxKD/CPXpr1jPl+JFM3o=",
   "Source": "Gamebook",
   "BasePath": "_content/Gamebook",
   "Mode": "Default",
@@ -782,12 +782,12 @@
       "OriginalItemSpec": "wwwroot\\images\\background\\act_3\\helipad.png"
     },
     {
-      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_3\\main_loby.png",
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_3\\main_lobby.png",
       "SourceId": "Gamebook",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
       "BasePath": "_content/Gamebook",
-      "RelativePath": "images/background/act_3/main_loby.png",
+      "RelativePath": "images/background/act_3/main_lobby.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -796,7 +796,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\background\\act_3\\main_loby.png"
+      "OriginalItemSpec": "wwwroot\\images\\background\\act_3\\main_lobby.png"
     },
     {
       "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\act_3\\research_wing.png",

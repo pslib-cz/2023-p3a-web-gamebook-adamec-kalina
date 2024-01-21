@@ -7,7 +7,7 @@ using Gamebook.Models;
 using Global = Gamebook.GlobalModels.GlobalModels;
 
 namespace Gamebook.Services;
-
+// SecretMeetingPlace, Workshop lock
 public class SessionHelper : ISessionHelper
 {
     private readonly IHttpContextAccessor _httpContext;
@@ -24,7 +24,7 @@ public class SessionHelper : ISessionHelper
         {Location.BackEntrance, new GameLocation(){Title = "Back Entrance", BackgroundImage = "back-entrance", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Pin, HitboxOrder = null}}}},
         {Location.SecretMeetingPlace, new GameLocation(){Title = "Secret Meeting Place", BackgroundImage = "secret-meeting-place",Locked = false, Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Hack, HitboxOrder = new(){Quest = 2, Step = 4}}}}},
         {Location.Workshop, new GameLocation(){Title = "Workshop", BackgroundImage = "workshop"}},
-        {Location.TacticalRoom, new GameLocation(){Title = "Tactical Room", BackgroundImage = "tactical-room"}},
+        {Location.TacticalRoom, new GameLocation(){Title = "Tactical Room", BackgroundImage = "tactical-room", Locked = false}},
         {Location.CyberLab, new GameLocation(){Title = "Cyber Lab", BackgroundImage = "cyber-lab"}},
         {Location.QuantumTechnology, new GameLocation(){Title = "Quantum Technology", BackgroundImage = "quantum-technology"}},
                 
@@ -145,7 +145,8 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: I need to meet them. I have important information they might be interested in.",
                 "Mysterious Guest: Everyone has 'important information'. But okay, maybe I can help you. The back door uses a combination lock. The code is a four digit number. If you're smart enough, you should be able to guess it.",
                 "Shadow Viper: What's the code?",
-                "Mysterious Guest: I won't tell you the code directly, but I'll give you a hint. PIN PUZZLE HINT"
+                "Mysterious Guest: I won't tell you the code directly, but I'll give you a hint. ",
+                "Mysterious Guest: Last is 1 above the first, second to last is 1 above the second, no numbers are repeating."
             }}
         }},
         {$"{Location.SecretMeetingPlace}Dialog", new List<Dialog>()
@@ -347,18 +348,18 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: I appreciate that. It's time to show the corporations that we're not just helpless pawns in the game.",
                 "Ripper Dock: Exactly. Now sit back and let me work. You'll soon have new abilities at your disposal."
             }}, new(){DialogFocus = PlayerFocus.Physics, Unlock = new() { Location.TacticalRoom, Location.Workshop }, DialogOrder = new(){Quest = 6, Step = 2}, Texts = new List<string>() {
-                "Tech Expert: We have another upgrade for you, Shadow Viper. This hacking module will allow you to penetrate corporate systems more efficiently and quickly.",
+                "Ripper Dock: We have another upgrade for you, Shadow Viper. This hacking module will allow you to penetrate corporate systems more efficiently and quickly.",
                 "Shadow Viper: Excellent. What's our plan for this mission?",
-                "Hacktivist Member: First you must physically penetrate the facility. Your physical module will help you do that. Once you're inside, your new hacking module will be next.", 
-                "Shadow Viper: Sounds like a combination that might work. Once I reach the central computer, I'll use the new module to hack into their systems.", 
-                "Tech Expert: Yes, and with this module you'll be able to more efficiently override their security protocols and get the information you need faster."
+                "Ripper Dock: First you must physically penetrate the facility. Your physical module will help you do that. Once you're inside, your new hacking module will be next.", 
+                "Shadow Viper: Sounds like a combination that might work. Once I reach the central computer, I'll use the new module to hack into their systems.",
+                "Ripper Dock: Yes, and with this module you'll be able to more efficiently override their security protocols and get the information you need faster."
             }}, new(){DialogFocus = PlayerFocus.Hack, Unlock = new() { Location.TacticalRoom, Location.Workshop}, DialogOrder = new(){Quest = 6, Step = 2}, Texts = new List<string>()
             {
-                "Tech Expert: Welcome, Shadow Viper. We have another upgrade for you - a physical module. It will increase your strength and agility, allowing you to infiltrate more effectively physically.",
-                "Shadow Viper: That sounds great. What's our plan for infiltrating the facility?", 
-                "Hacktivist member: Your mission will be physical infiltration first. You need to overcome the security guards and security devices to reach the central computer.", 
-                "Shadow Viper: Once inside, I will use my hacking skills to hack into the system.", 
-                "Tech Expert: Exactly. Your new physical module will allow you to quickly and silently overcome physical obstacles while your hacking module secures the digital portion of the mission." 
+                "Ripper Dock: Welcome, Shadow Viper. We have another upgrade for you - a physical module. It will increase your strength and agility, allowing you to infiltrate more effectively physically.",
+                "Shadow Viper: That sounds great. What's our plan for infiltrating the facility?",
+                "Ripper Dock: Your mission will be physical infiltration first. You need to overcome the security guards and security devices to reach the central computer.", 
+                "Shadow Viper: Once inside, I will use my hacking skills to hack into the system.",
+                "Ripper Dock: Exactly. Your new physical module will allow you to quickly and silently overcome physical obstacles while your hacking module secures the digital portion of the mission."
             }}
         }},
         {$"{Location.Workshop}Dialog", new List<Dialog>()
@@ -378,7 +379,7 @@ public class SessionHelper : ISessionHelper
     {
         {$"{Location.DarkAlley}Choice", new Choice(){ChoiceA = "Violence", ChoiceB = "Talk them Down", Description = "Choose whether to deal with the gang violently or talk them down and scare them away."}},
         {$"{Location.CyberLab}Choice", new Choice(){ChoiceA = "SKELLETRON", ChoiceB = "Brain Chip", Description = "SKELLETRON - fighting BRAIN CHIP - hacking Choose a cyberware you want to equip."}},
-        {$"{Location.Boss}Choice", new Choice(){ChoiceA = "Make him suffer", ChoiceB = " Hand to Police", Description = "Choose whether to deal with the head of the corrupt corporate world with violence or let him rot in a prison."}}
+        {$"{Location.Boss}Choice", new Choice(){ChoiceA = "Make him suffer", ChoiceB = "Hand to Police", Description = "Choose whether to deal with the head of the corrupt corporate world with violence or let him rot in a prison."}}
         
     };
 
@@ -473,7 +474,7 @@ public class SessionHelper : ISessionHelper
         MaxEnergy = 50,
         Money = 0,
         //TODO Default moral score
-        MoralScore = 100
+        MoralScore = 0
     };
 
     // Player starts without specified dealing type

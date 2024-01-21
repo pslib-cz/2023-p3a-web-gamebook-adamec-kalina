@@ -59,6 +59,7 @@ if (document.body.contains(submit)) {
         ChoiceNotAvailable();
         PlayerFocusChoice(document.querySelector('.choices__choice.selected').textContent);
         PlayerDealingTypeChoice(document.querySelector('.choices__choice.selected').textContent);
+        BossChoice(document.querySelector('.choices__choice.selected').textContent);
         setTimeout(function () {
             location.reload(true);
         }, 500);
@@ -76,17 +77,33 @@ function ChoiceNotAvailable() {
     });
 }
 
+function BossChoice(choice) {
+    if (choice == "Make him suffer") {
+        window.location.href = "/End";
+    }
+    else if (choice == "Hand to Police") {
+        MoralScoreChange(50);
+        window.location.href = "/End";
+    }
+    else {
+        return
+    }
+}
+
 function PlayerFocusChoice(choice) {
     var endChoice = "";
     if (choice == "SKELLETRON") {
         endChoice = "Physics";
     }
     else if (choice == "Brain Chip") {
-        endChoice = "Hack"
+        endChoice = "Hack";
         MoralScoreChange(25);
     }
+    else if (choice == "Frajer") {
+        endChoice = "Frajer";
+    }
     else {
-        return;
+        return
     }
 
     console.log(endChoice);
