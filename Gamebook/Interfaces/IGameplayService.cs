@@ -11,7 +11,7 @@ public interface IGameplayService
     void SetPlayerFocusChoice(PlayerFocus playerFocus);
     void SetPlayerDealingType(PlayerDealingType playerDealingType);
     void DialogOver();
-    // void SetHitboxNotAvailable();
+    void SetHitboxNotAvailable();
     void SetChoiceNotAvailable();
     void UnlockLocation(Location locationString);
     void LockLocation(Location locationString);
