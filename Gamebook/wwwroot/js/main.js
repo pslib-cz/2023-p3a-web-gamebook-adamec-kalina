@@ -28,13 +28,6 @@
                 SetHitboxNotAvailable();
             });
         }
-        else if (data.hitbox == "Dialog") {
-            hitbox.addEventListener('click', function () {
-                updateDialogueText();
-                ToggleDialog();
-                SetHitboxNotAvailable();
-            });
-        }
         else if (data.dialog != null && data.hitbox == "") {
             hitbox.addEventListener('click', function () {
                 updateDialogueText();
@@ -44,7 +37,7 @@
         }
     }
 
-    if (data.hitbox == "" && data.dialog == null) {
+    if (data.hitbox == "" && data.dialog == null && data.choices == null) {
         hitbox.classList.add("hidden");
     }
 
