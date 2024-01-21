@@ -24,7 +24,6 @@
         else if (data.hitbox == "Hack") {
             hitbox.addEventListener('click', function () {
                 ShowHack()
-                SetHitboxNotAvailable();
             });
         }
         else if (data.dialog != null && data.hitbox == "") {

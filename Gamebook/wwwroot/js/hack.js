@@ -127,7 +127,9 @@ if (document.body.contains(submitBtn)) {
 			currentSnippetIndex++;
 			if (currentSnippetIndex >= levelSnippets[currentLevel].length) {
 				resultDisplay.textContent = 'All levels complete!';
-				return; //GAME WON
+				SetHitboxNotAvailable();
+				HideHack();
+
 			}
 			loadSnippet(currentLevel, currentSnippetIndex);
 		} else {
@@ -150,10 +152,34 @@ function ShowHack() {
 
 	document.querySelector('.hack-game').classList.remove("hidden");
 
+	document.getElementById('location-choice').classList.add("hidden");
+	document.querySelector('.menu__swich').classList.add("hidden");
+	document.getElementById('hitbox').classList.add("hidden");
+
+
 }
 
 function HideHack() {
 
 	document.querySelector('.hack-game').classList.add("hidden");
 
+	document.getElementById('location-choice').classList.remove("hidden");
+	document.querySelector('.menu__swich').classList.remove("hidden");
+	document.getElementById('hitbox').classList.remove("hidden");
+}
+
+
+
+
+function SetHitboxNotAvailable() {
+	console.log("Hitbox over");
+	fetch('/Gameplay/SetHitboxNotAvailable ', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		}
+	});
+	setTimeout(function () {
+		location.reload(true);
+	}, 200);
 }

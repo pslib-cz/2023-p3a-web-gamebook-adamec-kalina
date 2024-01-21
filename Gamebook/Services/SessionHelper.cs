@@ -22,7 +22,7 @@ public class SessionHelper : ISessionHelper
         {Location.ShadyBar, new GameLocation(){Title = "Shady Bar", BackgroundImage = "shady-bar"}},
         {Location.PartOfTheBar, new GameLocation(){Title = "Part of the Bar", BackgroundImage = "part-of-the-bar"}},
         {Location.BackEntrance, new GameLocation(){Title = "Back Entrance", BackgroundImage = "back-entrance", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Pin, HitboxOrder = null}}}},
-        {Location.SecretMeetingPlace, new GameLocation(){Title = "Secret Meeting Place", BackgroundImage = "secret-meeting-place", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Hack, HitboxOrder = new(){Quest = 2, Step = 4}}}}},
+        {Location.SecretMeetingPlace, new GameLocation(){Title = "Secret Meeting Place", BackgroundImage = "secret-meeting-place",Locked = false, Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Hack, HitboxOrder = new(){Quest = 2, Step = 4}}}}},
         {Location.Workshop, new GameLocation(){Title = "Workshop", BackgroundImage = "workshop"}},
         {Location.TacticalRoom, new GameLocation(){Title = "Tactical Room", BackgroundImage = "tactical-room"}},
         {Location.CyberLab, new GameLocation(){Title = "Cyber Lab", BackgroundImage = "cyber-lab"}},
@@ -158,7 +158,6 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: I'm ready. What do you need me to do?",
                 "Hacktivist Leader: We need to retrieve information from a corporate database. It's well protected, but with your abilities, you could do it. If you can do that, you'll prove to us that you're on our side.",
                 "Shadow Viper: Understood. I'll give you the information.",
-                "End of Interview", 
                 "Hacktivist Leader: Alright, Shadow Viper. This quest will show you if you have what it takes to be part of our group. Don't let us down."
             }}, new() {DialogOrder = new(){Quest = 2, Step = 4, LastStep = true}, Texts = new List<string>()
             {
@@ -191,12 +190,12 @@ public class SessionHelper : ISessionHelper
                 "Hacktivist Leader: Okay, Shadow Viper. Counting on you. Be careful, but be quick."
             }}, new() {DialogFocus = PlayerFocus.Physics, DialogOrder = new(){Quest = 4, Step = 3, LastStep = true}, Texts = new List<string>()
             {
-                "Hacktivist Leader: 'Well done, Shadow Viper. Your actions tonight saved one life and provided us with valuable information.",
+                "Hacktivist Leader: Well done, Shadow Viper. Your actions tonight saved one life and provided us with valuable information.",
                 "Shadow Viper: I'm just glad I could help. It's time to show the corporations that we're not afraid to fight back.",
                 "Hacktivist Leader: Your success tonight has strengthened our position. We'll be counting on you for future missions."
             }}, new(){DialogFocus = PlayerFocus.Hack, Unlock = new() { Location.Workshop }, DialogOrder = new(){Quest = 4, Step = 1}, Texts = new List<string>()
             {
-                "Hacktivist leader: 'We have a key task for you. We need to hack into a corporate database and obtain information that can greatly aid our cause.",
+                "Hacktivist leader: We have a key task for you. We need to hack into a corporate database and obtain information that can greatly aid our cause.",
                 "Shadow Viper: What information are we looking for?",
                 "Hacktivist Leader: We are looking for detailed plans and communications regarding new corporate projects that could have a devastating impact on the public. This data is stored in a well-protected database.",
                 "Shadow Viper: I see. What are the security protocols for this database?", 
@@ -218,7 +217,7 @@ public class SessionHelper : ISessionHelper
                 "hactivists now fully trust you\nquest 4 completed\nQuest 5 is unlocked"
             }}, new(){DialogFocus = PlayerFocus.Physics, Unlock = new() { Location.TacticalRoom }, DialogOrder = new(){Quest = 5, Step = 1}, Texts = new List<string>()
             {
-                "Hacktivist leader: 'We have an urgent situation. A corporation is about to launch a new project that could have serious consequences for the public. We need to stop it before it's too late.",
+                "Hacktivist leader: We have an urgent situation. A corporation is about to launch a new project that could have serious consequences for the public. We need to stop it before it's too late.",
                 "Shadow Viper: What exactly should I do?",
                 "Hacktivist Leader: We need you to infiltrate one of their key industrial facilities and sabotage this project to stop it.",
                 "Shadow Viper: What security does that facility have?",
@@ -290,7 +289,8 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: Understood. I won't let you down."
             }}
         }},
-        {$"{Location.TacticalRoom}Dialog", new List<Dialog>(){ new() {DialogFocus = PlayerFocus.Physics, DialogOrder = new(){Quest = 4, Step = 2}, Texts = new List<string>
+        {$"{Location.TacticalRoom}Dialog", new List<Dialog>()
+            { new() {DialogFocus = PlayerFocus.Physics, Unlock = new() { Location.PartOfTheBar, Location.CorporalBuilding}, DialogOrder = new(){Quest = 4, Step = 2}, Texts = new List<string>
             {
                 "Technical Expert: The building where they keep our member is one of the best guarded facilities in the city. We have to be smart in our approach.",
                 "Shadow Viper: What are our options?",
@@ -336,7 +336,7 @@ public class SessionHelper : ISessionHelper
                 "Ripper Dock: We have a variety of options. We can enhance your physical abilities or expand your hacking skills. It depends on which style you prefer."
             }}, new(){ DialogFocus = PlayerFocus.Physics, DialogOrder = new(){Quest = 3, Step = 3, LastStep = true}, Texts = new List<string>()
             {
-                "Shadow Viper: I want to focus on physical abilitiesI want to focus on physical abilities. I need to get stronger and faster to face physica. I need to get stronger and faster to face physical threats.",
+                "Shadow Viper: I want to focus on physical abilities. I need to get stronger and faster to face physical threats.",
                 "Ripper Dock: Good choice, Shadow Viper. This upgrade will give you exactly what you need. And as for the price, you don't have to worry. Our group will cover all costs. Consider it an investment in our future together.",
                 "Shadow Viper: I appreciate that. It's time to show the corporations that we're not just helpless pawns in the game.",
                 "Ripper Dock: Exactly. Now sit back and let me work. You'll soon have new abilities at your disposal."
@@ -346,7 +346,7 @@ public class SessionHelper : ISessionHelper
                 "Ripper Dock: Good choice, Shadow Viper. This upgrade will give you exactly what you need. And as for the price, you don't have to worry. Our group will cover all costs. Consider it an investment in our future together.",
                 "Shadow Viper: I appreciate that. It's time to show the corporations that we're not just helpless pawns in the game.",
                 "Ripper Dock: Exactly. Now sit back and let me work. You'll soon have new abilities at your disposal."
-            }}, new(){DialogFocus = PlayerFocus.Physics, Unlock = new() { Location.TacticalRoom, Location.Workshop }, Texts = new List<string>() {
+            }}, new(){DialogFocus = PlayerFocus.Physics, Unlock = new() { Location.TacticalRoom, Location.Workshop }, DialogOrder = new(){Quest = 6, Step = 2}, Texts = new List<string>() {
                 "Tech Expert: We have another upgrade for you, Shadow Viper. This hacking module will allow you to penetrate corporate systems more efficiently and quickly.",
                 "Shadow Viper: Excellent. What's our plan for this mission?",
                 "Hacktivist Member: First you must physically penetrate the facility. Your physical module will help you do that. Once you're inside, your new hacking module will be next.", 
@@ -466,7 +466,7 @@ public class SessionHelper : ISessionHelper
     private bool gameInProgress = false;
 
     // Game starts at quest 1, step 1
-    private GameProgress gameProgress = new() {Quest = 1, Step = 1};
+    private GameProgress gameProgress = new() {Quest = 3, Step = 1};
 
     // Set default currentLocation on game start
     private Location currentLocation = Location.SlumDistrict;
