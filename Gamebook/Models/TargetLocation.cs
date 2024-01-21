@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Gamebook.Enums;
 
 namespace Gamebook.Models;

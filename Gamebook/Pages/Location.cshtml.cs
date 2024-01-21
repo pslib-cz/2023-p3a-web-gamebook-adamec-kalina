@@ -53,8 +53,25 @@ namespace Gamebook.Pages
             {
                 _locationService.SetCurrentLocation(currentLocation); 
             }
+
+            #region exceptions location locking
+
+            switch (currentLocation)
+            {
+                case Location.ExtractionVan:
+                    _gameplayService.LockLocation(Location.CorporalBuilding);
+                    break;
+                case Location.EscapeCar:
+                    _gameplayService.LockLocation(Location.Facility);
+                    break;
+                case Location.Helipad:
+                    _gameplayService.LockLocation(Location.DataDepot);
+                    break;
+            }
+
+            #endregion
             
-            if(currentLocation == Location.Reception)_gameplayService.HealthChange(0);
+
             PassLocationData(currentLocation);
 
             return Page();

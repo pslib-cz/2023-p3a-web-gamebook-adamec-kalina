@@ -1,4 +1,8 @@
 ﻿using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using Gamebook.Custom;
+
 namespace Gamebook.Enums
 {
     public enum Location
