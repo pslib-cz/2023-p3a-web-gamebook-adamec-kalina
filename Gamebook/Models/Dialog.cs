@@ -9,6 +9,7 @@ public class Dialog
     public PlayerDealingType? SpecialType { get; set; } = null;
     public List<Location>? Unlock { get; set; } = null; // A list of string so not a int is passed to the FE
     public List<Item>? ItemsAdd { get; set; } = null; // A list of string so not a int is passed to the FE
+    public PlayerFocus? FocusAdd { get; set; } = null;
     public List<Item>? ItemsRemove { get; set; } = null; // A list of string so not a int is passed to the FE
     public GameProgress DialogOrder { get; set; } // Sets the right game phase for the dialog to be provided
 }
