@@ -155,13 +155,22 @@ public class GameplayService : IGameplayService
             if (location.Hitboxes.Count == 0 || location.Hitboxes.FirstOrDefault(h => h.Available && (h.PlayerDealingType == null || h.PlayerDealingType == playerDealingType)) == null) return;//No hitboxes at all or just no available ones on the current page
     
             var hitbox = location.Hitboxes.First(h => h.Available && (h.PlayerDealingType == null || h.PlayerDealingType == playerDealingType));
-            if(hitbox.Type == HitboxType.Pin)UnlockLocation(Location.SecretMeetingPlace); //an exception for the pin hitbox -> the only occurrence where a hitbox unlocks a location :)
+            if(hitbox.Type == HitboxType.Pin){
+                UnlockLocation(Location.SecretMeetingPlace);
+                var gameProgress = _locationService.GetGameProgress();
+                gameProgress.Step = 3;
+                string serializedGameProgress= JsonSerializer.Serialize(gameProgress);
+                _session.SetString("gameProgress", serializedGameProgress);
+            } //an exception for the pin hitbox -> the only occurrence where a hitbox unlocks a location :)
+
             // Change the hitbox available state
             location.Hitboxes.First(h => h.Available && (h.PlayerDealingType == null || h.PlayerDealingType == playerDealingType)).Available = false;
                 
             // Save the changed location info back into the session
             string serializedLocation= JsonSerializer.Serialize(location);
             _session.SetString(currentLocation.ToString(), serializedLocation);
+            
+            
         }
         catch (Exception e)
         {
