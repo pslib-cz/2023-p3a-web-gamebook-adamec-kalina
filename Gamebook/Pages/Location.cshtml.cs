@@ -20,10 +20,10 @@ namespace Gamebook.Pages
         public LocationPageResponse LocationPageResponse { get; set; }
         
         
-        public LocationModel(IGameLocationService locationService)
+        public LocationModel(IGameLocationService locationService, IGameplayService gameplayService)
         {
             _locationService = locationService;
-            _gameplayService = _gameplayService;
+            _gameplayService = gameplayService;
         }
 
 
