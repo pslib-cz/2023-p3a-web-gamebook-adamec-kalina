@@ -205,7 +205,7 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: Okay, I'm ready to dive into the system and get the information.",
                 "Hacktivist Leader: Remember, Shadow Viper, time is of the essence. The longer you are inside the system, the greater the risk of detection. Be quick and careful.", 
                 "Shadow Viper: I understand the risks. We'll start now."
-            }}, new(){DialogFocus = PlayerFocus.Hack, DialogOrder = new(){Quest = 4, Step = 2, LastStep = true}, Texts = new List<string>()
+            }}, new(){DialogFocus = PlayerFocus.Hack, DialogOrder = new(){Quest = 4, Step = 3, LastStep = true}, Texts = new List<string>()
             {
                 "Shadow Viper: Mission accomplished. Information is secure and safe.",
                 "Hacktivist leader: This is a huge success. This information will give us deep insight into corporate plans. Well done, Shadow Viper.",
@@ -360,12 +360,25 @@ public class SessionHelper : ISessionHelper
                 "Tech Expert: Exactly. Your new physical module will allow you to quickly and silently overcome physical obstacles while your hacking module secures the digital portion of the mission." 
             }}
         }},
+        {$"{Location.Workshop}Dialog", new List<Dialog>()
+            { new() { DialogFocus = PlayerFocus.Hack, Unlock = new() { Location.QuantumTechnology }, DialogOrder = new(){Quest = 4, Step = 2}, Texts = new List<string>
+            {
+                "Technical Expert: Shadow Viper, we've integrated cutting-edge quantum technology into our hacking tools, enhancing their capabilities.",
+                "Shadow Viper: Quantum technology? How will that assist in this operation?",
+                "Technical Expert: Quantum computing offers unprecedented processing speed and power, ideal for breaking complex encryptions and navigating sophisticated security systems.",
+                "Shadow Viper: Sounds promising. Will I need special training to use it?",
+                "Technical Expert: No, the interface is user-friendly. But remember, its power makes it extremely efficient, so your actions must be precise and calculated.",
+                "Shadow Viper: Understood. I'll harness this quantum edge to infiltrate the database swiftly and securely."
+            }}
+        }},
     };
     
     private Dictionary<string, Choice> gameLocationChoiceDict = new()
     {
         {$"{Location.DarkAlley}Choice", new Choice(){ChoiceA = "Violence", ChoiceB = "Talk them Down", Description = "Choose whether to deal with the gang violently or talk them down and scare them away."}},
-        {$"{Location.CyberLab}Choice", new Choice(){ChoiceA = "SKELLETRON", ChoiceB = "Brain Chip", Description = "SKELLETRON - fighting BRAIN CHIP - hacking Choose a cyberware you want to equip."}}
+        {$"{Location.CyberLab}Choice", new Choice(){ChoiceA = "SKELLETRON", ChoiceB = "Brain Chip", Description = "SKELLETRON - fighting BRAIN CHIP - hacking Choose a cyberware you want to equip."}},
+        {$"{Location.Boss}Choice", new Choice(){ChoiceA = "Make him suffer", ChoiceB = " Hand to Police", Description = "Choose whether to deal with the head of the corrupt corporate world with violence or let him rot in a prison."}}
+        
     };
 
     // Default game locations' target locations states 
