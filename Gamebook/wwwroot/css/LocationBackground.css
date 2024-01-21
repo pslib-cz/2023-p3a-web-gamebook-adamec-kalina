@@ -146,7 +146,7 @@ body.data-depot{
 body.third-floor{
     background-image: url(/images/background/act_3/third_floor.png);
 }
-body.main-lobby{
+body.main-lobby {
     background-image: url(/images/background/act_3/main_lobby.png);
 }
 body.sector-D4{
@@ -172,15 +172,15 @@ body.helipad{
 }
 
 /*ACT4*/
-corporate-headquarters{
-    background-image: url(/images/background/act_4/corporate_headquarters.png);
+body.corporate-headquarters {
+    background-image: url(/images/background/act_4/corporate-headquarters.png);
 }
-elevator{
+body.elevator {
     background-image: url(/images/background/act_4/elevator.png);
 }
-penthouse{
+body.penthouse {
     background-image: url(/images/background/act_4/penthouse.png);
 }
-boss{
+body.boss {
     background-image: url(/images/background/act_4/boss.png);
 }

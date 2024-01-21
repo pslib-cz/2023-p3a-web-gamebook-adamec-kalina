@@ -34,7 +34,8 @@ public class SessionHelper : ISessionHelper
         {Location.BackOfBuilding, new GameLocation(){Title = "Back Of Building", BackgroundImage = "back-of-building", Locked = false}},
         {Location.Hallway, new GameLocation(){Title = "Hallway", BackgroundImage = "hallway", Locked = false}},
         {Location.ServerRoom, new GameLocation(){Title = "Server Room", BackgroundImage = "server-room", Locked = false}},
-        {Location.SecurityDoor, new GameLocation(){Title = "Security Door", BackgroundImage = "security-door", Locked = false}},  // needs keycard
+        {Location.SecurityDoor1, new GameLocation(){Title = "Security Door", BackgroundImage = "security-door", Locked = false}},  // needs keycard
+        {Location.SecurityDoor2, new GameLocation(){Title = "Security Door", BackgroundImage = "security-door", Locked = false}},  // needs keycard
         {Location.HoldingCells, new GameLocation(){Title = "Holding Cells", BackgroundImage = "holding-cells", Locked = false}}, //Locked = true
         {Location.ControlRoom, new GameLocation(){Title = "Control Room", BackgroundImage = "control-room", Locked = false}},
         {Location.ChiefTechnitianOffice, new GameLocation(){Title = "Chiefs Technician Office", BackgroundImage = "chief-technician-office", Locked = false}},
@@ -67,7 +68,7 @@ public class SessionHelper : ISessionHelper
         {Location.RooftopExit, new GameLocation(){Title = "Rooftop Exit", BackgroundImage = "rooftop-exit", Locked = false}}, // needs 2x cables 1x chip
         {Location.Helipad, new GameLocation(){Title = "Helipad", BackgroundImage = "helipad", Locked = false}}, //Locked = true
 
-        {Location.CorporateHeadquarters, new GameLocation(){Title = "CorporateHeadquarters", BackgroundImage = "corporate-headquarters"}},
+        {Location.CorporateHeadquarters, new GameLocation(){Title = "Corporate Headquarters", BackgroundImage = "corporate-headquarters"}},
         {Location.Elevator, new GameLocation(){Title = "Elevator", BackgroundImage = "elevator", Locked = false}},
         {Location.Penthouse, new GameLocation(){Title = "Penthouse", BackgroundImage = "penthouse", Locked = false}},
         {Location.Boss, new GameLocation(){Title = "Boss", BackgroundImage = "boss", Locked = false}},
@@ -274,7 +275,7 @@ public class SessionHelper : ISessionHelper
                 "Hacktivist Leader: We have to be careful how we use this information. Corporations have a lot of influence and will fight back. How do you suggest we proceed?",
                 "Shadow Viper: We should coordinate the leak with our allies and ensure that it reaches as wide a public as possible. At the same time, we must ensure the protection of our resources and members.",
                 "Hacktivist Leader: I agree. This data can change the course of our war against corporations. Your role in this has been crucial, Shadow Viper. You are invaluable to us."
-            }}, new(){DialogOrder = new(){Quest = 7, Step = 1, LastStep = true}, Texts = new List<string>()
+            }}, new(){Unlock = new() { Location.CorporateHeadquarters}, DialogOrder = new(){Quest = 7, Step = 1, LastStep = true}, Texts = new List<string>()
             {
                 "Hacktivist Leader: Shadow Viper, we face perhaps our greatest challenge yet. We have learned of a corporate project that could profoundly affect our society. It's something we must stop at all costs.",
                 "Shadow Viper: What exactly does this project involve?",
@@ -289,7 +290,7 @@ public class SessionHelper : ISessionHelper
             }}
         }},
         {$"{Location.TacticalRoom}Dialog", new List<Dialog>()
-            { new() {DialogFocus = PlayerFocus.Physics, Unlock = new() { Location.PartOfTheBar, Location.CorporalBuilding}, DialogOrder = new(){Quest = 4, Step = 2}, Texts = new List<string>
+            { new() {DialogFocus = PlayerFocus.Physics, Unlock = new() { Location.CorporalBuilding}, DialogOrder = new(){Quest = 4, Step = 2}, Texts = new List<string>
             {
                 "Technical Expert: The building where they keep our member is one of the best guarded facilities in the city. We have to be smart in our approach.",
                 "Shadow Viper: What are our options?",
@@ -301,7 +302,7 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: Once I find the prisoners, how do we get out?",
                 "Tech Expert: We have an escape plan in place. Once you free the prisoners, we'll direct you to the nearest safe exit.",
                 "Shadow Viper: Okay, sounds like a solid plan. I'm ready."
-            }}, new(){DialogFocus = PlayerFocus.Physics, DialogOrder = new(){Quest = 5, Step = 2}, Texts = new List<string>()
+            }}, new(){DialogFocus = PlayerFocus.Physics, Unlock = new() { Location.Facility}, DialogOrder = new(){Quest = 5, Step = 2}, Texts = new List<string>()
             {
                 "Technical Expert: We have limited information about the layout and security systems of the facility, but enough to make a plan.",
                 "Shadow Viper: What is the main objective of the sabotage?",
@@ -313,7 +314,7 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: What plan do we have for escape",
                 "Technical Expert: Once you've sabotaged the system, activate the emergency exit. We have an escape vehicle ready for you near the facility.",
                 "Shadow Viper: Excellent, that sounds like a solid plan. As soon as I have all the information I need, I'll be on my way."
-            }}, new(){DialogOrder = new(){Quest = 6, Step = 3}, Texts = new List<string>()
+            }}, new(){Unlock = new() { Location.DataDepot}, DialogOrder = new(){Quest = 6, Step = 3}, Texts = new List<string>()
             {
                 "Technical Expert: We have detailed information about the facility ready for you, including layout, security protocols and watch timings.",
                 "Shadow Viper: Thorough information will be key. What is our plan of approach?",
@@ -404,13 +405,14 @@ public class SessionHelper : ISessionHelper
         {$"{Location.Reception}TargetLocations", new List<Location> { }}, // death
         {$"{Location.BackOfBuilding}TargetLocations", new List<Location> { Location.Hallway , Location.BackDoor}},
         {$"{Location.Hallway}TargetLocations", new List<Location> { Location.ServerRoom, Location.ChiefTechnitianOffice}},
-        {$"{Location.ServerRoom}TargetLocations", new List<Location> { Location.SecurityDoor, Location.ControlRoom, Location.Hallway}},
-        {$"{Location.SecurityDoor}TargetLocations", new List<Location> { Location.ServerRoom, Location.HoldingCells}},
+        {$"{Location.ServerRoom}TargetLocations", new List<Location> { Location.SecurityDoor1, Location.ControlRoom, Location.Hallway}},
+        {$"{Location.SecurityDoor1}TargetLocations", new List<Location> { Location.ServerRoom, Location.HoldingCells}},
+        {$"{Location.SecurityDoor2}TargetLocations", new List<Location> { Location.Warehouse, Location.HoldingCells}},
         {$"{Location.HoldingCells}TargetLocations", new List<Location> { Location.ExtractionVan}},
         {$"{Location.ControlRoom}TargetLocations", new List<Location> { Location.ServerRoom}},
         {$"{Location.ChiefTechnitianOffice}TargetLocations", new List<Location> { Location.Hallway}},
         {$"{Location.BackDoor}TargetLocations", new List<Location> { Location.Warehouse, Location.SecurityRoom}},
-        {$"{Location.Warehouse}TargetLocations", new List<Location> { Location.SecurityDoor, Location.BoilerRoom, Location.BackDoor}},
+        {$"{Location.Warehouse}TargetLocations", new List<Location> { Location.SecurityDoor2, Location.BoilerRoom, Location.BackDoor}},
         {$"{Location.BoilerRoom}TargetLocations", new List<Location> { Location.Warehouse}},
         {$"{Location.SecurityRoom}TargetLocations", new List<Location> { Location.BackDoor}},        
         {$"{Location.ExtractionVan}TargetLocations", new List<Location> { Location.SecretMeetingPlace}}, // end mission
@@ -437,12 +439,14 @@ public class SessionHelper : ISessionHelper
         {$"{Location.Server21}TargetLocations", new List<Location> { Location.SectorD4 }},
         {$"{Location.ResearchWing}TargetLocations", new List<Location> { Location.MainLobby, Location.ComputerA765 }},
         {$"{Location.RooftopExit}TargetLocations", new List<Location> { Location.ThirdFloor, Location.Helipad }},
+        {$"{Location.ComputerA765}TargetLocations", new List<Location> { Location.ResearchWing }},
         {$"{Location.Helipad}TargetLocations", new List<Location> { Location.SecretMeetingPlace }}, // end mission
 
         //Act4
         {$"{Location.CorporateHeadquarters}TargetLocations", new List<Location> { Location.Elevator }},
         {$"{Location.Elevator}TargetLocations", new List<Location> { Location.Penthouse }},
-        {$"{Location.Penthouse}TargetLocations", new List<Location> { Location.Boss }} // end game
+        {$"{Location.Penthouse}TargetLocations", new List<Location> { Location.Boss }}, // end game
+        {$"{Location.Boss}TargetLocations", new List<Location> {  }} // end game
 
 
     };

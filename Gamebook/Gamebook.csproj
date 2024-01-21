@@ -19,7 +19,6 @@
     <Content Remove="wwwroot\images\locationBackgroundImages\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="wwwroot\images\background\" />
     <Folder Include="wwwroot\fonts\" />
   </ItemGroup>
   <ItemGroup>
