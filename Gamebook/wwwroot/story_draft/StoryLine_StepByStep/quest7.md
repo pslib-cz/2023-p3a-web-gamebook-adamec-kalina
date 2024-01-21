@@ -18,7 +18,10 @@ Shadow Viper: "Understood. I won't let you down."
 ```
 
 ```
-ACTION 3
+Corporate Headquarters
+ └─> elevator
+  └─> Penthouse 
+   └─> Boss (choice - fight / hand to police )
 ```
 
 

@@ -56,6 +56,22 @@ public class SessionHelper : ISessionHelper
         {Location.EmergencyExit, new GameLocation(){Title = "Emergency Exit", BackgroundImage = "emergency-exit"}},
         {Location.EscapeCar, new GameLocation(){Title = "Escape Car", BackgroundImage = "escape-car"}},
 
+        {Location.DataDepot, new GameLocation(){Title = "Data Depot", BackgroundImage = "data-depot"}},
+        {Location.ThirdFloor, new GameLocation(){Title = "Third Floor", BackgroundImage = "third-floor"}},
+        {Location.MainLobby, new GameLocation(){Title = "Main Lobby", BackgroundImage = "main-lobby"}},
+        {Location.SectorD4, new GameLocation(){Title = "Sector D4", BackgroundImage = "sector-D4"}},
+        {Location.Server17, new GameLocation(){Title = "Server 17", BackgroundImage = "server-17"}},
+        {Location.Server21, new GameLocation(){Title = "Server 21", BackgroundImage = "server-21"}},
+        {Location.ResearchWing, new GameLocation(){Title = "Research Wing", BackgroundImage = "research-wing"}},
+        {Location.ComputerA765, new GameLocation(){Title = "Computer A765", BackgroundImage = "computer-A765"}},
+        {Location.RooftopExit, new GameLocation(){Title = "Rooftop Exit", BackgroundImage = "rooftop-exit"}},
+        {Location.Helipad, new GameLocation(){Title = "Helipad", BackgroundImage = "helipad"}},
+
+        {Location.CorporateHeadquarters, new GameLocation(){Title = "CorporateHeadquarters", BackgroundImage = "corporate-headquarters"}},
+        {Location.Elevator, new GameLocation(){Title = "Elevator", BackgroundImage = "elevator"}},
+        {Location.Penthouse, new GameLocation(){Title = "Penthouse", BackgroundImage = "penthouse"}},
+        {Location.Boss, new GameLocation(){Title = "Boss", BackgroundImage = "boss"}},
+
 
     };
 
@@ -68,7 +84,7 @@ public class SessionHelper : ISessionHelper
                 "Old Merchant: Hmm, your face is familiar, but there are a lot of people hanging around this neighborhood. I might remember something, but I have my own worries right now.",
                 "Shadow Viper: Can I help you with something?",
                 "Old Merchant: Well, I need a component to repair a piece of equipment. You can find it at Jake's electronics shop just down the road. Bring it to me and maybe I'll remember something useful."
-            }}, new() {ItemsRemove = new() { Item.Battery.ToString()}, DialogOrder = new(){Quest = 1, Step = 6, LastStep = true}, Unlock = new() { Location.ShadyBar}, Texts = new List<string>{
+            }}, new() {ItemsRemove = new() { Item.Battery}, DialogOrder = new(){Quest = 1, Step = 6, LastStep = true}, Unlock = new() { Location.ShadyBar}, Texts = new List<string>{
                 "Shadow Viper: I have the component you needed.",
                 "Old Merchant: Oh, that's it. Thanks, young man. Well, I promised you the information. I saw you come into the Quarter. You were accompanied by a strange figure, looked like a hacker or something. You had some electronics on you, and it looked like you were planning something together.", 
                 "Shadow Viper: Do you know anything more about the character or what we were planning?",
@@ -85,7 +101,7 @@ public class SessionHelper : ISessionHelper
                 "Jake: You're big and you look pretty dangerous. All you have to do is show up in their territory and show off a little. Talk about joining a bigger group, come up with something. They're pretty paranoid, so that's enough.", 
                 "Shadow Viper: All right, I'll do it. Then you'll give me the component?",
                 "Jake: Yes, you have my word. When you do, the component is yours."
-            }}, new() {ItemsAdd = new() { Item.Battery.ToString()}, ItemsRemove = new() { Item.Eye.ToString()}, DialogOrder = new(){Quest = 1, Step = 5}, Texts = new List<string>()
+            }}, new() {ItemsAdd = new() { Item.Battery}, ItemsRemove = new() { Item.Eye}, DialogOrder = new(){Quest = 1, Step = 5}, Texts = new List<string>()
             {
                 "Shadow Viper: I've dealt with the gangs. They should leave you alone.",
                 "Jake: Good job, now I can hopefully concentrate on my work. Here's the component for the Old Merchant. Thanks for your help."
@@ -96,10 +112,10 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: I hear you're making trouble for Jake. I don't like that.", 
                 "Gang Leader: What are you going to do to us? We have our territory here.",
                 "Shadow Viper: I don't have to put it into words. I can take you all out without breaking a sweat."
-            }}, new() {ItemsAdd = new() { Item.Eye.ToString()}, DialogOrder = new(){Quest = 1, Step = 4}, SpecialType = PlayerDealingType.Violent, Texts = new List<string>()
+            }}, new() {ItemsAdd = new() { Item.Eye}, DialogOrder = new(){Quest = 1, Step = 4}, SpecialType = PlayerDealingType.Violent, Texts = new List<string>()
             {
                 "Gang Leader: 'Okay, okay, we'll leave him alone. Just go away and leave us alone."
-            }}, new() {ItemsAdd = new() { Item.Eye.ToString()}, DialogOrder = new(){Quest = 1, Step = 3}, SpecialType = PlayerDealingType.Peaceful, Texts = new List<string>()
+            }}, new() {ItemsAdd = new() { Item.Eye}, DialogOrder = new(){Quest = 1, Step = 3}, SpecialType = PlayerDealingType.Peaceful, Texts = new List<string>()
             {
                 "Shadow Viper: Rumor has it you have a problem with Jake, the electronics dealer.",
                 "Gang Leader: Who wants to know?",
@@ -121,7 +137,7 @@ public class SessionHelper : ISessionHelper
                 "Bartender: I'm not saying I know anything, but people like you sometimes use that back entrance. Maybe you should try there."
             }}
         }},
-        {$"{Location.BackEntrance}Dialog", new List<Dialog>()
+        {$"{Location.PartOfTheBar}Dialog", new List<Dialog>()
             { new() { DialogOrder = new(){Quest = 2, Step = 2}, Texts = new List<string> {
                 "Shadow Viper: Good evening, I heard you might know something about a group that meets in secret.",
                 "Mysterious Guest:  Maybe yes, maybe no. Why would I tell a stranger anything?",
@@ -366,7 +382,7 @@ public class SessionHelper : ISessionHelper
         {$"{Location.BackEntrance}TargetLocations", new List<Location> { Location.ShadyBar, Location.SecretMeetingPlace}},
         {$"{Location.SecretMeetingPlace}TargetLocations", new List<Location> { Location.CyberLab, Location.Workshop, Location.TacticalRoom}},
         {$"{Location.Workshop}TargetLocations", new List<Location> { Location.SecretMeetingPlace, Location.QuantumTechnology}},
-        {$"{Location.TacticalRoom}TargetLocations", new List<Location> { Location.SecretMeetingPlace , Location.CorporalBuilding, Location.Facility}},
+        {$"{Location.TacticalRoom}TargetLocations", new List<Location> { Location.SecretMeetingPlace , Location.CorporalBuilding, Location.Facility, Location.DataDepot, Location.CorporateHeadquarters}},
         {$"{Location.CyberLab}TargetLocations", new List<Location> { Location.SecretMeetingPlace}},
         {$"{Location.QuantumTechnology}TargetLocations", new List<Location> { Location.Workshop}},
 
@@ -398,7 +414,23 @@ public class SessionHelper : ISessionHelper
         {$"{Location.MaintenanceArea}TargetLocations", new List<Location> { Location.EmergencyExit, Location.RoomA765, Location.SecurityCheckpoint}},
         {$"{Location.ToolStorage}TargetLocations", new List<Location> { Location.DeliveryEntrance}},
         {$"{Location.EmergencyExit}TargetLocations", new List<Location> { Location.MaintenanceArea, Location.EscapeCar}},
-        {$"{Location.EscapeCar}TargetLocations", new List<Location> { Location.SecretMeetingPlace }} // end mission
+        {$"{Location.EscapeCar}TargetLocations", new List<Location> { Location.SecretMeetingPlace }}, // end mission
+
+        // Act3
+        {$"{Location.DataDepot}TargetLocations", new List<Location> { Location.ThirdFloor }},
+        {$"{Location.ThirdFloor}TargetLocations", new List<Location> { Location.MainLobby, Location.RooftopExit }},
+        {$"{Location.MainLobby}TargetLocations", new List<Location> { Location.ThirdFloor, Location.SectorD4, Location.ResearchWing }},
+        {$"{Location.SectorD4}TargetLocations", new List<Location> { Location.MainLobby, Location.Server17, Location.Server21 }},
+        {$"{Location.Server17}TargetLocations", new List<Location> { Location.SectorD4 }},
+        {$"{Location.Server21}TargetLocations", new List<Location> { Location.SectorD4 }},
+        {$"{Location.ResearchWing}TargetLocations", new List<Location> { Location.MainLobby, Location.ComputerA765 }},
+        {$"{Location.RooftopExit}TargetLocations", new List<Location> { Location.ThirdFloor, Location.Helipad }},
+        {$"{Location.Helipad}TargetLocations", new List<Location> { Location.SecretMeetingPlace }}, // end mission
+
+        //Act4
+        {$"{Location.CorporateHeadquarters}TargetLocations", new List<Location> { Location.Elevator }},
+        {$"{Location.Elevator}TargetLocations", new List<Location> { Location.Penthouse }},
+        {$"{Location.Penthouse}TargetLocations", new List<Location> { Location.Boss }} // end game
 
 
     };

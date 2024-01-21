@@ -114,9 +114,9 @@ p.cont__stat__money {
 }
 
 .cont__inventory__item {
-    width: 100%;
+    border: 1px solid var(--blue);
+    width: calc(100% - 2px);
     aspect-ratio: 1;
-    background-color: var(--blue);
     border-radius: 8px;
     background: var(--grey);
 
@@ -131,6 +131,7 @@ p.cont__stat__money {
 }
 .cont__inventory__item.Battery {
     background-image: url(../images/items/battery.png);
+    background-size: 50%;
 }
 
 /*CYBERWARE CONT*/

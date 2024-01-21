@@ -48,6 +48,22 @@ namespace Gamebook.Enums
         ToolStorage,
         EmergencyExit,
         EscapeCar,
+
+        DataDepot,
+        ThirdFloor,
+        MainLobby,
+        SectorD4,
+        Server17,
+        Server21,
+        ResearchWing,
+        ComputerA765,
+        RooftopExit,
+        Helipad,
+
+        CorporateHeadquarters,
+        Elevator,
+        Penthouse,
+        Boss,
     }
 }
 

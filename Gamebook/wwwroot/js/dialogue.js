@@ -28,17 +28,7 @@ function updateDialogueText() {
 
                     closeButton.addEventListener('click', function () {
                         ToggleDialog();
-                        if (dialogue.itemsAdd !== null) {
-                            dialogue.itemsAdd.forEach(item => {
-                                AddItem(item);
-                            })
-                        }
-                        if (dialogue.itemsRemove !== null) {
-                            dialogue.itemsRemove.forEach(item => {
-                                RemoveItem(item);
-                            })
-                        }
-
+ 
                         SetDialogNotAvailable();
 
                     });
@@ -89,7 +79,7 @@ function SetDialogNotAvailable() {
     .then(response => {
         if (response.status === 200) {
             console.log("Request successful with status 200");
-            reloadNow();
+            reload();
         } else {
             console.error("Request failed with status:", response.status);
         }
@@ -97,36 +87,15 @@ function SetDialogNotAvailable() {
 }
 
 
-function reloadNow() {
+function reload() {
     const choices = document.getElementById('location-choice');
-    choices.classList.remove('hidden');
-    location.reload(true);
+    setTimeout(function () {
+        choices.classList.remove('hidden');
+        location.reload(true);
+    }, 200);
 }
 
 const nextInDialogue = document.querySelector('.textbox__next');
 if (document.body.contains(nextInDialogue)) {
     nextInDialogue.addEventListener('click', onNextButtonClick);
-}
-
-function AddItem(item) {
-    fetch('/Gameplay/AddItem', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(item),
-    });
-
-    console.log(item);
-}
-function RemoveItem(item) {
-    fetch('/Gameplay/RemoveItem', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(item),
-    });
-
-    console.log(item);
 }
