@@ -329,6 +329,10 @@
       "PackagePath": "staticwebassets\\images\\items\\cable.png"
     },
     {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\items\\chip.png",
+      "PackagePath": "staticwebassets\\images\\items\\chip.png"
+    },
+    {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\items\\eye.png",
       "PackagePath": "staticwebassets\\images\\items\\eye.png"
     },
