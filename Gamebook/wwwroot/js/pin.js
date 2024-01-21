@@ -64,7 +64,7 @@ function submitGuess() {
     document.getElementById('pin-attempts').innerHTML = `Attempts left: ${attempts}`;
 
     if (result.W === codeLength) {
-        alert('Congratulations! You cracked the code!');
+        HidePin();
         SetHitboxNotAvailable();
         return;
     }
@@ -106,6 +106,7 @@ function ShowPin() {
     document.getElementById('location-choice').classList.add('hidden');
 
     document.getElementById('pin').classList.remove('pin--hidden');  
+
     console.log('ShowPin');
 }
 
@@ -130,4 +131,7 @@ function SetHitboxNotAvailable() {
             'Content-Type': 'application/json',
         }
     });
+    setTimeout(function () {
+        location.reload(true);
+    }, 200);
 }
