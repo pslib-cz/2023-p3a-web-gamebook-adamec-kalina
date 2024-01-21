@@ -32,7 +32,6 @@
             hitbox.addEventListener('click', function () {
                 updateDialogueText();
                 ToggleDialog();
-                SetHitboxNotAvailable();
             });
         }
     }
@@ -47,6 +46,7 @@
 
 
 function SetHitboxNotAvailable() {
+    console.log("Hitbox over");
     fetch('/Gameplay/SetHitboxNotAvailable ', {
         method: 'POST',
         headers: {
