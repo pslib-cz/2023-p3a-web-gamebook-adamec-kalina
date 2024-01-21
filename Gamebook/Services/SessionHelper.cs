@@ -29,48 +29,48 @@ public class SessionHelper : ISessionHelper
         {Location.QuantumTechnology, new GameLocation(){Title = "Quantum Technology", BackgroundImage = "quantum-technology"}},
                 
         {Location.CorporalBuilding, new GameLocation(){Title = "Corporal Building", BackgroundImage = "corporal-building" }},
-        {Location.MainEntrance, new GameLocation(){Title = "Main Entrance", BackgroundImage = "main-entrance"}},
-        {Location.Reception, new GameLocation(){Title = "Reception", BackgroundImage = "reception"}},
-        {Location.BackOfBuilding, new GameLocation(){Title = "Back Of Building", BackgroundImage = "back-of-building"}},
-        {Location.Hallway, new GameLocation(){Title = "Hallway", BackgroundImage = "hallway"}},
-        {Location.ServerRoom, new GameLocation(){Title = "Server Room", BackgroundImage = "server-room"}},
-        {Location.SecurityDoor, new GameLocation(){Title = "Security Door", BackgroundImage = "security-door"}},
+        {Location.MainEntrance, new GameLocation(){Title = "Main Entrance", BackgroundImage = "main-entrance", Locked = false}},
+        {Location.Reception, new GameLocation(){Title = "Reception", BackgroundImage = "reception", Locked = false}},
+        {Location.BackOfBuilding, new GameLocation(){Title = "Back Of Building", BackgroundImage = "back-of-building", Locked = false}},
+        {Location.Hallway, new GameLocation(){Title = "Hallway", BackgroundImage = "hallway", Locked = false}},
+        {Location.ServerRoom, new GameLocation(){Title = "Server Room", BackgroundImage = "server-room", Locked = false}},
+        {Location.SecurityDoor, new GameLocation(){Title = "Security Door", BackgroundImage = "security-door", Locked = false}},  // needs keycard
         {Location.HoldingCells, new GameLocation(){Title = "Holding Cells", BackgroundImage = "holding-cells"}},
-        {Location.ControlRoom, new GameLocation(){Title = "Control Room", BackgroundImage = "control-room"}},
-        {Location.ChiefTechnitianOffice, new GameLocation(){Title = "Chiefs Technician Office", BackgroundImage = "chief-technician-office"}},
-        {Location.BackDoor, new GameLocation(){Title = "Back Door", BackgroundImage = "back-door"}},
-        {Location.Warehouse, new GameLocation(){Title = "Warehouse", BackgroundImage = "warehouse"}},
-        {Location.BoilerRoom, new GameLocation(){Title = "Boiler Room", BackgroundImage = "boiler-room"}},
-        {Location.SecurityRoom, new GameLocation(){Title = "Security Room", BackgroundImage = "security-room"}},
-        {Location.ExtractionVan, new GameLocation(){Title = "Extraction Van", BackgroundImage = "extraction-van"}},
+        {Location.ControlRoom, new GameLocation(){Title = "Control Room", BackgroundImage = "control-room", Locked = false}},
+        {Location.ChiefTechnitianOffice, new GameLocation(){Title = "Chiefs Technician Office", BackgroundImage = "chief-technician-office", Locked = false}},
+        {Location.BackDoor, new GameLocation(){Title = "Back Door", BackgroundImage = "back-door", Locked = false}},
+        {Location.Warehouse, new GameLocation(){Title = "Warehouse", BackgroundImage = "warehouse", Locked = false}},
+        {Location.BoilerRoom, new GameLocation(){Title = "Boiler Room", BackgroundImage = "boiler-room", Locked = false}},
+        {Location.SecurityRoom, new GameLocation(){Title = "Security Room", BackgroundImage = "security-room", Locked = false}},
+        {Location.ExtractionVan, new GameLocation(){Title = "Extraction Van", BackgroundImage = "extraction-van", Locked = false}},
                         
         {Location.Facility, new GameLocation(){Title = "Facility", BackgroundImage = "facility"}},
-        {Location.DeliveryEntrance, new GameLocation(){Title = "Delivery Entrance", BackgroundImage = "delivery-entrance"}},
-        {Location.SecurityCheckpoint, new GameLocation(){Title = "Security Checkpoint", BackgroundImage = "security-checkpoint"}},
-        {Location.ElectricalHallway, new GameLocation(){Title = "Electrical Hallway", BackgroundImage = "electrical-hallway"}},
-        {Location.RoomA421, new GameLocation(){Title = "Room A421", BackgroundImage = "room-A421"}},
-        {Location.RoomB78, new GameLocation(){Title = "Room B78", BackgroundImage = "room-B78"}},
-        {Location.RoomA765, new GameLocation(){Title = "Room A765", BackgroundImage = "room-A765"}},
-        {Location.MaintenanceArea, new GameLocation(){Title = "Maintenance Area", BackgroundImage = "maintenance-area"}},
-        {Location.ToolStorage, new GameLocation(){Title = "Tool Storage", BackgroundImage = "tool-storage"}},
-        {Location.EmergencyExit, new GameLocation(){Title = "Emergency Exit", BackgroundImage = "emergency-exit"}},
+        {Location.DeliveryEntrance, new GameLocation(){Title = "Delivery Entrance", BackgroundImage = "delivery-entrance", Locked = false}},
+        {Location.SecurityCheckpoint, new GameLocation(){Title = "Security Checkpoint", BackgroundImage = "security-checkpoint", Locked = false}},
+        {Location.ElectricalHallway, new GameLocation(){Title = "Electrical Hallway", BackgroundImage = "electrical-hallway", Locked = false}},
+        {Location.RoomA421, new GameLocation(){Title = "Room A421", BackgroundImage = "room-A421", Locked = false}},
+        {Location.RoomB78, new GameLocation(){Title = "Room B78", BackgroundImage = "room-B78", Locked = false}},
+        {Location.RoomA765, new GameLocation(){Title = "Room A765", BackgroundImage = "room-A765", Locked = false}},
+        {Location.MaintenanceArea, new GameLocation(){Title = "Maintenance Area", BackgroundImage = "maintenance-area", Locked = false}},
+        {Location.ToolStorage, new GameLocation(){Title = "Tool Storage", BackgroundImage = "tool-storage", Locked = false}},
+        {Location.EmergencyExit, new GameLocation(){Title = "Emergency Exit", BackgroundImage = "emergency-exit", Locked = false}}, // needs 3 cables
         {Location.EscapeCar, new GameLocation(){Title = "Escape Car", BackgroundImage = "escape-car"}},
 
         {Location.DataDepot, new GameLocation(){Title = "Data Depot", BackgroundImage = "data-depot"}},
-        {Location.ThirdFloor, new GameLocation(){Title = "Third Floor", BackgroundImage = "third-floor"}},
-        {Location.MainLobby, new GameLocation(){Title = "Main Lobby", BackgroundImage = "main-lobby"}},
-        {Location.SectorD4, new GameLocation(){Title = "Sector D4", BackgroundImage = "sector-D4"}},
-        {Location.Server17, new GameLocation(){Title = "Server 17", BackgroundImage = "server-17"}},
-        {Location.Server21, new GameLocation(){Title = "Server 21", BackgroundImage = "server-21"}},
-        {Location.ResearchWing, new GameLocation(){Title = "Research Wing", BackgroundImage = "research-wing"}},
-        {Location.ComputerA765, new GameLocation(){Title = "Computer A765", BackgroundImage = "computer-A765"}},
-        {Location.RooftopExit, new GameLocation(){Title = "Rooftop Exit", BackgroundImage = "rooftop-exit"}},
+        {Location.ThirdFloor, new GameLocation(){Title = "Third Floor", BackgroundImage = "third-floor", Locked = false}},
+        {Location.MainLobby, new GameLocation(){Title = "Main Lobby", BackgroundImage = "main-lobby", Locked = false}},
+        {Location.SectorD4, new GameLocation(){Title = "Sector D4", BackgroundImage = "sector-D4", Locked = false}},
+        {Location.Server17, new GameLocation(){Title = "Server 17", BackgroundImage = "server-17", Locked = false}},
+        {Location.Server21, new GameLocation(){Title = "Server 21", BackgroundImage = "server-21", Locked = false}},
+        {Location.ResearchWing, new GameLocation(){Title = "Research Wing", BackgroundImage = "research-wing", Locked = false}},
+        {Location.ComputerA765, new GameLocation(){Title = "Computer A765", BackgroundImage = "computer-A765", Locked = false}},
+        {Location.RooftopExit, new GameLocation(){Title = "Rooftop Exit", BackgroundImage = "rooftop-exit", Locked = false}}, // needs 2x cables 1x chip
         {Location.Helipad, new GameLocation(){Title = "Helipad", BackgroundImage = "helipad"}},
 
         {Location.CorporateHeadquarters, new GameLocation(){Title = "CorporateHeadquarters", BackgroundImage = "corporate-headquarters"}},
-        {Location.Elevator, new GameLocation(){Title = "Elevator", BackgroundImage = "elevator"}},
-        {Location.Penthouse, new GameLocation(){Title = "Penthouse", BackgroundImage = "penthouse"}},
-        {Location.Boss, new GameLocation(){Title = "Boss", BackgroundImage = "boss"}},
+        {Location.Elevator, new GameLocation(){Title = "Elevator", BackgroundImage = "elevator", Locked = false}},
+        {Location.Penthouse, new GameLocation(){Title = "Penthouse", BackgroundImage = "penthouse", Locked = false}},
+        {Location.Boss, new GameLocation(){Title = "Boss", BackgroundImage = "boss", Locked = false}},
 
 
     };
@@ -444,7 +444,8 @@ public class SessionHelper : ISessionHelper
     // Default quests state
     private List<Quest> questList = new()
     {
-        Global.Quests.First(q => q.Number == 1)
+        Global.Quests.First(q => q.Number == 1),
+        Global.Quests.First(q => q.Number == 3)
     };
 
     // Default player state
