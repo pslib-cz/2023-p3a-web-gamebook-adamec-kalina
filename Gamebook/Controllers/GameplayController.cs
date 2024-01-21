@@ -82,13 +82,13 @@ public class GameplayController : ControllerBase
         return Ok();
     }
     
-    // [HttpPost("SetHitboxNotAvailable")]
-    // public ActionResult SetHitboxNotAvailable()
-    // {
-    //     _gameplayService.SetHitboxNotAvailable();
-    //     
-    //     return Ok();
-    // }
+    [HttpPost("SetHitboxNotAvailable")]
+    public ActionResult SetHitboxNotAvailable()
+    {
+        _gameplayService.SetHitboxNotAvailable();
+        
+        return Ok();
+    }
     
     [HttpPost("SetChoiceNotAvailable")]
     public ActionResult SetChoiceNotAvailable()
