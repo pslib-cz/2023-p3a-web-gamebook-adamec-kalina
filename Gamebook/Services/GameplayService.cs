@@ -151,8 +151,11 @@ public class GameplayService : IGameplayService
             var location = _locationService.GetLocation(currentLocation);
             var playerDealingType = _locationService.GetPlayerDealingType();
             
+            
             if (location.Hitboxes.Count == 0 || location.Hitboxes.FirstOrDefault(h => h.Available && (h.PlayerDealingType == null || h.PlayerDealingType == playerDealingType)) == null) return;//No hitboxes at all or just no available ones on the current page
     
+            var hitbox = location.Hitboxes.First(h => h.Available && (h.PlayerDealingType == null || h.PlayerDealingType == playerDealingType));
+            if(hitbox.Type == HitboxType.Pin)UnlockLocation(Location.SecretMeetingPlace); //an exception for the pin hitbox -> the only occurrence where a hitbox unlocks a location :)
             // Change the hitbox available state
             location.Hitboxes.First(h => h.Available && (h.PlayerDealingType == null || h.PlayerDealingType == playerDealingType)).Available = false;
                 
