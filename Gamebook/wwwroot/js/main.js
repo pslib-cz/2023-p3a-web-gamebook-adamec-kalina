@@ -19,7 +19,6 @@
         else if (data.hitbox == "Pin") {
             hitbox.addEventListener('click', function () {
                 ShowPin()
-                SetHitboxNotAvailable();
             });
         }
         else if (data.hitbox == "Hack") {

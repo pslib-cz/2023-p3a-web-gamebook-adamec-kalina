@@ -65,6 +65,7 @@ function submitGuess() {
 
     if (result.W === codeLength) {
         alert('Congratulations! You cracked the code!');
+        SetHitboxNotAvailable();
         return;
     }
 
@@ -119,4 +120,14 @@ function HidePin() {
 const closePin = document.querySelector('.pin__close');
 if (document.body.contains(closePin)) {
     closePin.addEventListener('click', HidePin);
+}
+
+function SetHitboxNotAvailable() {
+    console.log("Hitbox over");
+    fetch('/Gameplay/SetHitboxNotAvailable ', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    });
 }
