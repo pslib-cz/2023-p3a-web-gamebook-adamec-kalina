@@ -44,10 +44,10 @@ Corporal Building
     │   └── Chief Technitian office **(fight - keycard)**
     └─> Back Door
         ├── Warehouse
-        │   ├── Security door **(needs key)**
+        │   ├── Security door **(needs keycard)**
         │   │   └─> Holding cells **[finish]** -> extraction van
         │   └── Boiler Room
-        └── Security room **(fight - key)**
+        └── Security room **(fight - keycard)**
 ```
 
 player goes to **Secret Meeting Place**

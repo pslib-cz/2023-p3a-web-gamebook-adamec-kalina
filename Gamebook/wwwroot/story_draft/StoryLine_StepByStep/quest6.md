@@ -1,4 +1,4 @@
-# Quest 6: Cyber Infiltration
+﻿# Quest 6: Cyber Infiltration
 
 - player goes to **Secret Meeting Place**
 - player talks to **Hacktivist leader**
@@ -53,7 +53,16 @@ Shadow Viper: "Excellent, looks like we have everything we need. Let's do this."
 ```
 
 ```
-ACTION 3
+Data Depot
+  └─> Third floor
+      ├── Main Lobby
+      │   ├── Sector D4
+      │   │   ├── Server 17 (Tear Cables) (get cables)
+      │   │   └── Server 21 (Tear Cables) (get cables)
+      │   └── Research Wing
+      │       └── Computer A765 (Hack) - (get chip)
+      └── Rooftop Exit (needs 2x cables 1x chip)
+          └── Helipad (Escape by Helicopter)
 ```
 
 - player goes to **Secret Meeting Place**

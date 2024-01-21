@@ -137,3 +137,50 @@ body.emergency-exit{
 body.escape-car{
     background-image: url(/images/background/act_2/escape_car.png);
 }
+
+
+/*ACT3*/
+body.data-depot{
+    background-image: url(/images/background/act_3/data_depot.png);
+}
+body.third-floor{
+    background-image: url(/images/background/act_3/third_floor.png);
+}
+body.main-lobby{
+    background-image: url(/images/background/act_3/main_lobby.png);
+}
+body.sector-D4{
+    background-image: url(/images/background/act_3/sector_D4.png);
+}
+body.server-17{
+    background-image: url(/images/background/act_3/server_17.png);
+}
+body.server-21{
+    background-image: url(/images/background/act_3/server_21.png);
+}
+body.research-wing{
+    background-image: url(/images/background/act_3/research_wing.png);
+}
+body.computer-A765{
+    background-image: url(/images/background/act_3/computer_A765.png);
+}
+body.rooftop-exit{
+    background-image: url(/images/background/act_3/rooftop_exit.png);
+}
+body.helipad{
+    background-image: url(/images/background/act_3/helipad.png);
+}
+
+/*ACT4*/
+corporate-headquarters{
+    background-image: url(/images/background/act_4/corporate_headquarters.png);
+}
+elevator{
+    background-image: url(/images/background/act_4/elevator.png);
+}
+penthouse{
+    background-image: url(/images/background/act_4/penthouse.png);
+}
+boss{
+    background-image: url(/images/background/act_4/boss.png);
+}
