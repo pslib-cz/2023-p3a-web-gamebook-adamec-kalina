@@ -86,3 +86,97 @@
     left: 50%;
     top: 25%;
 }
+
+
+/*TODO*/
+/*act1*/
+.security-door .hitbox {
+    height: 25vh;
+    width: 25vh;
+    left: 35%;
+    top: 35%;
+}
+.chief-technician-office .hitbox {
+    height: 25vh;
+    width: 25vh;
+    left: 35%;
+    top: 35%;
+}
+.security-door .hitbox {
+    height: 25vh;
+    width: 25vh;
+    left: 35%;
+    top: 35%;
+}
+.security-room .hitbox {
+    height: 25vh;
+    width: 25vh;
+    left: 35%;
+    top: 35%;
+}
+
+/*act2*/
+.room-A421 .hitbox {
+    height: 25vh;
+    width: 25vh;
+    left: 35%;
+    top: 35%;
+}
+.room-B78 .hitbox {
+    height: 25vh;
+    width: 25vh;
+    left: 35%;
+    top: 35%;
+}
+.room-A765 .hitbox {
+    height: 25vh;
+    width: 25vh;
+    left: 35%;
+    top: 35%;
+}
+.emergency-exit .hitbox {
+    height: 25vh;
+    width: 25vh;
+    left: 35%;
+    top: 35%;
+}
+.tool-storage .hitbox {
+    height: 25vh;
+    width: 25vh;
+    left: 35%;
+    top: 35%;
+}
+
+/*act3*/
+.server-17 .hitbox {
+    height: 25vh;
+    width: 25vh;
+    left: 35%;
+    top: 35%;
+}
+.server-21 .hitbox {
+    height: 25vh;
+    width: 25vh;
+    left: 35%;
+    top: 35%;
+}
+.computer-A765 .hitbox {
+    height: 25vh;
+    width: 25vh;
+    left: 35%;
+    top: 35%;
+}
+.rooftop-exit .hitbox {
+    height: 25vh;
+    width: 25vh;
+    left: 35%;
+    top: 35%;
+}
+
+/*act4*/
+.boss .hitbox {
+    height: 25vh;
+    width: 25vh;
+    left: 35%;
+    top: 35%;
+}

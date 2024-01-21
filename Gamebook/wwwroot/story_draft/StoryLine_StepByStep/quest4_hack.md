@@ -21,7 +21,12 @@ Shadow Viper: "I understand the risks. We'll start now."
 - player talks to **Technical Expert**
 
 ```
-HACKING MINIGAME - MISSION 1 EXPLANATION
+Technical Expert: "Shadow Viper, we've integrated cutting-edge quantum technology into our hacking tools, enhancing their capabilities."
+Shadow Viper: "Quantum technology? How will that assist in this operation?"
+Technical Expert: "Quantum computing offers unprecedented processing speed and power, ideal for breaking complex encryptions and navigating sophisticated security systems."
+Shadow Viper: "Sounds promising. Will I need special training to use it?"
+Technical Expert: "No, the interface is user-friendly. But remember, its power makes it extremely efficient, so your actions must be precise and calculated."
+Shadow Viper: "Understood. I'll harness this quantum edge to infiltrate the database swiftly and securely."
 ```
 
 - ***Location Unlock***: Quantum Technology

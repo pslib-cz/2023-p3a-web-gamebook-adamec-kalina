@@ -35,7 +35,7 @@ public class SessionHelper : ISessionHelper
         {Location.Hallway, new GameLocation(){Title = "Hallway", BackgroundImage = "hallway", Locked = false}},
         {Location.ServerRoom, new GameLocation(){Title = "Server Room", BackgroundImage = "server-room", Locked = false}},
         {Location.SecurityDoor, new GameLocation(){Title = "Security Door", BackgroundImage = "security-door", Locked = false}},  // needs keycard
-        {Location.HoldingCells, new GameLocation(){Title = "Holding Cells", BackgroundImage = "holding-cells"}},
+        {Location.HoldingCells, new GameLocation(){Title = "Holding Cells", BackgroundImage = "holding-cells", Locked = false}}, //Locked = true
         {Location.ControlRoom, new GameLocation(){Title = "Control Room", BackgroundImage = "control-room", Locked = false}},
         {Location.ChiefTechnitianOffice, new GameLocation(){Title = "Chiefs Technician Office", BackgroundImage = "chief-technician-office", Locked = false}},
         {Location.BackDoor, new GameLocation(){Title = "Back Door", BackgroundImage = "back-door", Locked = false}},
@@ -54,7 +54,7 @@ public class SessionHelper : ISessionHelper
         {Location.MaintenanceArea, new GameLocation(){Title = "Maintenance Area", BackgroundImage = "maintenance-area", Locked = false}},
         {Location.ToolStorage, new GameLocation(){Title = "Tool Storage", BackgroundImage = "tool-storage", Locked = false}},
         {Location.EmergencyExit, new GameLocation(){Title = "Emergency Exit", BackgroundImage = "emergency-exit", Locked = false}}, // needs 3 cables
-        {Location.EscapeCar, new GameLocation(){Title = "Escape Car", BackgroundImage = "escape-car"}},
+        {Location.EscapeCar, new GameLocation(){Title = "Escape Car", BackgroundImage = "escape-car", Locked = false}}, //Locked = true
 
         {Location.DataDepot, new GameLocation(){Title = "Data Depot", BackgroundImage = "data-depot"}},
         {Location.ThirdFloor, new GameLocation(){Title = "Third Floor", BackgroundImage = "third-floor", Locked = false}},
@@ -65,7 +65,7 @@ public class SessionHelper : ISessionHelper
         {Location.ResearchWing, new GameLocation(){Title = "Research Wing", BackgroundImage = "research-wing", Locked = false}},
         {Location.ComputerA765, new GameLocation(){Title = "Computer A765", BackgroundImage = "computer-A765", Locked = false}},
         {Location.RooftopExit, new GameLocation(){Title = "Rooftop Exit", BackgroundImage = "rooftop-exit", Locked = false}}, // needs 2x cables 1x chip
-        {Location.Helipad, new GameLocation(){Title = "Helipad", BackgroundImage = "helipad"}},
+        {Location.Helipad, new GameLocation(){Title = "Helipad", BackgroundImage = "helipad", Locked = false}}, //Locked = true
 
         {Location.CorporateHeadquarters, new GameLocation(){Title = "CorporateHeadquarters", BackgroundImage = "corporate-headquarters"}},
         {Location.Elevator, new GameLocation(){Title = "Elevator", BackgroundImage = "elevator", Locked = false}},
@@ -214,7 +214,6 @@ public class SessionHelper : ISessionHelper
                 "Hacktivist Leader: Now we must analyze the data and prepare our next steps. Your role in our future missions will be crucial.",
                 "Hacktivist leader: And make sure you take a moment to rest. These neural connections can be taxing on the brain.",
                 "Shadow Viper: I'll take a break, but not for long. There's still a lot of work to do.",
-                "hactivists now fully trust you\nquest 4 completed\nQuest 5 is unlocked"
             }}, new(){DialogFocus = PlayerFocus.Physics, Unlock = new() { Location.TacticalRoom }, DialogOrder = new(){Quest = 5, Step = 1}, Texts = new List<string>()
             {
                 "Hacktivist leader: We have an urgent situation. A corporation is about to launch a new project that could have serious consequences for the public. We need to stop it before it's too late.",
