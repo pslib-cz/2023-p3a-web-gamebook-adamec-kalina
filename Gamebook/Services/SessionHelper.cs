@@ -347,9 +347,15 @@ public class SessionHelper : ISessionHelper
                 "Ripper Dock: Good choice, Shadow Viper. This upgrade will give you exactly what you need. And as for the price, you don't have to worry. Our group will cover all costs. Consider it an investment in our future together.",
                 "Shadow Viper: I appreciate that. It's time to show the corporations that we're not just helpless pawns in the game.",
                 "Ripper Dock: Exactly. Now sit back and let me work. You'll soon have new abilities at your disposal."
+            }}, new(){DialogFocus = PlayerFocus.Physics, Unlock = new() { Location.TacticalRoom, Location.Workshop }, FocusAdd = PlayerFocus.Frajer, DialogOrder = new(){Quest = 6, Step = 2}, Texts = new List<string>() {
+                "Tech Expert: We have another upgrade for you, Shadow Viper. This hacking module will allow you to penetrate corporate systems more efficiently and quickly.",
             }}, new(){DialogFocus = PlayerFocus.Physics, Unlock = new() { Location.TacticalRoom, Location.Workshop }, DialogOrder = new(){Quest = 6, Step = 2}, Texts = new List<string>() {
                 "Ripper Dock: We have another upgrade for you, Shadow Viper. This hacking module will allow you to penetrate corporate systems more efficiently and quickly.",
                 "Shadow Viper: Excellent. What's our plan for this mission?",
+                "Hacktivist Member: First you must physically penetrate the facility. Your physical module will help you do that. Once you're inside, your new hacking module will be next.", 
+                "Shadow Viper: Sounds like a combination that might work. Once I reach the central computer, I'll use the new module to hack into their systems.", 
+                "Tech Expert: Yes, and with this module you'll be able to more efficiently override their security protocols and get the information you need faster."
+            }}, new(){DialogFocus = PlayerFocus.Hack, Unlock = new() { Location.TacticalRoom, Location.Workshop}, FocusAdd = PlayerFocus.Frajer, DialogOrder = new(){Quest = 6, Step = 2}, Texts = new List<string>()
                 "Ripper Dock: First you must physically penetrate the facility. Your physical module will help you do that. Once you're inside, your new hacking module will be next.", 
                 "Shadow Viper: Sounds like a combination that might work. Once I reach the central computer, I'll use the new module to hack into their systems.",
                 "Ripper Dock: Yes, and with this module you'll be able to more efficiently override their security protocols and get the information you need faster."
