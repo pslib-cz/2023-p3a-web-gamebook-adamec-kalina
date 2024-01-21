@@ -102,8 +102,10 @@ namespace Gamebook.Services
         public HitboxType? GetHitbox(Location location)
         {
             var gameLocation = GetLocation(location);
+            var gameProgress = GetGameProgress();
+            var playerDealingType = GetPlayerDealingType();
             if (gameLocation.Hitboxes == null) return null;
-            var availableHitbox = gameLocation.Hitboxes.FirstOrDefault(h => h.Available);
+            var availableHitbox = gameLocation.Hitboxes.FirstOrDefault(h => (h.HitboxOrder == null || (h.HitboxOrder.Quest == gameProgress.Quest && h.HitboxOrder.Step == gameProgress.Step)) && (h.PlayerDealingType == playerDealingType || h.PlayerDealingType == null));
             return availableHitbox?.Type;
         }
 
