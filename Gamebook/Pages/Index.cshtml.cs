@@ -26,4 +26,13 @@ public class IndexModel : PageModel
 
         GameInProgress = _locationService.IsGameInProgress();
     }
+
+    public void OnGetStart()
+    {
+        _locationService.ResetGame();
+        var currentLocation = _locationService.GetCurrentLocation();
+        ViewData["lastLocation"] = currentLocation;
+        
+        GameInProgress = _locationService.IsGameInProgress();
+    }
 }
