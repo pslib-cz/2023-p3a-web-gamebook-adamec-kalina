@@ -15,6 +15,7 @@ namespace Gamebook.Pages
     public class LocationModel : PageModel
     {
         private readonly IGameLocationService _locationService;
+        private readonly IGameplayService _gameplayService;
 
         public LocationPageResponse LocationPageResponse { get; set; }
         
@@ -22,6 +23,7 @@ namespace Gamebook.Pages
         public LocationModel(IGameLocationService locationService)
         {
             _locationService = locationService;
+            _gameplayService = _gameplayService;
         }
 
 
@@ -52,6 +54,7 @@ namespace Gamebook.Pages
                 _locationService.SetCurrentLocation(currentLocation); 
             }
             
+            if(currentLocation == Location.Reception)_gameplayService.HealthChange(0);
             PassLocationData(currentLocation);
 
             return Page();
