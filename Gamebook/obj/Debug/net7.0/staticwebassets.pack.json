@@ -241,6 +241,10 @@
       "PackagePath": "staticwebassets\\images\\background\\electro_shop.png"
     },
     {
+      "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\end.png",
+      "PackagePath": "staticwebassets\\images\\background\\end.png"
+    },
+    {
       "Id": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\menu.png",
       "PackagePath": "staticwebassets\\images\\background\\menu.png"
     },

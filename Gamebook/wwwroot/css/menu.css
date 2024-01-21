@@ -84,9 +84,6 @@
 
 body.end {
     background-image: url(../images/background/end.png);
-    position: absolute;
-    left: 0;
-    top: 0;
 }
 
 .end__text {
@@ -111,6 +108,5 @@ body.end {
     width: 80%;
     margin: 0 auto;
     border-radius: 16px;
-    margin-top: 1em;
     min-height: unset;
 }

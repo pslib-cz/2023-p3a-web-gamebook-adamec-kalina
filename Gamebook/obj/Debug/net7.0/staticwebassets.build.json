@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9nz+6PQgxqNSmAPbKyq2j4HVX/crHRK3zsKts74V4OY=",
+  "Hash": "L0hOPp/+J3V5A0YBjK7wMySLE2VC+ogWdsGb7DuIl70=",
   "Source": "Gamebook",
   "BasePath": "_content/Gamebook",
   "Mode": "Default",
@@ -1035,6 +1035,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\background\\electro_shop.png"
+    },
+    {
+      "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\end.png",
+      "SourceId": "Gamebook",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\",
+      "BasePath": "_content/Gamebook",
+      "RelativePath": "images/background/end.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\background\\end.png"
     },
     {
       "Identity": "C:\\Users\\Maty\\OneDrive\\Plocha\\gamebook\\2023-p3a-web-gamebook-adamec-kalina\\Gamebook\\wwwroot\\images\\background\\menu.png",
