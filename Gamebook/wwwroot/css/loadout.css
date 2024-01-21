@@ -133,6 +133,18 @@ p.cont__stat__money {
     background-image: url(../images/items/battery.png);
     background-size: 50%;
 }
+.cont__inventory__item.Cable {
+    background-image: url(../images/items/cable.png);
+}
+.cont__inventory__item.Pliers {
+    background-image: url(../images/items/cable.png);
+}
+.cont__inventory__item.Keycard {
+    background-image: url(../images/items/keycard.png);
+}
+.cont__inventory__item.Chip {
+    background-image: url(../images/items/chip.png);
+}
 
 /*CYBERWARE CONT*/
 .cont__cyberware {

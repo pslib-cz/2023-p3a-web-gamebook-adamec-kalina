@@ -6,5 +6,26 @@
     var endResponse = Model.EndPageResponse;
 }
 
-<h1>@endResponse.Ending.Title</h1>
-<p>@endResponse.Ending.Text</p>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@endResponse.Ending.Title</title>
+    <link rel="stylesheet" href="~/css/root.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/menu.css" asp-append-version="true" />
+
+</head>
+<body class="end">
+
+    <p class="end__text">@endResponse.Ending.Text</p>
+    <a asp-page="/Index" class="end__btn button button--blue">Main Menu</a>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
