@@ -207,7 +207,7 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: Okay, I'm ready to dive into the system and get the information.",
                 "Hacktivist Leader: Remember, Shadow Viper, time is of the essence. The longer you are inside the system, the greater the risk of detection. Be quick and careful.", 
                 "Shadow Viper: I understand the risks. We'll start now."
-            }}, new(){DialogFocus = PlayerFocus.Hack, DialogOrder = new(){Quest = 4, Step = 3, LastStep = true}, Texts = new List<string>()
+            }}, new(){DialogFocus = PlayerFocus.Hack, DialogOrder = new(){Quest = 4, Step = 4, LastStep = true}, Texts = new List<string>()
             {
                 "Shadow Viper: Mission accomplished. Information is secure and safe.",
                 "Hacktivist leader: This is a huge success. This information will give us deep insight into corporate plans. Well done, Shadow Viper.",
@@ -248,7 +248,7 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: I'll prepare to invade their systems and find out what they're up to. I'll need access to our best tools and support.",
                 "Hacktivist Leader: Everything you need is ready. You need to act fast, we don't have much time.",
                 "Shadow Viper: We'll start now. This information war must not be lost."
-            }}, new(){DialogFocus = PlayerFocus.Hack, DialogOrder = new(){Quest = 5, Step = 2, LastStep = true}, Texts = new List<string>()
+            }}, new(){DialogFocus = PlayerFocus.Hack, DialogOrder = new(){Quest = 5, Step = 3, LastStep = true}, Texts = new List<string>()
             {
                 "Shadow Viper: The attacks have been stopped. The source has been identified and neutralized. Our networks are now more secure.",
                 "Hacktivist Leader: That's excellent work, Shadow Viper. Your cyber defense skills just saved our skins. What was the source of the attacks?",
@@ -415,9 +415,18 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: The world needs compassion and integrity, not tyranny. Your time is up.",
                 "Boss: What will you do now, Shadow Viper? Will you become the next me?",
                 "Shadow Viper: No. I'll keep fighting for what's right, but unlike you, I'll never lose sight of what that truly means."
+            }},
+        
+        
+        }},
+        {$"{Location.QuantumTechnology}Dialog", new List<Dialog>()
+        { new() { DialogFocus = PlayerFocus.Hack, DialogOrder = new(){Quest = 4, Step = 3}, Texts = new List<string>
+            {
+                "Good job solving the puzzle!"
+            }},new (){DialogFocus = PlayerFocus.Hack, DialogOrder = new(){Quest = 5, Step = 2}, Texts = new List<string>()
+            {
+                "Amazing hacking skills!"
             }}
-        
-        
         }},
         
             
