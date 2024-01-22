@@ -59,10 +59,7 @@ if (document.body.contains(submit)) {
         ChoiceNotAvailable();
         PlayerFocusChoice(document.querySelector('.choices__choice.selected').textContent);
         PlayerDealingTypeChoice(document.querySelector('.choices__choice.selected').textContent);
-        BossChoice(document.querySelector('.choices__choice.selected').textContent);
-        setTimeout(function () {
-            location.reload(true);
-        }, 500);
+        reload();
     });
 }
 
@@ -77,18 +74,6 @@ function ChoiceNotAvailable() {
     });
 }
 
-function BossChoice(choice) {
-    if (choice == "Make him suffer") {
-        window.location.href = "/End";
-    }
-    else if (choice == "Hand to Police") {
-        MoralScoreChange(50);
-        window.location.href = "/End";
-    }
-    else {
-        return
-    }
-}
 
 function PlayerFocusChoice(choice) {
     var endChoice = "";
@@ -117,7 +102,17 @@ function PlayerFocusChoice(choice) {
 }
 function PlayerDealingTypeChoice(choice) {
     var endChoice = "";
-    if (choice == "Violence") {
+
+    console.log(choice);
+    if (choice == "Make him suffer") {
+        endChoice = "Violent";
+    }
+    else if (choice == "Hand to Police") {
+        MoralScoreChange(50);
+        endChoice = "Peaceful";
+    }
+
+    else if (choice == "Violence") {
         endChoice = "Violent";
     }
     else if (choice == "Talk them Down") {
@@ -125,6 +120,7 @@ function PlayerDealingTypeChoice(choice) {
         MoralScoreChange(25);
     }
     else {
+        console.log("no choice");
         return;
     }
 

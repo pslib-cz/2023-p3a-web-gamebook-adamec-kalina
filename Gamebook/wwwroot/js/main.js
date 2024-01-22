@@ -13,7 +13,6 @@
         if (data.hitbox == "Fight") {
             hitbox.addEventListener('click', function () {
                 InitiateGame();
-                SetHitboxNotAvailable();
             });
         }
         else if (data.hitbox == "Pin") {
@@ -51,4 +50,10 @@ function SetHitboxNotAvailable() {
             'Content-Type': 'application/json',
         }
     });
+}
+
+function reload() {
+    setTimeout(function () {
+        location.reload(true);
+    }, 200);
 }

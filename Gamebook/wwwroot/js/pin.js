@@ -66,6 +66,7 @@ function submitGuess() {
     if (result.W === codeLength) {
         HidePin();
         SetHitboxNotAvailable();
+        reload();
         return;
     }
 
@@ -123,15 +124,3 @@ if (document.body.contains(closePin)) {
     closePin.addEventListener('click', HidePin);
 }
 
-function SetHitboxNotAvailable() {
-    console.log("Hitbox over");
-    fetch('/Gameplay/SetHitboxNotAvailable ', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        }
-    });
-    setTimeout(function () {
-        location.reload(true);
-    }, 200);
-}

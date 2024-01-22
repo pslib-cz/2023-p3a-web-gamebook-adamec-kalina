@@ -117,8 +117,8 @@
 .holding-cells .hitbox {
     height: 25vh;
     width: 25vh;
-    left: 35%;
-    top: 35%;
+    left: 42%;
+    top: 40%;
 }
 
 /*act2*/
@@ -141,10 +141,10 @@
     top: 35%;
 }
 .emergency-exit .hitbox {
-    height: 25vh;
-    width: 25vh;
-    left: 35%;
-    top: 35%;
+    height: 55vh;
+    width: 35vh;
+    left: 38%;
+    top: 28%;
 }
 .tool-storage .hitbox {
     height: 25vh;
@@ -173,16 +173,16 @@
     top: 35%;
 }
 .rooftop-exit .hitbox {
-    height: 25vh;
+    height: 40vh;
     width: 25vh;
-    left: 35%;
-    top: 35%;
+    left: 44%;
+    top: 45%;
 }
 
 /*act4*/
 .boss .hitbox {
     height: 25vh;
     width: 25vh;
-    left: 35%;
-    top: 35%;
+    left: 42%;
+    top: 30%;
 }
