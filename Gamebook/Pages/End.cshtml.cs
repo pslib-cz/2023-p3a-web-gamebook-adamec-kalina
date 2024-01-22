@@ -29,7 +29,7 @@ public class End : PageModel
         //TODO adjust the values
         EndPageResponse.Ending = moralScore switch
         {
-            (< 40) => Global.Endings.First(e => e.Key == 2).Value,
+            (< 50) => Global.Endings.First(e => e.Key == 2).Value,
             _ => Global.Endings.First(e => e.Key == 1).Value
         };
     }

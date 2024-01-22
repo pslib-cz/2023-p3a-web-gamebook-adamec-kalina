@@ -7,7 +7,6 @@ using Gamebook.Models;
 using Global = Gamebook.GlobalModels.GlobalModels;
 
 namespace Gamebook.Services;
-// SecretMeetingPlace, Workshop lock
 public class SessionHelper : ISessionHelper
 {
     private readonly IHttpContextAccessor _httpContext;
@@ -22,9 +21,9 @@ public class SessionHelper : ISessionHelper
         {Location.ShadyBar, new GameLocation(){Title = "Shady Bar", BackgroundImage = "shady-bar"}},
         {Location.PartOfTheBar, new GameLocation(){Title = "Part of the Bar", BackgroundImage = "part-of-the-bar"}},
         {Location.BackEntrance, new GameLocation(){Title = "Back Entrance", BackgroundImage = "back-entrance", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Pin, HitboxOrder = null}}}},
-        {Location.SecretMeetingPlace, new GameLocation(){Title = "Secret Meeting Place", BackgroundImage = "secret-meeting-place",Locked = false, Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Hack, HitboxOrder = new(){Quest = 2, Step = 4}}}}},
+        {Location.SecretMeetingPlace, new GameLocation(){Title = "Secret Meeting Place", BackgroundImage = "secret-meeting-place", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Hack, HitboxOrder = new(){Quest = 2, Step = 4}}}}},
         {Location.Workshop, new GameLocation(){Title = "Workshop", BackgroundImage = "workshop"}},
-        {Location.TacticalRoom, new GameLocation(){Title = "Tactical Room", BackgroundImage = "tactical-room", Locked = false}},
+        {Location.TacticalRoom, new GameLocation(){Title = "Tactical Room", BackgroundImage = "tactical-room"}},
         {Location.CyberLab, new GameLocation(){Title = "Cyber Lab", BackgroundImage = "cyber-lab"}},
         {Location.QuantumTechnology, new GameLocation(){Title = "Quantum Technology", BackgroundImage = "quantum-technology", Hitboxes = new(){new(){Type = HitboxType.Hack, PlayerFocus = PlayerFocus.Hack, HitboxOrder = new(){Quest = 4, Step = 3}}, new(){Type = HitboxType.Hack, PlayerFocus = PlayerFocus.Hack, HitboxOrder = new(){Quest = 5, Step = 2}}}}},
                 
@@ -68,7 +67,7 @@ public class SessionHelper : ISessionHelper
         {Location.RooftopExit, new GameLocation(){Title = "Rooftop Exit", BackgroundImage = "rooftop-exit", Locked = false}}, // needs 2x cables 1x chip
         {Location.Helipad, new GameLocation(){Title = "Helipad", BackgroundImage = "helipad"}}, //Locked = true
 
-        {Location.CorporateHeadquarters, new GameLocation(){Title = "Corporate Headquarters", BackgroundImage = "corporate-headquarters", Locked= false}},
+        {Location.CorporateHeadquarters, new GameLocation(){Title = "Corporate Headquarters", BackgroundImage = "corporate-headquarters"}},
         {Location.Elevator, new GameLocation(){Title = "Elevator", BackgroundImage = "elevator", Locked = false}},
         {Location.Penthouse, new GameLocation(){Title = "Penthouse", BackgroundImage = "penthouse", Locked = false}},
         {Location.Boss, new GameLocation(){Title = "Boss", BackgroundImage = "boss", Locked = false, Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Fight, PlayerDealingType = PlayerDealingType.Violent, HitboxOrder = new(){Quest = 7, Step = 3}}}}},
@@ -519,8 +518,7 @@ public class SessionHelper : ISessionHelper
     // Default quests state
     private List<Quest> questList = new()
     {
-        Global.Quests.First(q => q.Number == 1),
-        Global.Quests.First(q => q.Number == 7)
+        Global.Quests.First(q => q.Number == 1)
     };
 
     // Default player state
@@ -531,7 +529,6 @@ public class SessionHelper : ISessionHelper
         Energy = 50,
         MaxEnergy = 50,
         Money = 0,
-        //TODO Default moral score
         MoralScore = 0
     };
 
@@ -542,7 +539,7 @@ public class SessionHelper : ISessionHelper
     private bool gameInProgress = false;
 
     // Game starts at quest 1, step 1
-    private GameProgress gameProgress = new() {Quest = 7, Step = 2};
+    private GameProgress gameProgress = new() {Quest = 1, Step = 1};
 
     // Set default currentLocation on game start
     private Location currentLocation = Location.SlumDistrict;

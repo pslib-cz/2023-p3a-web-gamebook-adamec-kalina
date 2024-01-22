@@ -108,8 +108,8 @@ function PlayerDealingTypeChoice(choice) {
         endChoice = "Violent";
     }
     else if (choice == "Hand to Police") {
-        MoralScoreChange(50);
         endChoice = "Peaceful";
+        MoralScoreChange(25);
     }
 
     else if (choice == "Violence") {
