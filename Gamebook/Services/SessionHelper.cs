@@ -26,7 +26,7 @@ public class SessionHelper : ISessionHelper
         {Location.Workshop, new GameLocation(){Title = "Workshop", BackgroundImage = "workshop"}},
         {Location.TacticalRoom, new GameLocation(){Title = "Tactical Room", BackgroundImage = "tactical-room", Locked = false}},
         {Location.CyberLab, new GameLocation(){Title = "Cyber Lab", BackgroundImage = "cyber-lab"}},
-        {Location.QuantumTechnology, new GameLocation(){Title = "Quantum Technology", BackgroundImage = "quantum-technology"}},
+        {Location.QuantumTechnology, new GameLocation(){Title = "Quantum Technology", BackgroundImage = "quantum-technology", Hitboxes = new(){new(){Type = HitboxType.Hack, PlayerFocus = PlayerFocus.Hack, HitboxOrder = new(){Quest = 4, Step = 3}}, new(){Type = HitboxType.Hack, PlayerFocus = PlayerFocus.Hack, HitboxOrder = new(){Quest = 5, Step = 2}}}}},
                 
         {Location.CorporalBuilding, new GameLocation(){Title = "Corporal Building", BackgroundImage = "corporal-building" }},
         {Location.MainEntrance, new GameLocation(){Title = "Main Entrance", BackgroundImage = "main-entrance", Locked = false}},
