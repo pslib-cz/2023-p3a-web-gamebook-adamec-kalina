@@ -276,7 +276,7 @@ public class SessionHelper : ISessionHelper
                 "Hacktivist Leader: We have to be careful how we use this information. Corporations have a lot of influence and will fight back. How do you suggest we proceed?",
                 "Shadow Viper: We should coordinate the leak with our allies and ensure that it reaches as wide a public as possible. At the same time, we must ensure the protection of our resources and members.",
                 "Hacktivist Leader: I agree. This data can change the course of our war against corporations. Your role in this has been crucial, Shadow Viper. You are invaluable to us."
-            }}, new(){Unlock = new() { Location.CorporateHeadquarters}, DialogOrder = new(){Quest = 7, Step = 1, LastStep = true}, Texts = new List<string>()
+            }}, new(){Unlock = new() { Location.CorporateHeadquarters}, DialogOrder = new(){Quest = 7, Step = 1}, Texts = new List<string>()
             {
                 "Hacktivist Leader: Shadow Viper, we face perhaps our greatest challenge yet. We have learned of a corporate project that could profoundly affect our society. It's something we must stop at all costs.",
                 "Shadow Viper: What exactly does this project involve?",
@@ -389,6 +389,17 @@ public class SessionHelper : ISessionHelper
         { new() { Unlock = new() { Location.Helipad }, DialogOrder = new(){Quest = 6, Step = 4}, Texts = new List<string>
             {
                 "Shadow Viper: Let's get out of here!"
+            }}
+        }},
+        {$"{Location.Boss}Dialog", new List<Dialog>()
+        { new() { DialogOrder = new(){Quest = 7, Step = 2, LastStep = true}, Texts = new List<string>
+            {
+                "Boss: You've caught me, Shadow Viper. But do you really think handing me over to the police will change anything?",
+                "Shadow Viper: It's not about changing everything at once. It's about accountability and the rule of law.",
+                "Boss: You and I, we're not so different. We both want to shape society. Why side with those who limit your potential?",
+                "Shadow Viper: Shaping society doesn't give you the right to trample on others' freedoms. What you're doing is wrong.",
+                "Boss: Think about it, Shadow Viper. You have the skills to be more than just a pawn in someone else's game.",
+                "Shadow Viper: I've made my choice. It's time for you to face the consequences of yours. The police will be here soon."
             }}
         }},
     };
