@@ -129,7 +129,7 @@ public class GameplayService : IGameplayService
             finishedDialog.ItemsAdd?.ForEach(AddItem);
             finishedDialog.ItemsRemove?.ForEach(RemoveItem);
             
-            //if(finishedDialog.DialogFocus != null)SetPlayerFocusChoice(PlayerFocus.Frajer);
+            if(finishedDialog.FocusAdd != null)SetPlayerFocusChoice(PlayerFocus.Frajer);
 
             // Save the progress back into the session
             string serializedGameProgress= JsonSerializer.Serialize(gameProgress);
