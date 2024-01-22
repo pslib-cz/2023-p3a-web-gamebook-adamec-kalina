@@ -190,7 +190,7 @@ public class SessionHelper : ISessionHelper
                 "Tech Expert: Yes, we have the coordinates. However, the building is well guarded. You'll need a plan.", 
                 "Shadow Viper: I'll get ready. No member of our group can be left in the hands of the corporation.",
                 "Hacktivist Leader: Okay, Shadow Viper. Counting on you. Be careful, but be quick."
-            }}, new() {DialogFocus = PlayerFocus.Physics, DialogOrder = new(){Quest = 4, Step = 3, LastStep = true}, Texts = new List<string>()
+            }}, new() {DialogFocus = PlayerFocus.Physics, DialogOrder = new(){Quest = 4, Step = 4, LastStep = true}, Texts = new List<string>()
             {
                 "Hacktivist Leader: Well done, Shadow Viper. Your actions tonight saved one life and provided us with valuable information.",
                 "Shadow Viper: I'm just glad I could help. It's time to show the corporations that we're not afraid to fight back.",
@@ -228,7 +228,7 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: Understood. I'll need detailed information on the layout of the facility and its systems.",
                 "Hacktivist Leader: We'll provide everything you need. It's a risky operation, but we're confident you can handle it.",
                 "Shadow Viper: All right, I'll get ready and then I'll be on my way."
-            }}, new(){DialogFocus = PlayerFocus.Physics, DialogOrder = new(){Quest = 5, Step = 3, LastStep = true}, Texts = new List<string>()
+            }}, new(){DialogFocus = PlayerFocus.Physics, DialogOrder = new(){Quest = 5, Step = 4, LastStep = true}, Texts = new List<string>()
             {
                 "Shadow Viper: The sabotage was successful. Systems are down, and that should delay the corporation for quite some time.",
                 "Hacktivist Leader: Well done, Shadow Viper. Your actions have caused considerable complications for the corporation and given us valuable time to plan further.",
@@ -266,7 +266,7 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: What's the situation inside?",
                 "Hacktivist Leader: The facility is guarded by physical security and has advanced digital security. You'll have to be careful to avoid detection.",
                 "Shadow Viper: Okay, we'll put together a plan that uses all my abilities. It's time to show the corporation that we're not just helpless."
-            }}, new(){DialogOrder = new(){Quest = 6, Step = 4, LastStep = true}, Texts = new List<string>()
+            }}, new(){DialogOrder = new(){Quest = 6, Step = 5, LastStep = true}, Texts = new List<string>()
             {
                 "Shadow Viper: The mission was successful. We have information in our hands that could be very damaging to the corporation.",
                 "Hacktivist Leader: That is excellent news, Shadow Viper. What exactly was the information we obtained?",
@@ -371,6 +371,24 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: Sounds promising. Will I need special training to use it?",
                 "Technical Expert: No, the interface is user-friendly. But remember, its power makes it extremely efficient, so your actions must be precise and calculated.",
                 "Shadow Viper: Understood. I'll harness this quantum edge to infiltrate the database swiftly and securely."
+            }}
+        }},
+        {$"{Location.HoldingCells}Dialog", new List<Dialog>()
+        { new() { DialogFocus = PlayerFocus.Physics, Unlock = new() { Location.ExtractionVan }, DialogOrder = new(){Quest = 4, Step = 3}, Texts = new List<string>
+            {
+                "Shadow Viper: Let's get you Home!"
+            }}
+        }},
+        {$"{Location.EmergencyExit}Dialog", new List<Dialog>()
+        { new() { DialogFocus = PlayerFocus.Physics, Unlock = new() { Location.EscapeCar }, DialogOrder = new(){Quest = 5, Step = 3}, Texts = new List<string>
+            {
+                "Shadow Viper: Let's get out of here!"
+            }}
+        }},
+        {$"{Location.RooftopExit}Dialog", new List<Dialog>()
+        { new() { Unlock = new() { Location.Helipad }, DialogOrder = new(){Quest = 6, Step = 4}, Texts = new List<string>
+            {
+                "Shadow Viper: Let's get out of here!"
             }}
         }},
     };
