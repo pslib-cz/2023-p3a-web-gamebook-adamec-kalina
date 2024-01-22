@@ -29,9 +29,9 @@ function updateDialogueText() {
                     closeButton.addEventListener('click', function () {
                         ToggleDialog();
 
-                        console.log(dialogue.texts[0].includes("No. I'll keep fighting"));
+                        console.log(dialogue.texts[0].includes("my ideas, my vision, they will endure"));
                         console.log(dialogue.texts[0]);
-                        if (dialogue.texts[0].includes("No. I'll keep fighting") || dialogue.texts[0].includes("I've made my choice.")) {
+                        if (dialogue.texts[0].includes("my ideas, my vision, they will endure") || dialogue.texts[0].includes("handing me over to the police will change anything?")) {
                             window.location.href = "/End";
                         }
  
