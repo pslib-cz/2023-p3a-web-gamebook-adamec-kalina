@@ -461,7 +461,8 @@ public class SessionHelper : ISessionHelper
     // Default quests state
     private List<Quest> questList = new()
     {
-        Global.Quests.First(q => q.Number == 1)
+        Global.Quests.First(q => q.Number == 1),
+        Global.Quests.First(q => q.Number == 3)
     };
 
     // Default player state
@@ -483,7 +484,7 @@ public class SessionHelper : ISessionHelper
     private bool gameInProgress = false;
 
     // Game starts at quest 1, step 1
-    private GameProgress gameProgress = new() {Quest = 1, Step = 1};
+    private GameProgress gameProgress = new() {Quest = 3, Step = 1};
 
     // Set default currentLocation on game start
     private Location currentLocation = Location.SlumDistrict;
