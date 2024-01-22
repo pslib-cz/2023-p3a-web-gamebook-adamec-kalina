@@ -71,7 +71,7 @@ public class SessionHelper : ISessionHelper
         {Location.CorporateHeadquarters, new GameLocation(){Title = "Corporate Headquarters", BackgroundImage = "corporate-headquarters"}},
         {Location.Elevator, new GameLocation(){Title = "Elevator", BackgroundImage = "elevator", Locked = false}},
         {Location.Penthouse, new GameLocation(){Title = "Penthouse", BackgroundImage = "penthouse", Locked = false}},
-        {Location.Boss, new GameLocation(){Title = "Boss", BackgroundImage = "boss", Locked = false}},
+        {Location.Boss, new GameLocation(){Title = "Boss", BackgroundImage = "boss", Locked = false, Hitboxes = {new(){Type = HitboxType.Fight, PlayerDealingType = PlayerDealingType.Violent, HitboxOrder = new(){Quest = 7, Step = 3}}}}},
 
 
     };
@@ -392,7 +392,7 @@ public class SessionHelper : ISessionHelper
             }}
         }},
         {$"{Location.Boss}Dialog", new List<Dialog>()
-        { new() { DialogOrder = new(){Quest = 7, Step = 2, LastStep = true}, Texts = new List<string>
+        { new() {SpecialType = PlayerDealingType.Peaceful, DialogOrder = new(){Quest = 7, Step = 2, LastStep = true}, Texts = new List<string>
             {
                 "Boss: You've caught me, Shadow Viper. But do you really think handing me over to the police will change anything?",
                 "Shadow Viper: It's not about changing everything at once. It's about accountability and the rule of law.",
@@ -400,8 +400,26 @@ public class SessionHelper : ISessionHelper
                 "Shadow Viper: Shaping society doesn't give you the right to trample on others' freedoms. What you're doing is wrong.",
                 "Boss: Think about it, Shadow Viper. You have the skills to be more than just a pawn in someone else's game.",
                 "Shadow Viper: I've made my choice. It's time for you to face the consequences of yours. The police will be here soon."
+            }}, new(){ SpecialType = PlayerDealingType.Violent, DialogOrder = new(){Quest = 7, Step = 2}, Texts = new List<string>()
+            {
+                "Shadow Viper: You've been manipulating and hurting people for too long. It's time for you to suffer the consequences of your actions.",
+                "Boss: What are you planning to do, Shadow Viper? You're not a killer.",
+                "Shadow Viper: Killing you would be too easy, too quick. No, I want you to experience the fear and powerlessness you've inflicted on others.",
+                "Boss: You think inflicting pain makes you better than me? We're cut from the same cloth, Shadow Viper.",
+                "Shadow Viper: We are nothing alike. I fight for justice, for those you've wronged. Your reign of terror ends now."
+            }}, new(){ SpecialType = PlayerDealingType.Violent, DialogOrder = new(){Quest = 7, Step = 3,LastStep = true}, Texts = new List<string>()
+            {
+                "Boss: You may have defeated me, but my ideas, my vision, they will endure.",
+                "Shadow Viper: Your vision was flawed, built on manipulation and suffering. It's time for a new chapter.",
+                "Boss: You think you've won, but you'll see, the world needs people like me to make the hard decisions.",
+                "Shadow Viper: The world needs compassion and integrity, not tyranny. Your time is up.",
+                "Boss: What will you do now, Shadow Viper? Will you become the next me?",
+                "Shadow Viper: No. I'll keep fighting for what's right, but unlike you, I'll never lose sight of what that truly means."
             }}
         }},
+        
+            
+        
     };
     
     private Dictionary<string, Choice> gameLocationChoiceDict = new()
