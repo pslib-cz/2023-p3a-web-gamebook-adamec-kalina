@@ -71,7 +71,7 @@ public class SessionHelper : ISessionHelper
         {Location.CorporateHeadquarters, new GameLocation(){Title = "Corporate Headquarters", BackgroundImage = "corporate-headquarters"}},
         {Location.Elevator, new GameLocation(){Title = "Elevator", BackgroundImage = "elevator", Locked = false}},
         {Location.Penthouse, new GameLocation(){Title = "Penthouse", BackgroundImage = "penthouse", Locked = false}},
-        {Location.Boss, new GameLocation(){Title = "Boss", BackgroundImage = "boss", Locked = false, Hitboxes = {new(){Type = HitboxType.Fight, PlayerDealingType = PlayerDealingType.Violent, HitboxOrder = new(){Quest = 7, Step = 3}}}}},
+        {Location.Boss, new GameLocation(){Title = "Boss", BackgroundImage = "boss", Locked = false, Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Fight, PlayerDealingType = PlayerDealingType.Violent, HitboxOrder = new(){Quest = 7, Step = 3}}}}},
 
 
     };
@@ -416,6 +416,8 @@ public class SessionHelper : ISessionHelper
                 "Boss: What will you do now, Shadow Viper? Will you become the next me?",
                 "Shadow Viper: No. I'll keep fighting for what's right, but unlike you, I'll never lose sight of what that truly means."
             }}
+        
+        
         }},
         
             
