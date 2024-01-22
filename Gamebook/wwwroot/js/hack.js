@@ -153,7 +153,7 @@ if (document.body.contains(submitBtn)) {
 				resultDisplay.textContent = 'All levels complete!';
 				SetHitboxNotAvailable();
 				HideHack();
-
+				reload();
 			}
 			loadSnippet(currentLevel, currentSnippetIndex);
 		} else {
@@ -192,18 +192,3 @@ function HideHack() {
 	document.getElementById('hitbox').classList.remove("hidden");
 }
 
-
-
-
-function SetHitboxNotAvailable() {
-	console.log("Hitbox over");
-	fetch('/Gameplay/SetHitboxNotAvailable ', {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json',
-		}
-	});
-	setTimeout(function () {
-		location.reload(true);
-	}, 200);
-}

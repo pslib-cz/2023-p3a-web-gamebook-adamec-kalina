@@ -28,6 +28,12 @@ function updateDialogueText() {
 
                     closeButton.addEventListener('click', function () {
                         ToggleDialog();
+
+                        console.log(dialogue.texts[0].includes("No. I'll keep fighting"));
+                        console.log(dialogue.texts[0]);
+                        if (dialogue.texts[0].includes("No. I'll keep fighting") || dialogue.texts[0].includes("I've made my choice.")) {
+                            window.location.href = "/End";
+                        }
  
                         SetDialogNotAvailable();
 
@@ -87,13 +93,6 @@ function SetDialogNotAvailable() {
 }
 
 
-function reload() {
-    const choices = document.getElementById('location-choice');
-    setTimeout(function () {
-        choices.classList.remove('hidden');
-        location.reload(true);
-    }, 200);
-}
 
 const nextInDialogue = document.querySelector('.textbox__next');
 if (document.body.contains(nextInDialogue)) {

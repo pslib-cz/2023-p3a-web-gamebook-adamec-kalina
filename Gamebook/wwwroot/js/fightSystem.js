@@ -22,6 +22,7 @@ function InitiateGame() {
     currentAction = null;
     isGameOver = false;
 
+    console.log(isGameOver);
     // show max health, energy
     document.getElementById("enemy-max-health").textContent = enemyMaxHealth;
     updateStats();
@@ -186,9 +187,8 @@ function GameOver() {
 
     console.log("backend updated")
 
-    setTimeout(function () {
-        location.reload(true);
-    }, 200);
+    SetHitboxNotAvailable();
+    reload();
 }
 
 
