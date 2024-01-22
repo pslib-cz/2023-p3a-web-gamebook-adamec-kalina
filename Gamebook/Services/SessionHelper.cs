@@ -43,7 +43,7 @@ public class SessionHelper : ISessionHelper
         {Location.Warehouse, new GameLocation(){Title = "Warehouse", BackgroundImage = "warehouse", Locked = false}},
         {Location.BoilerRoom, new GameLocation(){Title = "Boiler Room", BackgroundImage = "boiler-room", Locked = false}},
         {Location.SecurityRoom, new GameLocation(){Title = "Security Room", BackgroundImage = "security-room", Locked = false}},
-        {Location.ExtractionVan, new GameLocation(){Title = "Extraction Van", BackgroundImage = "extraction-van", Locked = false}},
+        {Location.ExtractionVan, new GameLocation(){Title = "Extraction Van", BackgroundImage = "extraction-van"}},
                         
         {Location.Facility, new GameLocation(){Title = "Facility", BackgroundImage = "facility"}},
         {Location.DeliveryEntrance, new GameLocation(){Title = "Delivery Entrance", BackgroundImage = "delivery-entrance", Locked = false}},
@@ -55,7 +55,7 @@ public class SessionHelper : ISessionHelper
         {Location.MaintenanceArea, new GameLocation(){Title = "Maintenance Area", BackgroundImage = "maintenance-area", Locked = false}},
         {Location.ToolStorage, new GameLocation(){Title = "Tool Storage", BackgroundImage = "tool-storage", Locked = false}},
         {Location.EmergencyExit, new GameLocation(){Title = "Emergency Exit", BackgroundImage = "emergency-exit", Locked = false}}, // needs 3 cables
-        {Location.EscapeCar, new GameLocation(){Title = "Escape Car", BackgroundImage = "escape-car", Locked = false}}, //Locked = true
+        {Location.EscapeCar, new GameLocation(){Title = "Escape Car", BackgroundImage = "escape-car"}}, //Locked = true
 
         {Location.DataDepot, new GameLocation(){Title = "Data Depot", BackgroundImage = "data-depot"}},
         {Location.ThirdFloor, new GameLocation(){Title = "Third Floor", BackgroundImage = "third-floor", Locked = false}},
@@ -66,7 +66,7 @@ public class SessionHelper : ISessionHelper
         {Location.ResearchWing, new GameLocation(){Title = "Research Wing", BackgroundImage = "research-wing", Locked = false}},
         {Location.ComputerA765, new GameLocation(){Title = "Computer A765", BackgroundImage = "computer-A765", Locked = false}},
         {Location.RooftopExit, new GameLocation(){Title = "Rooftop Exit", BackgroundImage = "rooftop-exit", Locked = false}}, // needs 2x cables 1x chip
-        {Location.Helipad, new GameLocation(){Title = "Helipad", BackgroundImage = "helipad", Locked = false}}, //Locked = true
+        {Location.Helipad, new GameLocation(){Title = "Helipad", BackgroundImage = "helipad"}}, //Locked = true
 
         {Location.CorporateHeadquarters, new GameLocation(){Title = "Corporate Headquarters", BackgroundImage = "corporate-headquarters"}},
         {Location.Elevator, new GameLocation(){Title = "Elevator", BackgroundImage = "elevator", Locked = false}},

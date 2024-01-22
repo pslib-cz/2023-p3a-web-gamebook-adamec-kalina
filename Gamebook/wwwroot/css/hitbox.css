@@ -114,6 +114,12 @@
     left: 35%;
     top: 35%;
 }
+.holding-cells .hitbox {
+    height: 25vh;
+    width: 25vh;
+    left: 35%;
+    top: 35%;
+}
 
 /*act2*/
 .room-A421 .hitbox {
