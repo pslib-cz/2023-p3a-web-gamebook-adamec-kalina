@@ -38,22 +38,22 @@ public class SessionHelper : ISessionHelper
         {Location.SecurityDoor2, new GameLocation(){Title = "Security Door", BackgroundImage = "security-door", Locked = false}},  // needs keycard
         {Location.HoldingCells, new GameLocation(){Title = "Holding Cells", BackgroundImage = "holding-cells", Locked = false}}, //Locked = true
         {Location.ControlRoom, new GameLocation(){Title = "Control Room", BackgroundImage = "control-room", Locked = false}},
-        {Location.ChiefTechnitianOffice, new GameLocation(){Title = "Chiefs Technician Office", BackgroundImage = "chief-technician-office", Locked = false}},
+        {Location.ChiefTechnitianOffice, new GameLocation(){Title = "Chiefs Technician Office", BackgroundImage = "chief-technician-office", Locked = false, Hitboxes = new(){new(){Type = HitboxType.Fight, HitboxOrder = null}}}},
         {Location.BackDoor, new GameLocation(){Title = "Back Door", BackgroundImage = "back-door", Locked = false}},
         {Location.Warehouse, new GameLocation(){Title = "Warehouse", BackgroundImage = "warehouse", Locked = false}},
         {Location.BoilerRoom, new GameLocation(){Title = "Boiler Room", BackgroundImage = "boiler-room", Locked = false}},
-        {Location.SecurityRoom, new GameLocation(){Title = "Security Room", BackgroundImage = "security-room", Locked = false}},
+        {Location.SecurityRoom, new GameLocation(){Title = "Security Room", BackgroundImage = "security-room", Locked = false, Hitboxes = new(){new(){Type = HitboxType.Fight, HitboxOrder = null}}}},
         {Location.ExtractionVan, new GameLocation(){Title = "Extraction Van", BackgroundImage = "extraction-van"}},
                         
         {Location.Facility, new GameLocation(){Title = "Facility", BackgroundImage = "facility"}},
         {Location.DeliveryEntrance, new GameLocation(){Title = "Delivery Entrance", BackgroundImage = "delivery-entrance", Locked = false}},
         {Location.SecurityCheckpoint, new GameLocation(){Title = "Security Checkpoint", BackgroundImage = "security-checkpoint", Locked = false}},
         {Location.ElectricalHallway, new GameLocation(){Title = "Electrical Hallway", BackgroundImage = "electrical-hallway", Locked = false}},
-        {Location.RoomA421, new GameLocation(){Title = "Room A421", BackgroundImage = "room-A421", Locked = false}},
+        {Location.RoomA421, new GameLocation(){Title = "Room A421", BackgroundImage = "room-A421", Locked = false,  Hitboxes = new(){new(){Type = HitboxType.Fight, HitboxOrder = null}}}},
         {Location.RoomB78, new GameLocation(){Title = "Room B78", BackgroundImage = "room-B78", Locked = false}},
-        {Location.RoomA765, new GameLocation(){Title = "Room A765", BackgroundImage = "room-A765", Locked = false}},
+        {Location.RoomA765, new GameLocation(){Title = "Room A765", BackgroundImage = "room-A765", Locked = false,  Hitboxes = new(){new(){Type = HitboxType.Fight, HitboxOrder = null}}}},
         {Location.MaintenanceArea, new GameLocation(){Title = "Maintenance Area", BackgroundImage = "maintenance-area", Locked = false}},
-        {Location.ToolStorage, new GameLocation(){Title = "Tool Storage", BackgroundImage = "tool-storage", Locked = false}},
+        {Location.ToolStorage, new GameLocation(){Title = "Tool Storage", BackgroundImage = "tool-storage", Locked = false,  Hitboxes = new(){new(){Type = HitboxType.Fight, HitboxOrder = null}}}},
         {Location.EmergencyExit, new GameLocation(){Title = "Emergency Exit", BackgroundImage = "emergency-exit", Locked = false}}, // needs 3 cables
         {Location.EscapeCar, new GameLocation(){Title = "Escape Car", BackgroundImage = "escape-car"}}, //Locked = true
 
@@ -61,10 +61,10 @@ public class SessionHelper : ISessionHelper
         {Location.ThirdFloor, new GameLocation(){Title = "Third Floor", BackgroundImage = "third-floor", Locked = false}},
         {Location.MainLobby, new GameLocation(){Title = "Main Lobby", BackgroundImage = "main-lobby", Locked = false}},
         {Location.SectorD4, new GameLocation(){Title = "Sector D4", BackgroundImage = "sector-D4", Locked = false}},
-        {Location.Server17, new GameLocation(){Title = "Server 17", BackgroundImage = "server-17", Locked = false}},
+        {Location.Server17, new GameLocation(){Title = "Server 17", BackgroundImage = "server-17", Locked = false,  Hitboxes = new(){new(){Type = HitboxType.Fight, HitboxOrder = null}}}},
         {Location.Server21, new GameLocation(){Title = "Server 21", BackgroundImage = "server-21", Locked = false}},
         {Location.ResearchWing, new GameLocation(){Title = "Research Wing", BackgroundImage = "research-wing", Locked = false}},
-        {Location.ComputerA765, new GameLocation(){Title = "Computer A765", BackgroundImage = "computer-A765", Locked = false}},
+        {Location.ComputerA765, new GameLocation(){Title = "Computer A765", BackgroundImage = "computer-A765", Locked = false,  Hitboxes = new(){new(){Type = HitboxType.Fight, HitboxOrder = null}}}},
         {Location.RooftopExit, new GameLocation(){Title = "Rooftop Exit", BackgroundImage = "rooftop-exit", Locked = false}}, // needs 2x cables 1x chip
         {Location.Helipad, new GameLocation(){Title = "Helipad", BackgroundImage = "helipad"}}, //Locked = true
 
