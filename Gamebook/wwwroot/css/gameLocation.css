@@ -560,6 +560,7 @@ choices__submit.selected {
 
 /*HACK*/
 .hack-game {
+    padding: 1em;
     text-align: center;
     color: white;
     font-family: 'Consolas', 'Courier New', monospace;

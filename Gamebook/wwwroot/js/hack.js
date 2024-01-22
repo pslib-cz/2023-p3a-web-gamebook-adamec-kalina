@@ -77,6 +77,10 @@ function loadSnippet(level, index) {
 		li.textContent = snippet;
 		li.draggable = true;
 
+		li.addEventListener('touchstart', handleTouchStart);
+		li.addEventListener('touchmove', handleTouchMove);
+		li.addEventListener('touchend', handleTouchEnd);
+
 		li.addEventListener('dragstart', handleDragStart);
 		li.addEventListener('dragover', handleDragOver);
 		li.addEventListener('drop', handleDrop);
@@ -106,6 +110,26 @@ function handleDrop(e) {
 		this.textContent = temp;
 	}
 	return false;
+}
+
+function handleTouchStart(e) {
+	draggedItem = this;
+}
+
+function handleTouchMove(e) {
+	e.preventDefault();
+}
+
+function handleTouchEnd(e) {
+	let dropTarget = document.elementFromPoint(e.changedTouches[0].clientX, e.changedTouches[0].clientY);
+
+	if (draggedItem !== dropTarget && dropTarget) {
+		let temp = draggedItem.textContent;
+		draggedItem.textContent = dropTarget.textContent;
+		dropTarget.textContent = temp;
+	}
+
+	draggedItem = null;
 }
 
 function handleDragEnd(e) {
