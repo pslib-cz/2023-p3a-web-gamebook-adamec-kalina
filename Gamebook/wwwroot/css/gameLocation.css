@@ -32,7 +32,7 @@
     }
 
 .header__heading {
-    font-size: 38px;
+    font-size: 30px;
     margin: 0 .4em;
     color: var(--white);
 }
@@ -444,7 +444,7 @@
 
 
     text-align: center;
-    width: 385px;
+    width: 310px;
     background-color: var(--grey-dark);
     border-radius: 16px;
     padding: 16px;
@@ -573,6 +573,8 @@ choices__submit.selected {
     border-radius: 16px;
     overflow: hidden;
     font-size: .8em;
+    
+    width: 90vw;
 }
 
 .hack-game__list {
@@ -616,12 +618,12 @@ choices__submit.selected {
     }
 
     .header:before {
-        right: -75px;
+        right: -74.5px;
         border-width: 90px 75px 0 0;
     }
 
     .header:after {
-        left: -75px;
+        left: -74.5px;
         border-width: 90px 0 0 75px;
     }
 
@@ -662,5 +664,21 @@ choices__submit.selected {
         max-width: 750px;
         left: 50%;
         transform: translateX(-50%)
+    }
+
+}
+
+@media (min-width: 480px) {
+    /*PIN*/
+    .pin {
+        width: 385px;
+    }
+    .header__heading{
+        font-size: 38px;
+    }
+    /*HACK*/
+    .hack-game {
+        width: fit-content;
+        min-width: 450px;
     }
 }

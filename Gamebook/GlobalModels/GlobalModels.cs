@@ -5,12 +5,12 @@ namespace Gamebook.GlobalModels;
 
 public static class GlobalModels
 {
-    public static readonly List<Weapon> Weapons = new()
+    public static readonly List<Weapon> Weapons = new() // TODO: adjust values
     {
-        new Weapon{Type = WeaponType.Knife, Damage = 20, EnergyConsumption = -10},
+        new Weapon{Type = WeaponType.Knife, Damage = 50, EnergyConsumption = -10},
         new Weapon{Type = WeaponType.Bat, Damage = 20, EnergyConsumption = -10},
         new Weapon{Type = WeaponType.Gun, Damage = 10, EnergyConsumption = -5},
-        new Weapon{Type = WeaponType.Submachine, Damage = 30, EnergyConsumption = -10}
+        new Weapon{Type = WeaponType.Submachine, Damage = 30, EnergyConsumption = -10} 
     };
 
     public static readonly List<Quest> Quests = new()

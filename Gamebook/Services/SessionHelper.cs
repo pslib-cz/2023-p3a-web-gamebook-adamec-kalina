@@ -10,7 +10,7 @@ namespace Gamebook.Services;
 public class SessionHelper : ISessionHelper
 {
     private readonly IHttpContextAccessor _httpContext;
-    
+
     //Default game locations' states
     private Dictionary<Location, GameLocation> gameLocationDataDict = new()
     {
@@ -21,7 +21,7 @@ public class SessionHelper : ISessionHelper
         {Location.ShadyBar, new GameLocation(){Title = "Shady Bar", BackgroundImage = "shady-bar"}},
         {Location.PartOfTheBar, new GameLocation(){Title = "Part of the Bar", BackgroundImage = "part-of-the-bar"}},
         {Location.BackEntrance, new GameLocation(){Title = "Back Entrance", BackgroundImage = "back-entrance", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Pin, HitboxOrder = null}}}},
-        {Location.SecretMeetingPlace, new GameLocation(){Title = "Secret Meeting Place", BackgroundImage = "secret-meeting-place", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Hack, HitboxOrder = new(){Quest = 2, Step = 4}}}}},
+        {Location.SecretMeetingPlace, new GameLocation(){Title = "Meeting Place", BackgroundImage = "secret-meeting-place",Locked= false, Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Hack, HitboxOrder = new(){Quest = 2, Step = 4}}}}},
         {Location.Workshop, new GameLocation(){Title = "Workshop", BackgroundImage = "workshop"}},
         {Location.TacticalRoom, new GameLocation(){Title = "Tactical Room", BackgroundImage = "tactical-room"}},
         {Location.CyberLab, new GameLocation(){Title = "Cyber Lab", BackgroundImage = "cyber-lab"}},
@@ -37,7 +37,7 @@ public class SessionHelper : ISessionHelper
         {Location.SecurityDoor2, new GameLocation(){Title = "Security Door", BackgroundImage = "security-door", Locked = false}},  // needs keycard
         {Location.HoldingCells, new GameLocation(){Title = "Holding Cells", BackgroundImage = "holding-cells", Locked = false}}, //Locked = true
         {Location.ControlRoom, new GameLocation(){Title = "Control Room", BackgroundImage = "control-room", Locked = false}},
-        {Location.ChiefTechnitianOffice, new GameLocation(){Title = "Chiefs Technician Office", BackgroundImage = "chief-technician-office", Locked = false, Hitboxes = new(){new(){Type = HitboxType.Fight, HitboxOrder = null}}}},
+        {Location.ChiefTechnitianOffice, new GameLocation(){Title = "Chiefs Office", BackgroundImage = "chief-technician-office", Locked = false, Hitboxes = new(){new(){Type = HitboxType.Fight, HitboxOrder = null}}}},
         {Location.BackDoor, new GameLocation(){Title = "Back Door", BackgroundImage = "back-door", Locked = false}},
         {Location.Warehouse, new GameLocation(){Title = "Warehouse", BackgroundImage = "warehouse", Locked = false}},
         {Location.BoilerRoom, new GameLocation(){Title = "Boiler Room", BackgroundImage = "boiler-room", Locked = false}},
@@ -518,7 +518,7 @@ public class SessionHelper : ISessionHelper
     // Default quests state
     private List<Quest> questList = new()
     {
-        Global.Quests.First(q => q.Number == 1)
+        Global.Quests.First(q => q.Number == 3)
     };
 
     // Default player state
@@ -539,7 +539,7 @@ public class SessionHelper : ISessionHelper
     private bool gameInProgress = false;
 
     // Game starts at quest 1, step 1
-    private GameProgress gameProgress = new() {Quest = 1, Step = 1};
+    private GameProgress gameProgress = new() {Quest = 3, Step = 1};
 
     // Set default currentLocation on game start
     private Location currentLocation = Location.SlumDistrict;

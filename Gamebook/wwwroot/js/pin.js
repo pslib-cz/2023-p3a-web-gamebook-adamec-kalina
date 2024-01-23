@@ -60,8 +60,8 @@ function submitGuess() {
     let result = checkGuess(guess);
     document.getElementById('pin-history').innerHTML += `<p>${guess}: ${result.W}<span>W</span> ${result.L}<span>L</span></p>`;
 
-    attempts--;
-    document.getElementById('pin-attempts').innerHTML = `Attempts left: ${attempts}`;
+    //attempts--;
+    //document.getElementById('pin-attempts').innerHTML = `Attempts left: ${attempts}`;
 
     if (result.W === codeLength) {
         HidePin();

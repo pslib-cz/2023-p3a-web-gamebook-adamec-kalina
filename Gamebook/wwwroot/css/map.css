@@ -224,7 +224,6 @@
 .quest__card.active.finished .quest__card__heading:after {
     background-image: url(../images/check.svg), url(../images/arrow-down.svg);
     background-position: left, right;
-    background-size: contain, 32px;
 }
 
 .quest__card__cont {

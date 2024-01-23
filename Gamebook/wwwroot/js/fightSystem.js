@@ -3,8 +3,7 @@ console.log(locationResponseData.playerStats.maxHealth);
 
 
 const energyCost = locationResponseData.equipedWeapon.energyConsumption;
-//const playerDamage = locationResponseData.equipedWeapon.damage;
-const playerDamage = 80;
+const playerDamage = locationResponseData.equipedWeapon.damage;
 
 const playerMaxHealth = locationResponseData.playerStats.maxHealth;
 const playerMaxEnergy = locationResponseData.playerStats.maxEnergy;
@@ -96,7 +95,7 @@ function enemyTurn() {
         setTimeout(function () {
             if (isGameOver) return;
             if (currentAction === "attack") {
-                if (Math.random() < 0.6) { //TODO adjust values
+                if (Math.random() < 0.75) { //TODO adjust values
                     enemyAttack();
                 } else {
                     enemyDefend();
