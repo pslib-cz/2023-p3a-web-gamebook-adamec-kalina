@@ -21,7 +21,7 @@ public class SessionHelper : ISessionHelper
         {Location.ShadyBar, new GameLocation(){Title = "Shady Bar", BackgroundImage = "shady-bar"}},
         {Location.PartOfTheBar, new GameLocation(){Title = "Part of the Bar", BackgroundImage = "part-of-the-bar"}},
         {Location.BackEntrance, new GameLocation(){Title = "Back Entrance", BackgroundImage = "back-entrance", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Pin, HitboxOrder = null}}}},
-        {Location.SecretMeetingPlace, new GameLocation(){Title = "Meeting Place", BackgroundImage = "secret-meeting-place",Locked= false, Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Hack, HitboxOrder = new(){Quest = 2, Step = 4}}}}},
+        {Location.SecretMeetingPlace, new GameLocation(){Title = "Meeting Place", BackgroundImage = "secret-meeting-place", Hitboxes = new List<Hitbox>(){new(){Type = HitboxType.Hack, HitboxOrder = new(){Quest = 2, Step = 4}}}}},
         {Location.Workshop, new GameLocation(){Title = "Workshop", BackgroundImage = "workshop"}},
         {Location.TacticalRoom, new GameLocation(){Title = "Tactical Room", BackgroundImage = "tactical-room"}},
         {Location.CyberLab, new GameLocation(){Title = "Cyber Lab", BackgroundImage = "cyber-lab"}},
@@ -518,7 +518,7 @@ public class SessionHelper : ISessionHelper
     // Default quests state
     private List<Quest> questList = new()
     {
-        Global.Quests.First(q => q.Number == 3)
+        Global.Quests.First(q => q.Number == 1)
     };
 
     // Default player state
@@ -539,7 +539,7 @@ public class SessionHelper : ISessionHelper
     private bool gameInProgress = false;
 
     // Game starts at quest 1, step 1
-    private GameProgress gameProgress = new() {Quest = 3, Step = 1};
+    private GameProgress gameProgress = new() {Quest = 1, Step = 1};
 
     // Set default currentLocation on game start
     private Location currentLocation = Location.SlumDistrict;
