@@ -9,178 +9,178 @@
 
 
 body.electro-shop{
-    background-image: url(/images/background/electro_shop.png);
+    background-image: url(/images/background/electro_shop.jpg);
 }
 body.dark-alley{
-    background-image: url(/images/background/dark_alley.png);
+    background-image: url(/images/background/dark_alley.jpg);
 }
 body.slum-quarter{
-    background-image: url(/images/background/slum_quarter.png);
+    background-image: url(/images/background/slum_quarter.jpg);
 }
 body.slum-district{
-    background-image: url(/images/background/slum_district.png);
+    background-image: url(/images/background/slum_district.jpg);
 }
 
 
 body.shady-bar{
-    background-image: url(/images/background/shady_bar.png);
+    background-image: url(/images/background/shady_bar.jpg);
 }
 body.part-of-the-bar{
-    background-image: url(/images/background/part_of_the_bar.png);
+    background-image: url(/images/background/part_of_the_bar.jpg);
 }
 body.back-entrance{
-    background-image: url(/images/background/back_entrance.png);
+    background-image: url(/images/background/back_entrance.jpg);
 }
 
 
 body.secret-meeting-place{
-    background-image: url(/images/background/secret_meeting_place.png);
+    background-image: url(/images/background/secret_meeting_place.jpg);
 }
 
 body.cyber-lab{
-    background-image: url(/images/background/cyber_lab.png);
+    background-image: url(/images/background/cyber_lab.jpg);
 }
 body.tactical-room{
-    background-image: url(/images/background/tactical_room.png);
+    background-image: url(/images/background/tactical_room.jpg);
 }
 body.workshop{
-    background-image: url(/images/background/workshop.png);
+    background-image: url(/images/background/workshop.jpg);
 }
 body.quantum-technology{
-    background-image: url(/images/background/quantum_technology.png);
+    background-image: url(/images/background/quantum_technology.jpg);
 }
 
 body.death-screen {
-    background-image: url(/images/background/death_screen.png)
+    background-image: url(/images/background/death_screen.jpg)
 }
 
 
 
 /*ACT1*/
 body.corporal-building {
-    background-image: url(/images/background/act_1/corporal_building.png);
+    background-image: url(/images/background/act_1/corporal_building.jpg);
 }
 body.main-entrance {
-    background-image: url(/images/background/act_1/main_entrance.png);
+    background-image: url(/images/background/act_1/main_entrance.jpg);
 }
 body.reception {
-    background-image: url(/images/background/act_1/reception.png);
+    background-image: url(/images/background/act_1/reception.jpg);
 }
 body.back-of-building {
-    background-image: url(/images/background/act_1/back_of_building.png);
+    background-image: url(/images/background/act_1/back_of_building.jpg);
 }
 body.hallway {
-    background-image: url(/images/background/act_1/hallway.png);
+    background-image: url(/images/background/act_1/hallway.jpg);
 }
 body.server-room {
-    background-image: url(/images/background/act_1/server_room.png);
+    background-image: url(/images/background/act_1/server_room.jpg);
 }
 body.security-door {
-    background-image: url(/images/background/act_1/security_door.png);
+    background-image: url(/images/background/act_1/security_door.jpg);
 }
 body.holding-cells {
-    background-image: url(/images/background/act_1/holding_cells.png);
+    background-image: url(/images/background/act_1/holding_cells.jpg);
 }
 body.control-room {
-    background-image: url(/images/background/act_1/control_room.png);
+    background-image: url(/images/background/act_1/control_room.jpg);
 }
 body.chief-technician-office {
-    background-image: url(/images/background/act_1/chief_technitian_office.png);
+    background-image: url(/images/background/act_1/chief_technitian_office.jpg);
 }
 body.back-door {
-    background-image: url(/images/background/act_1/back_door.png);
+    background-image: url(/images/background/act_1/back_door.jpg);
 }
 body.warehouse {
-    background-image: url(/images/background/act_1/warehouse.png);
+    background-image: url(/images/background/act_1/warehouse.jpg);
 }
 body.boiler-room {
-    background-image: url(/images/background/act_1/boiler_room.png);
+    background-image: url(/images/background/act_1/boiler_room.jpg);
 }
 body.security-room {
-    background-image: url(/images/background/act_1/security_room.png);
+    background-image: url(/images/background/act_1/security_room.jpg);
 }
 body.extraction-van{
-    background-image: url(/images/background/act_1/extraction_van.png);
+    background-image: url(/images/background/act_1/extraction_van.jpg);
 }
 
 /*ACT2*/
 body.facility{
-    background-image: url(/images/background/act_2/facility.png);
+    background-image: url(/images/background/act_2/facility.jpg);
 }
 body.delivery-entrance{
-    background-image: url(/images/background/act_2/delivery_entrance.png);
+    background-image: url(/images/background/act_2/delivery_entrance.jpg);
 }
 body.security-checkpoint{
-    background-image: url(/images/background/act_2/security_checkpoint.png);
+    background-image: url(/images/background/act_2/security_checkpoint.jpg);
 }
 body.electrical-hallway{
-    background-image: url(/images/background/act_2/electrical_hallway.png);
+    background-image: url(/images/background/act_2/electrical_hallway.jpg);
 }
 body.room-A421{
-    background-image: url(/images/background/act_2/room_A421.png);
+    background-image: url(/images/background/act_2/room_A421.jpg);
 }
 body.room-B78{
-    background-image: url(/images/background/act_2/room_B78.png);
+    background-image: url(/images/background/act_2/room_B78.jpg);
 }
 body.room-A765{
-    background-image: url(/images/background/act_2/room_A765.png);
+    background-image: url(/images/background/act_2/room_A765.jpg);
 }
 body.maintenance-area{
-    background-image: url(/images/background/act_2/maintenance_area.png);
+    background-image: url(/images/background/act_2/maintenance_area.jpg);
 }
 body.tool-storage{
-    background-image: url(/images/background/act_2/tool_storage.png);
+    background-image: url(/images/background/act_2/tool_storage.jpg);
 }
 body.emergency-exit{
-    background-image: url(/images/background/act_2/emergency_exit.png);
+    background-image: url(/images/background/act_2/emergency_exit.jpg);
 }
 body.escape-car{
-    background-image: url(/images/background/act_2/escape_car.png);
+    background-image: url(/images/background/act_2/escape_car.jpg);
 }
 
 
 /*ACT3*/
 body.data-depot{
-    background-image: url(/images/background/act_3/data_depot.png);
+    background-image: url(/images/background/act_3/data_depot.jpg);
 }
 body.third-floor{
-    background-image: url(/images/background/act_3/third_floor.png);
+    background-image: url(/images/background/act_3/third_floor.jpg);
 }
 body.main-lobby {
-    background-image: url(/images/background/act_3/main_lobby.png);
+    background-image: url(/images/background/act_3/main_lobby.jpg);
 }
 body.sector-D4{
-    background-image: url(/images/background/act_3/sector_D4.png);
+    background-image: url(/images/background/act_3/sector_D4.jpg);
 }
 body.server-17{
-    background-image: url(/images/background/act_3/server_17.png);
+    background-image: url(/images/background/act_3/server_17.jpg);
 }
 body.server-21{
-    background-image: url(/images/background/act_3/server_21.png);
+    background-image: url(/images/background/act_3/server_21.jpg);
 }
 body.research-wing{
-    background-image: url(/images/background/act_3/research_wing.png);
+    background-image: url(/images/background/act_3/research_wing.jpg);
 }
 body.computer-A765{
-    background-image: url(/images/background/act_3/computer_A765.png);
+    background-image: url(/images/background/act_3/computer_A765.jpg);
 }
 body.rooftop-exit{
-    background-image: url(/images/background/act_3/rooftop_exit.png);
+    background-image: url(/images/background/act_3/rooftop_exit.jpg);
 }
 body.helipad{
-    background-image: url(/images/background/act_3/helipad.png);
+    background-image: url(/images/background/act_3/helipad.jpg);
 }
 
 /*ACT4*/
 body.corporate-headquarters {
-    background-image: url(/images/background/act_4/corporate-headquarters.png);
+    background-image: url(/images/background/act_4/corporate-headquarters.jpg);
 }
 body.elevator {
-    background-image: url(/images/background/act_4/elevator.png);
+    background-image: url(/images/background/act_4/elevator.jpg);
 }
 body.penthouse {
-    background-image: url(/images/background/act_4/penthouse.png);
+    background-image: url(/images/background/act_4/penthouse.jpg);
 }
 body.boss {
-    background-image: url(/images/background/act_4/boss.png);
+    background-image: url(/images/background/act_4/boss.jpg);
 }

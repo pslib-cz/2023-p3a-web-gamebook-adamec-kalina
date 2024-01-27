@@ -21,7 +21,7 @@ builder.Services.AddScoped<IGameplayService, GameplayService>();
 
 
 var app = builder.Build();
-
+app.UsePathBase("/HackAttack");
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

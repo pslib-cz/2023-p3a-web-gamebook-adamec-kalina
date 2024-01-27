@@ -55,7 +55,7 @@
 }
 
 body {
-    background-image: url(../images/background/menu.png);
+    background-image: url(../images/background/menu.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,7 +64,7 @@ body {
 }
 
 body.end {
-    background-image: url(../images/background/end.png);
+    background-image: url(../images/background/end.jpg);
 }
 
 .end__text {
