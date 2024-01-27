@@ -29,15 +29,18 @@
     display: block;
     flex-grow: 0;
 }
-
-.button--arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    height: fit-content;
-    min-height: 48px;
+.button--blue:hover{
+    background-color: var(--blue-light)
 }
+
+    .button--arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        height: fit-content;
+        min-height: 48px;
+    }
 
     .button--arrow::before {
         content: "";

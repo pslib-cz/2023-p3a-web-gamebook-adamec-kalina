@@ -563,38 +563,37 @@ choices__submit.selected {
     padding: 1em;
     text-align: center;
     color: white;
-    font-family: 'Consolas', 'Courier New', monospace;
+    box-shadow: 0 0 15px 5px var(--blue);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #333;
-    border: 1px solid red;
+    background-color: var(--grey-dark);
     border-radius: 16px;
     overflow: hidden;
     font-size: .8em;
-    
     width: 90vw;
 }
 
 .hack-game__list {
+    font-family: 'Consolas', 'Courier New', monospace;
     list-style-type: none;
     padding: 0;
 }
 
-    .hack-game__list li {
-        white-space: pre-wrap; /* This will make the browser respect whitespace, including tabs */
-        text-align: left;
-        padding: 4px;
-        background-color: #222;
-        cursor: pointer;
-        tab-size: 20px;
-        border-bottom: 1px solid #444;
-    }
+.hack-game__list li {
+    white-space: pre-wrap;
+    text-align: left;
+    padding: 4px;
+    background-color: #222;
+    cursor: pointer;
+    tab-size: 20px;
+    border-bottom: 1px solid #444;
+}
 
-        .hack-game__list li:hover {
-            background-color: #111111;
-        }
+.hack-game__list li:hover {
+    background-color: #111111;
+}
 
 .hack-game__submit {
     margin-top: 20px;
@@ -606,6 +605,10 @@ choices__submit.selected {
     color: white;
     font-size: 1.8em;
 }
+.hack-game__submit:hover {
+    background-color: #000;
+}
+
 
 @media (min-width: 768px) {
     /*HEADER*/
