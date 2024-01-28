@@ -44,7 +44,7 @@
 
 function SetHitboxNotAvailable() {
     console.log("Hitbox over");
-    fetch('/Gameplay/SetHitboxNotAvailable ', {
+    fetch('../Gameplay/SetHitboxNotAvailable ', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

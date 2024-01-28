@@ -66,7 +66,7 @@ if (document.body.contains(submit)) {
 
 function ChoiceNotAvailable() {
     console.log("choice not avalible");
-    fetch('/Gameplay/SetChoiceNotAvailable', {
+    fetch('../Gameplay/SetChoiceNotAvailable', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -92,7 +92,7 @@ function PlayerFocusChoice(choice) {
     }
 
     console.log(endChoice);
-    fetch('/Gameplay/PlayerFocusChoice', {
+    fetch('../Gameplay/PlayerFocusChoice', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -126,7 +126,7 @@ function PlayerDealingTypeChoice(choice) {
 
     console.log(endChoice);
 
-    fetch('/Gameplay/PlayerDealingTypeChoice', {
+    fetch('../Gameplay/PlayerDealingTypeChoice', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -136,7 +136,7 @@ function PlayerDealingTypeChoice(choice) {
 }
 function MoralScoreChange(amount) {
 
-    fetch('/Gameplay/MoralScoreChange', {
+    fetch('../Gameplay/MoralScoreChange', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

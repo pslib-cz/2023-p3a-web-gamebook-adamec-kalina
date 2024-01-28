@@ -76,7 +76,7 @@ const infoBoxText = document.getElementById('info-box-text');
 
 function SetDialogNotAvailable() {
     console.log("Dialog over");
-    fetch('/Gameplay/DialogOver', {
+    fetch('../Gameplay/DialogOver', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

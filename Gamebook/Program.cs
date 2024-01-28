@@ -1,5 +1,6 @@
 using Gamebook.Interfaces;
 using Gamebook.Services;
+using HackAttack.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,7 +22,8 @@ builder.Services.AddScoped<IGameplayService, GameplayService>();
 
 
 var app = builder.Build();
-app.UsePathBase("/HackAttack");
+app.UseRestrictingPathBase("/HackAttack");
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

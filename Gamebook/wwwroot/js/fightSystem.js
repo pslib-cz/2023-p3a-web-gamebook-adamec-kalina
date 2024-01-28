@@ -261,7 +261,7 @@ function updateInfoBox(text, healthChange, energyChange) {
 
 function HealthChange(amount) {
 
-    fetch('/Gameplay/HealthChange', {
+    fetch('../Gameplay/HealthChange', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -283,7 +283,7 @@ function HealthChange(amount) {
 
 function EnergyChange(amount) {
 
-    fetch('/Gameplay/EnergyChange', {
+    fetch('../Gameplay/EnergyChange', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
