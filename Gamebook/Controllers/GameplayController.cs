@@ -22,7 +22,7 @@ public class GameplayController : ControllerBase
     {
         if (amount <= 0)
         {
-            return Ok(new {redirectToDeath = "/Death"});
+            return Ok(new {redirectToDeath = "../Death"});
         }
 
         // Change the value in the session
