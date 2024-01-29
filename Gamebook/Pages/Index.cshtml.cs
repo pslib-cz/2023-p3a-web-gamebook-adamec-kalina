@@ -20,19 +20,22 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-        
-        var currentLocation = _locationService.GetCurrentLocation();
-        ViewData["lastLocation"] = currentLocation;
+        try
+        {
+            ViewData["lastLocation"] = _locationService.GetCurrentLocation();
+            GameInProgress = _locationService.IsGameInProgress();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("gameBegins");
+        }
 
-        GameInProgress = _locationService.IsGameInProgress();
     }
 
     public void OnGetStart()
     {
         _locationService.ResetGame();
-        var currentLocation = _locationService.GetCurrentLocation();
-        ViewData["lastLocation"] = currentLocation;
-        
+        ViewData["lastLocation"] = _locationService.GetCurrentLocation();
         GameInProgress = _locationService.IsGameInProgress();
     }
 }
