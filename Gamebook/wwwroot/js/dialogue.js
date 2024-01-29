@@ -32,7 +32,7 @@ function updateDialogueText() {
                         console.log(dialogue.texts[0].includes("my ideas, my vision, they will endure"));
                         console.log(dialogue.texts[0]);
                         if (dialogue.texts[0].includes("my ideas, my vision, they will endure") || dialogue.texts[0].includes("handing me over to the police will change anything?")) {
-                            window.location.href = "/HackAttack/End";
+                            window.location.href = "../End";
                         }
  
                         SetDialogNotAvailable();
